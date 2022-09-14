@@ -1,9 +1,13 @@
 import React from 'react'
-import Layout from '../../Layout/Layout'
+import MainBox from '../../components/MainBox/MainBox'
+import NavBar from '../../components/NavBar/NavBar'
 
 const Home = () => {
   return (
-    <Layout></Layout>
+    <div>
+      <NavBar />
+      <MainBox />
+    </div>
   )
 }
 
