@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 //import AdbIcon from '@mui/icons-material/Adb';
-import styles from './NavBar.module.css'
 import ContainedButtons from '../../elements/Button/ContainedButtons'
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
@@ -39,10 +38,13 @@ const NavBar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" className={`${styles.container}`} sx={{ background: { 
+      <Container maxWidth="xl" sx={{ background: { 
         xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
-        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 30%,#000000 30%,#000000 100%)' } }}>
-        <Toolbar disableGutters className={`${styles.toolbar}`}>
+        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 30%,#000000 30%,#000000 100%)' },
+        height: '100px',
+        paddingTop: '18px'
+        }}>
+        <Toolbar disableGutters sx={{alignItems: 'center'}}>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
@@ -117,14 +119,17 @@ const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none' }
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '100%', height: '40px', paddingTop: '8px', px: 0}}>{page}</Typography>
                 </MenuItem>
               ))}
+              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '15px' }}>
+                <ContainedButtons textAlign="center" />
+              </Box>
             </Menu>
           </Box>
           {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -151,7 +156,7 @@ const NavBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, mx: 8, color: 'white', display: 'block' }}
+                sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
               >
                 {page}
               </Button>
