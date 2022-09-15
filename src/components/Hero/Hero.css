@@ -4,7 +4,7 @@ body {
     font-family: 'Raleway';
     font-style: normal;
 }
-.big-text {
+.big_text {
     font-weight: 700;
     font-size: 28px;
     line-height: 132.4%;
@@ -19,4 +19,13 @@ body {
     color: #000000;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+
+.line {
+    margin-left: 25px;
+}
+
+.avatar {
+    margin-top: 30px;
+    margin-left: 128px;
 }

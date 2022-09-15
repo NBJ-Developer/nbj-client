@@ -93,6 +93,8 @@ const NavBar = () => {
             </Menu>
           </Box>
 
+
+          {/* Small Device */}
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -151,6 +153,8 @@ const NavBar = () => {
           >
             LOGO
           </Typography> */}
+
+          {/* Medium Device */}
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button

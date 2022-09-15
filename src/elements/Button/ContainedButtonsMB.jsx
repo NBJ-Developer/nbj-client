@@ -8,7 +8,7 @@ export default function ContainedButtons() {
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="contained" href="#contained-buttons" className='but' sx={{ 
-        width: '150px',
+        width: '100px',
         backgroundColor: {xs: '#000000', md: '#ffffff'},
         color: {xs: '#ffffff', md: '#000000'},
         textTransform: 'Capitalize',
@@ -20,6 +20,7 @@ export default function ContainedButtons() {
           backgroundColor: 'white',
           opacity: [0.9, 0.8, 0.7],
         },
+        fontSize: '10px'
         }}>
         Button
         <BsArrowRightCircle style={{marginLeft: '10px'}}/>

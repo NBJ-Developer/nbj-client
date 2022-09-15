@@ -1,12 +1,14 @@
 import React from 'react'
-import MainBox from '../../components/MainBox/MainBox'
+import Benefits from '../../components/Benefits/Benefits'
+import Hero from '../../components/Hero/Hero'
 import NavBar from '../../components/NavBar/NavBar'
 
 const Home = () => {
   return (
     <div>
       <NavBar />
-      <MainBox />
+      <Hero />
+      <Benefits />
     </div>
   )
 }
