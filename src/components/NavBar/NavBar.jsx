@@ -119,15 +119,15 @@ const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' }
+                display: { xs: 'block', md: 'none' }, backgroundColor: 'rgba(18, 18, 18, 0.37)'
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '100%', height: '40px', paddingTop: '8px', px: 0}}>{page}</Typography>
+                  <Typography textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '15px' }}>
+              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '16px' }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>

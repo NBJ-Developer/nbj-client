@@ -7,10 +7,13 @@ export default function ContainedButtons() {
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="contained" href="#contained-buttons" className='but' sx={{ 
+        width: '150px',
         backgroundColor: {xs: '#000000', md: '#ffffff'},
         color: {xs: '#ffffff', md: '#000000'},
         textTransform: 'Capitalize',
         borderTopLeftRadius: '0px',
+        borderTopRightRadius: '7px',
+        borderBottomLeftRadius: '7px',
         borderBottomRightRadius: '0px',
         '&:hover': {
           backgroundColor: 'white',
