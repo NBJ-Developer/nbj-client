@@ -26,8 +26,7 @@ body {
 .div_column_2 {
     column-count: 2;
     column-gap: 15px;
-    margin-top: 20px;
-    margin-left: 8px;
+    margin: 20px 0 0 8px;
 }
 
 .div_column_text {
@@ -36,3 +35,5 @@ body {
     line-height: 20px;
     color: #000000;
 }
+
+

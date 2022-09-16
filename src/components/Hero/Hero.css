@@ -4,7 +4,15 @@ body {
     font-family: 'Raleway';
     font-style: normal;
 }
-.big_text {
+
+.hero_text_mobile {
+    width: 223px;
+    height: 119px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+
+.big_text_mobile {
     font-weight: 700;
     font-size: 28px;
     line-height: 132.4%;
@@ -12,13 +20,12 @@ body {
     color: #000000;
 }
 
-.lorem {
+.lorem_mobile {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
     color: #000000;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 13px;
 }
 
 .line {
@@ -26,6 +33,28 @@ body {
 }
 
 .avatar {
+    margin: 18px 0 0 128px;
+}
+
+.hero_text_web {
+    width: 460px;
+    height: 300px;
+}
+
+.big_text_web {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 132.4%;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-top: 50px;
+}
+
+.lorem_web {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
     margin-top: 30px;
-    margin-left: 128px;
+    margin-bottom: 30px;
 }

@@ -7,33 +7,21 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-//import AdbIcon from '@mui/icons-material/Adb';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -45,56 +33,29 @@ const NavBar = () => {
         paddingTop: '18px'
         }}>
         <Toolbar disableGutters sx={{alignItems: 'center'}}>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography> */}
           <Box sx={{ flexGrow: 1 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+
+            {/* SMALL DEVICE */}
+            <Box sx={{  display: { xs: 'flex', md: 'none' },
+                        width: '84px',
+                        height: '30px',
+                        background: '#d9d9d9',
+                        borderRadius: '10px',
+                        marginLeft: '10px'
+            }}></Box>
+
+            {/* MEDIUM DEVICE */}
+            <Box sx={{  display: { xs: 'none', md: '  flex' },
+                        width: '159px',
+                        height: '43px',
+                        background: '#d9d9d9',
+                        borderRadius: '10px',
+                        marginLeft: '30px'
+            }}></Box>
           </Box>
 
 
-          {/* Small Device */}
+          {/* SMALL DEVICE */}
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -129,32 +90,13 @@ const NavBar = () => {
                   <Typography textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '16px' }}>
+              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '36px' }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography> */}
 
-          {/* Medium Device */}
+          {/* MEDIUM DEVICE */}
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
