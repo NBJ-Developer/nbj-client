@@ -42,21 +42,29 @@ const NavBar = () => {
                         background: '#d9d9d9',
                         borderRadius: '10px',
                         marginLeft: '10px'
-            }}></Box>
+            }}>
+            </Box>
 
             {/* MEDIUM DEVICE */}
-            <Box sx={{  display: { xs: 'none', md: '  flex' },
+            <Box sx={{  display: { xs: 'none', md: 'flex' },
                         width: '159px',
                         height: '43px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
-                        marginLeft: '30px'
+                        marginLeft: '80px'
             }}></Box>
           </Box>
 
 
           {/* SMALL DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={
+            { 
+              flexGrow: 0, 
+              display: {
+                 xs: 'flex', md: 'none' 
+                 } 
+                }
+              }>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -87,10 +95,11 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
+                  <Typography textAlign="center" 
+                              sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '36px' }}>
+              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '30px' }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>

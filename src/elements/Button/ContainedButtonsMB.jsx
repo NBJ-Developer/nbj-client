@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 //import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { BsArrowRightCircle } from 'react-icons/bs'
 
-export default function ContainedButtons() {
+export default function ContainedButtonsMB() {
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="contained" href="#contained-buttons" className='but' sx={{ 
@@ -16,6 +16,7 @@ export default function ContainedButtons() {
         borderRadius: {xs: '7px 0 7px 0', md: '10px 0 10px 0'},
         '&:hover': {
           backgroundColor: '#d9d9d9',
+          border: '1px solid #000000',
           opacity: [0.9, 0.8, 0.7],
           color: '#000000'
         },

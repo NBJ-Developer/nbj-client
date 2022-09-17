@@ -17,6 +17,8 @@ export default function ContainedButtons() {
         '&:hover': {
           backgroundColor: 'white',
           opacity: [0.9, 0.8, 0.7],
+          color: '#000000',
+          border: '1px solid #000000',
         },
         fontSize: {xs: '10px', md: '16px'}
         }}>
