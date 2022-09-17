@@ -1,20 +1,19 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import './Hero.css'
+import './HeroH.css'
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
-//import ContainedButtons from '../../elements/Button/ContainedButtons';
 import Line from '../../assets/images/Line_Horizontal.png'
 import Line2 from '../../assets/images/Line_Vertical.png'
 import Avatar from '../../assets/images/Vector.png'
 
-export default function Hero() {
+export default function HeroH() {
   return (
-    <div>
+    <Box>
       {/* SMALL DEVICE */}
       <Box
         sx={{ display: { xs: 'block', md: 'none' },
               width: '100%',
-              height: '410px',
+              height: '390px',
               backgroundColor: 'primary.dark',
               background: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
               paddingTop: '20px'
@@ -34,37 +33,37 @@ export default function Hero() {
             </div>
             <ContainedButtonsMB />
             <img src={Line} alt="" className='line' />
-            <img src={Avatar} alt="" className='avatar' />
+            <img src={Avatar} alt="" style={{margin: '18px 0 0 128px'}} className='avatar_mobile' />
         </Box>
 
         <Box sx={{  margin: '30px 0 0 30px', }}>
-          <img src={Avatar} alt="" />
+          <img src={Avatar} alt="" className='avatar_mobile' />
         </Box>
 
         <Box sx={{ margin: '-25px 0 0 140px', }}>
-          <img src={Avatar} alt="" />
+          <img src={Avatar} alt="" className='avatar_mobile' />
         </Box>
       </Box>
 
       {/* MEDIUM DEVICE */}
-      <Box sx={{  display: { xs: 'none', md: 'block' },
+     <Box sx={{  display: { xs: 'none', md: 'block' },
                   width: '100%',
-                  height: '700px',
+                  height: '734px',
                   backgroundColor: 'primary.dark',
-                  background: 'linear-gradient(to right,  #ffffff 0%,#ffffff 30%,#000000 30%,#000000 100%)',
+                  background: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)',
                   paddingTop: '10px',
                   marginBottom: '50px',
                   
         }}>
 
-        <Box sx={{  display: 'flex',
+          <Box sx={{  display: 'flex',
                     width: '961px',
                     height: '567px',
                     background: '#ffffff',
                     border: '1px solid #000000',
                     borderRadius: '0 43px 43px 0',
                     padding: '50px 0 0 85px'
-          }}>
+            }}>
             <Box className='hero_text_web'>
               <p className='big_text_web'>Big Text Header 2 lines</p>
               <p className='lorem_web'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et augue ante tellus non leo. </p>
@@ -78,19 +77,18 @@ export default function Hero() {
 
             <Box>
               <div className='avatar_1'>
-                <img src={Avatar} alt="" />
+                <img src={Avatar} alt="" className='avatar_web' />
               </div>
               <div className='avatar_2'>
-                <img src={Avatar} alt="" />
+                <img src={Avatar} alt="" className='avatar_web' />
               </div>
               <div className='avatar_3'>
-                <img src={Avatar} alt="" />
+                <img src={Avatar} alt="" className='avatar_web' />
               </div>
             </Box>
- 
-        </Box>
+          </Box>
       </Box>
       
-    </div>
+    </Box>
   );
 }

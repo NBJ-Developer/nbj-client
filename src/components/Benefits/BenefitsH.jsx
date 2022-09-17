@@ -1,20 +1,20 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import './Benefits.css'
+import './BenefitsH.css'
 import { BsCheck2Circle } from 'react-icons/bs'
 import WhiteVector from '../../assets/images/BBVector.png'
 import SWVector from '../../assets/images/BBVector_small.png'
 
-export default function Benefits() {
+export default function BenefitsH() {
   return (
-    <div>
+    <Box>
       {/* SMALL DEVICE */}
       <Box
         sx={{ display: { xs: 'block', md: 'none' },
           width: 315,
           height: 269,
           backgroundColor: '#ffffff',
-          margin: '160px 0 20px 30px'
+          margin: '180px 30px 0 30px'
 
         }}>
           <h4 className='what_you'>WHAT YOU GET</h4>
@@ -37,22 +37,24 @@ export default function Benefits() {
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-            <img src={WhiteVector} alt="" />
+            <img src={WhiteVector} alt="" className='w_vector' />
           </Box>
       </Box>
 
         {/* MEDIUM DEVICE */}
       <Box sx={{  display: {xs: 'none', md: 'block'}, 
                   marginTop: '83px'}}>
-      <h4 className='you_get'>WHAT YOU GET</h4>
+
+            <h4 className='you_get'>WHAT YOU GET</h4>
             <Box sx={{display: 'flex',
                       justifyContent: 'center',
-                      alignItems: 'center'
+                      alignItems: 'center',
+                      marginTop: '43px'
               }}>
               <Box sx={{  display: 'flex',
                           alignItems: 'center',
                           width: '1122px',
-                          height: '263px'
+                          height: '185px'
                 }}>
                 
                 <Box sx={{  width: '320px',
@@ -61,7 +63,7 @@ export default function Benefits() {
                             marginRight: '81px'
                   }}>
                     <div className='inner_box'>
-                      <img src={SWVector} alt="" />
+                      <img src={SWVector} alt="" className='sw_vector' />
                     </div>
                     <p className='sapien'>Sapien phasellus</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
@@ -73,18 +75,17 @@ export default function Benefits() {
                             marginRight: '81px'
                   }}>
                     <div className='inner_box'>
-                      <img src={SWVector} alt="" />
+                      <img src={SWVector} alt="" className='sw_vector' />
                     </div>
                     <p className='sapien'>Sapien phasellus</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
                 <Box sx={{  width: '320px',
-                            height: '185px',
-                            textAlign: 'center'
+                            height: '185px'
                   }}>
                     <div className='inner_box'>
-                      <img src={SWVector} alt="" />
+                      <img src={SWVector} alt="" className='sw_vector' />
                     </div>
                     <p className='sapien'>Sapien phasellus</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
@@ -92,6 +93,6 @@ export default function Benefits() {
               </Box>
             </Box>
       </Box>
-    </div>
+    </Box>
   );
 }

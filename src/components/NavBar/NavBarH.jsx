@@ -13,7 +13,7 @@ import ContainedButtons from '../../elements/Button/ContainedButtons'
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
 
-const NavBar = () => {
+const NavBarH = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -28,8 +28,8 @@ const NavBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl" sx={{ background: { 
         xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
-        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 30%,#000000 30%,#000000 100%)' },
-        height: '100px',
+        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
+        height: { xs: '129px', md: '167px' },
         paddingTop: '18px'
         }}>
         <Toolbar disableGutters sx={{alignItems: 'center'}}>
@@ -41,7 +41,7 @@ const NavBar = () => {
                         height: '30px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
-                        marginLeft: '10px'
+                        marginLeft: '30px'
             }}>
             </Box>
 
@@ -62,7 +62,8 @@ const NavBar = () => {
               flexGrow: 0, 
               display: {
                  xs: 'flex', md: 'none' 
-                 } 
+                 },
+                 my: 4, 
                 }
               }>
             <IconButton
@@ -99,19 +100,20 @@ const NavBar = () => {
                               sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '30px' }}>
+              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '30px', marginTop: '50px' }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
           </Box>
 
           {/* MEDIUM DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' },
+                     alignItems: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
+                sx={{ my: 5, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
               >
                 {page}
               </Button>
@@ -127,4 +129,4 @@ const NavBar = () => {
     </AppBar>
   );
 };
-export default NavBar;
+export default NavBarH;

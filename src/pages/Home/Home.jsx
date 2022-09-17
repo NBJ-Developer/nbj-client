@@ -1,14 +1,14 @@
 import React from 'react'
-import Benefits from '../../components/Benefits/Benefits'
-import Hero from '../../components/Hero/Hero'
-import NavBar from '../../components/NavBar/NavBar'
+import BenefitsH from '../../components/Benefits/BenefitsH'
+import HeroH from '../../components/Hero/HeroH'
+import NavBarH from '../../components/NavBar/NavBarH'
 
 const Home = () => {
   return (
     <div>
-      <NavBar />
-      <Hero />
-      <Benefits />
+      <NavBarH />
+      <HeroH />
+      <BenefitsH />
     </div>
   )
 }
