@@ -39,7 +39,7 @@ const NavBar = () => {
           justifyContent: 'space-between',
           px: {xs:'10px', md:'30px'},
           }}>
-          <Box>
+          <Box sx={{ flexGrow: 1 }}>
             {/* SMALL DEVICE */}
             <Box sx={{  
               display: { xs: 'flex', md: 'none' },
@@ -61,7 +61,7 @@ const NavBar = () => {
           </Box>
 
           {/* SMALL DEVICE */}
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -102,7 +102,7 @@ const NavBar = () => {
                     display: 'block', 
                     height: '40px', 
                     paddingTop: '8px',
-                    width:'230px',
+                    width:'220px',
                     textDecoration: 'none',
                     color:'#000000',
                     backgroundColor:'#D9D9D9',
@@ -112,16 +112,15 @@ const NavBar = () => {
                   </Link>
                 </MenuItem>
               ))}
-              <Box sx={{ display: { xs: 'block', md: 'none' }, }}>
-                <ContainedButtons textAlign="center" sx={{
-                  width:'250px',
-                }} />
+              <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' }, justifyContent:'center', }}>
+                <ContainedButtons textAlign="center"/>
               </Box>
             </Menu>
           </Box>
 
           {/* MEDIUM DEVICE */}
           <Box sx={{
+            flexGrow: 0,
             display: { xs: 'none', md: 'flex' },
         }}>
             {pages.map((page) => (
@@ -135,7 +134,9 @@ const NavBar = () => {
             ))}
           </Box>
 
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ 
+            flexGrow: 0,
+            display: { xs: 'none', md: 'flex' } }}>
             <ContainedButtons />
           </Box>
 
