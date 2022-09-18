@@ -1,14 +1,17 @@
 import React from 'react'
-import BenefitsH from '../../components/Benefits/BenefitsH'
-import HeroH from '../../components/Hero/HeroH'
-import NavBarH from '../../components/NavBar/NavBarH'
+import OurStory from '../../components/About/OurStory'
+import Benefits from '../../components/Benefits/Benefits'
+import Hero from '../../components/Hero/Hero'
+import NavBar from '../../components/NavBar/NavBar'
+
 
 const Home = () => {
   return (
     <div>
-      <NavBarH />
-      <HeroH />
-      <BenefitsH />
+      <NavBar />
+      <Hero />
+      <Benefits />
+      <OurStory />
     </div>
   )
 }

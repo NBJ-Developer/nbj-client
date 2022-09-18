@@ -1,11 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import './BenefitsH.css'
+import './Benefits.css'
 import { BsCheck2Circle } from 'react-icons/bs'
-import WhiteVector from '../../assets/images/BBVector.png'
-import SWVector from '../../assets/images/BBVector_small.png'
+import WVector from '../../assets/images/BBVector.png'
 
-export default function BenefitsH() {
+export default function Benefits() {
   return (
     <Box>
       {/* SMALL DEVICE */}
@@ -37,7 +36,7 @@ export default function BenefitsH() {
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-            <img src={WhiteVector} alt="" className='w_vector' />
+            <img src={WVector} alt="" className='w_vector' />
           </Box>
       </Box>
 
@@ -63,7 +62,7 @@ export default function BenefitsH() {
                             marginRight: '81px'
                   }}>
                     <div className='inner_box'>
-                      <img src={SWVector} alt="" className='sw_vector' />
+                      <img src={WVector} alt="" className='sw_vector' />
                     </div>
                     <p className='sapien'>Sapien phasellus</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
@@ -75,7 +74,7 @@ export default function BenefitsH() {
                             marginRight: '81px'
                   }}>
                     <div className='inner_box'>
-                      <img src={SWVector} alt="" className='sw_vector' />
+                      <img src={WVector} alt="" className='sw_vector' />
                     </div>
                     <p className='sapien'>Sapien phasellus</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
@@ -85,7 +84,7 @@ export default function BenefitsH() {
                             height: '185px'
                   }}>
                     <div className='inner_box'>
-                      <img src={SWVector} alt="" className='sw_vector' />
+                      <img src={WVector} alt="" className='sw_vector' />
                     </div>
                     <p className='sapien'>Sapien phasellus</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>

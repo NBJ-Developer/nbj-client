@@ -13,7 +13,7 @@ import ContainedButtons from '../../elements/Button/ContainedButtons'
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
 
-const NavBarH = () => {
+const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -100,7 +100,7 @@ const NavBarH = () => {
                               sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '30px', marginTop: '50px' }}>
+              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '30px', marginTop: '14px'}}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
@@ -129,4 +129,4 @@ const NavBarH = () => {
     </AppBar>
   );
 };
-export default NavBarH;
+export default NavBar;

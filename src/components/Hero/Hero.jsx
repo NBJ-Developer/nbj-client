@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import './HeroH.css'
+import './Hero.css'
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import Line from '../../assets/images/Line_Horizontal.png'
 import Line2 from '../../assets/images/Line_Vertical.png'
 import Avatar from '../../assets/images/Vector.png'
 
-export default function HeroH() {
+export default function Hero() {
   return (
     <Box>
       {/* SMALL DEVICE */}

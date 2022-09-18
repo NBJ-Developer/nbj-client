@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.div_story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; 
+}
+
+.our {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    padding-top: 22px;
+}
+
+.inner_story{
+    background-color: #d9d9d9;
+    color: #000000;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.bs_icon {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 22px;
+    margin-right: 26px;
+}
+
+.div_lorem {
+    width: 213px;
+    height: 58px;
+    margin-top: 28px;
+}
+
+.p_lorem {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.w_vector_1 {
+    width: 77px;
+    height: 77px;
+}
+
+.w_vector_2 {
+    width: 128px;
+    height: 128px;
+}
+
+.div_story_web {
+    padding-top: 76px;
+    color: #ffffff;
+}
+
+.our_web {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.025em;
+}
+
+.div_lorem_web {
+    width: 516px;
+    height: 234px;
+    margin-top: 56px;
+    margin-bottom: 26px;
+}
+
+.p_lorem_web {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.w_vector_web_1 {
+    width: 157.56;
+    height: 157.56;
+}
+
+.w_vector_web_2 {
+    width: 261.93px;
+    height: 261.93px;
+}
