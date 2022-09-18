@@ -87,16 +87,35 @@ const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' }, backgroundColor: 'rgba(18, 18, 18, 0.37)'
+                textAlign:'center',
+                display: { xs: 'block', md: 'none' }, 
+                backgroundColor: 'rgba(18, 18, 18, 0.37)',
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link textAlign="center" sx={{ display: 'block', height: '40px', paddingTop: '8px'}}>{page}</Link>
+                <MenuItem 
+                key={page} 
+                onClick={handleCloseNavMenu}
+                >
+                  <Link textAlign="center" 
+                  sx={{ 
+                    display: 'block', 
+                    height: '40px', 
+                    paddingTop: '8px',
+                    width:'230px',
+                    textDecoration: 'none',
+                    color:'#000000',
+                    backgroundColor:'#D9D9D9',
+                  }}
+                  >
+                      {page}
+                  </Link>
                 </MenuItem>
               ))}
               <Box sx={{ display: { xs: 'block', md: 'none' }, }}>
-                <ContainedButtons textAlign="center" />
+                <ContainedButtons textAlign="center" sx={{
+                  width:'250px',
+                }} />
               </Box>
             </Menu>
           </Box>
@@ -123,12 +142,13 @@ const NavBar = () => {
         </Toolbar>
         <Box sx={{
           mt: {xs:'30px', md:'80px'},
-          width: '600px',
+          width: {xs:'300px', md:'600px'},
           ml: {xs:'10px', md:'30px'},
         }}>
         <Box sx={{
           display: {
             xs: 'none',
+            md: 'block',
           }
         }}>
           <Typography variant="h3" component="h3" sx={{
@@ -143,7 +163,8 @@ const NavBar = () => {
         <Box sx={{
           display: {
             md: 'none',
-          }
+            xs: 'block'
+          },
         }}>
           <Typography variant="h4" component="h4">
             OUR STORY
