@@ -32,12 +32,12 @@ const NavBar = () => {
         md: '#000000' 
       },
         height: {xs:'149px', md:'364px'},
-        pt: '30px',
+        pt: {xs: '20px', md:'30px'},
         }}>
         <Toolbar disableGutters sx={{
           display:{xs: 'flex', md: 'flex'},
           justifyContent: 'space-between',
-          px: '30px',
+          px: {xs:'10px', md:'30px'},
           }}>
           <Box>
             {/* SMALL DEVICE */}
@@ -92,7 +92,7 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Link>
+                  <Link textAlign="center" sx={{ display: 'block', height: '40px', paddingTop: '8px'}}>{page}</Link>
                 </MenuItem>
               ))}
               <Box sx={{ display: { xs: 'block', md: 'none' }, }}>
@@ -122,9 +122,9 @@ const NavBar = () => {
 
         </Toolbar>
         <Box sx={{
-          mt: '80px',
+          mt: {xs:'30px', md:'80px'},
           width: '600px',
-          ml: '30px',
+          ml: {xs:'10px', md:'30px'},
         }}>
         <Box sx={{
           display: {
