@@ -6,11 +6,13 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
 import Link from '@mui/material/Link';
+import { Typography } from '@mui/material';
 
-const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
+const pages = ['Home', 'Benefits', 'Services', 'Contact Us'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,36 +28,40 @@ const NavBar = () => {
   return (
     <AppBar position="static">
       <Container maxWidth="xl" sx={{ background: { 
-        xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
-        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 30%,#000000 30%,#000000 100%)' },
-        height: '100px',
-        paddingTop: '18px'
+        xs: '#000000', 
+        md: '#000000' 
+      },
+        height: {xs:'149px', md:'364px'},
+        pt: '30px',
         }}>
-        <Toolbar disableGutters sx={{alignItems: 'center'}}>
-          <Box sx={{ flexGrow: 1 }}>
-
+        <Toolbar disableGutters sx={{
+          display:{xs: 'flex', md: 'flex'},
+          justifyContent: 'space-between',
+          px: '30px',
+          }}>
+          <Box>
             {/* SMALL DEVICE */}
-            <Box sx={{  display: { xs: 'flex', md: 'none' },
-                        width: '84px',
-                        height: '30px',
-                        background: '#d9d9d9',
-                        borderRadius: '10px',
-                        marginLeft: '10px'
-            }}></Box>
-
+            <Box sx={{  
+              display: { xs: 'flex', md: 'none' },
+              width: '84px',
+              height: '30px',
+              background: '#d9d9d9',
+              borderRadius: '10px',
+            }}>
+            </Box>
             {/* MEDIUM DEVICE */}
-            <Box sx={{  display: { xs: 'none', md: '  flex' },
-                        width: '159px',
-                        height: '43px',
-                        background: '#d9d9d9',
-                        borderRadius: '10px',
-                        marginLeft: '30px'
-            }}></Box>
+            <Box sx={{  
+              display: { xs: 'none', md: 'flex' },
+              width: '159px',
+              height: '43px',
+              background: '#d9d9d9',
+              borderRadius: '10px',
+            }}>
+            </Box>
           </Box>
 
-
           {/* SMALL DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -86,33 +92,65 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link href={`/${page}`} textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Link>
+                  <Link textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Link>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '36px' }}>
+              <Box sx={{ display: { xs: 'block', md: 'none' }, }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
           </Box>
 
           {/* MEDIUM DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{
+            display: { xs: 'none', md: 'flex' },
+        }}>
             {pages.map((page) => (
-              <Link
-              href={`/${page}`}
+              <Button
                 key={page}
-                sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
+                onClick={handleCloseNavMenu}
+                sx={{ marginRight: '40px', color: 'white', display: 'block', textTransform: 'Capitalize' }}
               >
                 {page}
-              </Link>
+              </Button>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <ContainedButtons />
           </Box>
 
         </Toolbar>
+        <Box sx={{
+          mt: '80px',
+          width: '600px',
+          ml: '30px',
+        }}>
+        <Box sx={{
+          display: {
+            xs: 'none',
+          }
+        }}>
+          <Typography variant="h3" component="h3" sx={{
+            marginBottom: '10px',
+          }}>
+            OUR STORY
+          </Typography>
+          <Typography>
+            If you want to know more about us, you’re in the right place. Read to learn how we can assist you
+          </Typography>
+        </Box>
+        <Box sx={{
+          display: {
+            md: 'none',
+          }
+        }}>
+          <Typography variant="h4" component="h4">
+            OUR STORY
+          </Typography>
+        </Box>
+         
+        </Box>
       </Container>
     </AppBar>
   );
