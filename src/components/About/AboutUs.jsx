@@ -3,7 +3,6 @@ import Box from '@mui/material/Box'
 import React from 'react'
 import bigimage from '../../assets/images/BBVector.png'
 import smallImage from '../../assets/images/BBVector_small.png'
-import './AboutUs.css'
 
 function AboutUs() {
   return (

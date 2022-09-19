@@ -39,7 +39,7 @@ const NavBar = () => {
           justifyContent: 'space-between',
           px: {xs:'10px', md:'30px'},
           }}>
-          <Box sx={{ flexGrow: 1 }}>
+          <Box>
             {/* SMALL DEVICE */}
             <Box sx={{  
               display: { xs: 'flex', md: 'none' },
