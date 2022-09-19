@@ -4,31 +4,32 @@ import React from 'react'
 import bigimage from '../../assets/images/BBVector.png'
 import smallImage from '../../assets/images/BBVector_small.png'
 import './AboutUs.css'
-import { lineHeight } from '@mui/system'
 
 function AboutUs() {
   return (
     <Box sx={{
       marginTop:'45px',
       display:'flex',
-      flexDirection:{xs:'column', md:'row'},
+      position:'relative',
+      width:'90%',
+      flexDirection:{md:'row', xs:'column'},
       backgroundColor: '#121212',
       color:'#FFFFFF',
-      width:'90%',
       height:{xs:'580px', md:'635px'},
       borderRadius:'0 30px 30px 0',
     }}>
       <Box sx={{
-        width:{md:'50%'},
-        marginLeft:{xs:'30px', md:'158px'},
-        marginTop:{xs:'22px', md:'200px'},
+        marginLeft:{xs:'30px', md:'100px'},
+        marginTop:{xs:'22px', md:'158px'},
         marginRight:'22px',
+        height:{xs:'50%',},
+        width:{md:'50%'},
       }}>
         <Typography sx={{
           fontFamily:'raleway',
           fontWeight:'700',
           fontSize:{xs:'19px', md:'32px'},
-          lineHeight:{xs:'22.31px', md:'37.57'},
+          lineHeight:{xs:'22.31px', md:'37.57px'},
         }}>
           ABOUT US
         </Typography>
@@ -50,42 +51,55 @@ function AboutUs() {
         </Typography>
       </Box>
       <Box sx={{
-        position:'relative'
+        paddingTop:{xs:'30px', md:'20px'},
+        marginLeft:'20px',
+        width:'50%',
       }}>
         <Box sx={{
-          position: 'absolute',
-          top:'-130px',
-          left:'40px',
+          position:'absolute',
+          width:{xs:'33%', md:'25%'},
+          height:{xs:'25%', md:'33%'},
+          top:{xs:'73%', md:'37%'},
         }}>
           <img
             src={bigimage}
             srcSet={bigimage}
-            alt={'Big Image'}
+            alt='BigImage'
             loading="lazy"
+            width='100%'
+            height='100%'
           />
         </Box>
         <Box sx={{
-          position: 'absolute',
-          bottom:'120px',
-          right:'90px',
+          position:'absolute',
+          width:{xs:'23%', md:'15%'},
+          height:{xs:'15%', md:'23%'},
+          top:{xs:'65%', md:'17%'},
+          right:{xs:'31%', md:'13%'},
         }}>
           <img
             src={smallImage}
             srcSet={smallImage}
-            alt={'Big Image'}
+            alt='BigImage'
             loading="lazy"
+            width='100%'
+            height='100%'
           />
         </Box>
         <Box sx={{
-          position: 'absolute',
-          top:'-40px',
-          right:'20px',
+          position:'absolute',
+          width:{xs:'23%', md:'15%'},
+          height:{xs:'15%', md:'23%'},
+          top:{xs:'85%', md:'67%'},
+          right:{xs:'10%', md:'3%'},
         }}>
            <img
             src={smallImage}
             srcSet={smallImage}
-            alt={'Big Image'}
+            alt='BigImage'
             loading="lazy"
+            width='100%'
+            height='100%'
           />
         </Box>
          
