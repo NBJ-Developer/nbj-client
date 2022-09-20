@@ -3,6 +3,7 @@ import Box from '@mui/material/Box'
 import React from 'react'
 import GeneralHero from '../../components/Hero/GeneralHero'
 import AboutUs from '../../components/About/AboutUs'
+import MissionVision from '../../components/About/MissionVision'
 
 function About() {
   return (
@@ -20,6 +21,7 @@ function About() {
         </Typography>
       </Box>
       <AboutUs />
+      <MissionVision />
     </div>
   )
 }

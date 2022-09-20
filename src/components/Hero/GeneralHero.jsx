@@ -127,7 +127,7 @@ const NavBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ marginRight: '40px', color: 'white', display: 'block', textTransform: 'Capitalize' }}
+                sx={{ marginRight: '50px', color: 'white', display: 'block', textTransform: 'Capitalize' }}
               >
                 {page}
               </Button>
