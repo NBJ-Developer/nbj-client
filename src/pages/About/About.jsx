@@ -4,6 +4,7 @@ import React from 'react'
 import GeneralHero from '../../components/Hero/GeneralHero'
 import AboutUs from '../../components/About/AboutUs'
 import MissionVision from '../../components/About/MissionVision'
+import Question from '../../components/About/Question'
 
 function About() {
   return (
@@ -22,6 +23,7 @@ function About() {
       </Box>
       <AboutUs />
       <MissionVision />
+      <Question />
     </div>
   )
 }
