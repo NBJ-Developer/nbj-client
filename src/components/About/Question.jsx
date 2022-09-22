@@ -7,11 +7,13 @@ import React from 'react'
 function Question() {
   return (
     <Box sx={{
+      display:{xs:'block', md:'flex'},
       backgroundColor:'#121212',
+      marginTop:'80px',
     }}>
       <Box sx={{
-        width:'50%',
-        padding:'80px',
+        width:{xs:'100%', md:'50%'},
+        padding:'80px 80px 0px 80px',
       }}>
         <Typography sx={{
             marginTop:'30px',
@@ -37,6 +39,7 @@ function Question() {
         <Box sx={{
           width:{xs:'25%', md:'50%px'},
           height:{xs:'25%', md:'45%'},
+          display:{xs:'none', md:'block'},
           margin:'80px',
         }}>
           <img
@@ -49,7 +52,12 @@ function Question() {
           />
         </Box>
       </Box>
-      <Box>
+      <Box sx={{
+        width:{xs:'100%', md:'50%'},
+        padding:'40px 40px',
+      }}>
+        <Accordion />
+        <Accordion />
         <Accordion />
       </Box>
     </Box>

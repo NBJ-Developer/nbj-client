@@ -8,15 +8,20 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function SimpleAccordion() {
   return (
     <div>
-      <Accordion>
+      <Accordion sx={{
+        background:'none',
+        color:'white',
+      }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon sx={{ color:'white'}}/>}
           id="panel1a-header"
         >
-          <Typography>Accordion 1</Typography>
+          <Typography>Accordion 1 Lorem ipsum dolor sit amet</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            malesuada lacus ex, sit amet blandit leo lobortis eget.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </Typography>
