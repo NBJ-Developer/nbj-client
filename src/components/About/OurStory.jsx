@@ -10,14 +10,14 @@ export default function OurStory() {
   return (
     <Box>
       {/* SMALL DEVICE */}
-      <Box sx={{ display: {xs: 'block', md: 'none'},
+      <Box sx={{  display: {xs: 'block', md: 'none'},
                   marginTop: '63px',
-                  width: '281px',
+                  width: '75vw',
                   height: '418px',
                   backgroundColor: '#000000',
                   borderRadius: '0px 30px 30px 0px',
                   paddingLeft: '30px'
-        }}>
+                }}>
         <div className='div_story'>
           <h1 className='our'>OUR <span className='inner_story'>STORY</span> </h1>
           <BsArrowRightCircle className='bs_icon' />
@@ -27,47 +27,61 @@ export default function OurStory() {
           <p className='p_lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at sit ut ultricies.</p>
         </div>
 
-        <Box sx={{ marginTop: '23px',
-                    marginLeft: '130px'
-        }}>
-          <img src={Wvector} alt="" className='w_vector_1'/>
+        <Box sx={{  position: 'absolute',
+                    left: '42.67%',
+                    top: '187%'
+                  }}>
+              <img  src={Wvector} 
+                    alt="" 
+                    srcSet={Wvector}
+                    loading='lazy'
+                    className='w_vector_1'
+                    />
         </Box>
 
-        <Box sx={{  width: '142px',
+        <Box sx={{  width: '39vw',
                     height: '150px',
                     backgroundColor: '#121212',
                     borderRadius: '25px',
+                    position: 'absolute',
+                    left: '10%',
+                    top: '190%',
                     display: 'flex',
                     justifyContent: 'center',
-                    alignItems: 'center',
-                    zIndex: '5',
-                    marginTop: '-70px',
-                    marginLeft: '15px'
-                    
-            }}>
-          <img src={Wvector} alt="" className='w_vector_2'/>
+                    alignItems: 'center'       
+                  }}>
+          <img  src={Wvector} 
+                alt="" 
+                srcSet={Wvector}
+                loading='lazy'
+                className='w_vector_2'/>
         </Box>
 
-        <Box sx={{ marginTop: '11px',
-                    marginLeft: '154px'
-        }}>
-          <img src={Wvector} alt="" className='w_vector_1'/>
+        <Box sx={{  position: 'absolute',
+                    left: '48%',
+                    top: '214%',
+                  }}>
+              <img  src={Wvector} 
+                    alt="" 
+                    srcSet={Wvector}
+                    loading='lazy'
+                    className='w_vector_1'/>
         </Box>
       </Box>
 
       {/* MEDIUM DEVICE */}
-      <Box sx={{display: {xs: 'none', md: 'block'},
-                width: '1142px',
-                height: '552px',
-                background: '#000000',
-                borderRadius: '0px 30px 30px 0px',
-                marginTop: '139px',
-                paddingLeft: '80px',
-                marginBottom: '10px'
-          }}>
-          <Box sx={{ display: 'flex',
+      <Box sx={{  display: {xs: 'none', md: 'block'},
+                  width: '78vw',
+                  height: '552px',
+                  background: '#000000',
+                  borderRadius: '0px 30px 30px 0px',
+                  marginTop: '139px',
+                  paddingLeft: '80px',
+                  marginBottom: '10px'
+                }}>
+          <Box sx={{  display: 'flex',
                       justifyContent: 'space-between'
-            }}>
+                    }}>
             <div>
               <div className='div_story_web'>
                 <h1 className='our_web'>OUR <span className='inner_story'>STORY</span> </h1>
@@ -81,31 +95,45 @@ export default function OurStory() {
             </div>
 
             <div>
-              <Box sx={{ marginTop: '21px',
-                    marginRight: '128.11px'
-                }}>
-                <img src={Wvector} alt="" className='w_vector_web_1'/>
+              <Box sx={{  position: 'absolute',
+                          top: '1410px',
+                          left: '950px'
+                        }}>
+                    <img  src={Wvector} 
+                          alt="" 
+                          srcSet={Wvector}
+                          loading='lazy'
+                          className='w_vector_web_1'/>
               </Box>
 
               <Box sx={{  width: '290.57px',
-                    height: '306.94px',
-                    backgroundColor: '#121212',
-                    borderRadius: '25px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    zIndex: '5',
-                    marginTop: '-70px',
-                    marginLeft: '-244.75px'
+                          height: '306.94px',
+                          backgroundColor: '#121212',
+                          borderRadius: '25px',
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          position: 'absolute',
+                          top: '1450px',
+                          left: '696px'
                     
-                }}>
-                <img src={Wvector} alt="" className='w_vector_web_2'/>
+                        }}>
+                    <img  src={Wvector} 
+                          alt="" 
+                          srcSet={Wvector}
+                          loading='lazy'
+                          className='w_vector_web_2'/>
               </Box>
 
-              <Box sx={{ marginTop: '42.51px',
-                    marginLeft: '60px'
-                }}>
-                <img src={Wvector} alt="" className='w_vector_web_1'/>
+              <Box sx={{  position: 'absolute',
+                          top: '1800px',
+                          left: '990px'
+                      }}>
+                <img  src={Wvector} 
+                      alt="" 
+                      srcSet={Wvector}
+                      loading='lazy'
+                      className='w_vector_web_1'/>
               </Box>
             </div>
           </Box>

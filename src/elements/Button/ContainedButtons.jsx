@@ -8,7 +8,7 @@ export default function ContainedButtons() {
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="contained" href="#contained-buttons" className='but' sx={{ 
-        width: {xs: '106px', md: '162px'},
+        width: {xs: '30vw', md: '12vw'},
         height: {xs: '30px', md: '43px'},
         backgroundColor: {xs: '#000000', md: '#ffffff'},
         color: {xs: '#ffffff', md: '#000000'},

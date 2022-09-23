@@ -20,7 +20,7 @@ export default function Hero() {
         }}>
 
         <Box
-          sx={{ width: '260px',
+          sx={{ width: '72vw',
                 height: '300px',
                 backgroundColor: '#d9d9d9',
                 borderRadius: '0 30px 30px 0',
@@ -33,14 +33,26 @@ export default function Hero() {
             </div>
             <ContainedButtonsMB />
             <img src={Line} alt="" className='line' />
-            <img src={Avatar} alt="" style={{margin: '18px 0 0 128px'}} className='avatar_mobile' />
-        </Box>
 
-        <Box sx={{  margin: '30px 0 0 30px', }}>
+            <Box sx={{  
+                        position: 'absolute',
+                        left: '42%',
+                        top: '60%'
+                      }}>
+              <img src={Avatar} alt="" className='avatar_mobile' />
+            </Box>
+        </Box>
+        <Box sx={{  position: 'absolute',
+                    left: '9%',
+                    top: '73%'
+                  }}>
           <img src={Avatar} alt="" className='avatar_mobile' />
         </Box>
 
-        <Box sx={{ margin: '-25px 0 0 140px', }}>
+        <Box sx={{  position: 'absolute',
+                    left: '38%',
+                    top: '82%'
+                  }}>
           <img src={Avatar} alt="" className='avatar_mobile' />
         </Box>
       </Box>
@@ -57,7 +69,7 @@ export default function Hero() {
         }}>
 
           <Box sx={{  display: 'flex',
-                    width: '961px',
+                    width: '63vw',
                     height: '567px',
                     background: '#ffffff',
                     border: '1px solid #000000',
@@ -65,7 +77,8 @@ export default function Hero() {
                     padding: '50px 0 0 85px'
             }}>
             <Box className='hero_text_web'>
-              <p className='big_text_web'>Big Text Header 2 lines</p>
+              <h1 className='big_text_web'>Big Text Header </h1>
+              <h2 className='big_text_web_2'>2 lines</h2>
               <p className='lorem_web'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et augue ante tellus non leo. </p>
               <ContainedButtonsMB />
             </Box>

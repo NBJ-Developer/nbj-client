@@ -6,7 +6,7 @@ body {
 }
 
 .hero_text_mobile {
-    width: 223px;
+    width: 55vw;
     height: 119px;
     margin-bottom: 50px;
     padding-top: 15px;
@@ -42,8 +42,9 @@ body {
 }
 
 .hero_text_web {
-    width: 460px;
+    width: 31.5vw;
     height: 300px;
+    padding-right: 10px;
 }
 
 .big_text_web {
@@ -53,6 +54,14 @@ body {
     letter-spacing: 0.03em;
     color: #000000;
     padding-top: 82px;
+}
+
+.big_text_web_2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 132.4%;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 
 .lorem_web {
@@ -70,13 +79,37 @@ body {
 }
 
 .avatar_1 {
-    margin: 36px 0 0 23px;
+    position: absolute;
+    top: 270px;
+    left: 580px;
 }
 
 .avatar_2 {
-    margin: 21.49px 0 0 197.33px;
+    position: absolute;
+    top: 415px;
+    left: 740px;
 }
 
 .avatar_3 {
-    margin: 21.49px 0 0 43.97px;
+    position: absolute;
+    top: 580px;
+    left: 650px;
+}
+
+
+@media screen and (max-width: 320px) {
+    .hero_text_mobile {
+        width: 55vw;
+        height: 150px;
+        margin-bottom: 50px;
+        padding-top: 15px;
+    }
+
+    .lorem_mobile {
+        margin-bottom: 20px;
+    }
+
+    .line {
+        margin-left: 5px;
+    }
 }

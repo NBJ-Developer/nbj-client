@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
+import './NavBar.css'
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
 
@@ -27,7 +28,8 @@ const NavBar = () => {
   return (
     <AppBar position="static">
       <Container maxWidth="xl" sx={{ background: { 
-        xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
+        xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
+        sm:  'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
         md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
         height: { xs: '129px', md: '167px' },
         paddingTop: '18px'
@@ -37,21 +39,21 @@ const NavBar = () => {
 
             {/* SMALL DEVICE */}
             <Box sx={{  display: { xs: 'flex', md: 'none' },
-                        width: '84px',
-                        height: '30px',
+                        width: '25vw',
+                        height: '35px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
-                        marginLeft: '30px'
+                        marginLeft: '15px'
             }}>
             </Box>
 
             {/* MEDIUM DEVICE */}
             <Box sx={{  display: { xs: 'none', md: 'flex' },
-                        width: '159px',
-                        height: '43px',
+                        width: '12vw',
+                        height: '45px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
-                        marginLeft: '80px'
+                        marginLeft: '60px'
             }}></Box>
           </Box>
 
@@ -97,10 +99,20 @@ const NavBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" 
-                              sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Typography>
+                              sx={{ backgroundColor: '#D9D9D9', 
+                                    width: '38vw', 
+                                    height: '40px', 
+                                    paddingTop: '8px'
+                                  }}>
+                                      {page}
+                  </Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '30px', marginTop: '14px'}}>
+              <Box sx={{  flexGrow: 0, 
+                          display: { xs: 'block', md: 'none' }, 
+                          marginLeft: '30px', 
+                          marginTop: '14px'
+                      }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
@@ -113,14 +125,22 @@ const NavBar = () => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 5, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
+                sx={{ my: 5, 
+                      mx: 9, 
+                      color: 'white', 
+                      display: 'block', 
+                      textTransform: 'Capitalize' 
+                    }}
               >
                 {page}
               </Button>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{  flexGrow: 0, 
+                      display: { xs: 'none', md: 'flex' },
+                      marginRight: '20px' 
+                    }}>
             <ContainedButtons />
           </Box>
 

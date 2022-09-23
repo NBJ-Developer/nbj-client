@@ -8,36 +8,45 @@ export default function Benefits() {
   return (
     <Box>
       {/* SMALL DEVICE */}
-      <Box
-        sx={{ display: { xs: 'block', md: 'none' },
-          width: 315,
-          height: 269,
-          backgroundColor: '#ffffff',
-          margin: '180px 30px 0 30px'
+      <Box sx={{  display: { xs: 'block', md: 'none' },
+                  marginTop: '170px'
+                }}>
+        <Box sx={{  display: 'flex',
+                    justifyContent: 'center',
+                }}>
+          <Box
+            sx={{     width: '83vw',
+                      height: '175px',
+                      backgroundColor: '#ffffff',
+            }}>
+            <h4 className='what_you'>WHAT YOU GET</h4>
+            <div className='div_column'>
+                <p className='div_column_text'><BsCheck2Circle className='check' /> Safety Priority</p>
+                <p className='div_column_text'><BsCheck2Circle className='check' /> Customer Service & Comfort</p>
+            </div>
+            <div className='div_column_2'>
+                <p className='div_column_text'><BsCheck2Circle className='check' /> Convenience & Flexibility</p>
+                <p className='div_column_text'><BsCheck2Circle className='check' /> Convenience & Flexibility</p>
+            </div>
+          </Box>
+        </Box>
 
-        }}>
-          <h4 className='what_you'>WHAT YOU GET</h4>
-          <div className='div_column'>
-              <p className='div_column_text'><BsCheck2Circle className='check' /> Sapien phasellus</p>
-              <p className='div_column_text'><BsCheck2Circle className='check' /> Sapien phasellus</p>
-          </div>
-          <div className='div_column_2'>
-              <p className='div_column_text'><BsCheck2Circle className='check' /> Sapien phasellus</p>
-              <p className='div_column_text'><BsCheck2Circle className='check' /> Sapien phasellus</p>
-          </div>
-
-          <Box sx={{
-              width: 315,
-              height: 144,
-              backgroundColor: '#000000',
-              borderRadius: '10px',
-              marginTop: '20px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
+        <Box sx={{ display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                  }}>
+          <Box sx={{  width: '83vw',
+                      height: '144px',
+                      backgroundColor: '#000000',
+                      borderRadius: '10px',
+                      
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center'
             }}>
             <img src={WVector} alt="" className='w_vector' />
           </Box>
+        </Box>
       </Box>
 
         {/* MEDIUM DEVICE */}
@@ -52,41 +61,54 @@ export default function Benefits() {
               }}>
               <Box sx={{  display: 'flex',
                           alignItems: 'center',
-                          width: '1122px',
-                          height: '185px'
-                }}>
+                          width: '90vw',
+                          height: '185px',
+                        }}>
                 
-                <Box sx={{  width: '320px',
+                <Box sx={{  width: '22vw',
                             height: '185px',
                             textAlign: 'center',
-                            marginRight: '81px'
-                  }}>
+                            marginRight: '40px'
+                          }}>
                     <div className='inner_box'>
                       <img src={WVector} alt="" className='sw_vector' />
                     </div>
-                    <p className='sapien'>Sapien phasellus</p>
+                    <p className='sapien'>Safety Priority</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '320px',
+                <Box sx={{  width: '22vw',
                             height: '185px',
                             textAlign: 'center',
-                            marginRight: '81px'
-                  }}>
+                            marginRight: '40px'
+                          }}>
                     <div className='inner_box'>
                       <img src={WVector} alt="" className='sw_vector' />
                     </div>
-                    <p className='sapien'>Sapien phasellus</p>
+                    <p className='sapien'>Comfort & Customer Service</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '320px',
-                            height: '185px'
-                  }}>
+                <Box sx={{  width: '22vw',
+                            height: '185px',
+                            textAlign: 'center',
+                            marginRight: '40px'
+                          }}>
                     <div className='inner_box'>
                       <img src={WVector} alt="" className='sw_vector' />
                     </div>
-                    <p className='sapien'>Sapien phasellus</p>
+                    <p className='sapien'>Convenience & Flexibility</p>
+                    <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
+                </Box>
+
+                <Box sx={{  width: '22vw',
+                            height: '185px',
+                            textAlign: 'center'
+                          }}>
+                    <div className='inner_box'>
+                      <img src={WVector} alt="" className='sw_vector' />
+                    </div>
+                    <p className='sapien'>Convenience & Flexibility</p>
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
               </Box>
