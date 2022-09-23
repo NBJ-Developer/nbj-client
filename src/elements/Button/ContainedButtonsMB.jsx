@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import { BsArrowRightCircle } from 'react-icons/bs'
 
 export default function ContainedButtonsMB() {
+  // const isBackgroundBlack = true;
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="contained" href="#contained-buttons" className='but' sx={{ 
@@ -12,6 +13,8 @@ export default function ContainedButtonsMB() {
         height: {xs: '30px', md: '48px'},
         backgroundColor: '#000000',
         color: '#ffffff',
+        // backgroundColor: isBackgroundBlack ? '#ffffff' : '#000000',
+        // color: isBackgroundBlack ? '#000000' : '#ffffff',
         textTransform: 'Capitalize',
         borderRadius: {xs: '7px 0 7px 0', md: '10px 0 10px 0'},
         '&:hover': {

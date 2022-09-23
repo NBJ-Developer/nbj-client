@@ -19,12 +19,12 @@ export default function OurStory() {
                   paddingLeft: '30px'
                 }}>
         <div className='div_story'>
-          <h1 className='our'>OUR <span className='inner_story'>STORY</span> </h1>
+          <h1 className='ours'> OUR <span className='inner_story'>STORY</span> </h1>
           <BsArrowRightCircle className='bs_icon' />
         </div>
 
         <div className='div_lorem'>
-          <p className='p_lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at sit ut ultricies.</p>
+          <p className='p_Lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at sit ut ultricies.</p>
         </div>
 
         <Box sx={{  position: 'absolute',
