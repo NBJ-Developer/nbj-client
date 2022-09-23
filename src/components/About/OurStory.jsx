@@ -76,8 +76,7 @@ export default function OurStory() {
                   background: '#000000',
                   borderRadius: '0px 30px 30px 0px',
                   marginTop: '139px',
-                  paddingLeft: '80px',
-                  marginBottom: '10px'
+                  paddingLeft: '80px'
                 }}>
           <Box sx={{  display: 'flex',
                       justifyContent: 'space-between'
