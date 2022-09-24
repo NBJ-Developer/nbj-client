@@ -5,6 +5,7 @@ import CallToAction from '../../components/CallToAction/CallToAction'
 import Hero from '../../components/Hero/Hero'
 import NavBar from '../../components/NavBar/NavBar'
 import Services from '../../components/Services/Services'
+import Testimonials from '../../components/Testimonials/Testimonials'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <OurStory />
       <Services />
       <CallToAction />
+      <Testimonials />
     </div>
   )
 }
