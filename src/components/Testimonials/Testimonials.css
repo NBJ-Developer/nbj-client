@@ -37,6 +37,48 @@ body {
     color: #000000;
 }
 
+.test_web {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-top: 22px;
+}
+
+.test_client_web {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.test_trust_web {
+    font-weight: 600;
+    font-size: 23.5699px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+}
+
+.test_chief_web {
+    font-weight: 400;
+    font-size: 20.6237px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.test_ceo_web {
+    font-weight: 400;
+    font-size: 17.6774px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
 @media screen and (max-width: 320px) {
     .test_cust {
         font-weight: 600;

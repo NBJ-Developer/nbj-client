@@ -11,11 +11,11 @@ export default function Testimonials() {
                     justifyContent: 'center',
                 }}>
             <Box sx={{  width: '80vw',
-                    height: '430px',
+                    height: '470px',
                     marginTop: '56px',
                 }}>
                     <h1 className='test_cust'>WHAT OUR CUSTOMERS SAY</h1>
-                    <FaQuoteLeft style={{marginTop: '6px'}}/>
+                    <FaQuoteLeft style={{ marginTop: '6px', width: '38px', height: '50px'}}/>
                     <p className='test_trust'>Trusting NBJ is a decision I <br /> never regret making....</p>
 
                     <Box sx={{display: 'flex',
@@ -74,13 +74,101 @@ export default function Testimonials() {
                     <Box sx={{display: 'flex',
                                 justifyContent: 'right'
                             }}>
-                        <FaQuoteRight />
+                        <FaQuoteRight style={{ width: '38px', height: '50px'}}/>
                     </Box>
             </Box>
         </Box>
 
       {/* MEDIUM DEVICE */}
-     <Box sx={{  display: { xs: 'none', md: 'block' }}}></Box>
+        <Box sx={{  display: { xs: 'none', md: 'flex' },
+                justifyContent: 'center'
+            }}>
+            <Box sx={{ marginTop: '119px',
+                        width: '90vw',
+                        height: '570px'
+                    }}>
+                <h1 className='test_web'>TESTIMONIALS</h1>
+                <p className='test_client_web'>What our Clients  have to say</p>
+                <FaQuoteLeft style={{ width: '100px', height: '150px'}}/>
+
+                <Box sx={{  display: 'flex',
+                            justifyContent: 'center'
+                        }}>
+                    <Box sx={{  width: '85vw',
+                                height: '137.43px',
+                                display: 'flex'
+                            }}>
+                        <Box sx={{  width: '25vw',
+                                    height: '138px',
+                                    marginRight: '100px'
+                                }}>
+                            <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
+                            <Box sx={{display: 'flex',
+                                            justifyContent: 'center',
+                                            marginTop: '14px'
+                                        }}>
+                                    <Box sx={{  width: '4vw',
+                                                height: '58px',
+                                                backgroundColor: '#d9d9d9',
+                                                borderRadius: '100px'
+                                            }}></Box>    
+                                    <Box>
+                                        <p className='test_chief_web'>Chief Elona Maxwell</p>
+                                        <p className='test_ceo_web'>CEO Max Ent.</p>
+                                    </Box>
+                                </Box>
+                        </Box>
+
+                        <Box sx={{  width: '25vw',
+                                    height: '138px',
+                                    marginRight: '100px'
+                                }}>
+                            <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
+                            <Box sx={{display: 'flex',
+                                            justifyContent: 'center',
+                                            marginTop: '14px'
+                                        }}>
+                                    <Box sx={{  width: '4vw',
+                                                height: '58px',
+                                                backgroundColor: '#d9d9d9',
+                                                borderRadius: '100px'
+                                            }}></Box>    
+                                    <Box>
+                                        <p className='test_chief_web'>Chief Elona Maxwell</p>
+                                        <p className='test_ceo_web'>CEO Max Ent.</p>
+                                    </Box>
+                                </Box>
+                        </Box>
+
+                        <Box sx={{  width: '25vw',
+                                    height: '138px'
+                                }}>
+                            <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
+                            <Box sx={{display: 'flex',
+                                            justifyContent: 'center',
+                                            marginTop: '14px'
+                                        }}>
+                                    <Box sx={{  width: '4vw',
+                                                height: '58px',
+                                                backgroundColor: '#d9d9d9',
+                                                borderRadius: '100px'
+                                            }}></Box>    
+                                    <Box>
+                                        <p className='test_chief_web'>Chief Elona Maxwell</p>
+                                        <p className='test_ceo_web'>CEO Max Ent.</p>
+                                    </Box>
+                                </Box>
+                        </Box>
+                    </Box>
+                </Box>
+
+                <Box sx={{  display: 'flex',
+                            justifyContent: 'right'
+                                }}>
+                            <FaQuoteRight style={{ width: '100px', height: '150px'}}/>
+                </Box>
+            </Box>
+        </Box>
       
     </Box>
   );
