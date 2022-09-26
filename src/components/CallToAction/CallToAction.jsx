@@ -42,7 +42,7 @@ export default function CallToAction() {
                   marginTop: '119px'
                 }}>
                 <Box sx={{ display: 'flex',
-                            maxWidth: '100vw',
+                            width: '100%',
                             height: '473px',
                             background: '#000000',
                             paddingTop: '60px'

@@ -16,7 +16,8 @@ export default function Hero() {
               height: '390px',
               backgroundColor: 'primary.dark',
               background: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
-              paddingTop: '20px'
+              paddingTop: '20px',
+              // marginTop: '109px'
         }}>
 
         <Box
@@ -65,16 +66,17 @@ export default function Hero() {
                   background: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)',
                   paddingTop: '10px',
                   marginBottom: '50px',
+                  // marginTop: '158px'
                   
         }}>
 
           <Box sx={{  display: 'flex',
                     width: '63vw',
-                    height: '567px',
+                    height: '575px',
                     background: '#ffffff',
                     border: '1px solid #000000',
                     borderRadius: '0 43px 43px 0',
-                    padding: '50px 0 0 85px'
+                    padding: '40px 0 0 80px'
             }}>
             <Box className='hero_text_web'>
               <h1 className='big_text_web'>Big Text Header </h1>

@@ -61,11 +61,11 @@ export default function Benefits() {
               }}>
               <Box sx={{  display: 'flex',
                           alignItems: 'center',
-                          width: '90vw',
+                          width: '90%',
                           height: '185px',
                         }}>
                 
-                <Box sx={{  width: '22vw',
+                <Box sx={{  width: '22%',
                             height: '185px',
                             textAlign: 'center',
                             marginRight: '40px'
@@ -77,7 +77,7 @@ export default function Benefits() {
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '22vw',
+                <Box sx={{  width: '22%',
                             height: '185px',
                             textAlign: 'center',
                             marginRight: '40px'
@@ -89,7 +89,7 @@ export default function Benefits() {
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '22vw',
+                <Box sx={{  width: '22%',
                             height: '185px',
                             textAlign: 'center',
                             marginRight: '40px'
@@ -101,7 +101,7 @@ export default function Benefits() {
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '22vw',
+                <Box sx={{  width: '22%',
                             height: '185px',
                             textAlign: 'center'
                           }}>

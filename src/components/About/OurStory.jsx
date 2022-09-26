@@ -71,7 +71,7 @@ export default function OurStory() {
 
       {/* MEDIUM DEVICE */}
       <Box sx={{  display: {xs: 'none', md: 'block'},
-                  width: '78vw',
+                  width: '78%',
                   height: '552px',
                   background: '#000000',
                   borderRadius: '0px 30px 30px 0px',
@@ -81,7 +81,7 @@ export default function OurStory() {
           <Box sx={{  display: 'flex',
                       justifyContent: 'space-between'
                     }}>
-            <div>
+            <div className='story_div_1'>
               <div className='div_story_web'>
                 <h1 className='our_web'>OUR <span className='inner_story'>STORY</span> </h1>
               </div>
@@ -90,13 +90,13 @@ export default function OurStory() {
                 <p className='p_lorem_web'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor lacus pellentesque pretium sed. Non dictum pretium id fringilla. Habitasse ipsum lectus a nunc elementum. Hac et vitae odio gravida feugiat. Nisl pharetra vestibulum sit arcu phasellus lacus, pellentesque. Nulla pharetra duis mauris lorem ut hendrerit mauris nunc. Orci eget convallis volutpat imperdiet nulla at odio iaculis. Lorem id odio netus bibendum. Arcu odio porttitor quis gravida quis sollicitudin iaculis amet. Tempus, vitae quis dignissim nisl tellus auctor. Sem mauris, vel suspendisse quis mattis dignissim.
                 </p>
               </div>
-              <ContainedButtons />
+                <ContainedButtons />
             </div>
 
-            <div>
+            <div className='story_div_2'>
               <Box sx={{  position: 'absolute',
-                          top: '1410px',
-                          left: '950px'
+                          top: '190%',
+                          left: '63%'
                         }}>
                     <img  src={Wvector} 
                           alt="" 
@@ -105,7 +105,7 @@ export default function OurStory() {
                           className='w_vector_web_1'/>
               </Box>
 
-              <Box sx={{  width: '290.57px',
+              <Box sx={{  width: '20%',
                           height: '306.94px',
                           backgroundColor: '#121212',
                           borderRadius: '25px',
@@ -113,8 +113,8 @@ export default function OurStory() {
                           justifyContent: 'center',
                           alignItems: 'center',
                           position: 'absolute',
-                          top: '1450px',
-                          left: '696px'
+                          top: '196%',
+                          left: '45%'
                     
                         }}>
                     <img  src={Wvector} 
@@ -125,8 +125,8 @@ export default function OurStory() {
               </Box>
 
               <Box sx={{  position: 'absolute',
-                          top: '1800px',
-                          left: '990px'
+                          top: '240%',
+                          left: '66%'
                       }}>
                 <img  src={Wvector} 
                       alt="" 

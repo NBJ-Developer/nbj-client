@@ -29,7 +29,6 @@ const NavBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl" sx={{ background: { 
         xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
-        sm:  'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
         md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
         height: { xs: '129px', md: '167px' },
         paddingTop: '18px'
@@ -44,8 +43,7 @@ const NavBar = () => {
                         background: '#d9d9d9',
                         borderRadius: '10px',
                         marginLeft: '15px'
-            }}>
-            </Box>
+            }}></Box>
 
             {/* MEDIUM DEVICE */}
             <Box sx={{  display: { xs: 'none', md: 'flex' },

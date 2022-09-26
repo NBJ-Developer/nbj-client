@@ -149,7 +149,7 @@ export default function Services() {
                     <Box sx={{  display: 'flex',
                                 justifyContent: 'center'
                             }}>
-                        <Box sx={{  width: '90vw',
+                        <Box sx={{  width: '90%',
                                     height: '450px',
                                     display: 'flex',
                                     justifyContent: 'center'
