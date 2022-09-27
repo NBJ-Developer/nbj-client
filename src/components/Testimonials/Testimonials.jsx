@@ -84,7 +84,7 @@ export default function Testimonials() {
                 justifyContent: 'center'
             }}>
             <Box sx={{ marginTop: '119px',
-                        width: '90vw',
+                        width: '90%',
                         height: '570px'
                     }}>
                 <h1 className='test_web'>TESTIMONIALS</h1>
@@ -92,13 +92,14 @@ export default function Testimonials() {
                 <FaQuoteLeft style={{ width: '100px', height: '150px'}}/>
 
                 <Box sx={{  display: 'flex',
-                            justifyContent: 'center'
+                            justifyContent: 'center',
+                            marginBottom: '100px'
                         }}>
-                    <Box sx={{  width: '85vw',
+                    <Box sx={{  width: '85%',
                                 height: '137.43px',
                                 display: 'flex'
                             }}>
-                        <Box sx={{  width: '25vw',
+                        <Box sx={{  width: '33%',
                                     height: '138px',
                                     marginRight: '100px'
                                 }}>
@@ -107,7 +108,7 @@ export default function Testimonials() {
                                             justifyContent: 'center',
                                             marginTop: '14px'
                                         }}>
-                                    <Box sx={{  width: '4vw',
+                                    <Box sx={{  width: '20%',
                                                 height: '58px',
                                                 backgroundColor: '#d9d9d9',
                                                 borderRadius: '100px'
@@ -119,7 +120,7 @@ export default function Testimonials() {
                                 </Box>
                         </Box>
 
-                        <Box sx={{  width: '25vw',
+                        <Box sx={{  width: '33%',
                                     height: '138px',
                                     marginRight: '100px'
                                 }}>
@@ -128,7 +129,7 @@ export default function Testimonials() {
                                             justifyContent: 'center',
                                             marginTop: '14px'
                                         }}>
-                                    <Box sx={{  width: '4vw',
+                                    <Box sx={{  width: '20%',
                                                 height: '58px',
                                                 backgroundColor: '#d9d9d9',
                                                 borderRadius: '100px'
@@ -140,7 +141,7 @@ export default function Testimonials() {
                                 </Box>
                         </Box>
 
-                        <Box sx={{  width: '25vw',
+                        <Box sx={{  width: '33%',
                                     height: '138px'
                                 }}>
                             <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
@@ -148,7 +149,7 @@ export default function Testimonials() {
                                             justifyContent: 'center',
                                             marginTop: '14px'
                                         }}>
-                                    <Box sx={{  width: '4vw',
+                                    <Box sx={{  width: '20%',
                                                 height: '58px',
                                                 backgroundColor: '#d9d9d9',
                                                 borderRadius: '100px'

@@ -63,3 +63,22 @@ body {
     line-height: 25px;
     color: #FFFFFF;
 }
+
+.href {
+    color: #000000;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .footer_nav_web {
+        font-size: 18px;
+    }
+
+    .nbj_web {
+        font-size: 22px; 
+    }
+
+    .foot_line {
+        width: 90%;
+    }
+}

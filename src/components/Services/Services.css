@@ -37,7 +37,7 @@ body {
 }
 
 .wvector {
-    width: 15vw;
+    width: 75%;
     height: 222.02px;
     margin-top: 20px;
 }
@@ -49,3 +49,10 @@ body {
     color: #FFFFFF;
     margin-top: 106px;
 } 
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .p_services {
+        font-size: 18px;
+    }
+}

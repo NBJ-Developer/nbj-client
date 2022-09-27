@@ -87,8 +87,17 @@ body {
 
 @media screen and (max-width: 320px) {
     .div_column_text {
-        font-weight: 400;
         font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .safe_pr {
+        margin-left: 60px;
+    }
+
+    .inner_box {
+        margin-left: 60px;
     }
 }
 

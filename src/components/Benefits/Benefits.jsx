@@ -65,11 +65,12 @@ export default function Benefits() {
                           height: '185px',
                         }}>
                 
-                <Box sx={{  width: '22%',
+                <Box sx={{  width: '23%',
                             height: '185px',
                             textAlign: 'center',
-                            marginRight: '40px'
+                            marginRight: '40px',
                           }}>
+
                     <div className='inner_box'>
                       <img src={WVector} alt="" className='sw_vector' />
                     </div>
@@ -77,7 +78,7 @@ export default function Benefits() {
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '22%',
+                <Box sx={{  width: '23%',
                             height: '185px',
                             textAlign: 'center',
                             marginRight: '40px'
@@ -89,7 +90,7 @@ export default function Benefits() {
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '22%',
+                <Box sx={{  width: '23%',
                             height: '185px',
                             textAlign: 'center',
                             marginRight: '40px'
@@ -101,7 +102,7 @@ export default function Benefits() {
                     <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
                 </Box>
 
-                <Box sx={{  width: '22%',
+                <Box sx={{  width: '23%',
                             height: '185px',
                             textAlign: 'center'
                           }}>

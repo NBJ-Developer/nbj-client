@@ -26,7 +26,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl" sx={{ background: { 
         xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
         md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
@@ -47,7 +47,7 @@ const NavBar = () => {
 
             {/* MEDIUM DEVICE */}
             <Box sx={{  display: { xs: 'none', md: 'flex' },
-                        width: '12vw',
+                        width: '30%',
                         height: '45px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
@@ -124,7 +124,7 @@ const NavBar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 5, 
-                      mx: 9, 
+                      mx: 4, 
                       color: 'white', 
                       display: 'block', 
                       textTransform: 'Capitalize' 
@@ -137,7 +137,7 @@ const NavBar = () => {
 
           <Box sx={{  flexGrow: 0, 
                       display: { xs: 'none', md: 'flex' },
-                      marginRight: '20px' 
+                      marginRight: '10px' 
                     }}>
             <ContainedButtons />
           </Box>

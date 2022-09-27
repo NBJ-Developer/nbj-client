@@ -155,7 +155,7 @@ export default function Services() {
                                     justifyContent: 'center'
                                 }}>
 
-                                    <Box sx={{  width: '20vw',
+                                    <Box sx={{  width: '22%',
                                                 height: '412.13px',
                                                 background: '#000000',
                                                 borderRadius: '7.3516px',
@@ -165,7 +165,7 @@ export default function Services() {
                                                 <p className='p_services'>Ground Support</p>
                                     </Box>
 
-                                    <Box sx={{  width: '20vw',
+                                    <Box sx={{  width: '22%',
                                                 height: '412.13px',
                                                 background: '#000000',
                                                 borderRadius: '7.3516px', 
@@ -175,7 +175,7 @@ export default function Services() {
                                                 <p className='p_services'>Aircraft Charter & Bookings</p>
                                     </Box>
 
-                                    <Box sx={{  width: '20vw',
+                                    <Box sx={{  width: '22%',
                                                 height: '412.13px',
                                                 background: '#000000',
                                                 borderRadius: '7.3516px',
@@ -185,7 +185,7 @@ export default function Services() {
                                                 <p className='p_services'>Maintenance</p>
                                     </Box>
                                     
-                                    <Box sx={{  width: '20vw',
+                                    <Box sx={{  width: '22%',
                                                 height: '412.13px',
                                                 background: '#000000',
                                                 borderRadius: '7.3516px',

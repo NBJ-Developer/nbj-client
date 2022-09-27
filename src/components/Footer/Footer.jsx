@@ -54,28 +54,35 @@ export default function Footer() {
                                         borderRadius: '5px',
                                         display: 'flex',
                                         justifyContent: 'center',
-                                        alignItems: 'center'
+                                        alignItems: 'center',
+                                        paddingTop: '3px'
                                     }}>
-                                    <TiSocialLinkedinCircular style={{ width: '20vw', height: '20px', cursor: 'pointer'}} />
-                                    <FiTwitter style={{ width: '20vw', height: '20px', cursor: 'pointer'}} />
-                                    <FiInstagram style={{ width: '20vw', height: '20px', cursor: 'pointer'}} />
+                                    <a href="/" className='href'>
+                                        <TiSocialLinkedinCircular style={{ width: '20vw', height: '20px', cursor: 'pointer'}} />
+                                    </a>
+                                    <a href="/" className='href'>
+                                        <FiTwitter style={{ width: '20vw', height: '20px', cursor: 'pointer'}} />
+                                    </a>
+                                    <a href="/" className='href'>
+                                        <FiInstagram style={{ width: '20vw', height: '20px', cursor: 'pointer'}} />
+                                    </a>
                             </Box>
                     </Box>
 
                     <Box sx={{  display: 'flex',
-                        justifyContent: 'center',
-                        marginTop: '24px'
+                                justifyContent: 'center',
+                                marginTop: '24px'
                     }}>
                         <img src={Footline} alt="" />
                     </Box>
 
                     <Box sx={{  display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        marginTop: '13px'
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                marginTop: '13px'
                     }}>
                         <Link to='/' className='footer_terms'>Privacy Policy</Link>
-                        <TbMinusVertical style={{color: '#ffffff',
+                        <TbMinusVertical style={{   color: '#ffffff',
                                                     width: '4vw',
                                                     height: '22px'
                                                 }} />
@@ -175,11 +182,19 @@ export default function Footer() {
                                     display: 'flex',
                                     justifyContent: 'center',
                                     alignItems: 'center',
-                                    marginLeft: '18px'
+                                    marginLeft: '18px',
+                                    paddingTop: '5px'
                                 }}>
-                                <TiSocialLinkedinCircular style={{ width: '8vw', height: '20px', cursor: 'pointer'}} />
-                                <FiTwitter style={{ width: '8vw', height: '20px', cursor: 'pointer'}} />
-                                <FiInstagram style={{ width: '8vw', height: '20px', cursor: 'pointer'}} />
+
+                                <a href="/" className='href'>
+                                    <TiSocialLinkedinCircular style={{ width: '7vw', height: '20px', cursor: 'pointer'}} />
+                                </a>
+                                <a href="/" className='href'>
+                                    <FiTwitter style={{ width: '7vw', height: '20px', cursor: 'pointer'}} />
+                                </a>
+                                <a href="/" className='href'>
+                                    <FiInstagram style={{ width: '7vw', height: '20px', cursor: 'pointer'}} />
+                                </a>
                         </Box>
             </Box>
 
@@ -187,7 +202,7 @@ export default function Footer() {
                         justifyContent: 'center',
                         marginTop: '56px'
                     }}>
-                <img src={FootLine} alt="" />
+                <img src={FootLine} alt="" className='foot_line' />
             </Box>
 
             <Box sx={{  display: 'flex',

@@ -42,15 +42,15 @@ export default function CallToAction() {
                   marginTop: '119px'
                 }}>
                 <Box sx={{ display: 'flex',
-                            width: '100%',
+                            maxWidth: '100%',
                             height: '473px',
                             background: '#000000',
                             paddingTop: '60px'
                           }}>
-                  <Box sx={{  width: '33vw',
+                  <Box sx={{  width: '33%',
                               height: '325px',
                               position: 'absolute',
-                              left: '150px'
+                              left: '12%'
                             }}>
                               <h1 className='cta_question'>Have any questions?</h1>
                               <p className='cta_need'>Need clarifications on any of our services, Say hello!</p>
@@ -62,10 +62,10 @@ export default function CallToAction() {
                                 <OrdinaryButton />
                               </Box>
                             </Box>
-                  <Box sx={{  width: '33vw',
+                  <Box sx={{  width: '33%',
                               height: '325px',
                               position: 'absolute',
-                              left: '820px',
+                              left: '55%',
                               textAlign: 'center'
                             }}>
                               <h1 className='cta_ready_web'>READY TO GET STARTED?</h1>

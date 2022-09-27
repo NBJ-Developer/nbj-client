@@ -90,50 +90,37 @@ export default function OurStory() {
                 <p className='p_lorem_web'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor lacus pellentesque pretium sed. Non dictum pretium id fringilla. Habitasse ipsum lectus a nunc elementum. Hac et vitae odio gravida feugiat. Nisl pharetra vestibulum sit arcu phasellus lacus, pellentesque. Nulla pharetra duis mauris lorem ut hendrerit mauris nunc. Orci eget convallis volutpat imperdiet nulla at odio iaculis. Lorem id odio netus bibendum. Arcu odio porttitor quis gravida quis sollicitudin iaculis amet. Tempus, vitae quis dignissim nisl tellus auctor. Sem mauris, vel suspendisse quis mattis dignissim.
                 </p>
               </div>
+              <div className='story_button'>
                 <ContainedButtons />
+              </div>
+                
             </div>
 
             <div className='story_div_2'>
-              <Box sx={{  position: 'absolute',
-                          top: '190%',
-                          left: '63%'
-                        }}>
-                    <img  src={Wvector} 
-                          alt="" 
-                          srcSet={Wvector}
-                          loading='lazy'
-                          className='w_vector_web_1'/>
-              </Box>
-
-              <Box sx={{  width: '20%',
-                          height: '306.94px',
-                          backgroundColor: '#121212',
-                          borderRadius: '25px',
-                          display: 'flex',
-                          justifyContent: 'center',
-                          alignItems: 'center',
-                          position: 'absolute',
-                          top: '196%',
-                          left: '45%'
+                        <div className='div_w_vector_web_1'>
+                          <img  src={Wvector} 
+                            alt="" 
+                            srcSet={Wvector}
+                            loading='lazy'
+                            className='w_vector_web_1'/>
+                        </div>
                     
-                        }}>
-                    <img  src={Wvector} 
+
+                        <div className='div_w_vector_web_2'>
+                          <img  src={Wvector} 
                           alt="" 
                           srcSet={Wvector}
                           loading='lazy'
                           className='w_vector_web_2'/>
-              </Box>
-
-              <Box sx={{  position: 'absolute',
-                          top: '240%',
-                          left: '66%'
-                      }}>
-                <img  src={Wvector} 
-                      alt="" 
-                      srcSet={Wvector}
-                      loading='lazy'
-                      className='w_vector_web_1'/>
-              </Box>
+                        </div>
+                    
+                        <div className='div_w_vector_web_3'>
+                          <img  src={Wvector} 
+                          alt="" 
+                          srcSet={Wvector}
+                          loading='lazy'
+                          className='w_vector_web_3'/>
+                        </div>
             </div>
           </Box>
 
