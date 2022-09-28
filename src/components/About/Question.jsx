@@ -55,7 +55,8 @@ function Question() {
       </Box>
       <Box sx={{
         width:{xs:'100%', md:'50%'},
-        padding:'40px 40px',
+        padding: {xs:'40px'},
+        marginTop:{md:'70px'}
       }}>
         <Accordion />
         <Accordion />
