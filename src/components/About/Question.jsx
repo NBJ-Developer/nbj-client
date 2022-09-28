@@ -30,7 +30,8 @@ function Question() {
             color:'#FFFFFF',
             fontSize:{xs:'15px', md:'18px'},
             lineHeight:{xs:'20.43px', md:'27.21px'},
-            letterSpacing:{xs:'1%', md:'2%'},
+            textAlign:'justify',
+            wordSpacing: '-2px',
             }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Accumsan vestibulum erat in gravida orci cursus enim. Elit 

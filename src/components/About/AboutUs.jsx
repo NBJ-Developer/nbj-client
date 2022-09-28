@@ -36,7 +36,8 @@ function AboutUs() {
           marginTop:'10px',
           fontSize:{xs:'15px', md:'18px'},
           lineHeight:{xs:'20.43px', md:'27.21px'},
-          letterSpacing:{xs:'1%', md:'2%'}
+          wordSpacing: '-2px',
+          textAlign:'justify'
         }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         In auctor lacus pellentesque pretium sed. Non dictum pretium id 

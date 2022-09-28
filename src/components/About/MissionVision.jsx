@@ -29,8 +29,8 @@ function MissionVision() {
             marginTop:'10px',
             fontSize:{xs:'15px', md:'18px'},
             lineHeight:{xs:'20.43px', md:'27.21px'},
-            letterSpacing:{xs:'1%', md:'2%'},
-            textAlign:{md:'center'},
+            wordSpacing: '-2px',
+            textAlign:'justify',
             }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis arcu 
           vulputate maecenas quis maecenas. Vehicula id dis amet, nunc, sit lorem.
@@ -55,8 +55,8 @@ function MissionVision() {
             marginTop:'10px',
             fontSize:{xs:'15px', md:'18px'},
             lineHeight:{xs:'20.43px', md:'27.21px'},
-            letterSpacing:{xs:'1%', md:'2%'},
-            textAlign:{ md:'center'},
+            wordSpacing: '-2px',
+            textAlign:'justify',
             }}>
           Lorem ipsum dolor sit amet, consectetur adipi elit. Turpis arcu 
           vulputate maecenas quis maecenas. Vehicula id dis amet, nunc, sit lorem.

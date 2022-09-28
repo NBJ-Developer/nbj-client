@@ -18,7 +18,7 @@ function About() {
         <Typography sx={{
         textAlign:'center',
       }}>
-          you want to know more about us, you’re in the right place. Read to learn how we can assist you
+          If you want to know more about us, you’re in the right place. Read to learn how we can assist you
         </Typography>
       </Box>
       <AboutUs />
