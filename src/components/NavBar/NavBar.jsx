@@ -10,7 +10,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
-import './NavBar.css'
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
 

@@ -12,6 +12,8 @@ export default function ContainedButtonsMB() {
         width: {xs: '30vw', md: '12vw'},
         height: {xs: '30px', md: '48px'},
         backgroundColor: '#000000',
+        fontFamily: 'Raleway',
+        fontStyle: 'normal',
         color: '#ffffff',
         // backgroundColor: isBackgroundBlack ? '#ffffff' : '#000000',
         // color: isBackgroundBlack ? '#000000' : '#ffffff',

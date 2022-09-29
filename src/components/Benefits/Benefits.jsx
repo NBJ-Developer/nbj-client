@@ -1,119 +1,174 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import './Benefits.css'
 import { BsCheck2Circle } from 'react-icons/bs'
 import WVector from '../../assets/images/BBVector.png'
+import Typography from '@mui/material/Typography';
+import SubBenefits from './SubBenefits';
+
 
 export default function Benefits() {
   return (
     <Box>
       {/* SMALL DEVICE */}
-      <Box sx={{  display: { xs: 'block', md: 'none' },
-                  marginTop: '170px'
-                }}>
-        <Box sx={{  display: 'flex',
-                    justifyContent: 'center',
-                }}>
-          <Box
-            sx={{     width: '83vw',
-                      height: '175px',
-                      backgroundColor: '#ffffff',
+      <Box sx={{
+        display: { xs: 'block', md: 'none' },
+        marginTop: '170px',
+        width: '100%'
+      }}>
+        <Box sx={{  
+          display: 'flex',
+          justifyContent: 'center',
+          width: '100%'
+        }}>
+          <Box sx={{     
+            width: '83%',
+            backgroundColor: '#ffffff',
+          }}>
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              fontSize: '20px',
+              lineHeight: '23px',
+              color: '#000000',
+              textAlign: 'center'
+            }} variant='h4'>
+              WHAT YOU GET
+            </Typography>
+
+            <Box sx={{
+              columnCount: '2',
+              columnGap: '15px',
+              marginTop: '25px'
             }}>
-            <h4 className='what_you'>WHAT YOU GET</h4>
-            <div className='div_column'>
-                <p className='div_column_text'><BsCheck2Circle className='check' /> Safety Priority</p>
-                <p className='div_column_text'><BsCheck2Circle className='check' /> Customer Service & Comfort</p>
-            </div>
-            <div className='div_column_2'>
-                <p className='div_column_text'><BsCheck2Circle className='check' /> Convenience & Flexibility</p>
-                <p className='div_column_text'><BsCheck2Circle className='check' /> Convenience & Flexibility</p>
-            </div>
+              <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '15px',
+                lineHeight: '20px',
+                color: '#000000'
+              }}>
+                <BsCheck2Circle style={{
+                  marginBottom: '-2px',
+                  marginRight: '5px'
+                }} />
+                Safety Priority
+              </Typography>
+              <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '15px',
+                lineHeight: '20px',
+                color: '#000000'
+              }}>
+                <BsCheck2Circle style={{
+                  marginBottom: '-2px',
+                  marginRight: '5px'
+                }} />
+                Customer Service & Comfort
+              </Typography>
+            </Box>
+
+            <Box sx={{
+              columnCount: '2',
+              columnGap: '15px',
+              margin: '23px 0 20px 8px'
+            }}>
+              <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '15px',
+                lineHeight: '20px',
+                color: '#000000'
+              }}>
+                <BsCheck2Circle style={{
+                  marginBottom: '-2px',
+                  marginRight: '5px'
+                }} />
+                Convenience & Flexibility
+              </Typography>
+              <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '15px',
+                lineHeight: '20px',
+                color: '#000000'
+              }}>
+                <BsCheck2Circle style={{
+                  marginBottom: '-2px',
+                  marginRight: '5px'
+                }} />
+                Convenience & Flexibility
+              </Typography>
+            </Box>
           </Box>
         </Box>
 
-        <Box sx={{ display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                  }}>
-          <Box sx={{  width: '83vw',
-                      height: '144px',
-                      backgroundColor: '#000000',
-                      borderRadius: '10px',
-                      
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center'
-            }}>
-            <img src={WVector} alt="" className='w_vector' />
+        <Box sx={{ 
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: '100%'
+        }}>
+          <Box sx={{  
+            width: '83%',
+            backgroundColor: '#000000',
+            borderRadius: '10px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}>
+            <img src={WVector} 
+            alt="" 
+            style={{
+              width: '35%',
+              margin: '15px 0'
+            }} 
+          />
           </Box>
         </Box>
       </Box>
-
         {/* MEDIUM DEVICE */}
-      <Box sx={{  display: {xs: 'none', md: 'block'}, 
-                  marginTop: '83px'}}>
+      <Box sx={{  
+        display: {xs: 'none', md: 'block'}, 
+        marginTop: '83px',
+        width: '100%'
+      }}>
+          <Typography sx={{
+            fontFamily: 'Raleway',
+            fontStyle: 'normal',
+            fontWeight: '700',
+            fontSize: '30px',
+            lineHeight: '23px',
+            color: '#000000',
+            textAlign: 'center'
+          }}
+          variant='h4'>
+            WHAT YOU GET
+          </Typography>
 
-            <h4 className='you_get'>WHAT YOU GET</h4>
-            <Box sx={{display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      marginTop: '43px'
-              }}>
-              <Box sx={{  display: 'flex',
-                          alignItems: 'center',
-                          width: '90%',
-                          height: '185px',
-                        }}>
-                
-                <Box sx={{  width: '23%',
-                            height: '185px',
-                            textAlign: 'center',
-                            marginRight: '40px',
-                          }}>
-
-                    <div className='inner_box'>
-                      <img src={WVector} alt="" className='sw_vector' />
-                    </div>
-                    <p className='sapien'>Safety Priority</p>
-                    <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
-                </Box>
-
-                <Box sx={{  width: '23%',
-                            height: '185px',
-                            textAlign: 'center',
-                            marginRight: '40px'
-                          }}>
-                    <div className='inner_box'>
-                      <img src={WVector} alt="" className='sw_vector' />
-                    </div>
-                    <p className='sapien'>Comfort & Customer Service</p>
-                    <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
-                </Box>
-
-                <Box sx={{  width: '23%',
-                            height: '185px',
-                            textAlign: 'center',
-                            marginRight: '40px'
-                          }}>
-                    <div className='inner_box'>
-                      <img src={WVector} alt="" className='sw_vector' />
-                    </div>
-                    <p className='sapien'>Convenience & Flexibility</p>
-                    <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
-                </Box>
-
-                <Box sx={{  width: '23%',
-                            height: '185px',
-                            textAlign: 'center'
-                          }}>
-                    <div className='inner_box'>
-                      <img src={WVector} alt="" className='sw_vector' />
-                    </div>
-                    <p className='sapien'>Convenience & Flexibility</p>
-                    <p className='pharetra'>At pharetra sed justo id sit nam lectus lorem.</p>
-                </Box>
-              </Box>
+          <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100%',
+            marginTop: '43px'
+          }}>
+            <Box sx={{  
+              display: 'flex',
+              alignItems: 'center',
+              width: '90%',
+            }}>
+              <SubBenefits />
+              <SubBenefits />
+              <SubBenefits />
+              <SubBenefits />
             </Box>
+          </Box>
       </Box>
     </Box>
   );

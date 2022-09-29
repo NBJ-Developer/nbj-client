@@ -10,6 +10,8 @@ export default function OrdinaryButton() {
         width: {xs: '30vw', md: '12vw'},
         height: {xs: '30px', md: '48px'},
         backgroundColor: '#ffffff',
+        fontFamily: 'Raleway',
+        fontStyle: 'normal',
         color: '#000000',
         textTransform: 'Capitalize',
         borderRadius: {xs: '7px 0 7px 0', md: '10px 0 10px 0'},

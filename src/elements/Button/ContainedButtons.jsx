@@ -11,6 +11,8 @@ export default function ContainedButtons() {
         width: {xs: '30vw', md: '12vw'},
         height: {xs: '30px', md: '43px'},
         backgroundColor: {xs: '#000000', md: '#ffffff'},
+        fontFamily: 'Raleway',
+        fontStyle: 'normal',
         color: {xs: '#ffffff', md: '#000000'},
         textTransform: 'Capitalize',
         borderRadius: {xs: '7px 0 7px 0', md: '10px 0 10px 0'},

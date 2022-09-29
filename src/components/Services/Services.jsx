@@ -9,9 +9,8 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import './Services.css'
-import Wvector from '../../assets/images/BBVector.png'
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
+import SubServices from './SubServices';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -54,15 +53,35 @@ export default function Services() {
   return (
     <Box>
         {/* SMALL DEVICE */}
-        <Box sx={{ display: {xs: 'block', md: 'none'},
-                    marginTop: '56px'
+        <Box sx={{ 
+            display: {xs: 'block', md: 'none'},
+            marginTop: '56px',
+            width: '100%'
+        }}>
+            <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '700',
+                fontSize: '20px',
+                lineHeight: '23px',
+                marginLeft: '30px',
+                marginBottom: '5px'
+            }}  variant='h1'>
+                OUR
+                <span style={{
+                    backgroundColor: '#d9d9d9',
+                    color: '#000000',
+                    borderRadius: '5px',
+                    padding: '2px',
+                    marginLeft: '5px'
                 }}>
-            <h1 className='our'>OUR <span className='inner_story'>SERVICES</span> </h1>
+                    SERVICES
+                </span> 
+            </Typography>
             <Box sx={{  display: 'flex',
                         justifyContent: 'center'
                     }}>
-                <Box sx={{  maxWidth: '54vw', 
-                            height: '350px', 
+                <Box sx={{  maxWidth: '55%', 
                             flexGrow: 1 }}>
                     
                     <AutoPlaySwipeableViews
@@ -73,13 +92,13 @@ export default function Services() {
                     >
                         {images.map((step, index) => (
                         <div key={step.label}>
-                            {Math.abs(activeStep - index) <= 2 ? (
+                            {Math.abs(activeStep - index) <= 4 ? (
                             <Box
                                 component="img"
                                 sx={{
                                 height: '226px',
                                 display: 'block',
-                                maxWidth: '54vw',
+                                maxWidth: '100%',
                                 overflow: 'hidden',
                                 width: '100%',
                                 marginTop: '20px',
@@ -139,66 +158,68 @@ export default function Services() {
         </Box>
 
         {/* MEDIUM DEVICE */}
-        <Box sx={{    display: {xs: 'none', md: 'block'},
-                    marginTop: '119px',
-                    textAlign: 'center'
+        <Box sx={{    
+            display: {xs: 'none', md: 'block'},
+            width: '100%',
+            marginTop: '119px',
+            textAlign: 'center',
+        }}>
+            <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '700',
+                fontSize: '32px',
+                lineHeight: '38px'
+            }} variant='h1'>
+                OUR
+                <span style={{
+                    backgroundColor: '#d9d9d9',
+                    color: '#000000',
+                    borderRadius: '5px',
+                    padding: '2px',
+                    marginLeft: '5px'
                 }}>
-                    <h1 className='our_web'>OUR <span className='inner_story'>SERVICES</span> </h1>
-                    <p className='p_lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    SERVICES
+                </span> 
+            </Typography>
+            
+            <Typography sx={{
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: '400',
+                fontSize: '20px',
+                lineHeight: '27px',
+                letterSpacing: '0.03em',
+                color: '#000000',
+                margin: '15px 0'
+            }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </Typography>
 
-                    <Box sx={{  display: 'flex',
-                                justifyContent: 'center'
-                            }}>
-                        <Box sx={{  width: '90%',
-                                    height: '450px',
-                                    display: 'flex',
-                                    justifyContent: 'center'
-                                }}>
-
-                                    <Box sx={{  width: '22%',
-                                                height: '412.13px',
-                                                background: '#000000',
-                                                borderRadius: '7.3516px',
-                                                marginRight: '50px'
-                                            }}>
-                                                <img src={Wvector} alt="" className='wvector' />
-                                                <p className='p_services'>Ground Support</p>
-                                    </Box>
-
-                                    <Box sx={{  width: '22%',
-                                                height: '412.13px',
-                                                background: '#000000',
-                                                borderRadius: '7.3516px', 
-                                                marginRight: '50px'
-                                            }}>
-                                                <img src={Wvector} alt="" className='wvector' />
-                                                <p className='p_services'>Aircraft Charter & Bookings</p>
-                                    </Box>
-
-                                    <Box sx={{  width: '22%',
-                                                height: '412.13px',
-                                                background: '#000000',
-                                                borderRadius: '7.3516px',
-                                                marginRight: '50px'
-                                            }}>
-                                                <img src={Wvector} alt="" className='wvector' />
-                                                <p className='p_services'>Maintenance</p>
-                                    </Box>
-                                    
-                                    <Box sx={{  width: '22%',
-                                                height: '412.13px',
-                                                background: '#000000',
-                                                borderRadius: '7.3516px',
-                                            }}>
-                                                <img src={Wvector} alt="" className='wvector' />
-                                                <p className='p_services'>Wings Inflight</p>
-                                    </Box>
-                        </Box>
-                    </Box>
+            <Box sx={{  
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center'
+            }}>
+                <Box sx={{  
+                    width: '90%',
+                    display: 'flex',
+                    justifyContent: 'center'
+                }}>
+                    <SubServices />
+                    <SubServices />
+                    <SubServices />
+                    <SubServices />
+                </Box>
+            </Box>
                     
-                    <Box sx={{  display: 'flex',
-                                justifyContent: 'center'
-                            }}><ContainedButtonsMB /></Box>
+            <Box sx={{  
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '50px'
+            }}>
+                <ContainedButtonsMB />
+            </Box>
         </Box>
 
     </Box>

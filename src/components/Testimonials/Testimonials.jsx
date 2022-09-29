@@ -1,176 +1,419 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import './Testimonials.css'
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
+import Typography from '@mui/material/Typography';
 
 export default function Testimonials() {
   return (
     <Box>
       {/* SMALL DEVICE */}
-        <Box sx={{  display: { xs: 'flex', md: 'none' },
-                    justifyContent: 'center',
-                }}>
-            <Box sx={{  width: '80vw',
-                    height: '470px',
-                    marginTop: '56px',
-                }}>
-                    <h1 className='test_cust'>WHAT OUR CUSTOMERS SAY</h1>
-                    <FaQuoteLeft style={{ marginTop: '6px', width: '38px', height: '50px'}}/>
-                    <p className='test_trust'>Trusting NBJ is a decision I <br /> never regret making....</p>
+        <Box sx={{  
+            display: { xs: 'flex', md: 'none' },
+            justifyContent: 'center',
+        }}>
+            <Box sx={{  
+                width: '80%',
+                height: '470px',
+                marginTop: '56px',
+            }}>
+                <Typography sx={{
+                    fontFamily: 'Raleway',
+                    fontStyle: 'normal',
+                    fontWeight: '600',
+                    fontSize: '19px',
+                    lineHeight: '22px',
+                    color: '#000000',
+                    textAlign: 'center'
+                }} variant='h1'>
+                    WHAT OUR CUSTOMERS SAY
+                </Typography>
+                <FaQuoteLeft style={{ 
+                    marginTop: '6px', 
+                    width: '38px', 
+                    height: '50px'
+                }}/>
 
-                    <Box sx={{display: 'flex',
-                                justifyContent: 'center',
-                                marginTop: '10px'
-                            }}>
-                        <Box sx={{  width: '10vw',
-                                    height: '40px',
-                                    backgroundColor: '#d9d9d9',
-                                    borderRadius: '100px'
-                                }}></Box>    
+                <Box>
+                <Typography sx={{
+                    fontFamily: 'Raleway',
+                    fontStyle: 'normal',
+                    fontWeight: '600',
+                    fontSize: '16px',
+                    lineHeight: '22px',
+                    color: '#000000',
+                    textAlign: 'center'
+                }}>
+                    Trusting NBJ is a decision I <br /> never regret making....
+                </Typography>
+                    <Box sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginTop: '10px'
+                    }}>
+                        <Box sx={{  
+                            width: '12%',
+                            backgroundColor: '#d9d9d9',
+                            borderRadius: '100px'
+                        }}></Box>    
                         <Box>
-                            <p className='test_chief'>Chief Elona Maxwell</p>
-                            <p className='test_ceo'>CEO Max Ent.</p>
-                        </Box>
-                    </Box>
-
-                    <Box sx={{ marginTop: '30px'}}>
-                        <p className='test_trust'>Trusting NBJ is a decision I <br /> never regret making....</p>
-
-                        <Box sx={{display: 'flex',
-                                    justifyContent: 'center',
-                                    marginTop: '10px'
-                                }}>
-                            <Box sx={{  width: '10vw',
-                                        height: '40px',
-                                        backgroundColor: '#d9d9d9',
-                                        borderRadius: '100px'
-                                    }}></Box>    
-                            <Box>
-                                <p className='test_chief'>Chief Elona Maxwell</p>
-                                <p className='test_ceo'>CEO Max Ent.</p>
-                            </Box>
-                        </Box>
-                    </Box>
-
-                    <Box sx={{ marginTop: '30px'}}>
-                        <p className='test_trust'>Trusting NBJ is a decision I <br /> never regret making....</p>
-
-                        <Box sx={{display: 'flex',
-                                    justifyContent: 'center',
-                                    marginTop: '10px'
-                                }}>
-                            <Box sx={{  width: '10vw',
-                                        height: '40px',
-                                        backgroundColor: '#d9d9d9',
-                                        borderRadius: '100px'
-                                    }}></Box>    
-                            <Box>
-                                <p className='test_chief'>Chief Elona Maxwell</p>
-                                <p className='test_ceo'>CEO Max Ent.</p>
-                            </Box>
-                        </Box>
-                    </Box>
-
-                    <Box sx={{display: 'flex',
-                                justifyContent: 'right'
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '400',
+                                fontSize: '14px',
+                                lineHeight: '19px',
+                                color: '#000000',
+                                textAlign: 'center'
                             }}>
-                        <FaQuoteRight style={{ width: '38px', height: '50px'}}/>
+                                Chief Elona Maxwell
+                            </Typography>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '400',
+                                fontSize: '12px',
+                                lineHeight: '16px',
+                                color: '#000000',
+                                textAlign: 'center'
+                            }}>
+                                CEO Max Ent.
+                            </Typography>
+                        </Box>
                     </Box>
+                </Box>
+
+                <Box sx={{ marginTop: '30px'}}>
+                    <Typography sx={{
+                        fontFamily: 'Raleway',
+                        fontStyle: 'normal',
+                        fontWeight: '600',
+                        fontSize: '16px',
+                        lineHeight: '22px',
+                        color: '#000000',
+                        textAlign: 'center'
+                    }}>
+                        Trusting NBJ is a decision I <br /> never regret making....
+                    </Typography>
+
+                    <Box sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginTop: '10px'
+                    }}>
+                        <Box sx={{  
+                            width: '12%',
+                            backgroundColor: '#d9d9d9',
+                            borderRadius: '100px'
+                        }}></Box>    
+                        <Box>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '400',
+                                fontSize: '14px',
+                                lineHeight: '19px',
+                                color: '#000000',
+                                textAlign: 'center'
+                            }}>
+                                Chief Elona Maxwell
+                            </Typography>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '400',
+                                fontSize: '12px',
+                                lineHeight: '16px',
+                                color: '#000000',
+                                textAlign: 'center'
+                            }}>
+                                CEO Max Ent.
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Box>
+
+                <Box sx={{ marginTop: '30px'}}>
+                    <Typography sx={{
+                        fontFamily: 'Raleway',
+                        fontStyle: 'normal',
+                        fontWeight: '600',
+                        fontSize: '16px',
+                        lineHeight: '22px',
+                        color: '#000000',
+                        textAlign: 'center'
+                    }}>
+                        Trusting NBJ is a decision I <br /> never regret making....
+                    </Typography>
+
+                    <Box sx={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        marginTop: '10px'
+                    }}>
+                        <Box sx={{  
+                            width: '12%',
+                            backgroundColor: '#d9d9d9',
+                            borderRadius: '100px'
+                        }}></Box>    
+                        <Box>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '400',
+                                fontSize: '14px',
+                                lineHeight: '19px',
+                                color: '#000000',
+                                textAlign: 'center'
+                            }}>
+                                Chief Elona Maxwell
+                            </Typography>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '400',
+                                fontSize: '12px',
+                                lineHeight: '16px',
+                                color: '#000000',
+                                textAlign: 'center'
+                            }}>
+                                CEO Max Ent.
+                            </Typography>
+                        </Box>
+                    </Box>
+                </Box>
+
+                <Box sx={{display: 'flex',
+                            justifyContent: 'right'
+                        }}>
+                    <FaQuoteRight style={{ width: '38px', height: '50px'}}/>
+                </Box>
             </Box>
         </Box>
 
       {/* MEDIUM DEVICE */}
-        <Box sx={{  display: { xs: 'none', md: 'flex' },
-                justifyContent: 'center'
+        <Box sx={{  
+            display: { xs: 'none', md: 'flex' },
+            justifyContent: 'center'
+        }}>
+            <Box sx={{ 
+                marginTop: '119px',
+                width: '90%',
+                height: '570px'
             }}>
-            <Box sx={{ marginTop: '119px',
-                        width: '90%',
-                        height: '570px'
+                <Typography sx={{
+                    fontFamily: 'Raleway',
+                    fontStyle: 'normal',
+                    fontWeight: '600',
+                    fontSize: '30px',
+                    lineHeight: '35px',
+                    color: '#000000',
+                    textAlign: 'center',
+                    marginTop: '22px'
+                }} variant='h1'>
+                    TESTIMONIALS
+                </Typography>
+                <Typography sx={{
+                    fontFamily: 'Raleway',
+                    fontStyle: 'normal',
+                    fontWeight: '400',
+                    fontSize: '18px',
+                    lineHeight: '25px',
+                    color: '#000000',
+                    textAlign: 'center',
+                    marginTop: '14px'
+                }}>
+                    What our Clients  have to say
+                </Typography>
+            
+                <FaQuoteLeft style={{ 
+                    width: '100px', 
+                    height: '50px',
+                    marginBottom: '50px'
+                }}/>
+
+                <Box sx={{  
+                    display: 'flex',
+                    justifyContent: 'center',
+                    marginBottom: '100px'
+                }}>
+                    <Box sx={{  
+                        width: '85%',
+                        display: 'flex'
                     }}>
-                <h1 className='test_web'>TESTIMONIALS</h1>
-                <p className='test_client_web'>What our Clients  have to say</p>
-                <FaQuoteLeft style={{ width: '100px', height: '150px'}}/>
-
-                <Box sx={{  display: 'flex',
-                            justifyContent: 'center',
-                            marginBottom: '100px'
+                        <Box sx={{  
+                            width: '33%',
+                            marginRight: '100px'
                         }}>
-                    <Box sx={{  width: '85%',
-                                height: '137.43px',
-                                display: 'flex'
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '600',
+                                fontSize: '24px',
+                                lineHeight: '32px',
+                                color: '#000000',
+                                textAlign: 'center',
                             }}>
-                        <Box sx={{  width: '33%',
-                                    height: '138px',
-                                    marginRight: '100px'
-                                }}>
-                            <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
-                            <Box sx={{display: 'flex',
-                                            justifyContent: 'center',
-                                            marginTop: '14px'
-                                        }}>
-                                    <Box sx={{  width: '20%',
-                                                height: '58px',
-                                                backgroundColor: '#d9d9d9',
-                                                borderRadius: '100px'
-                                            }}></Box>    
-                                    <Box>
-                                        <p className='test_chief_web'>Chief Elona Maxwell</p>
-                                        <p className='test_ceo_web'>CEO Max Ent.</p>
-                                    </Box>
+                                Trusting NBJ is a decision I <br /> never regret making....
+                            </Typography>
+
+                            <Box sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                marginTop: '14px'
+                            }}>
+                                <Box sx={{  
+                                    width: '20%',
+                                    height: '58px',
+                                    backgroundColor: '#d9d9d9',
+                                    borderRadius: '100px'
+                                }}></Box>    
+                                <Box>
+                                    <Typography sx={{
+                                        fontFamily: 'Raleway',
+                                        fontStyle: 'normal',
+                                        fontWeight: '400',
+                                        fontSize: '21px',
+                                        lineHeight: '28px',
+                                        color: '#000000',
+                                        textAlign: 'center',
+                                    }}>
+                                        Chief Elona Maxwell
+                                    </Typography>
+                                    <Typography sx={{
+                                        fontFamily: 'Raleway',
+                                        fontStyle: 'normal',
+                                        fontWeight: '400',
+                                        fontSize: '18px',
+                                        lineHeight: '24px',
+                                        color: '#000000',
+                                        textAlign: 'center',
+                                    }}>
+                                        CEO Max Ent.
+                                    </Typography>
                                 </Box>
+                            </Box>
                         </Box>
 
-                        <Box sx={{  width: '33%',
-                                    height: '138px',
-                                    marginRight: '100px'
-                                }}>
-                            <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
-                            <Box sx={{display: 'flex',
-                                            justifyContent: 'center',
-                                            marginTop: '14px'
-                                        }}>
-                                    <Box sx={{  width: '20%',
-                                                height: '58px',
-                                                backgroundColor: '#d9d9d9',
-                                                borderRadius: '100px'
-                                            }}></Box>    
-                                    <Box>
-                                        <p className='test_chief_web'>Chief Elona Maxwell</p>
-                                        <p className='test_ceo_web'>CEO Max Ent.</p>
-                                    </Box>
+                        <Box sx={{  
+                            width: '33%',
+                            marginRight: '100px'
+                        }}>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '600',
+                                fontSize: '24px',
+                                lineHeight: '32px',
+                                color: '#000000',
+                                textAlign: 'center',
+                            }}>
+                                Trusting NBJ is a decision I <br /> never regret making....
+                            </Typography>
+
+                            <Box sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                marginTop: '14px'
+                            }}>
+                                <Box sx={{  
+                                    width: '20%',
+                                    height: '58px',
+                                    backgroundColor: '#d9d9d9',
+                                    borderRadius: '100px'
+                                }}></Box>    
+                                <Box>
+                                    <Typography sx={{
+                                        fontFamily: 'Raleway',
+                                        fontStyle: 'normal',
+                                        fontWeight: '400',
+                                        fontSize: '21px',
+                                        lineHeight: '28px',
+                                        color: '#000000',
+                                        textAlign: 'center',
+                                    }}>
+                                        Chief Elona Maxwell
+                                    </Typography>
+                                    <Typography sx={{
+                                        fontFamily: 'Raleway',
+                                        fontStyle: 'normal',
+                                        fontWeight: '400',
+                                        fontSize: '18px',
+                                        lineHeight: '24px',
+                                        color: '#000000',
+                                        textAlign: 'center',
+                                    }}>
+                                        CEO Max Ent.
+                                    </Typography>
                                 </Box>
+                            </Box>
                         </Box>
 
-                        <Box sx={{  width: '33%',
-                                    height: '138px'
-                                }}>
-                            <p className='test_trust_web'>Trusting NBJ is a decision I <br /> never regret making....</p>
-                            <Box sx={{display: 'flex',
-                                            justifyContent: 'center',
-                                            marginTop: '14px'
+                        <Box sx={{  
+                            width: '33%',
+                            height: '138px'
+                        }}>
+                            <Typography sx={{
+                                fontFamily: 'Raleway',
+                                fontStyle: 'normal',
+                                fontWeight: '600',
+                                fontSize: '24px',
+                                lineHeight: '32px',
+                                color: '#000000',
+                                textAlign: 'center',
+                            }}>
+                                Trusting NBJ is a decision I <br /> never regret making....
+                            </Typography>
+                            <Box sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                marginTop: '14px'
+                            }}>
+                                <Box sx={{  
+                                    width: '20%',
+                                    height: '58px',
+                                    backgroundColor: '#d9d9d9',
+                                    borderRadius: '100px'
+                                }}></Box>    
+                                <Box>
+                                    <Typography sx={{
+                                            fontFamily: 'Raleway',
+                                            fontStyle: 'normal',
+                                            fontWeight: '400',
+                                            fontSize: '21px',
+                                            lineHeight: '28px',
+                                            color: '#000000',
+                                            textAlign: 'center',
                                         }}>
-                                    <Box sx={{  width: '20%',
-                                                height: '58px',
-                                                backgroundColor: '#d9d9d9',
-                                                borderRadius: '100px'
-                                            }}></Box>    
-                                    <Box>
-                                        <p className='test_chief_web'>Chief Elona Maxwell</p>
-                                        <p className='test_ceo_web'>CEO Max Ent.</p>
+                                            Chief Elona Maxwell
+                                        </Typography>
+                                        <Typography sx={{
+                                            fontFamily: 'Raleway',
+                                            fontStyle: 'normal',
+                                            fontWeight: '400',
+                                            fontSize: '18px',
+                                            lineHeight: '24px',
+                                            color: '#000000',
+                                            textAlign: 'center',
+                                        }}>
+                                            CEO Max Ent.
+                                        </Typography>
                                     </Box>
                                 </Box>
                         </Box>
                     </Box>
                 </Box>
 
-                <Box sx={{  display: 'flex',
-                            justifyContent: 'right'
-                                }}>
-                            <FaQuoteRight style={{ width: '100px', height: '150px'}}/>
+                <Box sx={{  
+                    display: 'flex',
+                    justifyContent: 'right'
+                }}>
+                    <FaQuoteRight style={{ 
+                        width: '100px', 
+                        height: '50px'
+                    }}/>
                 </Box>
             </Box>
         </Box>
-      
     </Box>
   );
 }
