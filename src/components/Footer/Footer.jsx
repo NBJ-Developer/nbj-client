@@ -33,7 +33,7 @@ export default function Footer() {
                 paddingTop: '20px'
             }}>
                 <Box sx={{  
-                    width: '15vw',
+                    width: '15%',
                     height: '59px',
                     background: '#d9d9d9',
                     borderRadius: '5px',
@@ -41,7 +41,7 @@ export default function Footer() {
                 }}>
                 </Box>
                 <Box sx={{  
-                    width: '25vw',
+                    width: '25%',
                     height: '59px',
                 }}>
                     <Typography sx={{
@@ -64,7 +64,7 @@ export default function Footer() {
                 marginTop: '114px'
             }}>
                 <Box sx={{  
-                    width: '60vw',
+                    width: '60%',
                     height: '33px',
                     background: '#d9d9d9',
                     borderRadius: '5px',
@@ -189,14 +189,14 @@ export default function Footer() {
                 paddingTop: '50px'
             }}>
                 <Box sx={{  
-                    width: '5vw',
+                    width: '5%',
                     height: '82px',
                     borderRadius: '10px',
                     background: '#d9d9d9',
                     marginRight: '10px'
                 }}></Box>
                 <Box sx={{  
-                    width: '10vw',
+                    width: '10%',
                     height: '82px',
                 }}>
                     <Typography sx={{
@@ -279,11 +279,6 @@ export default function Footer() {
                 }}>
                     CONTACT
                 </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
             </Box>
 
             <Box sx={{  
@@ -291,22 +286,6 @@ export default function Footer() {
                 justifyContent: 'center',
                 marginTop: '56px'
             }}>
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                   GROUND SUPPORT
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
 
                 <Link to='/' style={{
                     fontFamily: 'Raleway',
@@ -368,11 +347,6 @@ export default function Footer() {
                 }}>
                    WINGS INFLIGHT
                 </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
             </Box>
 
             <Box sx={{  
