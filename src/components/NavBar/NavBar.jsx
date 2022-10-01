@@ -9,6 +9,8 @@ import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
 import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
 
@@ -124,12 +126,12 @@ const NavBar = () => {
                 key={page}
                 sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 5, 
-                      mx: 4, 
-                      color: 'white', 
-                      display: 'block', 
-                      textTransform: 'Capitalize' 
-                    }}
+                // sx={{ my: 5, 
+                //       mx: 4, 
+                //       color: 'white', 
+                //       display: 'block', 
+                //       textTransform: 'Capitalize' 
+                //     }}
               >
                 {page}
               </Link>
