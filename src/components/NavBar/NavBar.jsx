@@ -24,11 +24,11 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl" sx={{ background: { 
-        xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)', 
-        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 30%,#000000 30%,#000000 100%)' },
-        height: '100px',
+        xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
+        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
+        height: { xs: '129px', md: '167px' },
         paddingTop: '18px'
         }}>
         <Toolbar disableGutters sx={{alignItems: 'center'}}>
@@ -36,26 +36,34 @@ const NavBar = () => {
 
             {/* SMALL DEVICE */}
             <Box sx={{  display: { xs: 'flex', md: 'none' },
-                        width: '84px',
-                        height: '30px',
+                        width: '25vw',
+                        height: '35px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
-                        marginLeft: '10px'
+                        marginLeft: '15px'
             }}></Box>
 
             {/* MEDIUM DEVICE */}
-            <Box sx={{  display: { xs: 'none', md: '  flex' },
-                        width: '159px',
-                        height: '43px',
+            <Box sx={{  display: { xs: 'none', md: 'flex' },
+                        width: '30%',
+                        height: '45px',
                         background: '#d9d9d9',
                         borderRadius: '10px',
-                        marginLeft: '30px'
+                        marginLeft: '60px'
             }}></Box>
           </Box>
 
 
           {/* SMALL DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={
+            { 
+              flexGrow: 0, 
+              display: {
+                 xs: 'flex', md: 'none' 
+                 },
+                 my: 4, 
+                }
+              }>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -87,28 +95,51 @@ const NavBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Link href={`/${page}`} textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Link>
+                  <Typography textAlign="center" 
+                              sx={{ backgroundColor: '#D9D9D9', 
+                                    width: '38vw', 
+                                    height: '40px', 
+                                    paddingTop: '8px'
+                                  }}>
+                                      {page}
+                  </Typography>
                 </MenuItem>
               ))}
-              <Box sx={{ flexGrow: 0, display: { xs: 'block', md: 'none' }, marginLeft: '36px' }}>
+              <Box sx={{  flexGrow: 0, 
+                          display: { xs: 'block', md: 'none' }, 
+                          marginLeft: '30px', 
+                          marginTop: '14px'
+                      }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
           </Box>
 
           {/* MEDIUM DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' },
+                     alignItems: 'center' }}>
             {pages.map((page) => (
               <Link
               href={`/${page}`}
                 key={page}
                 sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 5, 
+                      mx: 4, 
+                      color: 'white', 
+                      display: 'block', 
+                      textTransform: 'Capitalize' 
+                    }}
               >
                 {page}
               </Link>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{  flexGrow: 0, 
+                      display: { xs: 'none', md: 'flex' },
+                      marginRight: '10px' 
+                    }}>
             <ContainedButtons />
           </Box>
 
