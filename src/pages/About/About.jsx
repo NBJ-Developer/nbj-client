@@ -5,6 +5,7 @@ import GeneralHero from '../../components/Hero/GeneralHero'
 import AboutUs from '../../components/About/AboutUs'
 import MissionVision from '../../components/About/MissionVision'
 import Question from '../../components/About/Question'
+import Footer from '../../components/Footer/Footer'
 
 function About() {
   return (
@@ -24,6 +25,7 @@ function About() {
       <AboutUs />
       <MissionVision />
       <Question />
+      <Footer />
     </div>
   )
 }
