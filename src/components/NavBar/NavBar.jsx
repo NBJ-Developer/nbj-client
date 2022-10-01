@@ -3,13 +3,12 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
+import Link from '@mui/material/Link';
 
 const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
 
@@ -95,6 +94,7 @@ const NavBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Link href={`/${page}`} textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Link>
                   <Typography textAlign="center" 
                               sx={{ backgroundColor: '#D9D9D9', 
                                     width: '38vw', 
@@ -119,8 +119,10 @@ const NavBar = () => {
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' },
                      alignItems: 'center' }}>
             {pages.map((page) => (
-              <Button
+              <Link
+              href={`/${page}`}
                 key={page}
+                sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 5, 
                       mx: 4, 
@@ -130,7 +132,7 @@ const NavBar = () => {
                     }}
               >
                 {page}
-              </Button>
+              </Link>
             ))}
           </Box>
 
