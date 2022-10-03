@@ -26,7 +26,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" elevation={0}>
       <Container maxWidth="xl" sx={{ background: { 
         xs: '#000000', 
         md: '#000000' 
