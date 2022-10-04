@@ -12,7 +12,7 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 
-const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
+const pages = ['About', 'Benefits', 'Services', 'Contact'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

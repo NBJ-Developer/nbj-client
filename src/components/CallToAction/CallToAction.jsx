@@ -102,6 +102,8 @@ export default function CallToAction() {
             </Typography>
 
             <Link to="/" style={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
               fontWeight: '400',
               fontSize: '20px',
               lineHeight: '27px',
@@ -115,6 +117,8 @@ export default function CallToAction() {
             </Link>
 
             <Typography sx={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
               fontWeight: '400',
               fontSize: '20px',
               lineHeight: '27px',
@@ -128,6 +132,8 @@ export default function CallToAction() {
             </Typography>
 
             <Link to="/" style={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
               fontWeight: '400',
               fontSize: '20px',
               lineHeight: '27px',
