@@ -21,7 +21,6 @@ function ServiceSummary() {
         }}>
             <Box sx={{
                 width: '90%',
-                height: '590px',
                 display: 'flex'
             }}>
                 <Box sx={{
@@ -60,6 +59,7 @@ function ServiceSummary() {
                 <Box sx={{
                     width: '50%',
                     background: '#d9d9d9',
+                    height: '590px',
                     marginLeft: '10px'
                 }}></Box>
             </Box>
