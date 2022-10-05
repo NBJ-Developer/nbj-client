@@ -58,7 +58,7 @@ const handleSubmit = () => {
                     <Box
                         component="form"
                         sx={{
-                            '& .MuiTextField-root': { my: 1, width: '70%' },
+                            '& .MuiTextField-root': { my: 1, width: '70%', fontSize: 2 },
                         }}
                         // noValidate
                         // autoComplete="off"
@@ -77,7 +77,11 @@ const handleSubmit = () => {
                             <TextField
                                 id="outlined-name"
                                 label="Input Name"
+                                InputProps={{ style: { fontSize: '10px' } }}
+                                InputLabelProps={{ style: { fontSize: '10px' } }}
+                                // hiddenLabel
                                 type="text"
+                                size="small"
                                 value={name}
                                 onChange={e => setName(e.target.value)}
                                 sx={{
@@ -101,7 +105,10 @@ const handleSubmit = () => {
                             <TextField
                                 id="outlined-email"
                                 label="Input Email"
+                                InputProps={{ style: { fontSize: '10px' } }}
+                                InputLabelProps={{ style: { fontSize: '10px' } }}
                                 type="email"
+                                size="small"
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
                                 sx={{
@@ -126,7 +133,10 @@ const handleSubmit = () => {
                             <TextField
                                 id="outlined-multiline-static"
                                 label="Comments"
+                                InputProps={{ style: { fontSize: '10px' } }}
+                                InputLabelProps={{ style: { fontSize: '10px' } }}
                                 type="text"
+                                size="small"
                                 value={comment}
                                 onChange={e => setComment(e.target.value)}
                                 multiline
@@ -314,6 +324,8 @@ const handleSubmit = () => {
                             <TextField
                                 id="outlined-name"
                                 label="Input Name"
+                                InputProps={{ style: { fontSize: '16px' } }}
+                                InputLabelProps={{ style: { fontSize: '13px' } }}
                                 type="text"
                                 value={name}
                                 onChange={e => setName(e.target.value)}
@@ -338,6 +350,8 @@ const handleSubmit = () => {
                             <TextField
                                 id="outlined-email"
                                 label="Input Email"
+                                InputProps={{ style: { fontSize: '16px' } }}
+                                InputLabelProps={{ style: { fontSize: '13px' } }}
                                 type="email"
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
@@ -363,6 +377,8 @@ const handleSubmit = () => {
                             <TextField
                                 id="outlined-multiline-static"
                                 label="Comments"
+                                InputProps={{ style: { fontSize: '16px' } }}
+                                InputLabelProps={{ style: { fontSize: '13px' } }}
                                 type="text"
                                 value={comment}
                                 onChange={e => setComment(e.target.value)}
