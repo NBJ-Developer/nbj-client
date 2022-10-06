@@ -15,7 +15,6 @@ export default function CallToAction() {
       <Box sx={{  
         display: {xs: 'block', md: 'none'},
         maxWidth: '100%',
-        
         background: '#000000',
         marginTop: '50px',
         textAlign: 'center'

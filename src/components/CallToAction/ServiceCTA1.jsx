@@ -7,31 +7,27 @@ function ServiceCTA1() {
     <Box sx={{
         width: '100%'
     }}>
-        {/* SMALL DEVICE */}
-        <Box sx={{
-            display: { xs: 'flex', md: 'none'},
-        }}>
-        </Box>
 
-        {/* MEDIUM DEVICE */}
+        {/* BOTH DEVICES */}
       <Box sx={{
-            display: { xs: 'none', md: 'flex'},
+            display: {xs: 'block', md: 'flex'},
             justifyContent: 'center',
-            marginTop: '140px'
+            marginTop: {xs: '37px', md:'140px'}
         }}>
            <Box sx={{
-                width: '90%',
+                width: {xs: '100%', md:'90%'},
                 background: '#000000'
             }}>
                 <Typography variant='h1' sx={{
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '48px',
-                    lineHeight: '56px',
+                    fontWeight: {xs: '600', md: '700'},
+                    fontSize: {xs: '24px', md: '48px'},
+                    lineHeight: {xs: '28px', md: '56px'},
                     color: '#ffffff',
                     textAlign: 'center',
-                    marginTop: '85px'
+                    marginTop: {xs: 'none', md: '85px'},
+                    paddingTop: {xs: '17px', md: 'none'},
                 }}>
                     READY TO GET STARTED?
                 </Typography>
@@ -39,11 +35,12 @@ function ServiceCTA1() {
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
-                    fontSize: '24px',
-                    lineHeight: '33px',
+                    fontSize: {xs: '16px', md: '24px'},
+                    lineHeight: {xs: '22px', md: '33px'},
                     color: '#ffffff',
                     textAlign: 'center',
-                    margin: '23px 0 100px 0'
+                    margin: {xs: '25px 0 0 0', md: '23px 0 100px 0'},
+                    padding: {xs: '0 80px 50px 80px', md: 'none'}
                 }}>
                     Book your first flight, Charter or get in touch
                 </Typography>
