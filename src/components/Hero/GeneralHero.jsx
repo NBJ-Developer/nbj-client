@@ -6,13 +6,13 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/ContainedButtons'
 import Link from '@mui/material/Link';
 import { Typography } from '@mui/material';
 
-const pages = ['Home', 'Benefits', 'Services', 'Contact Us'];
+const pages = ['Home', 'About', 'Services', 'Contact'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,7 +26,7 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" elevation={0}>
       <Container maxWidth="xl" sx={{ background: { 
         xs: '#000000', 
         md: '#000000' 
@@ -124,13 +124,19 @@ const NavBar = () => {
             display: { xs: 'none', md: 'flex' },
         }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ marginRight: '50px', color: 'white', display: 'block', textTransform: 'Capitalize' }}
-              >
-                {page}
-              </Button>
+              <Link
+              href={`/${page}`}
+              key={page}
+              onClick={handleCloseNavMenu}
+              sx={{ marginRight: '50px', 
+                color: 'white', 
+                display: 'block', 
+                textTransform: 'Capitalize',
+                textDecoration: 'none' 
+              }}
+            >
+              {page}
+              </Link>
             ))}
           </Box>
 

@@ -12,7 +12,7 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 
-const pages = ['About', 'Benefits', 'Services', 'Contact Us'];
+const pages = ['About', 'Benefits', 'Services', 'Contact'];
 
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -26,32 +26,34 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" elevation={0}>
       <Container maxWidth="xl" sx={{ background: { 
         xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
         md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
-        height: { xs: '129px', md: '167px' },
-        paddingTop: '18px'
+        height: { xs: '120px', md: '150px' },
+        paddingTop: '18px',
         }}>
         <Toolbar disableGutters sx={{alignItems: 'center'}}>
           <Box sx={{ flexGrow: 1 }}>
 
             {/* SMALL DEVICE */}
-            <Box sx={{  display: { xs: 'flex', md: 'none' },
-                        width: '25vw',
-                        height: '35px',
-                        background: '#d9d9d9',
-                        borderRadius: '10px',
-                        marginLeft: '15px'
+            <Box sx={{  
+              display: { xs: 'flex', md: 'none' },
+              width: '25vw',
+              height: '35px',
+              background: '#d9d9d9',
+              borderRadius: '10px',
+              marginLeft: '15px'
             }}></Box>
 
             {/* MEDIUM DEVICE */}
-            <Box sx={{  display: { xs: 'none', md: 'flex' },
-                        width: '30%',
-                        height: '45px',
-                        background: '#d9d9d9',
-                        borderRadius: '10px',
-                        marginLeft: '60px'
+            <Box sx={{  
+              display: { xs: 'none', md: 'flex' },
+              width: '30%',
+              height: '45px',
+              background: '#d9d9d9',
+              borderRadius: '10px',
+              marginLeft: '60px'
             }}></Box>
           </Box>
 
@@ -91,57 +93,71 @@ const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' }, backgroundColor: 'rgba(18, 18, 18, 0.37)'
+                display: { xs: 'block', md: 'none' }, 
+                backgroundColor: 'rgba(18, 18, 18, 0.37)'
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link href={`/${page}`} textAlign="center" sx={{backgroundColor: '#D9D9D9', width: '150px', height: '40px', paddingTop: '8px'}}>{page}</Link>
+                  <Link href={`/${page}`} 
+                    textAlign="center" 
+                    sx={{
+                      backgroundColor: '#D9D9D9', 
+                      width: '150px', 
+                      height: '40px', 
+                      paddingTop: '8px',
+                      boxShadow: 'none'
+                    }}>{page}</Link>
                   <Typography textAlign="center" 
-                              sx={{ backgroundColor: '#D9D9D9', 
-                                    width: '38vw', 
-                                    height: '40px', 
-                                    paddingTop: '8px'
-                                  }}>
+                              sx={{ 
+                                backgroundColor: '#D9D9D9', 
+                                width: '38vw', 
+                                height: '40px', 
+                                paddingTop: '8px'
+                              }}>
                                       {page}
                   </Typography>
                 </MenuItem>
               ))}
-              <Box sx={{  flexGrow: 0, 
-                          display: { xs: 'block', md: 'none' }, 
-                          marginLeft: '30px', 
-                          marginTop: '14px'
-                      }}>
+              <Box sx={{  
+                flexGrow: 0, 
+                display: { xs: 'block', md: 'none' }, 
+                marginLeft: '30px', 
+                marginTop: '14px'
+              }}>
                 <ContainedButtons textAlign="center" />
               </Box>
             </Menu>
           </Box>
 
           {/* MEDIUM DEVICE */}
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' },
-                     alignItems: 'center' }}>
+          <Box sx={{ 
+            flexGrow: 0, 
+            display: { xs: 'none', md: 'flex' },
+            alignItems: 'center' }}>
             {pages.map((page) => (
               <Link
               href={`/${page}`}
                 key={page}
-                sx={{ my: 2, mx: 8, color: 'white', display: 'block', textTransform: 'Capitalize' }}
                 onClick={handleCloseNavMenu}
-                // sx={{ my: 5, 
-                //       mx: 4, 
-                //       color: 'white', 
-                //       display: 'block', 
-                //       textTransform: 'Capitalize' 
-                //     }}
+                sx={{ my: 5, 
+                      mx: 8, 
+                      color: 'white', 
+                      display: 'block', 
+                      textTransform: 'Capitalize',
+                      textDecoration: 'none' 
+                    }}
               >
                 {page}
               </Link>
             ))}
           </Box>
 
-          <Box sx={{  flexGrow: 0, 
-                      display: { xs: 'none', md: 'flex' },
-                      marginRight: '10px' 
-                    }}>
+          <Box sx={{  
+            flexGrow: 0, 
+            display: { xs: 'none', md: 'flex' },
+            marginRight: '10px' 
+          }}>
             <ContainedButtons />
           </Box>
 
