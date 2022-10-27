@@ -82,7 +82,8 @@ export default function Services() {
                         justifyContent: 'center'
                     }}>
                 <Box sx={{  maxWidth: '55%', 
-                            flexGrow: 1 }}>
+                            flexGrow: 1 
+                        }}>
                     
                     <AutoPlaySwipeableViews
                         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

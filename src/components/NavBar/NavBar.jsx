@@ -72,6 +72,7 @@ function ResponsiveAppBar() {
             marginRight: '10px' 
           }}>
             <ContainedButtons buttonLabel={'Get a Quote'} />
+
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
