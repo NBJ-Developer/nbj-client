@@ -8,13 +8,16 @@ import { FiTwitter, FiInstagram } from 'react-icons/fi'
 import FootLine from '../../assets/images/Big Rule.png'
 import Footline from '../../assets/images/Small Rule.png'
 import Typography from '@mui/material/Typography';
+import { color } from '@mui/system';
 
 
 
 export default function Footer() {
   
   return (
-    <Box>
+    <Box sx={{
+        backgroundColor: '#203578'
+    }}>
         {/* SMALL DEVICE */}
         <BottomNavigation sx={{ 
             display: {xs: 'block', md: 'none'},
@@ -24,7 +27,7 @@ export default function Footer() {
             marginTop: '56px',
             maxWidth: '100%',
             height: '334px',
-            background: '#000000'
+            background: '#203578'
         }}>
             <Box sx={{ 
                 display: 'flex',
@@ -74,7 +77,7 @@ export default function Footer() {
                     paddingTop: '3px'
                 }}>
                     <a href="/" style={{
-                        color: '#000000',
+                        color: '#203578',
                         cursor: 'pointer'
                     }}>
                         <TiSocialLinkedinCircular style={{ 
@@ -85,7 +88,7 @@ export default function Footer() {
                     </a>
 
                     <a href="/" style={{
-                        color: '#000000',
+                        color: '#203578',
                         cursor: 'pointer'
                     }}>
                         <FiTwitter style={{ 
@@ -96,7 +99,7 @@ export default function Footer() {
                     </a>
 
                     <a href="/" style={{
-                        color: '#000000',
+                        color: '#203578',
                         cursor: 'pointer'
                     }}>
                         <FiInstagram style={{ 
@@ -180,7 +183,7 @@ export default function Footer() {
             marginTop: '119px',
             maxWidth: '100%',
             height: '611px',
-            background: '#000000'
+            background: '#203578'
         }}>
             <Box sx={{      
                 display: 'flex',
@@ -377,7 +380,7 @@ export default function Footer() {
                         paddingTop: '5px'
                     }}>
                         <a href="/" style={{
-                            color: '#000000',
+                            color: '#203578',
                             cursor: 'pointer'
                         }}>
                             <TiSocialLinkedinCircular style={{ 
@@ -388,7 +391,7 @@ export default function Footer() {
                         </a>
 
                         <a href="/" style={{
-                            color: '#000000',
+                            color: '#203578',
                             cursor: 'pointer'
                         }}>
                             <FiTwitter style={{ 
@@ -399,7 +402,7 @@ export default function Footer() {
                         </a>
 
                         <a href="/" style={{
-                            color: '#000000',
+                            color: '#203578',
                             cursor: 'pointer'
                         }}>
                             <FiInstagram style={{ 
@@ -410,19 +413,20 @@ export default function Footer() {
                         </a>
                     </Box>
             </Box>
-
-            <Box sx={{  
+            
+            <Box sx={{
                 display: 'flex',
-                justifyContent: 'center',
-                marginTop: '56px'
+                justifyContent: 'center'
             }}>
-                <img src={FootLine} 
-                    alt="" 
-                    style={{
-                        width: '90%'
-                    }} 
-                />
+                <Box sx={{
+                marginTop: '56px',
+                width: '80%',
+                height: '3px',
+                backgroundColor: '#F9A020'
+            }}>
             </Box>
+            </Box>
+            
 
             <Box sx={{  
                 display: 'flex',
