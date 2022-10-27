@@ -1,20 +1,20 @@
+
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import ContainedButtons from '../../elements/Button/ContainedButtons'
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
+import ContainedButtons from '../../elements/Button/ContainedButtons';
 
+const pages = ['About', 'Media', 'Services', 'Contact Us'];
 
-const pages = ['About', 'Benefits', 'Services', 'Contact'];
-
-const NavBar = () => {
+function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -26,48 +26,56 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="sticky" elevation={0}>
-      <Container maxWidth="xl" sx={{ background: { 
-        xs: 'linear-gradient(to right,  #ffffff 0%,#ffffff 50%,#000000 50%,#000000 100%)',
-        md: 'linear-gradient(to right,  #ffffff 0%,#ffffff 25%,#000000 25%,#000000 100%)' },
-        height: { xs: '120px', md: '150px' },
-        paddingTop: '18px',
-        }}>
-        <Toolbar disableGutters sx={{alignItems: 'center'}}>
-          <Box sx={{ flexGrow: 1 }}>
+    <AppBar position="static" >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        backgroundColor: 'none',
+      }}>
+          <Box sx={{
+            display: {xs:'none', md:'flex'}
+          }}>
+            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '100px'}}/>
+            <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              mt: 1,
+              fontWeight: 700,
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            NBJ VIP 
+          </Typography>
+          </Box>
+          <Box sx={{ 
+            display: { xs: 'none', md: 'flex' } 
+            }}>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ mx: 3, color: 'white', display: 'block' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+          <Box sx={{  
+            flexGrow: 0, 
+            display: { xs: 'none', md: 'flex' },
+            marginRight: '10px' 
+          }}>
+            <ContainedButtons buttonLabel={'Get a Quote'} />
 
-            {/* SMALL DEVICE */}
-            <Box sx={{  
-              display: { xs: 'flex', md: 'none' },
-              width: '25vw',
-              height: '35px',
-              background: '#d9d9d9',
-              borderRadius: '10px',
-              marginLeft: '15px'
-            }}></Box>
-
-            {/* MEDIUM DEVICE */}
-            <Box sx={{  
-              display: { xs: 'none', md: 'flex' },
-              width: '30%',
-              height: '45px',
-              background: '#d9d9d9',
-              borderRadius: '10px',
-              marginLeft: '60px'
-            }}></Box>
           </Box>
 
-
-          {/* SMALL DEVICE */}
-          <Box sx={
-            { 
-              flexGrow: 0, 
-              display: {
-                 xs: 'flex', md: 'none' 
-                 },
-                 my: 4, 
-                }
-              }>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -93,77 +101,19 @@ const NavBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' }, 
-                backgroundColor: 'rgba(18, 18, 18, 0.37)'
+                display: { xs: 'block', md: 'none' },
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link href={`/${page}`} 
-                    textAlign="center" 
-                    sx={{
-                      backgroundColor: '#D9D9D9', 
-                      width: '150px', 
-                      height: '40px', 
-                      paddingTop: '8px',
-                      boxShadow: 'none'
-                    }}>{page}</Link>
-                  <Typography textAlign="center" 
-                              sx={{ 
-                                backgroundColor: '#D9D9D9', 
-                                width: '38vw', 
-                                height: '40px', 
-                                paddingTop: '8px'
-                              }}>
-                                      {page}
-                  </Typography>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
-              <Box sx={{  
-                flexGrow: 0, 
-                display: { xs: 'block', md: 'none' }, 
-                marginLeft: '30px', 
-                marginTop: '14px'
-              }}>
-                <ContainedButtons textAlign="center" />
-              </Box>
             </Menu>
           </Box>
-
-          {/* MEDIUM DEVICE */}
-          <Box sx={{ 
-            flexGrow: 0, 
-            display: { xs: 'none', md: 'flex' },
-            alignItems: 'center' }}>
-            {pages.map((page) => (
-              <Link
-              href={`/${page}`}
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 5, 
-                      mx: 8, 
-                      color: 'white', 
-                      display: 'block', 
-                      textTransform: 'Capitalize',
-                      textDecoration: 'none' 
-                    }}
-              >
-                {page}
-              </Link>
-            ))}
-          </Box>
-
-          <Box sx={{  
-            flexGrow: 0, 
-            display: { xs: 'none', md: 'flex' },
-            marginRight: '10px' 
-          }}>
-            <ContainedButtons />
-          </Box>
-
         </Toolbar>
       </Container>
     </AppBar>
   );
-};
-export default NavBar;
+}
+export default ResponsiveAppBar;
