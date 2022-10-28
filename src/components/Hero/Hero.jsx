@@ -3,6 +3,8 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import { Typography } from '@mui/material';
+import OrdinaryButton from '../../elements/Button/OrdinaryButton';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -26,12 +28,18 @@ function SwipeableTextMobileStepper() {
   };
 
   return (
-    <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
+    <Box>
+      <Box sx={{ 
+      maxWidth: '100%', 
+      flexGrow: 1,
+      position: 'relative' 
+      }}>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
+        interval={'6000'}
       >
         {images.map((step, index) => (
           <div key={step.label}>
@@ -51,7 +59,61 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
+      <Box sx={{ 
+      position: 'absolute',
+      top: '200px',
+      left: '80px',
+      width: '550px', 
+      }}>
+        <Typography sx={{ 
+          font: 'Raleway',
+          fontWeight: '700',
+          fontSize: '64px',
+          lineHeight: '85px',
+          color: '#ffffff', 
+      }}>
+          Big Text Header 2 lines
+        </Typography >
+        <Typography sx={{ 
+          mt: '5px',
+          font: 'Raleway',
+          fontWeight: '300',
+          fontSize: '24px',
+          lineHeight: '24px',
+          color: 'rgba(255, 255, 255, 0.9)', 
+      }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Et augue ante tellus non leo.
+        </Typography>
+        <Box sx={{
+          mt: '30px',
+        }}>
+          <OrdinaryButton/>
+        </Box>
+        
+      </Box>
     </Box>
+    <Box sx={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          backgroundColor: '#4264CC',
+          paddingY: '30px',
+        }}>
+      <Typography sx={{
+          textAlign: 'center',
+          color: '#FFFFFF',
+          marginY: '20px',
+          width: '60%',
+        }}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et augue 
+        ante tellus non leo. Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit. Et augue ante tellus non leo.
+      </Typography>
+    </Box>
+    
+    </Box>
+    
   );
 }
 

@@ -26,7 +26,7 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" >
+    <AppBar position="sticky" >
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{
         display: 'flex',
@@ -39,18 +39,19 @@ function ResponsiveAppBar() {
             <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '100px'}}/>
             <Typography
             variant="h6"
-            noWrap
             component="a"
             href="/"
             sx={{
-              mr: 2,
               mt: 1,
+              width: '165px',
+              lineHeight: '15px',
+              textAlign: 'center',
               fontWeight: 700,
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            NBJ VIP 
+            NBJ VIP GROUND HANDLING LTD 
           </Typography>
           </Box>
           <Box sx={{ 
