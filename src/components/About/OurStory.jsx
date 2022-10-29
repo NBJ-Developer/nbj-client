@@ -127,7 +127,8 @@ export default function OurStory() {
       {/* MEDIUM DEVICE */}
       <Box sx={{  
         display: {xs: 'none', md: 'block'},
-        width: '78%',
+        width: '75%',
+        maxHeight: '71.5vh',
         background: '#ffffff',
         borderRadius: '0px 40px 40px 0px',
         marginTop: '139px',
@@ -191,7 +192,7 @@ export default function OurStory() {
           <Box
             component="img"
             sx={{
-              height: '100vh',
+              height: '71.5vh',
               display: 'block',
               overflow: 'hidden',
             }}

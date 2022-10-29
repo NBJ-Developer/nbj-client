@@ -11,32 +11,36 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import SubServices from './SubServices';
+import ServicesCard from './ServicesCard';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-    const images = [
+    const content = [
     {
         label: 'Ground Support',
-        imgPath: 'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+        imgPath: 'airplain3.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
     },
     {
         label: 'Aircraft Charter & Bookings',
-        imgPath: 'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+        imgPath: 'service1.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
     },
     {
         label: 'Maintenance',
-        imgPath: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+        imgPath: 'service2.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
     },
     {
         label: 'Wings Inflight',
-        imgPath: 'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+        imgPath: 'service3.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
     },
     ];
 
 export default function Services() {
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
-    const maxSteps = images.length;
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -53,7 +57,7 @@ export default function Services() {
   return (
     <Box>
         {/* SMALL DEVICE */}
-        <Box sx={{ 
+        {/* <Box sx={{ 
             display: {xs: 'block', md: 'none'},
             marginTop: '56px',
             width: '100%'
@@ -156,7 +160,7 @@ export default function Services() {
                     />
                 </Box>
             </Box>
-        </Box>
+        </Box> */}
 
         {/* MEDIUM DEVICE */}
         <Box sx={{    
@@ -194,32 +198,17 @@ export default function Services() {
                 color: '#000000',
                 margin: '15px 0'
             }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Typography>
-
-            <Box sx={{  
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center'
+            <Box sx={{ 
+              display: 'flex',
+              justifyContent: 'center',
+              marginTop: '50px'
             }}>
-                <Box sx={{  
-                    width: '90%',
-                    display: 'flex',
-                    justifyContent: 'center'
-                }}>
-                    <SubServices />
-                    <SubServices />
-                    <SubServices />
-                    <SubServices />
-                </Box>
-            </Box>
-                    
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '50px'
-            }}>
-                <ContainedButtonsMB />
+              <ServicesCard content={content[0]}/>
+              <ServicesCard content={content[1]}/>
+              <ServicesCard content={content[2]}/>
+              <ServicesCard content={content[3]}/>
             </Box>
         </Box>
 
