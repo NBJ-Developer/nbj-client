@@ -8,7 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 //import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import ContainedButtons from '../../elements/Button/ContainedButtons'
+import PrimaryButtons from '../../elements/Button/PrimaryButtons'
 import Link from '@mui/material/Link';
 import { Typography } from '@mui/material';
 
@@ -113,7 +113,7 @@ const NavBar = () => {
                 </MenuItem>
               ))}
               <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' }, justifyContent:'center', }}>
-                <ContainedButtons textAlign="center"/>
+                <PrimaryButtons textAlign="center"/>
               </Box>
             </Menu>
           </Box>
@@ -143,7 +143,7 @@ const NavBar = () => {
           <Box sx={{ 
             flexGrow: 0,
             display: { xs: 'none', md: 'flex' } }}>
-            <ContainedButtons />
+            <PrimaryButtons />
           </Box>
 
         </Toolbar>

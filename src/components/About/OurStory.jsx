@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { BsArrowRightCircle } from 'react-icons/bs'
 import Wvector from '../../assets/images/BBVector.png'
-import ContainedButtons from '../../elements/Button/ContainedButtons';
+import ContainedButtons from '../../elements/Button/PrimaryButtons';
 import Typography from '@mui/material/Typography';
 
 
@@ -151,12 +151,8 @@ export default function OurStory() {
                 fontWeight: '700',
                 fontSize: '32px',
                 lineHeight: '38px',
-                letterSpacing: '0.025em'
               }} variant='h1'>
-                OUR
-                <span className='span1'>
-                  STORY
-                </span>
+                OUR <span className='span1'>STORY</span>
               </Typography>
             </Box>
 

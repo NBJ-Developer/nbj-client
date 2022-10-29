@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import OrdinaryButton from '../../elements/Button/OrdinaryButton';
+import SecondaryButton from '../../elements/Button/SecondaryButton';
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -49,7 +49,7 @@ export default function CallToAction() {
           justifyContent: 'center',
           marginTop: '25px'
         }}>
-          <OrdinaryButton />
+          <SecondaryButton />
         </Box>
         <Box sx={{
           display: 'flex',
@@ -57,26 +57,26 @@ export default function CallToAction() {
           marginTop: '25px',
           paddingBottom: '25px'
         }}>
-          <OrdinaryButton />
+          <SecondaryButton />
         </Box>
       </Box>
 
       {/* MEDIUM DEVICE */}
       <Box sx={{  
         display: {xs: 'none', md: 'block'},
-        marginTop: '119px'
+        marginTop: '90px'
       }}>
         <Box sx={{ 
           display: 'flex',
+          justifyContent: 'space-between',
           maxWidth: '100%',
-          height: '473px',
-          background: '#000000',
-          paddingTop: '60px'
+          height: '450px',
+          background: '#2B47A1',
+          py: 5,
+          px: 20,
         }}>
           <Box sx={{  
-            width: '33%',
-            position: 'absolute',
-            left: '12%'
+            width: '40%',
           }}>
             <Typography sx={{
               fontFamily: 'Raleway',
@@ -105,7 +105,6 @@ export default function CallToAction() {
               fontStyle: 'normal',
               fontWeight: '400',
               fontSize: '20px',
-              lineHeight: '27px',
               color: '#FFFFFF',
               textDecoration: 'none',
               display: 'flex',
@@ -148,14 +147,16 @@ export default function CallToAction() {
             <Box sx={{ 
               marginTop: '34px'
             }}>
-              <OrdinaryButton />
+              <SecondaryButton buttonLabel={'Button'}/>
             </Box>
           </Box>
-          <Box sx={{  
-            width: '33%',
+          <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',  
+            width: '40%',
             height: '325px',
-            position: 'absolute',
-            left: '55%',
             textAlign: 'center'
           }}>
             <Typography sx={{
@@ -165,7 +166,7 @@ export default function CallToAction() {
               fontSize: '36px',
               lineHeight: '42px',
               color: '#ffffff',
-              marginTop: '20px'
+              mt: 4,
             }} variant='h1'>
               READY TO GET STARTED?
             </Typography>
@@ -176,7 +177,8 @@ export default function CallToAction() {
               fontSize: '20px',
               lineHeight: '27px',
               color: '#ffffff',
-              marginTop: '72px'
+              width: '60%',
+              mt: 6,
             }}>
               Book a flight, charter, get a quote or get in touch
             </Typography>
@@ -186,8 +188,7 @@ export default function CallToAction() {
               justifyContent: 'space-around',
               marginTop: '72px'
             }}>
-              <OrdinaryButton />
-              <OrdinaryButton />
+              <SecondaryButton buttonLabel={'Button'}/>
             </Box>
           </Box>
         </Box>

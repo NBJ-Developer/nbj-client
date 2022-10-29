@@ -4,13 +4,14 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import ContainedButtons from '../../elements/Button/ContainedButtons';
+import ContainedButtons from '../../elements/Button/PrimaryButtons';
 
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{ 
         maxWidth: 320,
-        mr: 2, 
+        mr: 2,
+        pb: 2, 
         }}>
       <CardActionArea>
         <CardMedia
@@ -20,7 +21,15 @@ export default function ServicesCard({ content }) {
           alt={content.imgPath}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom component="div" sx={{
+            fontFamily: 'Raleway',
+            fontSize: '20px',
+            fontWeight: 600,
+            lineHeight: '23px',
+            letterSpacing: '0em',
+            textAlign: 'center',
+            
+          }}>
             {content.label}
           </Typography>
           <Typography variant="body2" color="text.secondary">

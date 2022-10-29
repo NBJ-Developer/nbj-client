@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import OrdinaryButton from '../../elements/Button/OrdinaryButton'
+import SecondaryButton from '../../elements/Button/SecondaryButton'
 
 function ServiceCTA2() {
   return (
@@ -46,7 +46,7 @@ function ServiceCTA2() {
           justifyContent: 'center',
           marginTop: '25px'
         }}>
-          <OrdinaryButton />
+          <SecondaryButton />
         </Box>
         <Box sx={{
           display: 'flex',
@@ -54,7 +54,7 @@ function ServiceCTA2() {
           marginTop: '25px',
           paddingBottom: '25px'
         }}>
-          <OrdinaryButton />
+          <SecondaryButton />
         </Box>
         </Box>
 
@@ -103,11 +103,11 @@ function ServiceCTA2() {
                         alignItems: 'center',
                         marginTop: '50px'
                     }}>
-                        <OrdinaryButton />
+                        <SecondaryButton />
                         <Box sx={{
                             marginLeft: '30px'
                         }}>
-                            <OrdinaryButton />
+                            <SecondaryButton />
                         </Box>
                     </Box>
                 </Box> 

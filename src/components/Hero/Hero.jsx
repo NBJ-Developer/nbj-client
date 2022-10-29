@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import { Typography } from '@mui/material';
-import OrdinaryButton from '../../elements/Button/OrdinaryButton';
+import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -19,7 +19,7 @@ const images = [
   },
 ];
 
-function SwipeableTextMobileStepper() {
+function SwipeableHeroStepper() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
 
@@ -88,7 +88,7 @@ function SwipeableTextMobileStepper() {
         <Box sx={{
           mt: '30px',
         }}>
-          <OrdinaryButton/>
+          <PrimaryButtons buttonLabel={'Explore'}/>
         </Box>
         
       </Box>
@@ -117,4 +117,4 @@ function SwipeableTextMobileStepper() {
   );
 }
 
-export default SwipeableTextMobileStepper;
+export default SwipeableHeroStepper;
