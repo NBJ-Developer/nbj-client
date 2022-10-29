@@ -7,9 +7,9 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 export default function ContainedButtons({buttonLabel}) {
   return (
     <Stack direction="row" spacing={2}>
-      <Button variant="contained" href="#contained-buttons" className='but' sx={{ 
+      <Button variant="contained" sx={{ 
         height: {xs: '30px', md: '43px'},
-        backgroundColor: {xs: '#000000', md: '#ffffff'},
+        backgroundColor: {xs: '#000000', md: '#F9A020'},
         fontFamily: 'Raleway',
         fontStyle: 'normal',
         color: {xs: '#ffffff', md: '#000000'},
