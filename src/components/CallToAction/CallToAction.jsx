@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
+import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -13,9 +14,11 @@ export default function CallToAction() {
     <Box>
       {/* SMALL DEVICE */}
       <Box sx={{  
-        display: {xs: 'block', md: 'none'},
+        display: {xs: 'flex', md: 'none'},
+        flexDirection: 'column',
+        alignItems: 'center',
         maxWidth: '100%',
-        background: '#000000',
+        background: '#2B47A1',
         marginTop: '50px',
         textAlign: 'center'
       }}>
@@ -26,7 +29,7 @@ export default function CallToAction() {
           fontSize: '24px',
           lineHeight: '28px',
           color: '#ffffff',
-          paddingTop: '17px'
+          pt: 3,
         }} variant='h1'>
           READY TO GET STARTED
         </Typography>
@@ -38,27 +41,16 @@ export default function CallToAction() {
           lineHeight: '22px',
           textAlign: 'center',
           color: '#ffffff',
-          padding: '0 20px',
-          marginTop: '25px'
+          py: 3,
         }}>
           Book a flight, charter, get a quote or get in touch?
         </Typography>
-
         <Box sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: '25px'
+          mb: 3,
         }}>
-          <SecondaryButton />
+          <PrimaryButtons buttonLabel={'Contact Us'} />
         </Box>
-        <Box sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: '25px',
-          paddingBottom: '25px'
-        }}>
-          <SecondaryButton />
-        </Box>
+          
       </Box>
 
       {/* MEDIUM DEVICE */}

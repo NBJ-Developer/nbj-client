@@ -6,22 +6,21 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 
 export default function PrimaryButtons({buttonLabel, buttonDimension}) {
   return (
-    <Stack direction="row" spacing={2}>
-      <Button variant="contained" sx={{ 
-        height: {xs: '30px', md: '43px'},
-        backgroundColor: {xs: '#000000', md: '#F9A020'},
+    <Stack direction="row" spacing={2} >
+      <Button variant="contained" sx={{
+        backgroundColor: '#F9A020',
         fontFamily: 'Raleway',
         fontStyle: 'normal',
-        color: {xs: '#ffffff', md: '#000000'},
+        color: '#ffffff',
         textTransform: 'Capitalize',
-        borderRadius: {xs: '7px 0 7px 0', md: '10px 0 10px 0'},
+        borderRadius: '10px 0 10px 0',
         '&:hover': {
           backgroundColor: 'inherit',
           opacity: [0.9, 0.8, 0.7],
           color: '#F9A020',
           border: '1px solid #F9A020',
         },
-        fontSize: {xs: '10px', md: '16px'}
+        fontSize: '20px',
         }}>
         {buttonLabel}
         <BsArrowRightCircle style={{marginLeft: '10px'}}/>
