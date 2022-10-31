@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 //import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { BsArrowRightCircle } from 'react-icons/bs'
 
-export default function PrimaryButtons({buttonLabel}) {
+export default function PrimaryButtons({buttonLabel, buttonDimension}) {
   return (
     <Stack direction="row" spacing={2}>
       <Button variant="contained" sx={{ 

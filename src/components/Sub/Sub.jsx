@@ -2,9 +2,12 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import Typography from '@mui/material/Typography';
+import image from './airplain3.png'
+import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 
 
 export default function Sub() {
+
   return (
     <Box>
       {/* SMALL DEVICE */}
@@ -68,19 +71,29 @@ export default function Sub() {
             marginTop: '119px',
             justifyContent: 'center'
         }}>
-            <Box sx={{  
-                width: '60vw',
-                height: '224px',
-                background: '#d9d9d9',
-                borderRadius: '50px 0'
+            <Box style={{
+               backgroundImage: `url(${image})`,
+               backgroundRepeat: 'no-repeat',
+               backgroundSize: '100% 100%',
+            }} 
+            sx={{ 
+              mt: 8, 
+              width: '60vw',
+              borderRadius: '50px 0',
             }}>
-                <Typography sx={{
+              <Box sx={{ 
+              width: '100%',
+              py: 2,
+              borderRadius: '50px 0',
+              background: 'rgba(0, 0, 0, 0.51)',
+            }}>
+                 <Typography sx={{
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '600',
                     fontSize: '24px',
                     lineHeight: '33px',
-                    color: '#000000',
+                    color: '#ffffff',
                     textAlign: 'center',
                     marginTop: '30px'
                 }} variant='h1'>
@@ -92,7 +105,7 @@ export default function Sub() {
                     fontWeight: '400',
                     fontSize: '18px',
                     lineHeight: '25px',
-                    color: '#000000',
+                    color: '#ffffff',
                     textAlign: 'center',
                     marginTop: '10px'
                 }}>
@@ -104,26 +117,31 @@ export default function Sub() {
                     alignItems: 'center',
                     marginTop: '20px'
                 }}>
-                    <input type="email" 
-                        placeholder='Enter Email' 
-                        style={{
-                            width: '60%',
-                            height: '48px',
-                            border: 'none',
-                            background: ' rgba(255, 255, 255, 0.65)',
-                            borderRadius: '20px 0 0 0',
-                            margin: '8px 0',
-                            padding: '12px 12px', 
-                            '&:focus': {
-                             outline: 'none'
-                            }
-                        }} 
-                        required 
+                    <input 
+                      type="email"
+                      required  
+                      placeholder='Enter Email' 
+                      style={{
+                      width: '60%',
+                      height: '41px',
+                      border: 'none',
+                      background: ' rgba(255, 255, 255, 0.65)',
+                      borderRadius: '20px 0 0 0',
+                      margin: '8px 0',
+                      padding: '12px 12px', 
+                      '&:focus': {
+                        outline: 'none'
+                      }
+                    }} 
                     />
-                    <Box sx={{ marginLeft: '-50px'}}>
-                        <ContainedButtonsMB />
+                    <Box sx={{ 
+                      marginRight: '10px',
+                    }}>
+                        <PrimaryButtons buttonLabel={'Button'} />
                     </Box>
                 </Box>
+              </Box>
+               
             </Box>
         </Box>
       

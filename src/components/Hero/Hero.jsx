@@ -30,11 +30,14 @@ function SwipeableHeroStepper() {
   return (
     <Box>
       <Box sx={{ 
-      maxWidth: '100%', 
-      flexGrow: 1,
-      position: 'relative' 
+        maxWidth: '100%', 
+        flexGrow: 1,
+        position: 'relative' 
       }}>
-      <AutoPlaySwipeableViews
+      <Box sx={{
+        display: {xs: 'none', md: 'flex'}, 
+      }}>
+        <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
@@ -59,22 +62,30 @@ function SwipeableHeroStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
+      </Box>
+      <Box sx={{
+          display: {xs: 'block', md: 'none'},
+        }}>
+        <img src="airplainMobile.png" alt="NBJ-LOGO" style={{width: '100%'}}/>
+      </Box>
       <Box sx={{ 
-      position: 'absolute',
-      top: '200px',
-      left: '80px',
-      width: '550px', 
+        position: 'absolute',
+        top: {xs: '520px', md:'200px'},
+        left: {xs: '10px', md: '80px'},
+        width: '550px', 
       }}>
         <Typography sx={{ 
           font: 'Raleway',
           fontWeight: '700',
-          fontSize: '64px',
-          lineHeight: '85px',
-          color: '#ffffff', 
+          fontSize: {xs: '38px', md:'64px'},
+          lineHeight: {xs: '37px', md: '85px'},
+          color: '#ffffff',
+          textAlign: {xs: 'center', md: 'left'}, 
       }}>
           Big Text Header 2 lines
         </Typography >
         <Typography sx={{ 
+          display: {xs: 'none', md: 'block'},
           mt: '5px',
           font: 'Raleway',
           fontWeight: '300',
@@ -93,13 +104,26 @@ function SwipeableHeroStepper() {
         
       </Box>
     </Box>
+    <Typography sx={{ 
+      display: {xs: 'block', md: 'none'},
+      mt: '15px',
+      px: 4,
+      textAlign: 'center',
+      font: 'Raleway',
+      fontWeight: '300',
+      fontSize: '24px',
+      lineHeight: '30px',
+    }}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Et augue ante tellus non leo.
+    </Typography>
     <Box sx={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          backgroundColor: '#4264CC',
-          paddingY: '30px',
-        }}>
+      display: {xs: 'none', md: 'flex'},
+      width: '100%',
+      justifyContent: 'center',
+      backgroundColor: '#4264CC',
+      paddingY: '30px',
+    }}>
       <Typography sx={{
           textAlign: 'center',
           color: '#FFFFFF',

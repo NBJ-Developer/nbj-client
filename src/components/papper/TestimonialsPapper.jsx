@@ -8,6 +8,9 @@ export default function TestimonialsPapper({ data }) {
 <Box>
   <Paper sx={{
   p: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
   minHeight: '220px'
   }}>
     <Typography sx={{
@@ -19,6 +22,7 @@ export default function TestimonialsPapper({ data }) {
     {data.label}
     </Typography>
     <Typography sx={{
+      mt: 1,
       font: 'Open Sans',
       fontWeight: '400',
       fontSize: '16px',

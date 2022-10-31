@@ -1,6 +1,5 @@
 
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -11,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
+import AppBar from '@mui/material/AppBar';
 
 const pages = ['About', 'Media', 'Services', 'Contact Us'];
 
@@ -26,92 +26,103 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky" sx={{
+      backgroundColor: '#203578',
+    }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        backgroundColor: 'none',
-      }}>
+          display: {md:'flex'},
+          width: '100%',
+          justifyContent: 'space-between',
+        }}>
+        {/* NBJ logo for the nav bar */}
+        <Box>
           <Box sx={{
-            display: {xs:'none', md:'flex'}
+          display: 'flex',
+          p:2,
           }}>
-            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '100px'}}/>
-            <Typography
+          <Box sx={{
+          backgroundColor: '#ffffff',
+          borderRadius: '50%',
+          }}>
+            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '50px', height: '50px'}}/>
+          </Box>
+          <Typography
             variant="h6"
             component="a"
             href="/"
             sx={{
-              mt: 1,
-              width: '165px',
-              lineHeight: '15px',
-              textAlign: 'center',
-              fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
+            display: {xs: 'none', md: 'block'},
+            mt: 1,
+            width: '165px',
+            lineHeight: '20px',
+            textAlign: 'center',
+            fontWeight: 700,
+            color: 'inherit',
+            textDecoration: 'none',
             }}
           >
             NBJ VIP GROUND HANDLING LTD 
           </Typography>
           </Box>
-          <Box sx={{ 
-            display: { xs: 'none', md: 'flex' } 
-            }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ mx: 3, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-          <Box sx={{  
-            flexGrow: 0, 
-            display: { xs: 'none', md: 'flex' },
-            marginRight: '10px' 
+        </Box>
+        {/* Navigation Links for the nav bar */}
+        <Box sx={{ 
+          display: { xs: 'none', md: 'flex' } 
           }}>
-            <ContainedButtons buttonLabel={'Get a Quote'} />
-
-          </Box>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
+          {pages.map((page) => (
+            <Button
+              key={page}
+              onClick={handleCloseNavMenu}
+              sx={{ mx: 3, color: 'white', display: 'block' }}
             >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              {page}
+            </Button>
+          ))}
+        </Box>
+        {/* Get a quote button */}
+        <Box sx={{  
+          display: { xs: 'none', md: 'flex' },
+          mr: 3, 
+        }}>
+          <ContainedButtons buttonLabel={'Get a Quote'} />
+        </Box>
+        {/* Menu Icon for the mobile view */}
+        <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+          <IconButton
+            size="large"
+            aria-label="account of current user"
+            aria-controls="menu-appbar"
+            aria-haspopup="true"
+            onClick={handleOpenNavMenu}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorElNav}
+            anchorOrigin={{
+              vertical: 'bottom',
+              horizontal: 'left',
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            open={Boolean(anchorElNav)}
+            onClose={handleCloseNavMenu}
+            sx={{
+              display: { xs: 'block', md: 'none' },
+            }}
+          >
+            {pages.map((page) => (
+              <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">{page}</Typography>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Box>
         </Toolbar>
       </Container>
     </AppBar>

@@ -13,7 +13,7 @@ import Testimonials from '../../components/Testimonials/Testimonials'
 const Home = () => {
   return (
     <div>
-      <NavBar />
+      <NavBar/>
       <Hero />
       <Benefits />
       <OurStory />

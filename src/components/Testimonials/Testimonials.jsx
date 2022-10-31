@@ -76,7 +76,7 @@ export default function Testimonials() {
           textAlign: 'center',
           marginTop: '14px'
         }}>
-          What our Clients  have to say
+          What our <span className='span1'>Clients</span>   have to say
         </Typography>
         <Box sx={{
           width: '100%',
@@ -86,11 +86,10 @@ export default function Testimonials() {
           <Box sx={{
           marginTop: '15px',
           display: 'flex',
-          flexWrap: 'wrap',
           '& > :not(style)': {
           mr: 7,
           mt: 1,
-          width: 220,
+          width: 270,
           height: 169,
           },
         }}>
