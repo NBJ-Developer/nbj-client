@@ -11,117 +11,70 @@ export default function OurStory() {
     <Box>
       {/* SMALL DEVICE */}
       <Box sx={{  
-        display: {xs: 'block', md: 'none'},
-        position:'relative',
-        marginTop: '63px',
+        display: {xs: 'flex', md: 'none'},
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        marginTop: '60px',
         width: '80%',
-        height: '420px',
-        backgroundColor: '#000000',
+        height: '70vh',
+        backgroundColor: '#ffffff',
         borderRadius: '0px 30px 30px 0px',
-        padding: '0 0 20px 30px',
       }}>
-        <Box sx={{
-          display: 'flex',
-          width: '95%',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          color: '#ffffff' 
-        }}>
+        <Box>
+          <Box sx={{
+            display: 'flex',
+            width: '95%',
+            p: 3,
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}>
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              fontSize: '20px',
+              lineHeight: '23px',
+              paddingTop: '22px',
+            }} variant='h1'>
+              OUR
+              <span className='span1'>
+                STORY
+              </span>
+            </Typography>
+            <BsArrowRightCircle style={{
+              fontWeight: '700',
+              fontSize: '20px',
+              color: '#F9A020',
+              margin: '22px 0px 0 0',
+            }} />
+            
+          </Box>
           <Typography sx={{
-            fontFamily: 'Raleway',
-            fontStyle: 'normal',
-            fontWeight: '700',
-            fontSize: '20px',
-            lineHeight: '23px',
-            paddingTop: '22px',
-          }} variant='h1'>
-            OUR
-            <span style={{
-              backgroundColor: '#d9d9d9',
-              color: '#000000',
-              borderRadius: '5px',
-              padding: '1px',
-              marginLeft: '5px'
-            }}>
-              STORY
-            </span>
-          </Typography>
-          <BsArrowRightCircle style={{
-            fontWeight: '700',
-            fontSize: '20px',
-            margin: '22px 26px 0 0',
-          }} />
-        </Box>
-
-        <Box sx={{
-          width: '85%',
-          margin: '28px 0 50px 0',
-        }}>
-          <Typography sx={{
+            px: 3,
+            textAlign: 'justify',
             fontFamily: 'Raleway',
             fontStyle: 'normal',
             fontWeight: '400',
             fontSize: '15px',
             lineHeight: '20px',
-            color: '#ffffff',
           }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh at sit ut ultricies.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A et in 
+            lectus ornare pellentesque mattis morbi placerat. Feugiat elementum 
+            orci lacus.
           </Typography>
-
-          <Box sx={{ 
-            width: '28%', 
-            position: 'absolute',
-            left: '58%',
-            top: '32%'
-          }}>
-            <img src={Wvector} 
-              alt="" 
-              srcSet={Wvector}
-              loading='lazy'
-              style={{
-                width: '100%',
-              }}
-            />
-          </Box>
-
-          <Box sx={{  
-            width: '53%',
-            backgroundColor: '#121212',
-            borderRadius: '25px',
-            position: 'absolute',
-            left: '15%',
-            top: '40%',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'       
-          }}>
-            <img src={Wvector} 
-              alt="" 
-              srcSet={Wvector}
-              loading='lazy'
-              style={{
-                width: '90%',
-                margin: '10px'
-              }}
-            />
-          </Box>
-
-          <Box sx={{  
-            width: '28%',
-            position: 'absolute',
-            left: '66%',
-            top: '76%',
-          }}>
-            <img src={Wvector} 
-              alt="" 
-              srcSet={Wvector}
-              loading='lazy'
-              style={{
-                width: '100%',
-              }}
-            />
-          </Box>
         </Box>
+        <Box
+          component="img"
+          sx={{
+            mt: 2,
+            height: '70%',
+            width: '100%',
+            display: 'block',
+            overflow: 'hidden',
+          }}
+          src={'airplain5.png'}
+          alt={'airplain5.png'}
+            />
       </Box>
 
       {/* MEDIUM DEVICE */}
