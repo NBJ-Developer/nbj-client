@@ -9,9 +9,9 @@ import ContainedButtons from '../../elements/Button/PrimaryButtons';
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{ 
-        maxWidth: 320,
-        mr: 2,
-        pb: 2, 
+        width: {xs: 500, md: 320},
+        mr: {xs: 0, md:2},
+        pb: {xs: 0, md: 2}, 
         }}>
       <CardActionArea>
         <CardMedia

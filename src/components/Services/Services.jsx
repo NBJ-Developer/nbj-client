@@ -57,7 +57,7 @@ export default function Services() {
   return (
     <Box>
         {/* SMALL DEVICE */}
-        {/* <Box sx={{ 
+        <Box sx={{ 
             display: {xs: 'block', md: 'none'},
             marginTop: '56px',
             width: '100%'
@@ -68,17 +68,10 @@ export default function Services() {
                 fontWeight: '700',
                 fontSize: '20px',
                 lineHeight: '23px',
-                marginLeft: '30px',
-                marginBottom: '5px'
+                textAlign: 'center',
             }}  variant='h1'>
                 OUR
-                <span style={{
-                    backgroundColor: '#d9d9d9',
-                    color: '#000000',
-                    borderRadius: '5px',
-                    padding: '2px',
-                    marginLeft: '5px'
-                }}>
+                <span className='span1'>
                     SERVICES
                 </span> 
             </Typography>
@@ -86,7 +79,8 @@ export default function Services() {
                         justifyContent: 'center'
                     }}>
                 <Box sx={{  maxWidth: '55%', 
-                            flexGrow: 1 
+                            flexGrow: 1,
+                            mt: 3, 
                         }}>
                     
                     <AutoPlaySwipeableViews
@@ -95,43 +89,16 @@ export default function Services() {
                         onChangeIndex={handleStepChange}
                         enableMouseEvents
                     >
-                        {images.map((step, index) => (
+                        {content.map((step, index) => (
                         <div key={step.label}>
                             {Math.abs(activeStep - index) <= 4 ? (
-                            <Box
-                                component="img"
-                                sx={{
-                                height: '226px',
-                                display: 'block',
-                                maxWidth: '100%',
-                                overflow: 'hidden',
-                                width: '100%',
-                                marginTop: '20px',
-                                borderRadius: '20px 20px 0 0'
-                                }}
-                                src={step.imgPath}
-                                alt={step.label}
-                            />
+                            <ServicesCard content={step}/>
                             ) : null}
                         </div>
                         ))}
                     </AutoPlaySwipeableViews>
-                    <Paper
-                        square
-                        elevation={0}
-                        sx={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                height: 50,
-                                bgcolor: '#d9d9d9',
-                                borderRadius: '0  0 20px 20px',
-                            }}
-                    >
-                        <Typography>{images[activeStep].label}</Typography>
-                    </Paper>
 
-                    <MobileStepper
+                    {/* <MobileStepper
                         steps={maxSteps}
                         position="static"
                         activeStep={activeStep}
@@ -157,10 +124,10 @@ export default function Services() {
                             )}
                         </Button>
                         }
-                    />
+                    /> */}
                 </Box>
             </Box>
-        </Box> */}
+        </Box>
 
         {/* MEDIUM DEVICE */}
         <Box sx={{    

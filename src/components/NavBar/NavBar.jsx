@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
 import AppBar from '@mui/material/AppBar';
+import { color } from '@mui/system';
 
 const pages = ['About', 'Media', 'Services', 'Contact Us'];
 
@@ -88,9 +89,14 @@ function ResponsiveAppBar() {
           <ContainedButtons buttonLabel={'Get a Quote'} />
         </Box>
         {/* Menu Icon for the mobile view */}
-        <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-          <IconButton
+        <Box sx={{ 
+          display: { xs: 'flex', md: 'none' }, 
+          }}>
+          <IconButton 
             size="large"
+            sx={{ 
+              color: '#ffffff',
+            }}
             aria-label="account of current user"
             aria-controls="menu-appbar"
             aria-haspopup="true"

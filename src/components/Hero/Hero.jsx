@@ -98,6 +98,7 @@ function SwipeableHeroStepper() {
         </Typography>
         <Box sx={{
           mt: '30px',
+          display: {xs: 'none', md: 'block'},
         }}>
           <PrimaryButtons buttonLabel={'Explore'}/>
         </Box>
