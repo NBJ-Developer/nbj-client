@@ -27,29 +27,6 @@ export default function Testimonials() {
 
   return (
     <Box>
-        {/* SMALL DEVICE */}
-          <Box sx={{  
-              display: { xs: 'flex', md: 'none' },
-              justifyContent: 'center',
-          }}>
-              <Box sx={{  
-                  width: '80%',
-                  height: '470px',
-                  marginTop: '56px',
-              }}>
-                  <Typography sx={{
-                      fontFamily: 'Raleway',
-                      fontStyle: 'normal',
-                      fontWeight: '600',
-                      fontSize: '19px',
-                      lineHeight: '22px',
-                      color: '#000000',
-                      textAlign: 'center'
-                  }} variant='h1'>
-                      WHAT OUR CUSTOMERS SAY
-                  </Typography>
-              </Box>
-          </Box>
 
       {/* MEDIUM DEVICE */}
       <Box sx={{ 
@@ -57,6 +34,7 @@ export default function Testimonials() {
         width: '100%',
       }}>
         <Typography sx={{
+          display: {xs: 'none', md: 'block'},
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: '600',
@@ -68,13 +46,28 @@ export default function Testimonials() {
           TESTIMONIALS
         </Typography>
         <Typography sx={{
+            display: {xs: 'block', md: 'none'},
+            fontFamily: 'Raleway',
+            fontStyle: 'normal',
+            fontWeight: '600',
+            fontSize: '30px',
+            lineHeight: '22px',
+            color: '#000000',
+            textAlign: 'center',
+            my: 8,
+          }} 
+          variant='h1'>
+          WHAT OUR <span className='span1'>CUSTOMERS</span>  SAY
+      </Typography>
+        <Typography sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: '400',
           fontSize: '18px',
           lineHeight: '25px',
           textAlign: 'center',
-          marginTop: '14px'
+          my: 4,
+          display: {xs: 'none', md: 'block'},
         }}>
           What our <span className='span1'>Clients</span>   have to say
         </Typography>
@@ -86,10 +79,11 @@ export default function Testimonials() {
           <Box sx={{
           marginTop: '15px',
           display: 'flex',
+          flexDirection: {xs: 'column', md: 'row'},
           '& > :not(style)': {
-          mr: 7,
-          mt: 1,
-          width: 270,
+          mr: {xs: 0, md: 7},
+          mb: {xs: 6, md: 0},
+          width: {xs: 400, md: 270},
           height: 169,
           },
         }}>
