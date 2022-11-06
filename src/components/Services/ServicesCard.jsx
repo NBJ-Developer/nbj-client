@@ -38,7 +38,7 @@ export default function ServicesCard({ content }) {
         </CardContent>
       </CardActionArea>
       <CardActions sx={{
-        display: 'flex',
+        display: !content.buttonDisplay?'none': 'flex',
         justifyContent: 'center',
       }}>
         <ContainedButtons buttonLabel={'Button'}/>

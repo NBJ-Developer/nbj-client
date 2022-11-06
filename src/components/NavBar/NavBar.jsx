@@ -7,13 +7,12 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import ContainedButtons from '../../elements/Button/PrimaryButtons';
 import AppBar from '@mui/material/AppBar';
-import { color } from '@mui/system';
+import { Link } from 'react-router-dom'
+import ContainedButtons from '../../elements/Button/PrimaryButtons';
 
-const pages = ['About', 'Media', 'Services', 'Contact Us'];
+const pages = ['Home', 'About', 'Media', 'Services', 'Contact Us'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -69,16 +68,17 @@ function ResponsiveAppBar() {
         </Box>
         {/* Navigation Links for the nav bar */}
         <Box sx={{ 
-          display: { xs: 'none', md: 'flex' } 
+          display: { xs: 'none', md: 'flex' }
           }}>
           {pages.map((page) => (
-            <Button
-              key={page}
-              onClick={handleCloseNavMenu}
-              sx={{ mx: 3, color: 'white', display: 'block' }}
-            >
+            <Link to={`/${page}`} key={page} style={{
+              color: '#ffffff',
+              textDecoration: 'none',
+              padding: '15px 30px',
+            }}>
               {page}
-            </Button>
+            </Link>
+            
           ))}
         </Box>
         {/* Get a quote button */}

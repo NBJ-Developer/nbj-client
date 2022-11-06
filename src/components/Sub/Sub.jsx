@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import Typography from '@mui/material/Typography';
 import image from './airplain3.png'
+import image2 from './backgroungImage.jpeg'
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 
 
@@ -13,11 +14,17 @@ export default function Sub() {
       {/* SMALL DEVICE */}
        <Box sx={{   
             display: {xs: 'flex', md: 'none'},
+            mt: 10,
             justifyContent: 'center',
         }}>
-            <Box sx={{ 
-                width: '80%',
-                background: 'rgba(217, 217, 217, 0.5)',
+            <Box style={{
+               backgroundImage: `url(${image2})`,
+               backgroundRepeat: 'no-repeat',
+               backgroundSize: '100% 100%',
+            }}
+                sx={{ 
+                width: '60%',
+                background: 'rgba(0, 0, 0, 0.51)',
                 marginTop: '56px',
                 borderRadius: '30px 0'
             }}>
@@ -27,7 +34,7 @@ export default function Sub() {
                     fontWeight: '600',
                     fontSize: '16px',
                     lineHeight: '22px',
-                    color: '#000000',
+                    color: '#ffffff',
                     textAlign: 'center',
                     marginTop: '17px'
                 }} variant='h1'>

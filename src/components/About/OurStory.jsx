@@ -1,12 +1,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { BsArrowRightCircle } from 'react-icons/bs'
-import Wvector from '../../assets/images/BBVector.png'
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
 import Typography from '@mui/material/Typography';
 
 
-export default function OurStory() {
+export default function OurStory({ourStoryProps}) {
   return (
     <Box>
       {/* SMALL DEVICE */}
@@ -36,9 +35,9 @@ export default function OurStory() {
               lineHeight: '23px',
               paddingTop: '22px',
             }} variant='h1'>
-              OUR
+              {ourStoryProps.heading}
               <span className='span1'>
-                STORY
+               {ourStoryProps.heading1}
               </span>
             </Typography>
             <BsArrowRightCircle style={{
@@ -58,9 +57,7 @@ export default function OurStory() {
             fontSize: '15px',
             lineHeight: '20px',
           }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. A et in 
-            lectus ornare pellentesque mattis morbi placerat. Feugiat elementum 
-            orci lacus.
+            {ourStoryProps.content}
           </Typography>
         </Box>
         <Box
@@ -72,83 +69,74 @@ export default function OurStory() {
             display: 'block',
             overflow: 'hidden',
           }}
-          src={'airplain5.png'}
-          alt={'airplain5.png'}
+          src={ourStoryProps.image}
+          alt={ourStoryProps.image}
             />
       </Box>
 
       {/* MEDIUM DEVICE */}
       <Box sx={{  
-        display: {xs: 'none', md: 'block'},
+        display: {xs: 'none', md: 'flex'},
+        alignItems: 'center',
         width: '75%',
-        maxHeight: '71.5vh',
-        background: '#ffffff',
-        borderRadius: '0px 40px 40px 0px',
+        maxHeight: '65.5vh',
         marginTop: '139px',
-        paddingLeft: '80px',
       }}>
-        <Box sx={{  
-          display: 'flex',
-        }}>
+        <Box sx={{
+            background: '#ffffff',
+            borderRadius: ourStoryProps.display? 'none': '0px 40px 40px 0px',
+            width: '60%',
+            height: '58.5vh',
+            px: 4,
+          }}>
           <Box sx={{
-              width: '50%',
-              mr: 4,
-            }}>
-            <Box sx={{
-              paddingTop: '70px',
-              color: '#434343'
-            }}>
-              <Typography sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '700',
-                fontSize: '32px',
-                lineHeight: '38px',
-              }} variant='h1'>
-                OUR <span className='span1'>STORY</span>
-              </Typography>
-            </Box>
-
-            <Box sx={{
-              marginY: '40px',
-            }}>
-              <Typography sx={{
-                fontFamily: 'Raleway',
-                fontWeight: '400',
-                fontSize: '17px',
-                lineHeight: '23px',
-                color: '#434343',
-                textAlign: 'justify'
-              }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor lacus 
-                pellentesque pretium sed. Non dictum pretium id fringilla. Habitasse ipsum 
-                lectus a nunc elementum. Hac et vitae odio gravida feugiat. Nisl pharetra 
-                vestibulum sit arcu phasellus lacus, pellentesque. Nulla pharetra duis mauris 
-                lorem ut hendrerit mauris nunc. Orci eget convallis volutpat imperdiet nulla 
-                at odio iaculis. Lorem id odio netus bibendum. Arcu odio porttitor quis gravida 
-                quis sollicitudin iaculis amet. Tempus, vitae quis dignissim nisl tellus auctor. 
-                Sem mauris, vel suspendisse quis mattis dignissim.
-              </Typography>
-            </Box>
-            <Box sx={{ 
-              marginBottom: '70px',
-              marginTop: '20px'
-            }}>
-              <ContainedButtons buttonLabel={'Button'}/>
-            </Box>
+            paddingTop: '70px',
+            color: '#434343'
+          }}>
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              fontSize: '32px',
+              lineHeight: '38px',
+            }} variant='h1'>
+              {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
+            </Typography>
           </Box>
 
-          <Box
-            component="img"
-            sx={{
-              height: '71.5vh',
-              display: 'block',
-              overflow: 'hidden',
-            }}
-            src={'airplain2.png'}
-            alt={'airplain2.png'}
-              />
+          <Box sx={{
+            marginY: '40px',
+          }}>
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontWeight: '400',
+              fontSize: '17px',
+              lineHeight: '23px',
+              color: '#434343',
+              textAlign: 'justify'
+            }}>
+              {ourStoryProps.content}
+            </Typography>
+          </Box>
+          <Box sx={{ 
+            marginBottom: '70px',
+            marginTop: '20px',
+            display: ourStoryProps.display? 'block': 'none',
+          }}>
+            <ContainedButtons buttonLabel={'Button'}/>
+          </Box>
         </Box>
+
+        <Box
+          component="img"
+          sx={{
+            maxHeight: ourStoryProps.display? '62.8vh': '50.5vh',
+            display: 'block',
+            overflow: 'hidden',
+          }}
+          src={ourStoryProps.image}
+          alt={ourStoryProps.image}
+            />
       </Box>
     </Box>
   );

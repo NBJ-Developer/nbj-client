@@ -5,10 +5,8 @@ import { Link } from 'react-router-dom'
 import { TbMinusVertical } from 'react-icons/tb'
 import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { FiTwitter, FiInstagram } from 'react-icons/fi'
-import FootLine from '../../assets/images/Big Rule.png'
 import Footline from '../../assets/images/Small Rule.png'
 import Typography from '@mui/material/Typography';
-import { color } from '@mui/system';
 
 
 
@@ -35,14 +33,12 @@ export default function Footer() {
                 alignItems: 'center',
                 paddingTop: '20px'
             }}>
-                <Box sx={{  
-                    width: '15%',
-                    height: '59px',
-                    background: '#d9d9d9',
-                    borderRadius: '5px',
-                    marginRight: '4px'
-                }}>
-                </Box>
+                <Box sx={{
+          backgroundColor: '#ffffff',
+          borderRadius: '50%',
+          }}>
+            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '50px', height: '50px'}}/>
+          </Box>
                 <Box sx={{  
                     width: '25%',
                     height: '59px',
@@ -191,13 +187,12 @@ export default function Footer() {
                 alignItems: 'center',
                 paddingTop: '50px'
             }}>
-                <Box sx={{  
-                    width: '5%',
-                    height: '82px',
-                    borderRadius: '10px',
-                    background: '#d9d9d9',
-                    marginRight: '10px'
-                }}></Box>
+                <Box sx={{
+          backgroundColor: '#ffffff',
+          borderRadius: '50%',
+          }}>
+            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '80px', height: '80px'}}/>
+          </Box>
                 <Box sx={{  
                     width: '10%',
                     height: '82px',
