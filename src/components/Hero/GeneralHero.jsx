@@ -14,7 +14,7 @@ import { Typography } from '@mui/material';
 
 const pages = ['Home', 'About', 'Services', 'Contact'];
 
-const NavBar = () => {
+const NavBar = ({ display, bgImage }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -26,16 +26,20 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" elevation={0}>
-      <Container maxWidth="xl" sx={{ background: { 
-        xs: '#000000', 
-        md: '#000000' 
-      },
+    <AppBar position="static" elevation={0} sx={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% 100%',
+      borderRadius: '0 0 25px 25px',
+    }}>
+      <Container maxWidth="xl" sx={{
+        backgroundColor: 'rgba(32, 53, 120, 0.87)',
+        borderRadius: '0 0 25px 25px',
         height: {xs:'149px', md:'364px'},
         pt: {xs: '20px', md:'30px'},
         }}>
         <Toolbar disableGutters sx={{
-          display:{xs: 'flex', md: 'flex'},
+          display: !display? 'none': 'flex',
           justifyContent: 'space-between',
           px: {xs:'10px', md:'30px'},
           }}>
@@ -153,10 +157,8 @@ const NavBar = () => {
           ml: {xs:'10px', md:'30px'},
         }}>
         <Box sx={{
-          display: {
-            xs: 'none',
-            md: 'block',
-          }
+          display: { xs: 'none', md: 'block', },
+          pt: !display? 10: 0,
         }}>
           <Typography variant="h3" component="h3" sx={{
             marginBottom: '10px',

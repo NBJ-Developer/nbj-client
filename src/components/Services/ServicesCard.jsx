@@ -3,7 +3,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import CardActions from '@mui/material/CardActions';
+import  CardActionArea from '@mui/material/CardActionArea';
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
 
 export default function ServicesCard({ content }) {
@@ -16,7 +17,6 @@ export default function ServicesCard({ content }) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="180"
           image={content.imgPath}
           alt={content.imgPath}
         />

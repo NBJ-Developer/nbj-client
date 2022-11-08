@@ -1,4 +1,4 @@
-import { Box } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 import ServicesCard from '../Services/ServicesCard'
 
@@ -28,10 +28,45 @@ function MeetTheTeam() {
   ]
   return (
     <Box sx={{
-      mt: 16,
+      mt: 20,
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
     }}>
-      <ServicesCard content={cardContents[0]}/>
+      <Box sx={{
+      my: 3,
+      textAlign: 'center',
+    }}>
+        <Typography sx={{
+          mb: 3,
+          fontFamily: 'Raleway',
+          fontSize: '32px',
+          fontWeight: '700',
+        }}>
+          MEET THE <span className='orangeSpan'>TEAM</span> 
+        </Typography>
+        <Typography sx={{
+          fontFamily: 'Open Sans',
+          fontSize: '20px',
+          fontWeight: '400',
+        }}>
+          Let’s see our team members
+        </Typography>
+      </Box>
+      
+      <Box sx={{
+      display: 'flex',
+      justifyContent: 'space-between',
+    }}>
+      {cardContents.map( data => (
+        <Box key={data.imgPath}>
+          <ServicesCard content={data}/>
+        </Box>
+      ))}
     </Box>
+    </Box>
+    
   )
 }
 

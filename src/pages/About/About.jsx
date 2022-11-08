@@ -3,10 +3,11 @@ import Box from '@mui/material/Box'
 import React from 'react'
 import GeneralHero from '../../components/Hero/GeneralHero'
 import MissionVision from '../../components/About/MissionVision'
-import Question from '../../components/About/Question'
 import Footer from '../../components/Footer/Footer'
 import OurStory from '../../components/About/OurStory'
 import MeetTheTeam from '../../components/About/MeetTheTeam'
+import Available from '../../components/About/Available'
+import bgImage from './aboutBG.png'
 
 function About() {
   const ourStoryProps = {
@@ -24,7 +25,7 @@ function About() {
   }
   return (
     <div>
-      <GeneralHero />
+      <GeneralHero display={false} bgImage={bgImage} />
       <Box sx={{
         textalign:'center',
         display: {xs:'block', md:'none'},
@@ -39,7 +40,7 @@ function About() {
       <OurStory ourStoryProps={ourStoryProps}/>
       <MissionVision />
       <MeetTheTeam />
-      <Question />
+      <Available />
       <Footer />
     </div>
   )
