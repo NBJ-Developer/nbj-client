@@ -138,13 +138,6 @@ function ServiceList() {
                             flexGrow: 1,
                             marginTop: '28px' 
                         }}>
-                    
-                    {/* <AutoPlaySwipeableViews
-                        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                        index={activeStep}
-                        onChangeIndex={handleStepChange}
-                        enableMouseEvents
-                    >
                         {images.map((step, index) => (
                         <div key={step.label}>
                             {Math.abs(activeStep - index) <= 4 ? (
@@ -165,7 +158,6 @@ function ServiceList() {
                             ) : null}
                         </div>
                         ))}
-                    </AutoPlaySwipeableViews> */}
                     <Paper
                         square
                         elevation={0}

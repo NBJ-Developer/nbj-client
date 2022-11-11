@@ -37,13 +37,6 @@ function SwipeableHeroStepper() {
       <Box sx={{
         display: {xs: 'none', md: 'flex'}, 
       }}>
-        {/* <AutoPlaySwipeableViews
-        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-        interval={'6000'}
-      >
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
@@ -61,7 +54,6 @@ function SwipeableHeroStepper() {
             ) : null}
           </div>
         ))}
-      </AutoPlaySwipeableViews> */}
       </Box>
       <Box sx={{
           display: {xs: 'block', md: 'none'},
