@@ -13,10 +13,10 @@ import Button from '@mui/material/Button';
 import MobileStepper from '@mui/material/MobileStepper';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+//import SwipeableViews from 'react-swipeable-views';
+//import { autoPlay } from 'react-swipeable-views-utils';
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+//const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
     const images = [
     {
@@ -139,7 +139,7 @@ function ServiceList() {
                             marginTop: '28px' 
                         }}>
                     
-                    <AutoPlaySwipeableViews
+                    {/* <AutoPlaySwipeableViews
                         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                         index={activeStep}
                         onChangeIndex={handleStepChange}
@@ -165,7 +165,7 @@ function ServiceList() {
                             ) : null}
                         </div>
                         ))}
-                    </AutoPlaySwipeableViews>
+                    </AutoPlaySwipeableViews> */}
                     <Paper
                         square
                         elevation={0}

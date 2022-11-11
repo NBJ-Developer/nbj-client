@@ -7,13 +7,13 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+//import SwipeableViews from 'react-swipeable-views';
+//import { autoPlay } from 'react-swipeable-views-utils';
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import SubServices from './SubServices';
 import ServicesCard from './ServicesCard';
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+//const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
     const content = [
     {
@@ -83,7 +83,7 @@ export default function Services() {
                             mt: 3, 
                         }}>
                     
-                    <AutoPlaySwipeableViews
+                    {/* <AutoPlaySwipeableViews
                         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                         index={activeStep}
                         onChangeIndex={handleStepChange}
@@ -96,7 +96,7 @@ export default function Services() {
                             ) : null}
                         </div>
                         ))}
-                    </AutoPlaySwipeableViews>
+                    </AutoPlaySwipeableViews> */}
 
                     {/* <MobileStepper
                         steps={maxSteps}

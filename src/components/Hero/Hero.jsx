@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+//import SwipeableViews from 'react-swipeable-views';
+//import { autoPlay } from 'react-swipeable-views-utils';
 import { Typography } from '@mui/material';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+//const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
@@ -37,7 +37,7 @@ function SwipeableHeroStepper() {
       <Box sx={{
         display: {xs: 'none', md: 'flex'}, 
       }}>
-        <AutoPlaySwipeableViews
+        {/* <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
         onChangeIndex={handleStepChange}
@@ -61,7 +61,7 @@ function SwipeableHeroStepper() {
             ) : null}
           </div>
         ))}
-      </AutoPlaySwipeableViews>
+      </AutoPlaySwipeableViews> */}
       </Box>
       <Box sx={{
           display: {xs: 'block', md: 'none'},
