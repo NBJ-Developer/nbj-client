@@ -19,22 +19,26 @@ import ServicesCard from './ServicesCard';
     {
         label: 'Ground Support',
         imgPath: 'airplain3.png',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
+        buttonDisplay: true
     },
     {
         label: 'Aircraft Charter & Bookings',
         imgPath: 'service1.png',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
+        buttonDisplay: true
     },
     {
         label: 'Maintenance',
         imgPath: 'service2.png',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
+        buttonDisplay: true
     },
     {
         label: 'Wings Inflight',
         imgPath: 'service3.png',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.'
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
+        buttonDisplay: true
     },
     ];
 
@@ -82,49 +86,7 @@ export default function Services() {
                             flexGrow: 1,
                             mt: 3, 
                         }}>
-                    
-                    {/* <AutoPlaySwipeableViews
-                        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                        index={activeStep}
-                        onChangeIndex={handleStepChange}
-                        enableMouseEvents
-                    >
-                        {content.map((step, index) => (
-                        <div key={step.label}>
-                            {Math.abs(activeStep - index) <= 4 ? (
-                            <ServicesCard content={step}/>
-                            ) : null}
-                        </div>
-                        ))}
-                    </AutoPlaySwipeableViews> */}
-
-                    {/* <MobileStepper
-                        steps={maxSteps}
-                        position="static"
-                        activeStep={activeStep}
-                        nextButton={
-                        <Button
-                            size="small"
-                            onClick={handleNext}
-                            disabled={activeStep === maxSteps - 1}
-                        >
-                            {theme.direction === 'rtl' ? (
-                            <KeyboardArrowLeft />
-                            ) : (
-                            <KeyboardArrowRight />
-                            )}
-                        </Button>
-                        }
-                        backButton={
-                        <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-                            {theme.direction === 'rtl' ? (
-                            <KeyboardArrowRight />
-                            ) : (
-                            <KeyboardArrowLeft />
-                            )}
-                        </Button>
-                        }
-                    /> */}
+                    <ServicesCard content={content[0]}/>
                 </Box>
             </Box>
         </Box>

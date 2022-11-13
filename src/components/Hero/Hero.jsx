@@ -37,9 +37,6 @@ function SwipeableHeroStepper() {
       <Box sx={{
         display: {xs: 'none', md: 'flex'}, 
       }}>
-        {images.map((step, index) => (
-          <div key={step.label}>
-            {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
                 sx={{
@@ -48,12 +45,9 @@ function SwipeableHeroStepper() {
                   overflow: 'hidden',
                   width: '100%',
                 }}
-                src={step.imgPath}
-                alt={step.label}
+                src={images[1].imgPath}
+                alt={images[1].label}
               />
-            ) : null}
-          </div>
-        ))}
       </Box>
       <Box sx={{
           display: {xs: 'block', md: 'none'},

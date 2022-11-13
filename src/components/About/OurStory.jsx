@@ -84,9 +84,9 @@ export default function OurStory({ourStoryProps}) {
       }}>
         <Box sx={{
             background: '#ffffff',
-            borderRadius: ourStoryProps.display? 'none': '0px 40px 40px 0px',
+            borderRadius: ourStoryProps.display? '0px 5px 5px 0px': '0px 40px 40px 0px',
             width: '60%',
-            height: '58.5vh',
+            height: ourStoryProps.display?'63vh': '57vh',
             px: 4,
           }}>
           <Box sx={{
