@@ -65,10 +65,13 @@ export default function CallToAction() {
           height: '450px',
           background: '#2B47A1',
           py: 5,
-          px: 20,
         }}>
-          <Box sx={{  
-            width: '40%',
+          <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',  
+            width: '50%',
+            mx: 6,
           }}>
             <Typography sx={{
               fontFamily: 'Raleway',
@@ -101,9 +104,10 @@ export default function CallToAction() {
               textDecoration: 'none',
               display: 'flex',
               alignItems: 'center',
-              marginTop: '40px'
             }}>
-              <CallIcon /> &nbsp; +234 8169003746
+              <CallIcon sx={{
+                mr: 1,
+              }}/>  +234 8169003746
             </Link>
 
             <Typography sx={{
@@ -113,12 +117,12 @@ export default function CallToAction() {
               fontSize: '20px',
               lineHeight: '27px',
               color: '#FFFFFF',
-              textDecoration: 'none',
               display: 'flex',
               alignItems: 'center',
-              marginTop: '24px'
             }}>
-              <LocationOnIcon /> &nbsp; Plot 23, MMIA Road, Ikeja, Lagos
+              <LocationOnIcon sx={{
+                mr: 1,
+              }}/> Plot 23, MMIA Road, Ikeja, Lagos
             </Typography>
 
             <Link to="/" style={{
@@ -131,9 +135,10 @@ export default function CallToAction() {
               textDecoration: 'none',
               display: 'flex',
               alignItems: 'center',
-              marginTop: '24px'
             }}>
-              <MailOutlineIcon /> &nbsp; nbjvipgroundhandling@gmail.com
+              <MailOutlineIcon sx={{
+                mr: 1,
+              }}/>  nbjvipgroundhandling@gmail.com
             </Link>
             
             <Box sx={{ 
@@ -145,11 +150,13 @@ export default function CallToAction() {
           <Box sx={{
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
+            justifyContent: 'space-between',
             alignItems: 'center',  
-            width: '40%',
+            width: '50%',
             height: '325px',
-            textAlign: 'center'
+            textAlign: 'center',
+            py: 4,
+            mr: 6,
           }}>
             <Typography sx={{
               fontFamily: 'Raleway',
@@ -170,7 +177,7 @@ export default function CallToAction() {
               lineHeight: '27px',
               color: '#ffffff',
               width: '60%',
-              mt: 6,
+              mt: 4,
             }}>
               Book a flight, charter, get a quote or get in touch
             </Typography>
@@ -178,7 +185,7 @@ export default function CallToAction() {
             <Box sx={{  
               display: 'flex',
               justifyContent: 'space-around',
-              marginTop: '72px'
+              mt: 4
             }}>
               <SecondaryButton buttonLabel={'Button'}/>
             </Box>

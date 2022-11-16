@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import AppBar from '@mui/material/AppBar';
-import { Link } from 'react-router-dom'
+import Link from '@mui/material/Link'
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
 
 const pages = ['Home', 'About', 'Media', 'Services', 'Contact Us'];
@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
         <Box>
           <Box sx={{
           display: 'flex',
-          p:2,
+          py:2,
           }}>
           <Box sx={{
           backgroundColor: '#ffffff',
@@ -67,17 +67,24 @@ function ResponsiveAppBar() {
           </Box>
         </Box>
         {/* Navigation Links for the nav bar */}
-        <Box sx={{ 
-          display: { xs: 'none', md: 'flex' }
-          }}>
+        <Box sx={{
+          width: '45%',
+          display: {xs: 'none', md:'flex'},
+          justifyContent: 'space-between',
+        }}>
           {pages.map((page) => (
-            <Link to={`/${page}`} key={page} style={{
+            <Box>
+            <Link href={`/${page}`} underline="hover" sx={{
               color: '#ffffff',
-              textDecoration: 'none',
-              padding: '15px 30px',
+              '&:hover': {
+                color: '#F9A020',
+                textDecorationWidth: '5px',
+                textDecorationThickness: '3px',             
+                }
             }}>
               {page}
             </Link>
+          </Box>
             
           ))}
         </Box>

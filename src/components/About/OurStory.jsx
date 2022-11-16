@@ -9,21 +9,24 @@ export default function OurStory({ourStoryProps}) {
   return (
     <Box>
       {/* SMALL DEVICE */}
-      <Box sx={{  
-        display: {xs: 'flex', md: 'none'},
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        marginTop: '60px',
-        width: '80%',
-        height: '70vh',
-        backgroundColor: '#ffffff',
-        borderRadius: '0px 30px 30px 0px',
-      }}>
-        <Box>
+      <Box sx={{
+          display: {xs: 'flex', md: 'none'},
+          flexDirection: 'column',
+          mt: 6,
+        }}>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          width: '90%',
+          backgroundColor: '#ffffff',
+          borderRadius: '0px 30px 30px 0px',
+          p: 3,
+        }}>
           <Box sx={{
             display: 'flex',
-            width: '95%',
-            p: 3,
+            width: '80%',
+            px: 3,
+            pb: 3,
             justifyContent: 'space-between',
             alignItems: 'center',
           }}>
@@ -33,7 +36,6 @@ export default function OurStory({ourStoryProps}) {
               fontWeight: '700',
               fontSize: '20px',
               lineHeight: '23px',
-              paddingTop: '22px',
             }} variant='h1'>
               {ourStoryProps.heading}
               <span className='span1'>
@@ -44,7 +46,6 @@ export default function OurStory({ourStoryProps}) {
               fontWeight: '700',
               fontSize: '20px',
               color: '#F9A020',
-              margin: '22px 0px 0 0',
             }} />
             
           </Box>
@@ -63,14 +64,13 @@ export default function OurStory({ourStoryProps}) {
         <Box
           component="img"
           sx={{
-            mt: 2,
             height: '70%',
-            width: '100%',
-            display: 'block',
+            width: '90%',
             overflow: 'hidden',
+            borderRadius: '0px 30px 30px 0px',
           }}
-          src={ourStoryProps.image}
-          alt={ourStoryProps.image}
+          src={ourStoryProps.airplain5}
+          alt={ourStoryProps.airplain5}
             />
       </Box>
 
@@ -83,29 +83,28 @@ export default function OurStory({ourStoryProps}) {
         marginTop: '139px',
       }}>
         <Box sx={{
-            background: '#ffffff',
-            borderRadius: ourStoryProps.display? '0px 5px 5px 0px': '0px 40px 40px 0px',
-            width: '60%',
-            height: ourStoryProps.display?'63vh': '57vh',
-            px: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          background: '#ffffff',
+          borderRadius: ourStoryProps.display? '0px 5px 5px 0px': '0px 40px 40px 0px',
+          width: '60%',
+          minHeight: ourStoryProps.display?'63vh': '57vh',
+          p: 3,
           }}>
-          <Box sx={{
-            paddingTop: '70px',
-            color: '#434343'
-          }}>
+          <Box>
             <Typography sx={{
               fontFamily: 'Raleway',
               fontStyle: 'normal',
               fontWeight: '700',
-              fontSize: '32px',
-              lineHeight: '38px',
+              fontSize: '28px',
+              lineHeight: '23px',
             }} variant='h1'>
               {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
             </Typography>
           </Box>
 
           <Box sx={{
-            marginY: '40px',
           }}>
             <Typography sx={{
               fontFamily: 'Raleway',
@@ -119,8 +118,6 @@ export default function OurStory({ourStoryProps}) {
             </Typography>
           </Box>
           <Box sx={{ 
-            marginBottom: '70px',
-            marginTop: '20px',
             display: ourStoryProps.display? 'block': 'none',
           }}>
             <ContainedButtons buttonLabel={'Button'}/>
@@ -130,7 +127,7 @@ export default function OurStory({ourStoryProps}) {
         <Box
           component="img"
           sx={{
-            maxHeight: ourStoryProps.display? '62.8vh': '50.5vh',
+            height: ourStoryProps.display? '62.8vh': '50.5vh',
             display: 'block',
             overflow: 'hidden',
           }}

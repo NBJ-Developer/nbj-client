@@ -3,21 +3,26 @@ import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import { Link } from 'react-router-dom'
 import { TbMinusVertical } from 'react-icons/tb'
-import { TiSocialLinkedinCircular } from 'react-icons/ti'
-import { FiTwitter, FiInstagram } from 'react-icons/fi'
-import Footline from '../../assets/images/Small Rule.png'
 import Typography from '@mui/material/Typography';
+import MediaComponent from './MediaComponent';
+import NbjLogo from './NbjLogo';
+import LinkComponent from './LinkComponent';
 
 
 
 export default function Footer() {
+
+  const linkItems1 = 
+  ['OUR STORY', 'OUR SERVICES', 'MEDIA', 'CONTACT',]
+  const linkItems2 = 
+  ['GROUND SUPPORT', 'CHATER & BOOKING', 'CREW SERVICES', 'HOSPITALITY',]
   
   return (
     <Box sx={{
         backgroundColor: '#203578'
     }}>
         {/* SMALL DEVICE */}
-        <BottomNavigation sx={{ 
+        {/* <BottomNavigation sx={{ 
             display: {xs: 'block', md: 'none'},
             bottom: '0',
             left: '0',
@@ -168,265 +173,100 @@ export default function Footer() {
                     2022 All Rights Reserved. NBJ
                 </Typography>
             </Box>
-        </BottomNavigation>
+        </BottomNavigation> */}
 
         {/* MEDIUM DEVICE */}
         <BottomNavigation sx={{ 
-            display: {xs: 'none', md: 'block'},
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
             bottom: '0',
             left: '0',
             right: '0',
             marginTop: '119px',
             maxWidth: '100%',
-            height: '611px',
+            minHeight: '611px',
             background: '#203578'
         }}>
-            <Box sx={{      
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                paddingTop: '50px'
-            }}>
-                <Box sx={{
-          backgroundColor: '#ffffff',
-          borderRadius: '50%',
+          <NbjLogo />
+          <Box sx={{
+            mt: 3,
+            px: {xs: 16, md: 0},
+            width: '100%',
+            display: 'flex',
+            flexDirection: {xs: 'row', md: 'column'},
+            justifyContent: {xs: 'space-between', md: 'center'},
+            alignItems: 'center',
           }}>
-            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '80px', height: '80px'}}/>
-          </Box>
-                <Box sx={{  
-                    width: '10%',
-                    height: '82px',
-                }}>
-                    <Typography sx={{
-                        fontFamily: 'Raleway',
-                        fontStyle: 'normal',
-                        fontWeight: '700',
-                        fontSize: '24px',
-                        lineHeight: '28px',
-                        color: '#ffffff',
-                    }} variant='h1'>
-                        NBJ VIP GROUND HANDLING
-                    </Typography>
-                </Box>
-            </Box>
-
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '56px'
-            }}>
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                    OUR STORY
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
-
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                    OUR SERVICES
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
-
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                    MEDIA
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
-
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                    CONTACT
-                </Link>
-            </Box>
-
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '56px'
-            }}>
-
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                   GROUND SUPPORT
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
-
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                   CHARTER & BOOKINGS
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                   MAINTENANCE
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '6vw',
-                    height: '23px'
-                }} />
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                   WINGS INFLIGHT
-                </Link>
-            </Box>
-
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginTop: '56px'
-            }}>
-                <Typography sx={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '700',
-                    fontSize: '20px',
-                    lineHeight: '23px',
-                    color: '#ffffff',
-                }}>
-                    Connect with us
-                </Typography>
-                    <Box sx={{ 
-                        width: '20vw',
-                        height: '33px',
-                        background: '#d9d9d9',
-                        borderRadius: '5px',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        marginLeft: '18px',
-                        paddingTop: '5px'
-                    }}>
-                        <a href="/" style={{
-                            color: '#203578',
-                            cursor: 'pointer'
-                        }}>
-                            <TiSocialLinkedinCircular style={{ 
-                                width: '7vw', 
-                                height: '20px', 
-                                cursor: 'pointer'
-                            }} />
-                        </a>
-
-                        <a href="/" style={{
-                            color: '#203578',
-                            cursor: 'pointer'
-                        }}>
-                            <FiTwitter style={{ 
-                                width: '7vw', 
-                                height: '20px', 
-                                cursor: 'pointer'
-                            }} />
-                        </a>
-
-                        <a href="/" style={{
-                            color: '#203578',
-                            cursor: 'pointer'
-                        }}>
-                            <FiInstagram style={{ 
-                                width: '7vw', 
-                                height: '20px', 
-                                cursor: 'pointer'
-                            }} />
-                        </a>
-                    </Box>
-            </Box>
-            
             <Box sx={{
-                display: 'flex',
-                justifyContent: 'center'
+              my: 3,
+              width: {md: '65%'},
+              display: 'flex',
+              flexDirection: {xs: 'column', md: 'row'},
+              justifyContent: {xs: 'space-between', md: 'center'}
             }}>
-                <Box sx={{
-                marginTop: '56px',
-                width: '80%',
-                height: '3px',
-                backgroundColor: '#F9A020'
+              
+              <Typography sx={{
+                display: {xs: 'block', md: 'none'},
+                m: 1.5,
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: 600,
+                fontSize: '20px',
+                color: '#ffffff',
+                textDecoration: 'none'
+              }}>
+                Quick Links
+              </Typography>
+              {linkItems1.map((item, index) => (
+              <Box key={index}>
+              <LinkComponent item={item}/>
+              </Box>
+              ))}
+            </Box>
+            <Box sx={{
+              width: {xs: '30%', md: '90%'},
+              display: 'flex',
+              flexDirection: {xs: 'column', md: 'row'},
+              justifyContent: 'center'
             }}>
+              <Typography sx={{
+                display: {xs: 'block', md: 'none'},
+                m: 1.5,
+                fontFamily: 'Raleway',
+                fontStyle: 'normal',
+                fontWeight: 600,
+                fontSize: '20px',
+                color: '#ffffff',
+                textDecoration: 'none'
+              }}>
+                Services
+              </Typography>
+              {linkItems2.map((item, index) => (
+              <Box key={index}>
+              <LinkComponent item={item}/>
+              </Box>
+              ))}
             </Box>
-            </Box>
-            
+          </Box>
+          <MediaComponent />
+          <Box sx={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <Box sx={{
+              my: 5,
+              width: '80%',
+              height: '3px',
+              backgroundColor: '#F9A020'
+            }} />
+          </Box>
 
             <Box sx={{  
                 display: 'flex',
                 justifyContent: 'center',
-                marginTop: '56px'
             }}>
                 <Link to='/' style={{
                     fontFamily: 'Raleway',
@@ -460,7 +300,6 @@ export default function Footer() {
             <Box sx={{  
                 display: 'flex',
                 justifyContent: 'center',
-                marginTop: '10px'
             }}>
                 <Typography sx={{
                     fontFamily: 'Raleway',

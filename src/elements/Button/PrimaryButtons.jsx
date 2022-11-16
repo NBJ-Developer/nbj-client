@@ -4,13 +4,14 @@ import Stack from '@mui/material/Stack';
 //import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { BsArrowRightCircle } from 'react-icons/bs'
 
-export default function PrimaryButtons({buttonLabel, buttonDimension}) {
+export default function PrimaryButtons({ buttonLabel }) {
   return (
     <Stack direction="row" spacing={2} >
       <Button variant="contained" sx={{
         backgroundColor: '#F9A020',
         fontFamily: 'Raleway',
         fontStyle: 'normal',
+        fontSize: '20px',
         color: '#ffffff',
         textTransform: 'Capitalize',
         borderRadius: '10px 0 10px 0',
@@ -20,7 +21,6 @@ export default function PrimaryButtons({buttonLabel, buttonDimension}) {
           color: '#F9A020',
           border: '1px solid #F9A020',
         },
-        fontSize: '20px',
         }}>
         {buttonLabel}
         <BsArrowRightCircle style={{marginLeft: '10px'}}/>

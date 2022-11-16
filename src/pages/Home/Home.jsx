@@ -11,11 +11,12 @@ import Testimonials from '../../components/Testimonials/Testimonials'
 
 
 const Home = () => {
-  const ourStoryProps = {
+  const ourStoryProps = [{
     heading: 'Our',
     heading1: 'Story',
     display: true,
     image: 'airplain2.png',
+    airplain5: 'airplain5.png',
     content: `NBJ was birthed in 2020 out of the passion to provide the 
     highest standard of air travel while ensuring the safety and comfort 
     of individuals around the world. We are a ground handling company 
@@ -23,14 +24,18 @@ const Home = () => {
     service because we know how important it is for clients to expand 
     and network globally. Both in the air and on the ground, we are focused 
     on giving you a unique travel experience regardless of travel purpose 
-    and provide a enviable working environment.`
-  }
+    and provide a enviable working environment.`,
+    smallContent: `NBJ was birthed in 2020 out of the passion to provide the 
+    highest standard of air travel while ensuring the safety and comfort 
+    of individuals around the world. We are a ground handling company 
+    committed to providing quality.`
+  }]
   return (
     <div>
       <NavBar/>
       <Hero />
       <Benefits />
-      <OurStory ourStoryProps={ourStoryProps}/>
+      <OurStory ourStoryProps={ourStoryProps[0]}/>
       <Services />
       <CallToAction />
       <Testimonials />
