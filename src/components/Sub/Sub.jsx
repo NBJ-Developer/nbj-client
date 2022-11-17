@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import image from './airplain3.png'
 import image2 from './backgroungImage.jpeg'
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
+import InputField from './InputField';
 
 
 export default function Sub() {
@@ -34,7 +35,7 @@ export default function Sub() {
                     fontWeight: '600',
                     fontSize: '16px',
                     lineHeight: '22px',
-                    color: '#ffffff',
+                    color: '#262626',
                     textAlign: 'center',
                     marginTop: '17px'
                 }} variant='h1'>
@@ -75,83 +76,57 @@ export default function Sub() {
       {/* MEDIUM DEVICE */}
        <Box sx={{   
             display: {xs: 'none', md: 'flex'},
-            marginTop: '119px',
+            mt: 30,
             justifyContent: 'center'
         }}>
-            <Box style={{
-               backgroundImage: `url(${image})`,
-               backgroundRepeat: 'no-repeat',
-               backgroundSize: '100% 100%',
-            }} 
-            sx={{ 
-              mt: 8, 
-              width: '60vw',
-              borderRadius: '50px 0',
-            }}>
-              <Box sx={{ 
-              width: '100%',
+          <Box sx={{ 
+              fontFamily: 'Inter',
+              width: '75%',
               py: 2,
-              borderRadius: '50px 0',
-              background: 'rgba(0, 0, 0, 0.51)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}>
                  <Typography sx={{
-                    fontFamily: 'Raleway',
                     fontStyle: 'normal',
-                    fontWeight: '600',
-                    fontSize: '24px',
-                    lineHeight: '33px',
-                    color: '#ffffff',
+                    fontWeight: '700',
+                    fontSize: '45px',
+                    lineHeight: '53px',
+                    color: '#262626',
                     textAlign: 'center',
-                    marginTop: '30px'
                 }} variant='h1'>
-                    Never miss out on our offers
+                    Join Our Mail list
                 </Typography>
                 <Typography sx={{
-                    fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
                     fontSize: '18px',
                     lineHeight: '25px',
-                    color: '#ffffff',
+                    color: '#262626',
                     textAlign: 'center',
                     marginTop: '10px'
                 }}>
-                    Subscribe to our newsletter to get all the updates you love, <br /> we promise not to spam you.
+                   Receive updates on our services and promotions straight to your inbox.
                 </Typography>
-                <Box sx={{  
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    marginTop: '20px'
+                <Box sx={{ 
+                  width: '100%', 
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  mt: 2,
                 }}>
-                    <input 
-                      type="email"
-                      required  
-                      placeholder='Enter Email' 
-                      style={{
-                      width: '60%',
-                      height: '41px',
-                      border: 'none',
-                      background: ' rgba(255, 255, 255, 0.65)',
-                      borderRadius: '20px 0 0 0',
-                      margin: '8px 0',
-                      padding: '12px 12px', 
-                      '&:focus': {
-                        outline: 'none'
-                      }
-                    }} 
-                    />
+                    <InputField label={'Your Name'}/>
+                    <InputField label={'Email Address'}/>
                     <Box sx={{ 
                       marginRight: '10px',
                     }}>
-                        <PrimaryButtons buttonLabel={'Button'} />
+                        <PrimaryButtons buttonLabel={'Join'} />
                     </Box>
                 </Box>
               </Box>
                
             </Box>
         </Box>
-      
-    </Box>
   );
 }
