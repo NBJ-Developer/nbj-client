@@ -1,6 +1,9 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { FiTwitter, FiInstagram } from 'react-icons/fi'
 
@@ -26,45 +29,27 @@ function MediaComponent() {
           Connect with us:
         </Typography>
         <Box sx={{ 
-          width: '180px',
-          p: {xs: 1, md: 0},
           mt: 3,
+          py: {xs: 0.6, md: 0},
+          px: {xs: 4, md: 0},
           background: {xs: '#d9d9d9', md: 'none'},
           borderRadius: '5px',
           display: 'flex',
           justifyContent: 'space-between',
         }}>
-          <a href="/" style={{
-            color: '#ffffff',
-            cursor: 'pointer'
-          }}>
-            <TiSocialLinkedinCircular style={{ 
-              fontSize: '30px',  
-              cursor: 'pointer'
-            }} />
-          </a>
-
-          <a href="/" style={{
-          color: '#ffffff',
-              cursor: 'pointer'
-          }}>
-            <FiTwitter style={{  
-              fontSize: '25px', 
-              cursor: 'pointer'
-            }} />
-          </a>
-
-          <a href="/" style={{
-          color: '#ffffff',
-              cursor: 'pointer'
-          }}>
-            <FiInstagram style={{ 
-              fontSize: '25px',
-              cursor: 'pointer'
-            }} />
-          </a>
+          <LinkedInIcon sx={{
+            mr: 6,
+            color: {xs: '', md: '#ffffff'},
+          }}/>
+          <TwitterIcon sx={{
+            mr: 6,
+            color: {xs: '', md: '#ffffff'},
+          }}/>
+          <InstagramIcon sx={{
+            color: {xs: '', md: '#ffffff'},
+          }}/>
         </Box>
-            </Box>
+      </Box>
     </div>
   )
 }

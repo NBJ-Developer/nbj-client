@@ -10,13 +10,18 @@ function NbjLogo() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingTop: '50px'
       }}>
         <Box sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           backgroundColor: '#ffffff',
+          border: '2px solid #F9A020',
           borderRadius: '50%',
+          width: '90px',
+          height: '90px',
         }}>
-          <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '7vw', height: '7vw'}}/>
+          <img src="nbj-logo.png" alt="NBJ-LOGO" style={{ width: '200px', height: '50px',}}/>
         </Box>
         <Box sx={{  
             width: '25%',

@@ -16,7 +16,7 @@ export default function OurStory({ourStoryProps}) {
         }}>
         <Box sx={{
           display: 'flex',
-          flexDirection: 'column',
+          alignItems: 'center',
           width: '90%',
           backgroundColor: '#ffffff',
           borderRadius: '0px 30px 30px 0px',
@@ -85,7 +85,7 @@ export default function OurStory({ourStoryProps}) {
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           background: '#ffffff',
           borderRadius: ourStoryProps.display? '0px 5px 5px 0px': '0px 40px 40px 0px',
           width: '60%',
@@ -103,20 +103,17 @@ export default function OurStory({ourStoryProps}) {
               {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
             </Typography>
           </Box>
-
-          <Box sx={{
-          }}>
             <Typography sx={{
               fontFamily: 'Raleway',
               fontWeight: '400',
               fontSize: '17px',
               lineHeight: '23px',
               color: '#434343',
-              textAlign: 'justify'
+              textAlign: 'justify',
+              mt: 4,
             }}>
               {ourStoryProps.content}
             </Typography>
-          </Box>
           <Box sx={{ 
             display: ourStoryProps.display? 'block': 'none',
           }}>

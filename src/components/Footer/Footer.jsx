@@ -13,170 +13,14 @@ import LinkComponent from './LinkComponent';
 export default function Footer() {
 
   const linkItems1 = 
-  ['OUR STORY', 'OUR SERVICES', 'MEDIA', 'CONTACT',]
+  ['OUR STORY', 'OUR SERVICES', 'MEDIA', 'FAQs', 'CONTACT',]
   const linkItems2 = 
   ['GROUND SUPPORT', 'CHATER & BOOKING', 'CREW SERVICES', 'HOSPITALITY',]
   
+  const itemsLength1 = linkItems1.length
+  const itemsLength2 = linkItems2.length
   return (
-    <Box sx={{
-        backgroundColor: '#203578'
-    }}>
-        {/* SMALL DEVICE */}
-        {/* <BottomNavigation sx={{ 
-            display: {xs: 'block', md: 'none'},
-            bottom: '0',
-            left: '0',
-            right: '0',
-            marginTop: '56px',
-            maxWidth: '100%',
-            height: '334px',
-            background: '#203578'
-        }}>
-            <Box sx={{ 
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                paddingTop: '20px'
-            }}>
-                <Box sx={{
-          backgroundColor: '#ffffff',
-          borderRadius: '50%',
-          }}>
-            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '50px', height: '50px'}}/>
-          </Box>
-                <Box sx={{  
-                    width: '25%',
-                    height: '59px',
-                }}>
-                    <Typography sx={{
-                        fontFamily: 'Raleway',
-                        fontStyle: 'normal',
-                        fontWeight: '700',
-                        fontSize: '18px',
-                        lineHeight: '21px',
-                        color: '#ffffff',
-                    }} variant='h1'>
-                        NBJ VIP GROUND HANDLING
-                    </Typography>
-                </Box>
-            </Box>
-
-            <Box sx={{ 
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginTop: '114px'
-            }}>
-                <Box sx={{  
-                    width: '60%',
-                    height: '33px',
-                    background: '#d9d9d9',
-                    borderRadius: '5px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    paddingTop: '3px'
-                }}>
-                    <a href="/" style={{
-                        color: '#203578',
-                        cursor: 'pointer'
-                    }}>
-                        <TiSocialLinkedinCircular style={{ 
-                            width: '20vw', 
-                            height: '20px', 
-                            cursor: 'pointer'
-                        }} />
-                    </a>
-
-                    <a href="/" style={{
-                        color: '#203578',
-                        cursor: 'pointer'
-                    }}>
-                        <FiTwitter style={{ 
-                            width: '20vw', 
-                            height: '20px', 
-                            cursor: 'pointer'
-                        }} />
-                    </a>
-
-                    <a href="/" style={{
-                        color: '#203578',
-                        cursor: 'pointer'
-                    }}>
-                        <FiInstagram style={{ 
-                            width: '20vw', 
-                            height: '20px', 
-                            cursor: 'pointer'
-                        }} />
-                    </a>
-                </Box>
-            </Box>
-
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '24px'
-            }}>
-                <img src={Footline} 
-                    alt="" 
-                />
-            </Box>
-
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                marginTop: '13px'
-            }}>
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '400',
-                    fontSize: '12px',
-                    lineHeight: '16px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                    Privacy Policy
-                </Link>
-                <TbMinusVertical style={{   
-                    color: '#ffffff',
-                    width: '4vw',
-                    height: '22px'
-                }} />
-                <Link to='/' style={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '400',
-                    fontSize: '12px',
-                    lineHeight: '16px',
-                    color: '#ffffff',
-                    textDecoration: 'none'
-                }}>
-                    Terms & Conditions
-                </Link>
-            </Box>
-
-            <Box sx={{  
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '5px'
-            }}>
-                <Typography sx={{
-                    fontFamily: 'Raleway',
-                    fontStyle: 'normal',
-                    fontWeight: '400',
-                    fontSize: '13px',
-                    lineHeight: '18px',
-                    color: '#ffffff',
-                }}>
-                    2022 All Rights Reserved. NBJ
-                </Typography>
-            </Box>
-        </BottomNavigation> */}
-
-        {/* MEDIUM DEVICE */}
-        <BottomNavigation sx={{ 
+        <Box sx={{ 
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -184,10 +28,10 @@ export default function Footer() {
             bottom: '0',
             left: '0',
             right: '0',
+            py: 4,
             marginTop: '119px',
             maxWidth: '100%',
-            minHeight: '611px',
-            background: '#203578'
+            background: '#06133C'
         }}>
           <NbjLogo />
           <Box sx={{
@@ -221,12 +65,12 @@ export default function Footer() {
               </Typography>
               {linkItems1.map((item, index) => (
               <Box key={index}>
-              <LinkComponent item={item}/>
+              <LinkComponent item={item} index={index} itemsLength={itemsLength1}/>
               </Box>
               ))}
             </Box>
             <Box sx={{
-              width: {xs: '30%', md: '90%'},
+              width: {xs: '35%', md: '90%'},
               display: 'flex',
               flexDirection: {xs: 'column', md: 'row'},
               justifyContent: 'center'
@@ -245,7 +89,7 @@ export default function Footer() {
               </Typography>
               {linkItems2.map((item, index) => (
               <Box key={index}>
-              <LinkComponent item={item}/>
+              <LinkComponent item={item} index={index} itemsLength={itemsLength2}/>
               </Box>
               ))}
             </Box>
@@ -312,7 +156,6 @@ export default function Footer() {
                     2022 All Rights Reserved. NBJ
                 </Typography>
             </Box>
-        </BottomNavigation>
-    </Box>
+        </Box>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Box from '@mui/material/Box'
 
-function LinkComponent({item}) {
+function LinkComponent({item, index, itemsLength}) {
   return (
     <div>
       <Box sx={{
@@ -19,7 +19,7 @@ function LinkComponent({item}) {
         <Link to='/' style={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
-          fontWeight: {xs: 400, md: 700},
+          fontWeight: {xs: '400px', md: '700'},
           fontSize: {xs: '14px', md: '20px'},
           lineHeight: '23px',
           color: '#ffffff',
@@ -28,7 +28,7 @@ function LinkComponent({item}) {
           {item}
         </Link>
         <Box sx={{
-          display: {xs: 'none', md: 'block'},
+          display: {xs: 'none', md: index+1 !== itemsLength? 'block': 'none'},
           borderLeft: '3px solid #ffffff',
           height: '18px',
           mt: 0.35,

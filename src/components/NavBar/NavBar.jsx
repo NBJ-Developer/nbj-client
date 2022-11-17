@@ -44,6 +44,7 @@ function ResponsiveAppBar() {
           <Box sx={{
           backgroundColor: '#ffffff',
           borderRadius: '50%',
+          width: '50px',
           }}>
             <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '50px', height: '50px'}}/>
           </Box>
