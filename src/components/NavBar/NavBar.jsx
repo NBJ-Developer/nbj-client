@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import MenuItem from '@mui/material/MenuItem';
 import AppBar from '@mui/material/AppBar';
 import Link from '@mui/material/Link'
-import ContainedButtons from '../../elements/Button/PrimaryButtons';
+import SecondaryButton from '../../elements/Button/SecondaryButton';
 
 const pages = ['Home', 'About', 'Media', 'Services', 'Contact Us'];
 
@@ -26,8 +26,13 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="sticky" sx={{
-      backgroundColor: '#203578',
+    <AppBar sx={{
+      position: 'absolute',
+      top: 0,
+      zIndex: 5,
+      backgroundColor: 'inherit',
+      border: 'none',
+      boxShadow: 'none',
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{
@@ -42,11 +47,15 @@ function ResponsiveAppBar() {
           py:2,
           }}>
           <Box sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
           backgroundColor: '#ffffff',
           borderRadius: '50%',
           width: '50px',
+          height: '50px'
           }}>
-            <img src="nbj-logo.png" alt="NBJ-LOGO" style={{width: '50px', height: '50px'}}/>
+            <img src="nbj-logo.png" alt="NBJ-LOGO"/>
           </Box>
           <Typography
             variant="h6"
@@ -94,7 +103,7 @@ function ResponsiveAppBar() {
           display: { xs: 'none', md: 'flex' },
           mr: 3, 
         }}>
-          <ContainedButtons buttonLabel={'Get a Quote'} />
+          <SecondaryButton buttonLabel={'Get a quote'} />
         </Box>
         {/* Menu Icon for the mobile view */}
         <Box sx={{ 

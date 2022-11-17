@@ -134,7 +134,7 @@ export default function Footer() {
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
-                    fontSize: {xs: '14px', md: '24px'},
+                    fontSize: {xs: '14px', md: '18px'},
                     lineHeight: {xs: '16px', md: '28px'},
                     color: '#ffffff',
                     textDecoration: 'none'
@@ -151,7 +151,7 @@ export default function Footer() {
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
-                    fontSize: {xs: '14px', md: '24px'},
+                    fontSize: {xs: '14px', md: '12px'},
                     lineHeight: {xs: '16px', md: '28px'},
                     color: '#ffffff',
                 }}>

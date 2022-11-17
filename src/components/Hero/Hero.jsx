@@ -43,11 +43,13 @@ function SwipeableHeroStepper() {
 
   return (
     <Box>
-      <Box sx={{ 
+      <Box  sx={{ 
+        backgroundImage: 'linear-gradient(red, yellow)',
         maxWidth: '100%', 
         flexGrow: 1,
-        position: 'relative' 
-      }}>
+        position: 'relative', 
+      }}
+      >
       <Box sx={{
         display: {xs: 'none', md: 'flex'}, 
       }}>
@@ -62,6 +64,15 @@ function SwipeableHeroStepper() {
         src={images[1].imgPath}
         alt={images[1].label}
       />
+        <Box sx={{ 
+          position: 'absolute',
+          backgroundImage: 'linear-gradient(rgba(32, 53, 120, 0.91), rgba(32, 53, 120, 0))',
+          width: '100%',
+          height: '100%', 
+          flexGrow: 1,
+        }}>
+
+      </Box>
       </Box>
       <Box sx={{
           display: {xs: 'block', md: 'none'},
@@ -93,34 +104,74 @@ function SwipeableHeroStepper() {
       <Box sx={{ 
         display: {xs: 'none', md: 'block',},
         position: 'absolute',
-        top: {xs: '520px', md:'90px'},
+        top: {xs: '520px', md:'20vh'},
         left: {xs: '10px', md: '80px'},
-        width: '64%', 
+        width: '100%', 
       }}>
         <Typography sx={{ 
           font: 'Raleway',
           fontWeight: '700',
-          fontSize: {xs: '38px', md:'64px'},
-          lineHeight: {xs: '37px', md: '85px'},
+          fontSize: {xs: '38px', md:'78px'},
+          lineHeight: {xs: '37px', md: '91px'},
           color: '#ffffff',
           textAlign: {xs: 'center', md: 'left'}, 
       }}>
-          World class charter and ground support flights
+          <span style={{
+            color: '#F9A020',
+          }}>World class</span> charter
+        </Typography >
+        <Typography sx={{ 
+          font: 'Raleway',
+          fontWeight: '700',
+          fontSize: {xs: '38px', md:'78px'},
+          lineHeight: {xs: '37px', md: '91px'},
+          color: '#ffffff',
+          textAlign: {xs: 'center', md: 'left'}, 
+      }}>
+         and ground support 
+        </Typography >
+        <Typography sx={{ 
+          font: 'Raleway',
+          fontWeight: '700',
+          fontSize: {xs: '38px', md:'78px'},
+          lineHeight: {xs: '37px', md: '91px'},
+          color: '#ffffff',
+          textAlign: {xs: 'center', md: 'left'}, 
+      }}>
+          flights
         </Typography >
         <Typography sx={{ 
           display: {xs: 'none', md: 'block'},
-          mt: '5px',
+          mt: 3,
           font: 'inter',
           fontWeight: '300',
           fontSize: '24px',
           lineHeight: '24px',
           color: 'rgba(255, 255, 255, 0.9)', 
-      }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Et augue ante tellus non leo.
+        }}>
+          Our goal is simply to offer the highest standards of professionalism
+        </Typography>
+        <Typography sx={{ 
+          display: {xs: 'none', md: 'block'},
+          font: 'inter',
+          fontWeight: '300',
+          fontSize: '24px',
+          lineHeight: '36px',
+          color: 'rgba(255, 255, 255, 0.9)', 
+        }}>
+          and service as measured by our safety record, dispatch reliability
+        </Typography>
+        <Typography sx={{ 
+          display: {xs: 'none', md: 'block'},
+          font: 'inter',
+          fontWeight: '300',
+          fontSize: '24px',
+          lineHeight: '36px',
+          color: 'rgba(255, 255, 255, 0.9)', 
+        }}> and customer satisfaction
         </Typography>
         <Box sx={{
-          mt: '30px',
+          mt: 4,
           display: {xs: 'none', md: 'block'},
         }}>
           <PrimaryButtons buttonLabel={'Explore'}/>
@@ -143,7 +194,7 @@ function SwipeableHeroStepper() {
     </Typography>
     <Box sx={{
       position: 'absolute',
-      bottom: '-200px',
+      bottom: '-100px',
       width: '100%',
       display: {xs: 'none', md: 'flex'},
       justifyContent: 'center',

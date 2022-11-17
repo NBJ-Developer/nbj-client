@@ -79,7 +79,7 @@ export default function OurStory({ourStoryProps}) {
         display: {xs: 'none', md: 'flex'},
         alignItems: 'center',
         width: '75%',
-        maxHeight: '65.5vh',
+        maxHeight: '68.5vh',
         marginTop: '139px',
       }}>
         <Box sx={{
@@ -89,6 +89,7 @@ export default function OurStory({ourStoryProps}) {
           background: '#ffffff',
           borderRadius: ourStoryProps.display? '0px 5px 5px 0px': '0px 40px 40px 0px',
           width: '60%',
+          height: '70.5vh',
           minHeight: ourStoryProps.display?'63vh': '57vh',
           p: 3,
           }}>
@@ -103,6 +104,7 @@ export default function OurStory({ourStoryProps}) {
               {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
             </Typography>
           </Box>
+          <Box>
             <Typography sx={{
               fontFamily: 'Raleway',
               fontWeight: '400',
@@ -114,7 +116,10 @@ export default function OurStory({ourStoryProps}) {
             }}>
               {ourStoryProps.content}
             </Typography>
+          </Box>
+            
           <Box sx={{ 
+            mt: 4,
             display: ourStoryProps.display? 'block': 'none',
           }}>
             <ContainedButtons buttonLabel={'Button'}/>
@@ -124,7 +129,7 @@ export default function OurStory({ourStoryProps}) {
         <Box
           component="img"
           sx={{
-            height: ourStoryProps.display? '62.8vh': '50.5vh',
+            height: ourStoryProps.display? '70.5vh': '50.5vh',
             display: 'block',
             overflow: 'hidden',
           }}

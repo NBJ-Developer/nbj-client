@@ -20,6 +20,9 @@ export default function ServicesCard({ content }) {
           component="img"
           image={content.imgPath}
           alt={content.imgPath}
+          style={{
+            height: '250px',
+          }}
         />
         <CardContent>
           <Typography gutterBottom component="div" sx={{
@@ -28,7 +31,6 @@ export default function ServicesCard({ content }) {
             fontSize: content.justify === 'left'? '26px': '20px',
             lineHeight: '23px',
             textAlign: content.justify === 'left'? 'left': 'center',
-            
           }}>
             {content.label}
           </Typography>

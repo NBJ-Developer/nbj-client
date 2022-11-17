@@ -132,7 +132,7 @@ export default function Services() {
             <Box sx={{ 
               display: 'flex',
               justifyContent: 'center',
-              height: '450px',
+              height: '470px',
             }}>
               <ServicesCard content={content[0]}/>
               <ServicesCard content={content[1]}/>

@@ -30,8 +30,8 @@ function NbjLogo() {
             fontFamily: 'Raleway',
             fontStyle: 'normal',
             fontWeight: '700',
-            fontSize: {xs: '14px', md: '24px'},
-            lineHeight: {xs: '16px', md: '28px'},
+            fontSize: {xs: '14px', md: '20px'},
+            lineHeight: {xs: '16px', md: '23px'},
             color: '#ffffff',
           }} >
             NBJ VIP GROUND HANDLING
