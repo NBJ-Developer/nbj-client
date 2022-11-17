@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import Typography from '@mui/material/Typography';
-import image from './airplain3.png'
 import image2 from './backgroungImage.jpeg'
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import InputField from './InputField';
@@ -30,12 +29,12 @@ export default function Sub() {
                 borderRadius: '30px 0'
             }}>
                 <Typography sx={{
-                    fontFamily: 'Raleway',
+                    fontFamily: 'Inter',
                     fontStyle: 'normal',
                     fontWeight: '600',
-                    fontSize: '16px',
+                    fontSize: '24px',
                     lineHeight: '22px',
-                    color: '#262626',
+                    color: '#ffffff',
                     textAlign: 'center',
                     marginTop: '17px'
                 }} variant='h1'>
@@ -81,6 +80,7 @@ export default function Sub() {
         }}>
           <Box sx={{ 
               fontFamily: 'Inter',
+              fontStyle: 'Regular',
               width: '75%',
               py: 2,
               display: 'flex',
@@ -89,7 +89,6 @@ export default function Sub() {
               alignItems: 'center',
             }}>
                  <Typography sx={{
-                    fontStyle: 'normal',
                     fontWeight: '700',
                     fontSize: '45px',
                     lineHeight: '53px',
@@ -99,7 +98,6 @@ export default function Sub() {
                     Join Our Mail list
                 </Typography>
                 <Typography sx={{
-                    fontStyle: 'normal',
                     fontWeight: '400',
                     fontSize: '18px',
                     lineHeight: '25px',

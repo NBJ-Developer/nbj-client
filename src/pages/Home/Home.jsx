@@ -4,6 +4,7 @@ import Benefits from '../../components/Benefits/Benefits'
 import CallToAction from '../../components/CallToAction/CallToAction'
 import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
+import HotelTransport from '../../components/Hotel&Transport/HotelTransport'
 import NavBar from '../../components/NavBar/NavBar'
 import Services from '../../components/Services/Services'
 import Sub from '../../components/Sub/Sub'
@@ -15,7 +16,7 @@ const Home = () => {
     heading: 'Our',
     heading1: 'Story',
     display: true,
-    image: 'airplain2.png',
+    image: 'ourStory.png',
     airplain5: 'airplain5.png',
     content: `NBJ was birthed in 2020 out of the passion to provide the 
     highest standard of air travel while ensuring the safety and comfort 
@@ -39,6 +40,7 @@ const Home = () => {
       <Services />
       <CallToAction />
       <Testimonials />
+      <HotelTransport />
       <Sub />
       <Footer />
     </div>

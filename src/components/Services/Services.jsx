@@ -86,7 +86,7 @@ export default function Services() {
                             flexGrow: 1,
                             mt: 3, 
                         }}>
-                    <ServicesCard content={content[0]}/>
+                    <ServicesCard content={content}/>
                 </Box>
             </Box>
         </Box>
@@ -132,7 +132,7 @@ export default function Services() {
             <Box sx={{ 
               display: 'flex',
               justifyContent: 'center',
-              marginTop: '50px'
+              height: '450px',
             }}>
               <ServicesCard content={content[0]}/>
               <ServicesCard content={content[1]}/>

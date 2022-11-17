@@ -44,20 +44,17 @@ function Benefits() {
           }}
         >
           <BenefitComponent 
-          benefitComponent={<WorkspacePremiumIcon sx={{
-            color: '#F9A020',
-          }}/>} 
+          image= {'safety.png'} 
           data={benefitsData[0]}/>
           <BenefitComponent 
-          benefitComponent={<WorkspacePremiumIcon sx={{
-            color: '#F9A020',
-          }}/>} 
+          image= {'comfort&privacy.png'} 
           data={benefitsData[1]}/>
           <BenefitComponent 
-          benefitComponent={<WorkspacePremiumIcon sx={{
-            color: '#F9A020',
-          }}/>} 
-          data={benefitsData[2]}/>            
+          image= {'convinience.png'}
+          data={benefitsData[2]}/>  
+          <BenefitComponent 
+          image= {'exellent.png'}
+          data={benefitsData[2]}/>           
         </Box>
         <Box sx={{
           display: {xs: 'flex', md: 'none'},
