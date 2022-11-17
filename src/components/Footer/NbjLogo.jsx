@@ -18,21 +18,20 @@ function NbjLogo() {
           backgroundColor: '#ffffff',
           border: '2px solid #F9A020',
           borderRadius: '50%',
-          width: '90px',
-          height: '90px',
+          width: {xs: '70px', md: '90px'},
+          height: {xs: '70px', md: '90px'},
         }}>
-          <img src="nbj-logo.png" alt="NBJ-LOGO" style={{ width: '200px', height: '50px',}}/>
+          <img src="nbj-logo.png" alt="NBJ-LOGO" style={{ width: '90px', height: '40px',}}/>
         </Box>
         <Box sx={{  
-            width: '25%',
-            height: '82px',
+            width: '30%',
         }}>
           <Typography variant='h1' sx={{
             fontFamily: 'Raleway',
             fontStyle: 'normal',
             fontWeight: '700',
-            fontSize: '24px',
-            lineHeight: '28px',
+            fontSize: {xs: '14px', md: '24px'},
+            lineHeight: {xs: '16px', md: '28px'},
             color: '#ffffff',
           }} >
             NBJ VIP GROUND HANDLING

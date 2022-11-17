@@ -29,14 +29,14 @@ export default function Footer() {
             left: '0',
             right: '0',
             py: 4,
+            px: {xs: 6, md: 0},
             marginTop: '119px',
             maxWidth: '100%',
             background: '#06133C'
         }}>
           <NbjLogo />
           <Box sx={{
-            mt: 3,
-            px: {xs: 16, md: 0},
+            mb: {md: 3},
             width: '100%',
             display: 'flex',
             flexDirection: {xs: 'row', md: 'column'},
@@ -45,7 +45,7 @@ export default function Footer() {
           }}>
             <Box sx={{
               my: 3,
-              width: {md: '65%'},
+              width: {md: '80%'},
               display: 'flex',
               flexDirection: {xs: 'column', md: 'row'},
               justifyContent: {xs: 'space-between', md: 'center'}
@@ -57,7 +57,8 @@ export default function Footer() {
                 fontFamily: 'Raleway',
                 fontStyle: 'normal',
                 fontWeight: 600,
-                fontSize: '20px',
+                fontSize: '14px',
+                lineHeight: '16px',
                 color: '#ffffff',
                 textDecoration: 'none'
               }}>
@@ -70,7 +71,7 @@ export default function Footer() {
               ))}
             </Box>
             <Box sx={{
-              width: {xs: '35%', md: '90%'},
+              width: {xs: '32%', md: '90%'},
               display: 'flex',
               flexDirection: {xs: 'column', md: 'row'},
               justifyContent: 'center'
@@ -81,7 +82,8 @@ export default function Footer() {
                 fontFamily: 'Raleway',
                 fontStyle: 'normal',
                 fontWeight: 600,
-                fontSize: '20px',
+                fontSize: '14px',
+                lineHeight: '16px',
                 color: '#ffffff',
                 textDecoration: 'none'
               }}>
@@ -101,8 +103,8 @@ export default function Footer() {
             justifyContent: 'center'
           }}>
             <Box sx={{
-              my: 5,
-              width: '80%',
+              my: 2,
+              width: {xs: '90%', md: '80%'},
               height: '3px',
               backgroundColor: '#F9A020'
             }} />
@@ -116,8 +118,8 @@ export default function Footer() {
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
-                    fontSize: '18px',
-                    lineHeight: '25px',
+                    fontSize: {xs: '14px', md: '24px'},
+                    lineHeight: {xs: '16px', md: '28px'},
                     color: '#ffffff',
                     textDecoration: 'none'
                 }}>
@@ -132,8 +134,8 @@ export default function Footer() {
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
-                    fontSize: '18px',
-                    lineHeight: '25px',
+                    fontSize: {xs: '14px', md: '24px'},
+                    lineHeight: {xs: '16px', md: '28px'},
                     color: '#ffffff',
                     textDecoration: 'none'
                 }}>
@@ -149,8 +151,8 @@ export default function Footer() {
                     fontFamily: 'Raleway',
                     fontStyle: 'normal',
                     fontWeight: '400',
-                    fontSize: '18px',
-                    lineHeight: '25px',
+                    fontSize: {xs: '14px', md: '24px'},
+                    lineHeight: {xs: '16px', md: '28px'},
                     color: '#ffffff',
                 }}>
                     2022 All Rights Reserved. NBJ

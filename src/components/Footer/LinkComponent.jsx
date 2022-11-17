@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Box from '@mui/material/Box'
+import Link from '@mui/material/Link'
 
 function LinkComponent({item, index, itemsLength}) {
   return (
@@ -16,12 +16,12 @@ function LinkComponent({item, index, itemsLength}) {
           mt: 0.35,
           mx: 2,
         }}/>
-        <Link to='/' style={{
+        <Link to='/' sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: {xs: '400px', md: '700'},
           fontSize: {xs: '14px', md: '20px'},
-          lineHeight: '23px',
+          lineHeight: {xs: '16px', md: '24px'},
           color: '#ffffff',
           textDecoration: 'none'
         }}>

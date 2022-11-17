@@ -16,7 +16,6 @@ function MediaComponent() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '56px'
        }}>
         <Typography sx={{
           fontFamily: 'Raleway',
@@ -29,7 +28,7 @@ function MediaComponent() {
           Connect with us:
         </Typography>
         <Box sx={{ 
-          mt: 3,
+          mt: 2,
           py: {xs: 0.6, md: 0},
           px: {xs: 4, md: 0},
           background: {xs: '#d9d9d9', md: 'none'},
