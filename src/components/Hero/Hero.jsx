@@ -3,18 +3,39 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
+import { Paper } from '@mui/material';
+import ServicesDetails from './ServicesDetails';
 
 
 const images = [
   {
     label: 'NBJ-Airline',
-    imgPath:'airplain4.png'
+    imgPath:'airplain1.png'
   },
   {
     label: 'NBJ-Airline',
-    imgPath:'airplain1.png'
+    imgPath:'airplain4.png'
   },
 ];
+
+const content = [
+  {
+   label: '5000+',
+   body: 'Total flights', 
+  },
+  {
+    label: '0',
+    body: 'Flight crash', 
+   },
+   {
+    label: '250',
+    body: 'Destination', 
+   },
+   {
+    label: '100K+',
+    body: 'Total Passengers', 
+   },
+]
 
 const imageArray = ['airplain4.png', 'airplain1.png', 'airplain3.png']
 
@@ -72,9 +93,9 @@ function SwipeableHeroStepper() {
       <Box sx={{ 
         display: {xs: 'none', md: 'block',},
         position: 'absolute',
-        top: {xs: '520px', md:'200px'},
+        top: {xs: '520px', md:'90px'},
         left: {xs: '10px', md: '80px'},
-        width: '550px', 
+        width: '64%', 
       }}>
         <Typography sx={{ 
           font: 'Raleway',
@@ -84,12 +105,12 @@ function SwipeableHeroStepper() {
           color: '#ffffff',
           textAlign: {xs: 'center', md: 'left'}, 
       }}>
-          Big Text Header 2 lines
+          World class charter and ground support flights
         </Typography >
         <Typography sx={{ 
           display: {xs: 'none', md: 'block'},
           mt: '5px',
-          font: 'Raleway',
+          font: 'inter',
           fontWeight: '300',
           fontSize: '24px',
           lineHeight: '24px',
@@ -121,23 +142,27 @@ function SwipeableHeroStepper() {
       Et augue ante tellus non leo.
     </Typography>
     <Box sx={{
-      display: {xs: 'none', md: 'flex'},
+      position: 'absolute',
+      bottom: '-200px',
       width: '100%',
+      display: {xs: 'none', md: 'flex'},
       justifyContent: 'center',
-      backgroundColor: '#4264CC',
+      alignItems: 'center',
+    }}>
+      <Paper sx={{
+      width: '90%',
+      px: 3,
+      display: {xs: 'none', md: 'flex'},
+      justifyContent: 'space-between',
       paddingY: '30px',
     }}>
-      <Typography sx={{
-          textAlign: 'center',
-          color: '#FFFFFF',
-          marginY: '20px',
-          width: '60%',
-        }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et augue 
-        ante tellus non leo. Lorem ipsum dolor sit amet, consectetur adipiscing 
-        elit. Et augue ante tellus non leo.
-      </Typography>
+       <ServicesDetails content={content[0]}/>
+       <ServicesDetails content={content[1]}/>
+       <ServicesDetails content={content[2]}/>
+       <ServicesDetails content={content[3]}/>
+    </Paper>
     </Box>
+    
     <Box sx={{
       display: {xs: 'flex', md: 'none'},
       width: '100%',

@@ -9,7 +9,7 @@ function Benefits() {
   return (
     <div>
       <Box sx={{
-        marginTop: '60px',
+        marginTop: '200px',
       }}>
         <Typography sx={{
           fontFamily: 'Raleway',
@@ -36,7 +36,7 @@ function Benefits() {
             display: {xs: 'none', md: 'flex'},
             flexWrap: 'wrap',
             '& > :not(style)': {
-              mr: 7,
+              mr: 3,
               mt: 1,
               width: 220,
               height: 169,
