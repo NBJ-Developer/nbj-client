@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
+import Slider from '../../elements/Slider/Slider';
 import Statistic from '../Statistic/Statistic';
 
 
@@ -106,6 +107,7 @@ function SwipeableHeroStepper() {
         left: {xs: '10px', md: '80px'},
         width: '90%', 
       }}>
+        <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
@@ -118,7 +120,9 @@ function SwipeableHeroStepper() {
               color: '#F9A020',
             }}>World class</span> charter
           </Typography >
+        }/>
 
+        <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
@@ -129,7 +133,9 @@ function SwipeableHeroStepper() {
           }}>
           and ground support 
           </Typography >
+        }/>
 
+        <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
@@ -140,6 +146,7 @@ function SwipeableHeroStepper() {
           }}>
             flights
           </Typography >
+        }/>
         
         <Typography sx={{ 
           display: {xs: 'none', md: 'block'},
@@ -228,7 +235,6 @@ function SwipeableHeroStepper() {
       height: '2px',
       width: '70%',
     }}>
-
     </Box>
     </Box>
     </Box>
