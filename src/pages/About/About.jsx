@@ -6,10 +6,7 @@ import MissionVision from '../../components/About/MissionVision'
 import Footer from '../../components/Footer/Footer'
 import OurStory from '../../components/About/OurStory'
 import MeetTheTeam from '../../components/About/MeetTheTeam'
-import Available from '../../components/About/Available'
-import ServicesDetails from '../../components/Statistic/ServicesDetails'
 import bgImage from './aboutBG.png'
-import { Paper } from '@mui/material'
 import Statistic from '../../components/Statistic/Statistic'
 
 function About() {
