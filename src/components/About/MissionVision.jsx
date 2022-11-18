@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material'
 import Box from '@mui/material/Box'
 import React from 'react'
-import Slider from '../../elements/Slider/Slider'
+import Slider from '../../elements/Slider/Slider.jsx'
 
 function MissionVision() {
   const componentContents = [
