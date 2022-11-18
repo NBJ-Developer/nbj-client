@@ -7,7 +7,10 @@ import Footer from '../../components/Footer/Footer'
 import OurStory from '../../components/About/OurStory'
 import MeetTheTeam from '../../components/About/MeetTheTeam'
 import Available from '../../components/About/Available'
+import ServicesDetails from '../../components/Statistic/ServicesDetails'
 import bgImage from './aboutBG.png'
+import { Paper } from '@mui/material'
+import Statistic from '../../components/Statistic/Statistic'
 
 function About() {
   const ourStoryProps = {
@@ -23,6 +26,8 @@ function About() {
     on giving you a unique travel experience regardless of travel purpose 
     and provide a enviable working environment.`
   }
+
+ 
   return (
     <div>
       <GeneralHero display={false} bgImage={bgImage} />
@@ -38,9 +43,16 @@ function About() {
         </Typography>
       </Box>
       <OurStory ourStoryProps={ourStoryProps}/>
-      <MissionVision />
       <MeetTheTeam />
-      <Available />
+      <MissionVision />
+      <Box sx={{
+        mt: 16,
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+      }}>
+        <Statistic />
+      </Box>
       <Footer />
     </div>
   )

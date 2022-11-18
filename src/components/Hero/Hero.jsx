@@ -3,9 +3,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
-import { Paper } from '@mui/material';
-import ServicesDetails from './ServicesDetails';
-import Slider from '../../elements/Slider/slider';
+import Slider from '../../elements/Slider/Slider';
+import Statistic from '../Statistic/Statistic';
 
 
 const images = [
@@ -209,18 +208,7 @@ function SwipeableHeroStepper() {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <Paper sx={{
-      width: '90%',
-      px: 3,
-      display: {xs: 'none', md: 'flex'},
-      justifyContent: 'space-between',
-      paddingY: '30px',
-    }}>
-       <ServicesDetails content={content[0]}/>
-       <ServicesDetails content={content[1]}/>
-       <ServicesDetails content={content[2]}/>
-       <ServicesDetails content={content[3]}/>
-    </Paper>
+    <Statistic />
     </Box>
     
     <Box sx={{

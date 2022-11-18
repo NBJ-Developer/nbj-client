@@ -15,6 +15,7 @@ function ServicesDetails({content}) {
           fontSize: '41px',
           lineHeight: '49px',
           textAlign: 'center',
+          color: '#0E1035',
         }}>
           {content.label}
         </Typography>
@@ -25,6 +26,7 @@ function ServicesDetails({content}) {
           fontSize: '28px',
           lineHeight: '32px',
           textAlign: 'center',
+          color: '#0E1035',
         }}>
           {content.body}
         </Typography>

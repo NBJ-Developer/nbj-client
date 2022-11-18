@@ -1,6 +1,7 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import ServicesCard from '../Services/ServicesCard'
+import Slider from '../../elements/Slider/Slider'
 
 function MeetTheTeam() {
   const cardContents = [
@@ -59,11 +60,16 @@ function MeetTheTeam() {
       display: 'flex',
       justifyContent: 'space-between',
     }}>
+      <Grid container spacing={2}>
       {cardContents.map( data => (
-        <Box key={data.imgPath}>
+        <Grid key={data.imgPath} item xs={6} md={4}>
+        <Slider  slideComponent={
           <ServicesCard content={data}/>
-        </Box>
+        }/>
+        </Grid>
       ))}
+        
+      </Grid>
     </Box>
     </Box>
     

@@ -5,7 +5,7 @@ import BenefitComponent from './BenefitComponent'
 import benefitsData from './benefitsData';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Slider from '../../elements/Slider/slider';
+import Slider from '../../elements/Slider/Slider';
 function Benefits() {
   return (
     <div>

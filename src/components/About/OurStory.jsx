@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import { BsArrowRightCircle } from 'react-icons/bs'
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
 import Typography from '@mui/material/Typography';
+import Slider from '../../elements/Slider/Slider';
 
 
 export default function OurStory({ourStoryProps}) {
@@ -87,14 +88,15 @@ export default function OurStory({ourStoryProps}) {
           flexDirection: 'column',
           justifyContent: 'center',
           background: '#ffffff',
-          borderRadius: ourStoryProps.display? '0px 5px 5px 0px': '0px 40px 40px 0px',
+          borderRadius: '0px 5px 5px 0px',
           width: '60%',
           height: '70.5vh',
           minHeight: ourStoryProps.display?'63vh': '57vh',
           p: 3,
           }}>
           <Box>
-            <Typography sx={{
+          <Slider slideComponent={
+          <Typography sx={{
               fontFamily: 'Raleway',
               fontStyle: 'normal',
               fontWeight: '700',
@@ -103,6 +105,8 @@ export default function OurStory({ourStoryProps}) {
             }} variant='h1'>
               {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
             </Typography>
+          }/>
+            
           </Box>
           <Box>
             <Typography sx={{
@@ -129,7 +133,7 @@ export default function OurStory({ourStoryProps}) {
         <Box
           component="img"
           sx={{
-            height: ourStoryProps.display? '70.5vh': '50.5vh',
+            height: '70.5vh',
             display: 'block',
             overflow: 'hidden',
           }}

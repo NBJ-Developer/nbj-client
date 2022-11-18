@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import ServicesCard from './ServicesCard';
-import Slider from '../../elements/Slider/slider';
+import Slider from '../../elements/Slider/Slider';
 import { Grid } from '@mui/material';
 
 //const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
