@@ -11,7 +11,6 @@ import MenuItem from '@mui/material/MenuItem';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons'
 import Link from '@mui/material/Link';
 import { Typography } from '@mui/material';
-import Slider from '../../elements/Slider/Slider';
 
 const pages = ['Home', 'About', 'Services', 'Contact'];
 
@@ -161,18 +160,14 @@ const NavBar = ({ display, bgImage }) => {
           display: { xs: 'none', md: 'block', },
           pt: !display? 10: 0,
         }}>
-          <Slider slideComponent={
               <Typography variant="h3" component="h3" sx={{
                 marginBottom: '10px',
               }}>
                 OUR STORY
               </Typography>
-          }/>
-          <Slider slideComponent={
             <Typography>
               If you want to know more about us, you’re in the right place. Read to learn how we can assist you
             </Typography>
-          }/>
           
         </Box>
         <Box sx={{

@@ -140,6 +140,7 @@ function SwipeableHeroStepper() {
           }}>
             flights
           </Typography >
+        
         <Typography sx={{ 
           display: {xs: 'none', md: 'block'},
           mt: 3,
