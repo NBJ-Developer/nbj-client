@@ -4,7 +4,7 @@ import Benefits from '../../components/Benefits/Benefits'
 import CallToAction from '../../components/CallToAction/CallToAction'
 import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
-import HotelTransport from '../../components/Hotel&Transport/HotelTransport'
+import SideAttraction from '../../components/SideAttraction/SideAttraction'
 import NavBar from '../../components/NavBar/NavBar'
 import Services from '../../components/Services/Services'
 import Sub from '../../components/Sub/Sub'
@@ -40,7 +40,7 @@ const Home = () => {
       <Services />
       <CallToAction />
       <Testimonials />
-      <HotelTransport />
+      <SideAttraction />
       <Sub />
       <Footer />
     </div>

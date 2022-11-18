@@ -12,11 +12,11 @@ export default function PrimaryButtons({buttonLabel}) {
       fontStyle: 'normal',
       fontSize: '20px',
       color: '#F9A020',
-      border: '3px solid #F9A020',
+      border: '1px solid #F9A020',
       textTransform: 'none',
       borderRadius: '10px 0 10px 0',
       '&:hover': {
-        backgroundColor: '#ffffff',
+        backgroundColor: 'inherit',
         opacity: [0.9, 0.8, 0.7],
         color: '#F9A020',
         border: '3px solid #F9A020',

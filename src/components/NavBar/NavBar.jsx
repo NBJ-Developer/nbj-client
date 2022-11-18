@@ -29,7 +29,6 @@ function ResponsiveAppBar() {
     <AppBar sx={{
       position: 'absolute',
       top: 0,
-      zIndex: 5,
       backgroundColor: 'inherit',
       border: 'none',
       boxShadow: 'none',
@@ -50,10 +49,10 @@ function ResponsiveAppBar() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-          backgroundColor: '#ffffff',
-          borderRadius: '50%',
-          width: '50px',
-          height: '50px'
+            backgroundColor: '#ffffff',
+            borderRadius: '50%',
+            width: '50px',
+            height: '50px'
           }}>
             <img src="nbj-logo.png" alt="NBJ-LOGO"/>
           </Box>

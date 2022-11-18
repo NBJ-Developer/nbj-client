@@ -6,6 +6,20 @@ import { Typography } from '@mui/material';
 export default function TestimonialsPapper({ data }) {
   return (
 <Box>
+  <Box sx={{
+  mr: 4,
+  display: 'flex',
+  justifyContent: 'right',
+  }}>
+   <Box sx={{
+    width: 0,
+    height: 0,
+    border: '15px solid transparent',
+    borderTop: 0,
+    borderBottom: '30px solid #ffffff',
+  }} /> 
+  </Box>
+  
   <Paper sx={{
   p: 1,
   display: 'flex',

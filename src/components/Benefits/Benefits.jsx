@@ -5,6 +5,7 @@ import BenefitComponent from './BenefitComponent'
 import benefitsData from './benefitsData';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import Slider from '../../elements/Slider/slider';
 function Benefits() {
   return (
     <div>
@@ -32,29 +33,43 @@ function Benefits() {
       }}>
         <Box
           sx={{
-            marginTop: '15px',
+            width: '85%',
+            mt: 4,
             display: {xs: 'none', md: 'flex'},
-            flexWrap: 'wrap',
-            '& > :not(style)': {
-              mr: 3,
-              mt: 1,
-              width: 220,
-              height: 169,
-            },
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
-          <BenefitComponent 
-          image= {'safety.png'} 
-          data={benefitsData[0]}/>
-          <BenefitComponent 
-          image= {'comfort&privacy.png'} 
-          data={benefitsData[1]}/>
-          <BenefitComponent 
-          image= {'convinience.png'}
-          data={benefitsData[2]}/>  
-          <BenefitComponent 
-          image= {'exellent.png'}
-          data={benefitsData[2]}/>           
+          <Grid container spacing={4}>
+            <Grid item xs={6} md={3}>
+              <Slider slideComponent={
+                <BenefitComponent 
+                image= {'safety.png'} 
+                data={benefitsData[0]}/>
+              }/>
+            </Grid>
+            <Grid item xs={6} md={3}>
+              <Slider slideComponent={
+                <BenefitComponent 
+                image= {'comfort&privacy.png'} 
+                data={benefitsData[1]}/>
+              }/>
+            </Grid>
+            <Grid item xs={6} md={3}>
+              <Slider slideComponent={
+                <BenefitComponent 
+                image= {'convinience.png'}
+                data={benefitsData[2]}/> 
+              }/>
+            </Grid>
+            <Grid item xs={6} md={3}>
+              <Slider slideComponent={
+                <BenefitComponent 
+                image= {'exellent.png'}
+                data={benefitsData[3]}/> 
+              }/>
+            </Grid>
+          </Grid>    
         </Box>
         <Box sx={{
           display: {xs: 'flex', md: 'none'},

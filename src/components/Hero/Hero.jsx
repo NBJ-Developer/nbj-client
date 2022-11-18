@@ -5,6 +5,7 @@ import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
 import { Paper } from '@mui/material';
 import ServicesDetails from './ServicesDetails';
+import Slider from '../../elements/Slider/slider';
 
 
 const images = [
@@ -46,7 +47,6 @@ function SwipeableHeroStepper() {
       <Box  sx={{ 
         backgroundImage: 'linear-gradient(red, yellow)',
         maxWidth: '100%', 
-        flexGrow: 1,
         position: 'relative', 
       }}
       >
@@ -56,10 +56,10 @@ function SwipeableHeroStepper() {
       <Box
         component="img"
         sx={{
-          height: '100vh',
           display: 'block',
           overflow: 'hidden',
           width: '100%',
+          height: '100vh',
         }}
         src={images[1].imgPath}
         alt={images[1].label}
@@ -106,40 +106,49 @@ function SwipeableHeroStepper() {
         position: 'absolute',
         top: {xs: '520px', md:'20vh'},
         left: {xs: '10px', md: '80px'},
-        width: '100%', 
+        width: '90%', 
       }}>
-        <Typography sx={{ 
-          font: 'Raleway',
-          fontWeight: '700',
-          fontSize: {xs: '38px', md:'78px'},
-          lineHeight: {xs: '37px', md: '91px'},
-          color: '#ffffff',
-          textAlign: {xs: 'center', md: 'left'}, 
-      }}>
-          <span style={{
-            color: '#F9A020',
-          }}>World class</span> charter
-        </Typography >
-        <Typography sx={{ 
-          font: 'Raleway',
-          fontWeight: '700',
-          fontSize: {xs: '38px', md:'78px'},
-          lineHeight: {xs: '37px', md: '91px'},
-          color: '#ffffff',
-          textAlign: {xs: 'center', md: 'left'}, 
-      }}>
-         and ground support 
-        </Typography >
-        <Typography sx={{ 
-          font: 'Raleway',
-          fontWeight: '700',
-          fontSize: {xs: '38px', md:'78px'},
-          lineHeight: {xs: '37px', md: '91px'},
-          color: '#ffffff',
-          textAlign: {xs: 'center', md: 'left'}, 
-      }}>
-          flights
-        </Typography >
+        <Slider slideComponent={
+          <Typography sx={{ 
+            font: 'Raleway',
+            fontWeight: '700',
+            fontSize: {xs: '38px', md:'78px'},
+            lineHeight: {xs: '37px', md: '91px'},
+            color: '#ffffff',
+            textAlign: {xs: 'center', md: 'left'}, 
+          }}>
+            <span style={{
+              color: '#F9A020',
+            }}>World class</span> charter
+          </Typography >
+        }/>
+
+        <Slider slideComponent={
+          <Typography sx={{ 
+            font: 'Raleway',
+            fontWeight: '700',
+            fontSize: {xs: '38px', md:'78px'},
+            lineHeight: {xs: '37px', md: '91px'},
+            color: '#ffffff',
+            textAlign: {xs: 'center', md: 'left'}, 
+          }}>
+          and ground support 
+          </Typography >
+        }/>
+
+        <Slider slideComponent={
+          <Typography sx={{ 
+            font: 'Raleway',
+            fontWeight: '700',
+            fontSize: {xs: '38px', md:'78px'},
+            lineHeight: {xs: '37px', md: '91px'},
+            color: '#ffffff',
+            textAlign: {xs: 'center', md: 'left'}, 
+          }}>
+            flights
+          </Typography >
+        }/>
+        
         <Typography sx={{ 
           display: {xs: 'none', md: 'block'},
           mt: 3,

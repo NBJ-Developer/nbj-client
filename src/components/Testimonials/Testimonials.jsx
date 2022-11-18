@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TestimonialsPapper from '../papper/TestimonialsPapper';
+import Slider from '../../elements/Slider/slider';
 
 export default function Testimonials() {
     const data = [
@@ -69,7 +70,7 @@ export default function Testimonials() {
           my: 4,
           display: {xs: 'none', md: 'block'},
         }}>
-          What our <span className='span1'>Clients</span>   have to say
+          What our <span className='orangeSpan'>Clients</span>   have to say
         </Typography>
         <Box sx={{
           width: '100%',
@@ -77,7 +78,6 @@ export default function Testimonials() {
           justifyContent: 'center',
         }}>
           <Box sx={{
-          marginTop: '15px',
           display: 'flex',
           flexDirection: {xs: 'column', md: 'row'},
           '& > :not(style)': {
@@ -87,19 +87,25 @@ export default function Testimonials() {
           height: 169,
           },
         }}>
-          <Box>
-            <TestimonialsPapper data={data[0]}/>
-          </Box>
-          <Box sx={{
-            pt: 4,
-          }}>
-            <TestimonialsPapper data={data[1]}/>
-          </Box>
-          <Box sx={{
-            pt: 8,
-          }}>
-            <TestimonialsPapper data={data[2]}/>
-          </Box>
+          <Slider slideComponent={
+            <Box>
+              <TestimonialsPapper data={data[0]}/>
+            </Box>
+          }/>
+          <Slider slideComponent={
+            <Box sx={{
+              pt: 4,
+            }}>
+              <TestimonialsPapper data={data[1]}/>
+            </Box>
+          }/>
+          <Slider slideComponent={
+            <Box sx={{
+              pt: 8,
+            }}>
+              <TestimonialsPapper data={data[2]}/>
+            </Box>
+          }/>          
         </Box> 
         </Box>
          

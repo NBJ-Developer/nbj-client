@@ -60,7 +60,7 @@ export default function CallToAction() {
         display: {xs: 'none', md: 'flex'},
         justifyContent: 'center',
         alignItems: 'center',  
-        width: '100%',
+        width: '100vw',
         height: '450px',
         marginTop: '90px'
       }}>

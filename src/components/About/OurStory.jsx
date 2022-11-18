@@ -78,9 +78,9 @@ export default function OurStory({ourStoryProps}) {
       <Box sx={{  
         display: {xs: 'none', md: 'flex'},
         alignItems: 'center',
-        width: '75%',
-        maxHeight: '68.5vh',
-        marginTop: '139px',
+        width: '80%',
+        maxHeight: '60.5vh',
+        mt: 25,
       }}>
         <Box sx={{
           display: 'flex',

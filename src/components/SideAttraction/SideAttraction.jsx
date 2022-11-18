@@ -2,8 +2,10 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import ServicesCard from '../Services/ServicesCard'
+import Slider from '../../elements/Slider/slider'
+import { Grid } from '@mui/material'
 
-function HotelTransport() {
+function SideAttraction() {
 
   const contents = [
     {
@@ -12,7 +14,7 @@ function HotelTransport() {
       body: `Book a room in our hotels to relax after a long flight. 
       We have different rooms that suit your taste. Our rooms are 
       also pet friendly and you definately enjoy your stay.`,
-      buttonDisplay: true,
+      buttonDisplay: 'secondary',
       justify: 'left',
     },
     {
@@ -20,7 +22,7 @@ function HotelTransport() {
       label: 'Transport Service',
       body: `Take advantage of your stop to visit our restaurants. Everything 
       in between from breakfast to dinner is made carefully with excellent hygiene.`,
-      buttonDisplay: true,
+      buttonDisplay: 'secondary',
       justify: 'left',
     }
   ]
@@ -31,7 +33,7 @@ function HotelTransport() {
         mt: 26,
         display: 'flex',
         width: '100%',
-        height: '500px',
+        height: '550px',
       }}>
         <Box sx={{
         display: 'flex',
@@ -57,16 +59,25 @@ function HotelTransport() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          px: 2,
           width: '75%',
           backgroundColor: 'rgba(43, 71, 161, 0.2)',
         }}>
-          <ServicesCard content={contents[0]}/>
-          <ServicesCard content={contents[1]}/>
-          <ServicesCard content={contents[1]}/>
+          <Grid container spacing={2}>
+            <Grid item md={4}>
+              <Slider slideComponent={<ServicesCard content={contents[0]}/>}/>
+            </Grid>
+            <Grid item md={4}>
+              <Slider slideComponent={<ServicesCard content={contents[1]}/>}/>
+            </Grid>
+            <Grid item md={4}>
+              <Slider slideComponent={<ServicesCard content={contents[0]}/>}/>
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     </div>
   )
 }
 
-export default HotelTransport
+export default SideAttraction

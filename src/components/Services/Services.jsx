@@ -1,17 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { useTheme } from '@mui/material/styles';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-//import SwipeableViews from 'react-swipeable-views';
-//import { autoPlay } from 'react-swipeable-views-utils';
-import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
-import SubServices from './SubServices';
 import ServicesCard from './ServicesCard';
+import Slider from '../../elements/Slider/slider';
+import { Grid } from '@mui/material';
 
 //const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -20,43 +12,29 @@ import ServicesCard from './ServicesCard';
         label: 'Ground Support',
         imgPath: 'airplain3.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
-        buttonDisplay: true
+        buttonDisplay: 'primary',
     },
     {
         label: 'Aircraft Charter & Bookings',
         imgPath: 'service1.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
-        buttonDisplay: true
+        buttonDisplay: 'primary',
     },
     {
         label: 'Maintenance',
         imgPath: 'service2.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
-        buttonDisplay: true
+        buttonDisplay: 'primary',
     },
     {
         label: 'Wings Inflight',
         imgPath: 'service3.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
-        buttonDisplay: true
+        buttonDisplay: 'primary',
     },
     ];
 
 export default function Services() {
-    const theme = useTheme();
-    const [activeStep, setActiveStep] = React.useState(0);
-
-    const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
-
-    const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
-
-    const handleStepChange = (step) => {
-        setActiveStep(step);
-    };
 
   return (
     <Box>
@@ -95,7 +73,7 @@ export default function Services() {
         <Box sx={{    
             display: {xs: 'none', md: 'block'},
             width: '100%',
-            marginTop: '119px',
+            marginTop: '180px',
             textAlign: 'center',
         }}>
             <Typography sx={{
@@ -106,13 +84,7 @@ export default function Services() {
                 lineHeight: '38px'
             }} variant='h1'>
                 OUR
-                <span style={{
-                    backgroundColor: '#d9d9d9',
-                    color: '#000000',
-                    borderRadius: '5px',
-                    padding: '2px',
-                    marginLeft: '5px'
-                }}>
+                <span className='span1'>
                     SERVICES
                 </span> 
             </Typography>
@@ -129,15 +101,30 @@ export default function Services() {
             }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Typography>
-            <Box sx={{ 
+            <Box sx={{
+              width: '100%', 
               display: 'flex',
               justifyContent: 'center',
-              height: '470px',
+              alignItems: 'center',
+              height: '550px',
             }}>
-              <ServicesCard content={content[0]}/>
-              <ServicesCard content={content[1]}/>
-              <ServicesCard content={content[2]}/>
-              <ServicesCard content={content[3]}/>
+              <Box>
+                <Grid container spacing={4}>
+                <Grid item md={3}>
+                <Slider slideComponent={<ServicesCard content={content[0]}/>}/>
+                </Grid>
+                <Grid item md={3}>
+              <Slider slideComponent={<ServicesCard content={content[1]}/>}/>
+                </Grid>
+                <Grid item md={3}>
+              <Slider slideComponent={<ServicesCard content={content[2]}/>}/>
+                </Grid>
+                <Grid item md={3}>
+              <Slider slideComponent={<ServicesCard content={content[3]}/>}/>
+                </Grid>
+              </Grid>
+              </Box>
+              
             </Box>
         </Box>
 

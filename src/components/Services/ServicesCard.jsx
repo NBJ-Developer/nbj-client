@@ -6,13 +6,14 @@ import Typography from '@mui/material/Typography';
 import CardActions from '@mui/material/CardActions';
 import  CardActionArea from '@mui/material/CardActionArea';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
+import SecondaryButton from '../../elements/Button/SecondaryButton';
+import { Box } from '@mui/material';
 
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{ 
         width: {xs: 500, md: 320},
-        height: '90%',
-        mr: {xs: 0, md:2},
+        maxHeight: '90%',
         pb: {xs: 0, md: 2}, 
         }}>
       <CardActionArea>
@@ -43,7 +44,16 @@ export default function ServicesCard({ content }) {
         display: !content.buttonDisplay?'none': 'flex',
         justifyContent: content.justify === 'left'? 'left': 'center',
       }}>
-        <PrimaryButtons buttonLabel={'Button'}/>
+        <Box sx={{
+          display: content.buttonDisplay === 'primary'? 'block': 'none'
+        }}>
+          <PrimaryButtons buttonLabel={'Button'}/>
+        </Box>
+        <Box sx={{
+          display: content.buttonDisplay === 'secondary'? 'block': 'none'
+        }}>
+          <SecondaryButton buttonLabel={'Button'}/>
+        </Box>
       </CardActions>
     </Card>
   );
