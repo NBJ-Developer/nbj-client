@@ -106,7 +106,6 @@ function SwipeableHeroStepper() {
         left: {xs: '10px', md: '80px'},
         width: '90%', 
       }}>
-        <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
@@ -119,9 +118,7 @@ function SwipeableHeroStepper() {
               color: '#F9A020',
             }}>World class</span> charter
           </Typography >
-        }/>
 
-        <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
@@ -132,9 +129,7 @@ function SwipeableHeroStepper() {
           }}>
           and ground support 
           </Typography >
-        }/>
 
-        <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
@@ -145,8 +140,6 @@ function SwipeableHeroStepper() {
           }}>
             flights
           </Typography >
-        }/>
-        
         <Typography sx={{ 
           display: {xs: 'none', md: 'block'},
           mt: 3,
