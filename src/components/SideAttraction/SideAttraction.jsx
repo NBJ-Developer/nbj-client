@@ -2,7 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import ServicesCard from '../Services/ServicesCard'
-import Slider from '../../elements/Slider/Slider'
+import Slider from '../../elements/Slidereffect/Slidereffect'
 import Grid from '@mui/material/Grid'
 
 function SideAttraction() {

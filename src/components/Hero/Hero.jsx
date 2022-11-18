@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
-import Slider from '../../elements/Slider/Slider';
+import Slider from '../../elements/Slidereffect/Slidereffect';
 import Statistic from '../Statistic/Statistic';
 
 

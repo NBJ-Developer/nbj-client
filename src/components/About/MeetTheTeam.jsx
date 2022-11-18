@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import ServicesCard from '../Services/ServicesCard'
-import Slider from '../../elements/Slider/Slider.jsx'
+import Slider from '../../elements/Slidereffect/Slidereffect'
 
 function MeetTheTeam() {
   const cardContents = [

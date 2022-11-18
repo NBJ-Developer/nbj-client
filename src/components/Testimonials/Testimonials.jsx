@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TestimonialsPapper from '../papper/TestimonialsPapper';
-import Slider from '../../elements/Slider/Slider';
+import Slider from '../../elements/Slidereffect/Slidereffect'
 
 export default function Testimonials() {
     const data = [

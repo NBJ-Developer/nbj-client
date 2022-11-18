@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import { BsArrowRightCircle } from 'react-icons/bs'
 import ContainedButtons from '../../elements/Button/PrimaryButtons';
 import Typography from '@mui/material/Typography';
-import Slider from '../../elements/Slider/Slider';
+import Slider from '../../elements/Slidereffect/Slidereffect'
 
 
 export default function OurStory({ourStoryProps}) {

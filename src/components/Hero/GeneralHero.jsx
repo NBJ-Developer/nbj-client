@@ -11,7 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons'
 import Link from '@mui/material/Link';
 import { Typography } from '@mui/material';
-import Slider from '../../elements/Slider/Slider';
+import Slider from '../../elements/Slidereffect/Slidereffect';
 
 const pages = ['Home', 'About', 'Services', 'Contact'];
 
