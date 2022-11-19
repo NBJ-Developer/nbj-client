@@ -9,6 +9,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import Services from '../../components/Services/Services'
 import Sub from '../../components/Sub/Sub'
 import Testimonials from '../../components/Testimonials/Testimonials'
+import { Box } from '@mui/material'
 
 
 const Home = () => {
@@ -16,8 +17,8 @@ const Home = () => {
     heading: 'Our',
     heading1: 'Story',
     display: true,
-    image: 'ourStory.png',
-    airplain5: 'airplain5.png',
+    mdImage: 'ourStory.png',
+    xsImage: 'airplain5.png',
     content: `NBJ was birthed in 2020 out of the passion to provide the 
     highest standard of air travel while ensuring the safety and comfort 
     of individuals around the world. We are a ground handling company 
@@ -40,7 +41,11 @@ const Home = () => {
       <Services />
       <CallToAction />
       <Testimonials />
-      <SideAttraction />
+      <Box sx={{
+        display: {xs: 'none', md: 'block'},
+      }}>
+        <SideAttraction />
+      </Box>
       <Sub />
       <Footer />
     </div>

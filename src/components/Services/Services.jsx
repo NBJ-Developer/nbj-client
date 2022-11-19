@@ -41,7 +41,7 @@ export default function Services() {
         {/* SMALL DEVICE */}
         <Box sx={{ 
             display: {xs: 'block', md: 'none'},
-            marginTop: '56px',
+            mt: 16,
             width: '100%'
         }}>
             <Typography sx={{
@@ -64,7 +64,7 @@ export default function Services() {
                             flexGrow: 1,
                             mt: 3, 
                         }}>
-                    <ServicesCard content={content}/>
+                    <ServicesCard content={content[0]}/>
                 </Box>
             </Box>
         </Box>

@@ -28,7 +28,7 @@ function LinkComponent({item, index, itemsLength}) {
           {item}
         </Link>
         <Box sx={{
-          display: {xs: 'none', md: index+1 !== itemsLength? 'block': 'none'},
+          display: {xs: 'none', md: index + 1 !== itemsLength? 'block': 'none'},
           borderLeft: '3px solid #ffffff',
           height: '18px',
           mt: 0.35,

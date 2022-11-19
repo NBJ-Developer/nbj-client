@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import { BsArrowRightCircle } from 'react-icons/bs'
-import ContainedButtons from '../../elements/Button/PrimaryButtons';
+import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import Typography from '@mui/material/Typography';
 import Slider from '../../elements/Slidereffect/Slidereffect'
 
@@ -13,20 +13,20 @@ export default function OurStory({ourStoryProps}) {
       <Box sx={{
           display: {xs: 'flex', md: 'none'},
           flexDirection: 'column',
-          mt: 6,
+          mt: 16,
         }}>
         <Box sx={{
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
-          width: '90%',
+          width: '80%',
           backgroundColor: '#ffffff',
-          borderRadius: '0px 30px 30px 0px',
-          p: 3,
+          borderRadius: '0px 30px 0px 0px',
+          p: 6,
         }}>
           <Box sx={{
             display: 'flex',
-            width: '80%',
-            px: 3,
+            width: '100%',
             pb: 3,
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -51,27 +51,25 @@ export default function OurStory({ourStoryProps}) {
             
           </Box>
           <Typography sx={{
-            px: 3,
-            textAlign: 'justify',
-            fontFamily: 'Raleway',
+            fontFamily: 'Open Sans',
             fontStyle: 'normal',
             fontWeight: '400',
             fontSize: '15px',
             lineHeight: '20px',
+            textAlign: 'justify',
           }}>
-            {ourStoryProps.content}
+            {ourStoryProps.smallContent}
           </Typography>
         </Box>
         <Box
           component="img"
           sx={{
-            height: '70%',
-            width: '90%',
+            width: '80%',
+            height: '300px',
             overflow: 'hidden',
-            borderRadius: '0px 30px 30px 0px',
           }}
-          src={ourStoryProps.airplain5}
-          alt={ourStoryProps.airplain5}
+          src={ourStoryProps.xsImage}
+          alt={ourStoryProps.xsImage}
             />
       </Box>
 
@@ -126,7 +124,7 @@ export default function OurStory({ourStoryProps}) {
             mt: 4,
             display: ourStoryProps.display? 'block': 'none',
           }}>
-            <ContainedButtons buttonLabel={'Button'}/>
+            <PrimaryButtons buttonLabel={'Button'}/>
           </Box>
         </Box>
 
@@ -137,8 +135,8 @@ export default function OurStory({ourStoryProps}) {
             display: 'block',
             overflow: 'hidden',
           }}
-          src={ourStoryProps.image}
-          alt={ourStoryProps.image}
+          src={ourStoryProps.mdImage}
+          alt={ourStoryProps.mdImage}
             />
       </Box>
     </Box>

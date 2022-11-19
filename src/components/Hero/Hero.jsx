@@ -44,7 +44,6 @@ function SwipeableHeroStepper() {
   return (
     <Box>
       <Box  sx={{ 
-        backgroundImage: 'linear-gradient(red, yellow)',
         maxWidth: '100%', 
         position: 'relative', 
       }}
@@ -78,7 +77,17 @@ function SwipeableHeroStepper() {
           position: 'relative',
           width: '100%',
         }}>
+          <Box sx={{ 
+          position: 'absolute',
+          backgroundImage: 'linear-gradient(rgba(32, 53, 120, 0.91), rgba(32, 53, 120, 0))',
+          width: '100%',
+          height: '100%', 
+          flexGrow: 1,
+        }}>
+
+      </Box>
         <img src="airplainMobile.png" alt="NBJ-LOGO" style={{width: '100%'}}/>
+        
         <Box sx={{ 
           position: 'absolute',
           bottom: '30px',

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import ContainedButtonsMB from '../../elements/Button/ContainedButtonsMB';
 import Typography from '@mui/material/Typography';
 import image2 from './backgroungImage.jpeg'
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
@@ -14,61 +13,74 @@ export default function Sub() {
       {/* SMALL DEVICE */}
        <Box sx={{   
             display: {xs: 'flex', md: 'none'},
-            mt: 10,
+            mt: 16,
             justifyContent: 'center',
+            alignItems: 'center',
+            position: 'relative',
         }}>
+          <Box sx={{ 
+          position: 'absolute',
+          backgroundImage: 'linear-gradient(rgba(32, 53, 120, 0.91), rgba(32, 53, 120, 0))',
+          width: '70%',
+          height: '160px',
+          borderRadius: '30px 0',
+          bottom: '0px',
+          flexGrow: 1,
+        }}>
+
+      </Box>
+            
             <Box style={{
                backgroundImage: `url(${image2})`,
                backgroundRepeat: 'no-repeat',
                backgroundSize: '100% 100%',
             }}
                 sx={{ 
-                width: '60%',
+                width: '70%',
+                height: '160px',
                 background: 'rgba(0, 0, 0, 0.51)',
-                marginTop: '56px',
                 borderRadius: '30px 0'
             }}>
+              <Box sx={{
+                position: 'absolute',
+                left: 12,
+                right: 12,
+                zIndex: 2,
+              }}>
                 <Typography sx={{
                     fontFamily: 'Inter',
                     fontStyle: 'normal',
-                    fontWeight: '600',
+                    fontWeight: '700',
                     fontSize: '24px',
                     lineHeight: '22px',
                     color: '#ffffff',
+                    zIndex: 2,
                     textAlign: 'center',
                     marginTop: '17px'
                 }} variant='h1'>
                     Subscribe to our newsletter
                 </Typography>
                 <Box sx={{ 
-                    display: 'flex',
-                    justifyContent: 'center'
+                  width: '100%', 
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  mt: 2,
+                  zIndex: 2,
                 }}>
-                    <input type="email" 
-                        placeholder='Enter Email' 
-                        style={{
-                           width: '90%',
-                           height: '32px',
-                           border: 'none',
-                           background: '#D9D9D9',
-                           borderRadius: '7px',
-                           margin: '18px 0 8px 0',
-                           padding: '12px 12px', 
-                           '&:focus': {
-                            outline: 'none'
-                           }
-                        }}
-                        required
-                    />
+                    <InputField content={{
+                      label:'Your Name',
+                      color: '#ffffff',
+                      }} />
+                    <Box sx={{ 
+                      my: 2,
+                    }}>
+                        <PrimaryButtons buttonLabel={'Join'} />
                 </Box>
-                <Box sx={{ 
-                    display: 'flex',
-                    justifyContent: 'center',
-                    marginTop: '10px',
-                    paddingBottom: '20px'
-                }}>
-                    <ContainedButtonsMB />
                 </Box>
+              </Box>
+                
             </Box>
         </Box> 
 
@@ -114,13 +126,19 @@ export default function Sub() {
                   alignItems: 'center',
                   mt: 2,
                 }}>
-                    <InputField label={'Your Name'}/>
-                    <InputField label={'Email Address'}/>
+                    <InputField content={{
+                      label:'Your Name',
+                      color: '#06133C',
+                      }}/>
+                    <InputField content={{
+                      label:'Email Address',
+                      color: '#06133C',
+                      }}/>
                     <Box sx={{ 
                       marginRight: '10px',
                     }}>
                         <PrimaryButtons buttonLabel={'Join'} />
-                    </Box>
+                </Box>
                 </Box>
               </Box>
                

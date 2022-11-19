@@ -1,19 +1,48 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import { styled } from '@mui/material/styles';
 
-function InputField({ label }) {return (
-  <Box>
-    <TextField id="outlined-basic" label={label} variant="outlined" size="small" sx={{
+function InputField({ content }) {
+  
+  const CssTextField = styled(TextField)({
+    width: content.color === '#ffffff'? '50vw': '30vw',
+    '& label.Mui-focused': {
+      color: '#F9A020',
+    },
+    input: {
+      color: content.color,
       fontFamily: 'inter',
-      width: '30vw',
-      mr: 1,
-      '&:focus': {
-        opacity: [0.9, 0.8, 0.7],
-        color: '#F9A020',
-        border: '3px solid #F9A020',
+    },
+    label: {
+      color: content.color,
+    },
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'green',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: '#06133C',
       },
-    }}/>
+      '&:hover fieldset': {
+        borderColor: '#F9A020',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: '#06133C',
+      },
+    },
+  });
+
+  return (
+  <Box>
+     <CssTextField
+     label={content.label}
+     size="small"
+     sx={{
+      mr: 1,
+      fontFamily: 'inter',
+     }}
+     />
   </Box>
 );
 }

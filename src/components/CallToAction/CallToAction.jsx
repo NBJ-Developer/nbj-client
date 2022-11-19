@@ -43,6 +43,7 @@ export default function CallToAction() {
           Book a flight, charter, get a quote or get in touch?
         </Typography>
         <Box sx={{
+          width: '80%',
           mb: 3,
         }}>
           <PrimaryButtons buttonLabel={'Contact Us'} />

@@ -49,13 +49,13 @@ export default function BenefitComponent({image, data}) {
       font: 'Open Sans',
       fontWeight: '600',
       fontSize: '17px',
-      textAlign: 'center',
       lineHeight: '23px',
       marginBottom: '10px',
     }}>
       <Box
       component="img"
       sx={{
+        display: {xs: 'none', md: 'block'},
         height: '70%',
         width: '90%',
         overflow: 'hidden',
@@ -63,12 +63,11 @@ export default function BenefitComponent({image, data}) {
       }}
       src={image}
       alt={image}
-    />
+      />
       <Typography sx={{
         font: 'Open Sans',
         fontWeight: '600',
         fontSize: '17px',
-        textAlign: 'center',
         lineHeight: '23px',
         marginBottom: '10px',
       }}>
