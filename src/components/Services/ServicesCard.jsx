@@ -12,7 +12,7 @@ import { Box } from '@mui/material';
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{ 
-        width: {xs: 500, md: 320},
+        width: {xs: '55vw', md: 320},
         maxHeight: '90%',
         pb: {xs: 0, md: 2}, 
         }}>
@@ -23,6 +23,7 @@ export default function ServicesCard({ content }) {
           alt={content.imgPath}
           style={{
             height: '250px',
+            objectFit: 'fill',
           }}
         />
         <CardContent>

@@ -10,7 +10,7 @@ function Benefits() {
   return (
     <div>
       <Box sx={{
-        mt: 16,
+        mt: {xs: 16, md: 26},
       }}>
         <Typography sx={{
           fontFamily: 'Raleway',

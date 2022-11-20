@@ -8,6 +8,10 @@ import OurStory from '../../components/About/OurStory'
 import MeetTheTeam from '../../components/About/MeetTheTeam'
 import bgImage from './aboutBG.png'
 import Statistic from '../../components/Statistic/Statistic'
+import Video from '../../components/About/Video'
+import MissionComponent from '../../components/About/MissionComponent'
+import { Grid } from '@mui/material'
+import MisionVissionMobile from '../../components/About/MisionVissionMobile'
 
 function About() {
   const ourStoryProps = {
@@ -46,7 +50,12 @@ function About() {
       </Box>
       <OurStory ourStoryProps={ourStoryProps}/>
       <MeetTheTeam />
-      <MissionVision />
+      <Box sx={{
+        display: {xs: 'none', md: 'block'},
+      }}>
+        <MissionVision />
+      </Box>
+      <MisionVissionMobile />
       <Box sx={{
         mt: 16,
         width: '100%',
@@ -55,6 +64,7 @@ function About() {
       }}>
         <Statistic />
       </Box>
+      <Video/>
       <Footer />
     </div>
   )

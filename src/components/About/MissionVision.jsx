@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material'
+import { Grid, List, ListItem, Typography } from '@mui/material'
 import Box from '@mui/material/Box'
 import React from 'react'
 import Slider from '../../elements/Slidereffect/Slidereffect'
@@ -23,6 +23,26 @@ function MissionVision() {
   }
 ]
 
+const misionContent = [
+  {
+  label: 'CORE VALUES',
+  body: `To provide the highest standards of safety through our highly 
+  trained domestic and international field representatives and customer 
+  service personnel.`,
+},
+{
+  label: 'CORE VALUES',
+  body: `To provide the highest standards of safety through our highly 
+  trained domestic and international field representatives and customer 
+  service personnel.`,
+},
+{
+  label: 'CORE VALUES',
+  body: `To provide the highest standards of safety through our highly 
+  trained domestic and international field representatives and customer 
+  service personnel.`,
+},
+]
   const paperContents = [
   {
     image: 'visionLogo.png',
@@ -43,21 +63,29 @@ function MissionVision() {
   return (
       <Box sx={{
         mt: 16,
-        p: 10,
+        p: 8,
         display: 'flex',
         justifyContent: 'space-between',
         backgroundColor: '#02103E',
       }}>
         <Box sx={{
           display: 'flex',
-          flexDirection: 'column',
           justifyContent: 'space-between',
-          width: '35%',
+          width: '100%',
           height: '50vh',
         }}>
-          <Slider slideComponent={
-            <Box>
-            <Typography sx={{
+          <Grid container spacing={4}>
+            <Grid item xs={4} md={4}>
+            <Slider slideComponent={
+            <Box sx={{
+              width: '80%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+              <Box>
+                <Typography sx={{
                 fontFamily:'raleway',
                 color: '#ffffff',
                 fontWeight:'700',
@@ -77,12 +105,22 @@ function MissionVision() {
                 trained domestic and international field representatives and customer 
                 service personnel.
               </Typography>
+              </Box>
+            
             </Box>
           }/>
-
-          <Slider slideComponent={
-            <Box>
-            <Typography sx={{
+            </Grid>
+            <Grid item xs={4} md={4}>
+            <Slider slideComponent={
+            <Box sx={{
+              width: '80%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}>
+              <Box>
+                <Typography sx={{
                 fontFamily:'raleway',
                 color: '#ffffff',
                 fontWeight:'700',
@@ -100,54 +138,83 @@ function MissionVision() {
                 }}>
                 To create Value and make a difference in air travel
               </Typography>
+              </Box>
+            
             </Box>
           }/>
-        </Box>
-        <Box sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          maxWidth:{md:'25rem'},
-        }}>
-          <Slider slideComponent={
+            </Grid>
+            <Grid item xs={4} md={4}>
+            <Slider slideComponent={
             <Box sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: '#ffffff',
-            borderRadius: '50%',
-            width: '130px',
-            height: '130px',
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}>
-              <Typography sx={{
+              <Box>
+                 <Typography sx={{
                 fontFamily:'raleway',
+                color: '#ffffff',
                 fontWeight:'700',
                 fontSize: '22px',
-                color: '#2B47A1',
                 lineHeight: '25px',
-                textAlign: 'center',
               }}>
                 CORE VALUES
               </Typography>
-          </Box>
+              <List
+                sx = {{
+                listStyleType: 'disc',
+                pl: 5,
+                fontSize:{xs:'18px', md:'22px'},
+                color: '#F9A020',
+                '& .MuiListItem-root': {
+                  display: 'list-item',
+                },
+                }}>
+                <ListItem>
+                <Typography sx={{
+                fontFamily:'Open Sans',
+                color: '#ffffff',
+                fontSize: '18px',
+              }}>
+                Team work
+              </Typography>
+                </ListItem>
+                <ListItem>
+                <Typography sx={{
+                fontFamily:'Open Sans',
+                color: '#ffffff',
+                fontSize: '18px',
+              }}>
+                Commited to our customer
+              </Typography>
+                </ListItem>
+                <ListItem>
+                <Typography sx={{
+                fontFamily:'Open Sans',
+                color: '#ffffff',
+                fontSize: '18px',
+              }}>
+                Innovation
+              </Typography>
+                </ListItem>
+                <ListItem>
+                <Typography sx={{
+                fontFamily:'Open Sans',
+                color: '#ffffff',
+                fontSize: '18px',
+              }}>
+                Quality & Simplicity
+              </Typography>
+                </ListItem>
+                </List>
+              </Box>
+           
+            </Box>
           }/>
-          <Slider slideComponent={
-            <Typography sx={{
-            fontFamily:'Open Sans',
-            marginTop:'10px',
-            color: '#ffffff',
-            fontSize: '18px',
-            lineHeight: '27.21px',
-            wordSpacing: '-2px',
-            textAlign:'center',
-          }}>
-            To provide the highest standards of safety through our highly 
-            trained domestic and international field representatives and customer 
-            service personnel.
-          </Typography>
-          }/>
-          
+            </Grid>
+          </Grid>
         </Box>
       </Box>
     

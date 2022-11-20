@@ -29,7 +29,7 @@ function MeetTheTeam() {
   ]
   return (
     <Box sx={{
-      mt: 20,
+      mt: {xs: 16, md: 20},
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -62,7 +62,11 @@ function MeetTheTeam() {
     }}>
       <Grid container spacing={2}>
       {cardContents.map( data => (
-        <Grid key={data.imgPath} item xs={6} md={4}>
+        <Grid key={data.imgPath} item xs={12} md={4} 
+        container
+        direction="row"
+        alignItems="center"
+        justifyContent="center">
         <Slider  slideComponent={
           <ServicesCard content={data}/>
         }/>
