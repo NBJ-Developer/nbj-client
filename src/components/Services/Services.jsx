@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import ServicesCard from './ServicesCard';
 import Slider from '../../elements/Slidereffect/Slidereffect'
 import { Grid } from '@mui/material';
+import { textAlign } from '@mui/system';
 
 //const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -44,6 +45,7 @@ export default function Services() {
         mt: 16,
         width: '100%'
       }}>
+        <Slider slideComponent={
         <Typography variant='h1' sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
@@ -57,6 +59,8 @@ export default function Services() {
               SERVICES
           </span> 
         </Typography>
+      }/>
+        
         <Box sx={{  
           display: 'flex',
           justifyContent: 'center'
@@ -80,18 +84,23 @@ export default function Services() {
             marginTop: '180px',
             textAlign: 'center',
         }}>
-            <Typography sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '700',
-                fontSize: '32px',
-                lineHeight: '38px'
-            }} variant='h1'>
+          <Slider slideComponent={
+            <Typography variant='h1' sx={{
+              width: '100%',
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
+              fontWeight: '700',
+              fontSize: '32px',
+              lineHeight: '38px',
+              textAlign: 'center',
+            }} >
                 OUR
                 <span className='span1'>
                     SERVICES
                 </span> 
             </Typography>
+          }/>
+            
             
             <Typography sx={{
                 fontFamily: 'Raleway',

@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import image2 from './backgroungImage.jpeg'
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import InputField from './InputField';
+import Slider from '../../elements/Slidereffect/Slidereffect';
 
 
 export default function Sub() {
@@ -101,7 +102,8 @@ export default function Sub() {
               justifyContent: 'center',
               alignItems: 'center',
             }}>
-                 <Typography sx={{
+              <Slider slideComponent={
+                <Typography sx={{
                     fontWeight: '700',
                     fontSize: '45px',
                     lineHeight: '53px',
@@ -110,6 +112,8 @@ export default function Sub() {
                 }} variant='h1'>
                     Join Our Mail list
                 </Typography>
+              }/>
+                 
                 <Typography sx={{
                     fontWeight: '400',
                     fontSize: '18px',

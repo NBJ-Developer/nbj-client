@@ -6,19 +6,21 @@ function Statistic() {
 
   const statisticContent = [
     {
-     label: '5000+',
+     numb: 500,
+     plusSign: 'K+',
      body: 'Total flights', 
     },
     {
-      label: '0',
+      numb: 0,
       body: 'Flight crash', 
      },
      {
-      label: '250',
+      numb: 250,
       body: 'Destination', 
      },
      {
-      label: '100K+',
+      numb: 10,
+      plusSign: 'K+',
       body: 'Total Passengers', 
      },
   ]

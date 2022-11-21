@@ -11,12 +11,11 @@ function ServicesDetails({content}) {
   const [count, setCount] = useState(0)
 
   let i = 1;   
-  const myLoop = () => {         //  create a loop function
-    setTimeout(() => {                 //  increment the counter
-      if (i < 100) {
+  const myLoop = () => { 
+    setTimeout(() => {         
+      if (i < content.numb) {
         i++; 
-        console.log(i) 
-        setCount(i)          //  if the counter < 10, call the loop function
+        setCount(i)
         myLoop();             
       }                       
     }, 1)
@@ -27,7 +26,6 @@ function ServicesDetails({content}) {
     }else{
       setCount(0)
     }
-    
   }, [inView])
   return (
     <div ref={ref}>
@@ -43,7 +41,7 @@ function ServicesDetails({content}) {
           textAlign: 'center',
           color: '#0E1035',
         }}>
-          {count}
+          {`${count}${content.plusSign? content.plusSign: ''}`}
         </Typography>
         <Typography sx={{
           fontFamily: 'Inter',
