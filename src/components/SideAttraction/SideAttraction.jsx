@@ -39,15 +39,15 @@ function SideAttraction() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '25%',
+        width: {xs: '40%', md: '25%'},
         backgroundColor: '#2B47A1',
       }}>
           <Typography sx={{
             fontFamily: 'Inter',
             fontStyle: 'normal',
             fontWeight: '700',
-            fontSize: '41px',
-            lineHeight: '49px',
+            fontSize: {xs: '30px', md:'78px'},
+            lineHeight: {xs: '40px', md: '91px'},
             color: '#ffffff',
             textAlign: 'center',
             marginTop: '17px'
@@ -59,18 +59,19 @@ function SideAttraction() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          overflow: 'auto',
           px: 2,
-          width: '75%',
+          width: {xs: '60%', md: '75%'},
           backgroundColor: 'rgba(43, 71, 161, 0.2)',
         }}>
           <Grid container spacing={2}>
-            <Grid item md={4}>
+            <Grid item xs={12} md={4}>
               <Slider slideComponent={<ServicesCard content={contents[0]}/>}/>
             </Grid>
-            <Grid item md={4}>
+            <Grid item xs={12} md={4}>
               <Slider slideComponent={<ServicesCard content={contents[1]}/>}/>
             </Grid>
-            <Grid item md={4}>
+            <Grid item xs={12} md={4}>
               <Slider slideComponent={<ServicesCard content={contents[0]}/>}/>
             </Grid>
           </Grid>

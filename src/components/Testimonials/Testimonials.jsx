@@ -16,7 +16,8 @@ export default function Testimonials() {
             label: 'Aircraft Charter',
             para: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat malesuada id mus donec feugiat a est platea viverra.',
             name: 'Salaudeen',
-            ocupation: 'Software Engineer'
+            ocupation: 'Software Engineer',
+            left: true,
         },
         {
             label: 'Ground Support',
@@ -30,8 +31,8 @@ export default function Testimonials() {
     <Box>
 
       {/* MEDIUM DEVICE */}
-      <Box sx={{ 
-        mt: 8,
+      <Box sx={{
+        mt: 16,
         width: '100%',
       }}>
         <Typography sx={{
@@ -47,16 +48,16 @@ export default function Testimonials() {
           TESTIMONIALS
         </Typography>
         <Typography sx={{
-            display: {xs: 'block', md: 'none'},
-            fontFamily: 'Raleway',
-            fontStyle: 'normal',
-            fontWeight: '600',
-            fontSize: '22px',
-            lineHeight: '22px',
-            color: '#000000',
-            textAlign: 'center',
-            my: 8,
-          }} 
+          mb: 2,
+          display: {xs: 'block', md: 'none'},
+          fontFamily: 'Raleway',
+          fontStyle: 'normal',
+          fontWeight: '600',
+          fontSize: '18px',
+          lineHeight: '24px',
+          color: '#000000',
+          textAlign: 'center',
+        }} 
           variant='h1'>
           WHAT OUR <span className='span1'>CUSTOMERS</span>  SAY
       </Typography>
@@ -82,7 +83,7 @@ export default function Testimonials() {
             flexDirection: {xs: 'column', md: 'row'},
             '& > :not(style)': {
             mr: {xs: 0, md: 4},
-            width: {xs: 350, md: 280},
+            width:  350,
             height: 270,
             },
           }}>

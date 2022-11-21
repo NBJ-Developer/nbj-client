@@ -8,8 +8,9 @@ export default function TestimonialsPapper({ data }) {
 <Box>
   <Box sx={{
   mr: 4,
+  ml: 4,
   display: 'flex',
-  justifyContent: 'right',
+  justifyContent: data.left? 'left': 'right',
   }}>
    <Box sx={{
     width: 0,
@@ -30,17 +31,14 @@ export default function TestimonialsPapper({ data }) {
     <Typography sx={{
       font: 'Open Sans',
       fontWeight: '600',
-      fontSize: '17px',
-      lineHeight: '23px',
+      fontSize: '24px',
+      lineHeight: '30px',
     }}>
     {data.label}
     </Typography>
-    <Typography sx={{
+    <Typography variant="body2" color="text.secondary" sx={{
       mt: 1,
       font: 'Open Sans',
-      fontWeight: '400',
-      fontSize: '16px',
-      textAlign: 'left',
     }}>
     {data.para}
     </Typography>
@@ -48,14 +46,16 @@ export default function TestimonialsPapper({ data }) {
       mt: 1,
       font: 'Open Sans',
       fontWeight: '500',
-      fontSize: '16px',
+      fontSize: {xs: '12px', md: '18px'},
+      lineHeight: {xs: '16px', md: '24px'},
     }}>
     {data.name}
     </Typography>
     <Typography sx={{
       font: 'Open Sans',
       fontWeight: '300',
-      fontSize: '15px',
+      fontSize: {xs: '12px', md: '18px'},
+      lineHeight: {xs: '16px', md: '24px'},
     }}>
     {data.ocupation}
     </Typography>

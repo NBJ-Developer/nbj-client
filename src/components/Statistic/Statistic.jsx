@@ -29,7 +29,7 @@ function Statistic() {
     <Paper sx={{
     width: '90%',
     px: 3,
-    display: {xs: 'none', md: 'flex'},
+    display: 'flex',
     justifyContent: 'space-between',
     paddingY: '30px',
   }}>

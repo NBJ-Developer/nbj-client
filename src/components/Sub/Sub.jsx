@@ -12,7 +12,7 @@ export default function Sub() {
   return (
     <Box>
       {/* SMALL DEVICE */}
-       <Box sx={{   
+       {/* <Box sx={{   
             display: {xs: 'flex', md: 'none'},
             mt: 16,
             justifyContent: 'center',
@@ -84,12 +84,12 @@ export default function Sub() {
               </Box>
                 
             </Box>
-        </Box> 
+        </Box>  */}
 
       {/* MEDIUM DEVICE */}
        <Box sx={{   
-            display: {xs: 'none', md: 'flex'},
-            mt: 30,
+            display: 'flex',
+            mt: 16,
             justifyContent: 'center'
         }}>
           <Box sx={{ 
@@ -105,8 +105,8 @@ export default function Sub() {
               <Slider slideComponent={
                 <Typography sx={{
                     fontWeight: '700',
-                    fontSize: '45px',
-                    lineHeight: '53px',
+                    fontSize: {xs: '18px', md: '45px'},
+                    lineHeight: {xs: '24px', md: '53px'},
                     color: '#262626',
                     textAlign: 'center',
                 }} variant='h1'>
@@ -116,8 +116,8 @@ export default function Sub() {
                  
                 <Typography sx={{
                     fontWeight: '400',
-                    fontSize: '18px',
-                    lineHeight: '25px',
+                    fontSize: {xs: '12px', md: '18px'},
+                    lineHeight: {xs: '18px', md: '24px'},
                     color: '#262626',
                     textAlign: 'center',
                     marginTop: '10px'
@@ -127,6 +127,7 @@ export default function Sub() {
                 <Box sx={{ 
                   width: '100%', 
                   display: 'flex',
+                  flexDirection: {xs: 'column', md: 'row'},
                   justifyContent: 'center',
                   alignItems: 'center',
                   mt: 2,
@@ -142,7 +143,7 @@ export default function Sub() {
                     <Box sx={{ 
                       marginRight: '10px',
                     }}>
-                        <PrimaryButtons buttonLabel={'Join'} />
+                      <PrimaryButtons buttonLabel={'Join'} />
                 </Box>
                 </Box>
               </Box>

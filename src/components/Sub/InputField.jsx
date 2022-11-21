@@ -6,16 +6,18 @@ import { styled } from '@mui/material/styles';
 function InputField({ content }) {
   
   const CssTextField = styled(TextField)({
-    width: content.color === '#ffffff'? '60vw': '30vw',
     '& label.Mui-focused': {
+      fontSize: {xs: '12px', md: '18px'},
+      lineHeight: {xs: '18px', md: '24px'},
       color: '#F9A020',
     },
     input: {
-      color: content.color,
+      color: '#262626',
       fontFamily: 'inter',
     },
     label: {
-      color: content.color,
+      color: '#262626',
+      fontSize: '12px',
     },
     
     '& .MuiInput-underline:after': {
@@ -40,7 +42,9 @@ function InputField({ content }) {
      label={content.label}
      size="small"
      sx={{
+      width: {xs: '80vw', md: '30vw'},
       mr: 1,
+      mb: 2, 
       fontFamily: 'inter',
      }}
      />

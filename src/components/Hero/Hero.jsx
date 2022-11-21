@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
-import SecondaryButton from '../../elements/Button/SecondaryButton';
 import Slider from '../../elements/Slidereffect/Slidereffect';
 import Statistic from '../Statistic/Statistic';
 
@@ -49,7 +48,7 @@ function SwipeableHeroStepper() {
       }}
       >
       <Box sx={{
-        display: {xs: 'none', md: 'flex'}, 
+        display: {xs: 'flex', md: 'flex'}, 
       }}>
       <Box
         component="img"
@@ -72,48 +71,10 @@ function SwipeableHeroStepper() {
 
       </Box>
       </Box>
-      <Box sx={{
-          display: {xs: 'block', md: 'none'},
-          position: 'relative',
-          width: '100%',
-        }}>
-          <Box sx={{ 
-          position: 'absolute',
-          backgroundImage: 'linear-gradient(rgba(32, 53, 120, 0.91), rgba(32, 53, 120, 0))',
-          width: '100%',
-          height: '100%', 
-          flexGrow: 1,
-        }}>
-
-      </Box>
-        <img src="airplainMobile.png" alt="NBJ-LOGO" style={{width: '100%'}}/>
-        <Slider slideComponent={
-          <Box sx={{ 
-        position: 'absolute',
-        bottom: '30px',
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-      }}>
-        <Typography sx={{
-          width: '70%',
-          font: 'Raleway',
-          fontWeight: '700',
-          fontSize: '38px',
-          lineHeight: '37px',
-          color: '#ffffff',
-          textAlign: 'center', 
-        }}>
-          Big Text Header 2 lines
-        </Typography >
-      </Box>
-        }/>
-        
-      </Box>
+    
       <Box sx={{ 
-        display: {xs: 'none', md: 'block',},
         position: 'absolute',
-        top: {xs: '520px', md:'20vh'},
+        top: {xs: '25vh', md:'25vh'},
         left: {xs: '10px', md: '80px'},
         width: '90%', 
       }}>
@@ -121,8 +82,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '38px', md:'78px'},
-            lineHeight: {xs: '37px', md: '91px'},
+            fontSize: {xs: '30px', md:'78px'},
+            lineHeight: {xs: '40px', md: '91px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -136,8 +97,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '38px', md:'78px'},
-            lineHeight: {xs: '37px', md: '91px'},
+            fontSize: {xs: '30px', md:'78px'},
+            lineHeight: {xs: '40px', md: '91px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -149,8 +110,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '38px', md:'78px'},
-            lineHeight: {xs: '37px', md: '91px'},
+            fontSize: {xs: '30px', md:'78px'},
+            lineHeight: {xs: '40px', md: '91px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -159,94 +120,57 @@ function SwipeableHeroStepper() {
         }/>
         
         <Typography sx={{ 
-          display: {xs: 'none', md: 'block'},
           mt: 3,
           font: 'inter',
           fontWeight: '300',
-          fontSize: '24px',
-          lineHeight: '24px',
+          fontSize: {xs: '12px', md: '24px'},
+          lineHeight: {xs: '16px', md: '24px'},
           color: 'rgba(255, 255, 255, 0.9)', 
         }}>
           Our goal is simply to offer the highest standards of professionalism
         </Typography>
         <Typography sx={{ 
-          display: {xs: 'none', md: 'block'},
           font: 'inter',
           fontWeight: '300',
-          fontSize: '24px',
-          lineHeight: '36px',
+          fontSize: {xs: '12px', md: '24px'},
+          lineHeight: {xs: '16px', md: '24px'},
           color: 'rgba(255, 255, 255, 0.9)', 
         }}>
           and service as measured by our safety record, dispatch reliability
         </Typography>
         <Typography sx={{ 
-          display: {xs: 'none', md: 'block'},
           font: 'inter',
           fontWeight: '300',
-          fontSize: '24px',
-          lineHeight: '36px',
+          fontSize: {xs: '12px', md: '24px'},
+          lineHeight: {xs: '16px', md: '24px'},
           color: 'rgba(255, 255, 255, 0.9)', 
         }}> and customer satisfaction
         </Typography>
         <Box sx={{
           mt: 4,
-          display: {xs: 'none', md: 'block'},
         }}>
           <PrimaryButtons buttonLabel={'Explore'}/>
         </Box>
         
       </Box>
     </Box>
-    <Typography sx={{ 
-      display: {xs: 'block', md: 'none'},
-      mt: '15px',
-      px: 4,
-      textAlign: 'center',
-      font: 'Raleway',
-      fontWeight: '400',
-      fontSize: '16px',
-      lineHeight: '30px',
-    }}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Et augue ante tellus non leo.
-    </Typography>
     <Box sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+     <Box sx={{
       position: 'absolute',
       bottom: '-100px',
-      width: '100%',
-      display: {xs: 'none', md: 'flex'},
+      width: {xs: '100%', md: '100%'},
+      display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
     }}>
     <Statistic />
+    </Box> 
     </Box>
     
-    <Box sx={{
-      display: {xs: 'flex', md: 'none'},
-      width: '100%',
-      justifyContent: 'center',
-      paddingY: '30px',
-    }}>
-      <Box sx={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '60%',
-    }}>
-      <PrimaryButtons buttonLabel={'Button'}/>
-      <SecondaryButton buttonLabel={'Button'} />
-    </Box>
-    </Box>
-    <Box sx={{
-      display: {xs: 'flex', md: 'none'},
-      justifyContent: 'center',
-    }}>
-      <Box sx={{
-      backgroundColor: '#4264CC',
-      height: '2px',
-      width: '70%',
-    }}>
-    </Box>
-    </Box>
     </Box>
     
   );

@@ -59,6 +59,7 @@ export default function Services() {
           <span className='span1'>
               SERVICES
           </span> 
+          AREAS
         </Typography>
       }/>
         

@@ -41,11 +41,7 @@ const Home = () => {
       <Services />
       <CallToAction />
       <Testimonials />
-      <Box sx={{
-        display: {xs: 'none', md: 'block'},
-      }}>
-        <SideAttraction />
-      </Box>
+      <SideAttraction />
       <Sub />
       <Footer />
     </div>

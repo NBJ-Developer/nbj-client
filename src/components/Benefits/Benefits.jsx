@@ -1,5 +1,4 @@
 import Box from '@mui/material/Box'
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import React from 'react'
 import BenefitComponent from './BenefitComponent'
 import benefitsData from './benefitsData';
@@ -10,13 +9,13 @@ function Benefits() {
   return (
     <div>
       <Box sx={{
-        mt: {xs: 16, md: 26},
+        mt: 26,
       }}>
         <Typography sx={{
           fontFamily: 'Raleway',
-          fontSize: '30px',
           fontWeight: 700,
-          lineHeight: '35px',
+          fontSize: {xs: '18px', md:'30px'},
+          lineHeight: {xs: '24px', md: '40px'},
           color: '#434343',
           letterSpacing: '0.08em',
           textAlign: 'center',
@@ -35,7 +34,7 @@ function Benefits() {
           sx={{
             width: '85%',
             mt: 4,
-            display: {xs: 'none', md: 'flex'},
+            display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
           }}
@@ -71,7 +70,7 @@ function Benefits() {
             </Grid>
           </Grid>    
         </Box>
-        <Box sx={{
+        {/* <Box sx={{
           display: {xs: 'flex', md: 'none'},
           justifyContent: 'center',
           alignItems: 'center', 
@@ -111,7 +110,7 @@ function Benefits() {
               </Grid>
               </Grid>
             </Box>
-        </Box>
+        </Box> */}
       </Box>
     </div>
   )

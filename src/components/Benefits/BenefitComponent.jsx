@@ -2,14 +2,15 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
-import TaskAltIcon from '@mui/icons-material/TaskAlt';
-import Slider from '../../elements/Slidereffect/Slidereffect';
 
 export default function BenefitComponent({image, data}) {
   return (
-<Box>
+<Box sx={{
+  width: '100%',
+  height: '220px'
+  }}>
   <Paper sx={{
-  display: {xs: 'none', md: 'flex'},
+  display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
@@ -28,25 +29,27 @@ export default function BenefitComponent({image, data}) {
     <Typography sx={{
       font: 'Open Sans',
       fontWeight: '600',
-      fontSize: '17px',
       textAlign: 'center',
-      lineHeight: '23px',
+      fontSize: {xs: '12px', md: '24px'},
+      lineHeight: {xs: '16px', md: '24px'},
       marginBottom: '10px',
     }}>
     {data.name}
     </Typography>
     <Typography sx={{
-      display: {xs: 'none', md: 'block'},
+      display: 'block',
       font: 'Open Sans',
       fontWeight: '400',
       fontSize: '15px',
+      fontSize: {xs: '12px', md: '24px'},
+      lineHeight: {xs: '16px', md: '24px'},
       textAlign: 'center',
     }}>
     {data.para}
     </Typography>
   </Paper>
 
-  <Box sx={{
+  {/* <Box sx={{
       display: {xs: 'flex', md: 'none'},
       font: 'Open Sans',
       fontWeight: '600',
@@ -73,7 +76,7 @@ export default function BenefitComponent({image, data}) {
       </Typography>
       </Box>
     }/>
-  </Box>
+  </Box> */}
 </Box>
     
   );

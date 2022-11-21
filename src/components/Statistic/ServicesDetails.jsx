@@ -36,8 +36,8 @@ function ServicesDetails({content}) {
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: '700',
-          fontSize: '41px',
-          lineHeight: '49px',
+          fontSize: {xs: '30px', md:'78px'},
+          lineHeight: {xs: '40px', md: '91px'},
           textAlign: 'center',
           color: '#0E1035',
         }}>
@@ -47,8 +47,8 @@ function ServicesDetails({content}) {
           fontFamily: 'Inter',
           fontStyle: 'normal',
           fontWeight: '400',
-          fontSize: '28px',
-          lineHeight: '32px',
+          fontSize: {xs: '12px', md: '24px'},
+          lineHeight: {xs: '16px', md: '24px'},
           textAlign: 'center',
           color: '#0E1035',
         }}>

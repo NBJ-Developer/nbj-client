@@ -11,7 +11,7 @@ export default function CallToAction() {
   return (
     <Box>
       {/* SMALL DEVICE */}
-      <Box sx={{  
+      {/* <Box sx={{  
         display: {xs: 'flex', md: 'none'},
         flexDirection: 'column',
         alignItems: 'center',
@@ -53,7 +53,7 @@ export default function CallToAction() {
           <PrimaryButtons buttonLabel={'Contact us'} />
         </Box>
           
-      </Box>
+      </Box> */}
 
       {/* MEDIUM DEVICE */}
       <Box style={{
@@ -62,7 +62,7 @@ export default function CallToAction() {
         backgroundSize: '100% 100%',
       }} 
       sx={{
-        display: {xs: 'none', md: 'flex'},
+        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',  
         width: '100vw',
@@ -82,8 +82,8 @@ export default function CallToAction() {
             fontFamily: 'Inter',
             fontStyle: 'normal',
             fontWeight: '700',
-            fontSize: '40px',
-            lineHeight: '22px',
+            fontSize: {xs: '30px', md:'78px'},
+            lineHeight: {xs: '40px', md: '91px'},
             color: '#ffffff',
             textAlign: 'center',
           }}>
@@ -94,8 +94,8 @@ export default function CallToAction() {
             fontFamily: 'Inter',
             fontStyle: 'normal',
             fontWeight: '600',
-            fontSize: '30px',
-            lineHeight: '22px',
+            fontSize: {xs: '15px', md: '24px'},
+            lineHeight: {xs: '16px', md: '24px'},
             color: '#ffffff',
             textAlign: 'center',
           }}>
