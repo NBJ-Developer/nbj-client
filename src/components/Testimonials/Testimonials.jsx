@@ -51,7 +51,7 @@ export default function Testimonials() {
             fontFamily: 'Raleway',
             fontStyle: 'normal',
             fontWeight: '600',
-            fontSize: '30px',
+            fontSize: '22px',
             lineHeight: '22px',
             color: '#000000',
             textAlign: 'center',
@@ -78,35 +78,34 @@ export default function Testimonials() {
           justifyContent: 'center',
         }}>
           <Box sx={{
-          display: 'flex',
-          flexDirection: {xs: 'column', md: 'row'},
-          '& > :not(style)': {
-          mr: {xs: 0, md: 7},
-          mb: {xs: 6, md: 0},
-          width: {xs: 400, md: 270},
-          height: 169,
-          },
-        }}>
-          <Slider slideComponent={
-            <Box>
-              <TestimonialsPapper data={data[0]}/>
-            </Box>
-          }/>
-          <Slider slideComponent={
-            <Box sx={{
-              pt: 4,
-            }}>
-              <TestimonialsPapper data={data[1]}/>
-            </Box>
-          }/>
-          <Slider slideComponent={
-            <Box sx={{
-              pt: 8,
-            }}>
-              <TestimonialsPapper data={data[2]}/>
-            </Box>
-          }/>          
-        </Box> 
+            display: 'flex',
+            flexDirection: {xs: 'column', md: 'row'},
+            '& > :not(style)': {
+            mr: {xs: 0, md: 4},
+            width: {xs: 350, md: 280},
+            height: 270,
+            },
+          }}>
+            <Slider slideComponent={
+              <Box>
+                <TestimonialsPapper data={data[0]}/>
+              </Box>
+             }/>
+            <Slider slideComponent={
+              <Box sx={{
+                pt: {xs: 0, md: 8},
+              }}>
+                <TestimonialsPapper data={data[1]}/>
+              </Box>
+            }/>
+            <Slider slideComponent={
+              <Box sx={{
+                pt: {xs: 0, md: 16},
+              }}>
+                <TestimonialsPapper data={data[2]}/>
+              </Box>
+            }/>          
+          </Box> 
         </Box>
          
       </Box>

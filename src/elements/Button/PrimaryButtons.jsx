@@ -7,12 +7,12 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 export default function PrimaryButtons({ buttonLabel }) {
   return (
       <Button variant="contained" sx={{ 
-        width: {xs: '30vw', md: '170px'},
+        width: {xs: '150px', md: '170px'},
         height: {xs: '30px', md: '40px'},
         backgroundColor: '#F9A020',
         fontFamily: 'inter',
         fontStyle: 'normal',
-        fontSize: '20px',
+        fontSize: {xs: '15px', md: '20px'},
         color: '#ffffff',
         textTransform: 'Capitalize',
         borderRadius: '10px 0 10px 0',

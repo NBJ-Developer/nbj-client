@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 function InputField({ content }) {
   
   const CssTextField = styled(TextField)({
-    width: content.color === '#ffffff'? '50vw': '30vw',
+    width: content.color === '#ffffff'? '60vw': '30vw',
     '& label.Mui-focused': {
       color: '#F9A020',
     },
@@ -17,18 +17,19 @@ function InputField({ content }) {
     label: {
       color: content.color,
     },
+    
     '& .MuiInput-underline:after': {
       borderBottomColor: 'green',
     },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
-        borderColor: '#06133C',
+        borderColor: content.color === '#ffffff'? '#f1f3fb': '#06133C',
       },
       '&:hover fieldset': {
         borderColor: '#F9A020',
       },
       '&.Mui-focused fieldset': {
-        borderColor: '#06133C',
+        borderColor: content.color === '#ffffff'? '#f1f3fb': '#06133C',
       },
     },
   });

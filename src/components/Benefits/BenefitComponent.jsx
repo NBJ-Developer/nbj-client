@@ -2,6 +2,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import Slider from '../../elements/Slidereffect/Slidereffect';
 
 export default function BenefitComponent({image, data}) {
   return (
@@ -43,7 +45,7 @@ export default function BenefitComponent({image, data}) {
     {data.para}
     </Typography>
   </Paper>
-   
+
   <Box sx={{
       display: {xs: 'flex', md: 'none'},
       font: 'Open Sans',
@@ -52,18 +54,14 @@ export default function BenefitComponent({image, data}) {
       lineHeight: '23px',
       marginBottom: '10px',
     }}>
-      <Box
-      component="img"
-      sx={{
-        display: {xs: 'none', md: 'block'},
-        height: '70%',
-        width: '90%',
-        overflow: 'hidden',
-        borderRadius: '0px 30px 30px 0px',
-      }}
-      src={image}
-      alt={image}
-      />
+      <Slider slideComponent={
+      <Box sx={{
+        display: 'flex',
+      }}>
+        <TaskAltIcon sx={{
+        mr: 1,
+        color: '#F9A020',
+      }}/>
       <Typography sx={{
         font: 'Open Sans',
         fontWeight: '600',
@@ -73,6 +71,8 @@ export default function BenefitComponent({image, data}) {
       }}>
       {data.name}
       </Typography>
+      </Box>
+    }/>
   </Box>
 </Box>
     

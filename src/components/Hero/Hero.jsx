@@ -87,15 +87,15 @@ function SwipeableHeroStepper() {
 
       </Box>
         <img src="airplainMobile.png" alt="NBJ-LOGO" style={{width: '100%'}}/>
-        
-        <Box sx={{ 
-          position: 'absolute',
-          bottom: '30px',
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
+        <Slider slideComponent={
+          <Box sx={{ 
+        position: 'absolute',
+        bottom: '30px',
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
       }}>
-          <Typography sx={{
+        <Typography sx={{
           width: '70%',
           font: 'Raleway',
           fontWeight: '700',
@@ -103,10 +103,11 @@ function SwipeableHeroStepper() {
           lineHeight: '37px',
           color: '#ffffff',
           textAlign: 'center', 
-      }}>
+        }}>
           Big Text Header 2 lines
         </Typography >
-        </Box>
+      </Box>
+        }/>
         
       </Box>
       <Box sx={{ 

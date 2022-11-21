@@ -38,36 +38,40 @@ export default function Services() {
 
   return (
     <Box>
-        {/* SMALL DEVICE */}
-        <Box sx={{ 
-            display: {xs: 'block', md: 'none'},
-            mt: 16,
-            width: '100%'
+      {/* SMALL DEVICE */}
+      <Box sx={{ 
+        display: {xs: 'block', md: 'none'},
+        mt: 16,
+        width: '100%'
+      }}>
+        <Typography variant='h1' sx={{
+          fontFamily: 'Raleway',
+          fontStyle: 'normal',
+          fontWeight: '700',
+          fontSize: '20px',
+          lineHeight: '23px',
+          textAlign: 'center',
         }}>
-            <Typography sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '700',
-                fontSize: '20px',
-                lineHeight: '23px',
-                textAlign: 'center',
-            }}  variant='h1'>
-                OUR
-                <span className='span1'>
-                    SERVICES
-                </span> 
-            </Typography>
-            <Box sx={{  display: 'flex',
-                        justifyContent: 'center'
-                    }}>
-                <Box sx={{  maxWidth: '55%', 
-                            flexGrow: 1,
-                            mt: 3, 
-                        }}>
-                    <ServicesCard content={content[0]}/>
-                </Box>
-            </Box>
+          OUR
+          <span className='span1'>
+              SERVICES
+          </span> 
+        </Typography>
+        <Box sx={{  
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <Box sx={{  
+            maxWidth: '55%', 
+            flexGrow: 1,
+            mt: 3, 
+          }}>
+            <Slider slideComponent={
+            <ServicesCard content={content[0]}/>
+            }/>  
+          </Box>
         </Box>
+      </Box>
 
         {/* MEDIUM DEVICE */}
         <Box sx={{    

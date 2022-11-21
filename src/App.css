@@ -37,12 +37,12 @@
 
   opacity: 0;
   transform: scale(80%);
-  transition: 1.5s;
+  transition: 2s;
 }
 
 .slider--zoom {
   opacity: 1;
   transform: scale(100%);
-  transition: 1.5s;
+  transition: 2s;
 }
 

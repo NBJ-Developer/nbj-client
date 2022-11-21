@@ -4,6 +4,7 @@ import PrimaryButtons from '../../elements/Button/PrimaryButtons'
 import Typography from '@mui/material/Typography';
 
 import image from '../../assets/images/explore.png'
+import Slider from '../../elements/Slidereffect/Slidereffect';
 
 
 export default function CallToAction() {
@@ -19,6 +20,7 @@ export default function CallToAction() {
         marginTop: '50px',
         textAlign: 'center'
       }}>
+        <Slider slideComponent={
         <Typography sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
@@ -30,6 +32,8 @@ export default function CallToAction() {
         }} variant='h1'>
           READY TO GET STARTED
         </Typography>
+      }/>
+        
         <Typography sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
@@ -46,7 +50,7 @@ export default function CallToAction() {
           width: '80%',
           mb: 3,
         }}>
-          <PrimaryButtons buttonLabel={'Contact Us'} />
+          <PrimaryButtons buttonLabel={'Contact us'} />
         </Box>
           
       </Box>
