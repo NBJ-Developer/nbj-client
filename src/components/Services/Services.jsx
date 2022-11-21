@@ -47,6 +47,7 @@ export default function Services() {
       }}>
         <Slider slideComponent={
         <Typography variant='h1' sx={{
+          width: '100%',
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: '700',
