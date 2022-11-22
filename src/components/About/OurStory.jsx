@@ -79,7 +79,7 @@ export default function OurStory({ourStoryProps}) {
         alignItems: 'center',
         width: '80%',
         maxHeight: '60.5vh',
-        mt: 25,
+        mt: 23,
       }}>
         <Box sx={{
           display: 'flex',

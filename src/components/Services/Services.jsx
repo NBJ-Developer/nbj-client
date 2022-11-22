@@ -123,7 +123,7 @@ export default function Services() {
               height: '550px',
             }}>
               <Box>
-                <Grid container spacing={4}>
+                <Grid container spacing={1}>
                 <Grid item md={3}>
                 <Slider slideComponent={<ServicesCard content={content[0]}/>}/>
                 </Grid>

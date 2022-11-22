@@ -11,11 +11,11 @@ import { Box } from '@mui/material';
 
 export default function ServicesCard({ content }) {
   return (
-    <Card sx={{ 
-        width: {xs: '100%', md: 320},
-        maxHeight: '90%',
-        pb: {xs: 0, md: 2}, 
-        }}>
+    <Card sx={{
+      width: {xs: '100%', md: 320},
+      height: {xs: '90%', md: '67vh'},
+      pb: {xs: 0, md: 2}, 
+    }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -31,7 +31,7 @@ export default function ServicesCard({ content }) {
             font: 'Open Sans',
             fontWeight: '600',
             fontSize: {xs: '18px', sm: '19px',  md: '20px'},
-            lineHeight: {xs: '28px', sm: '32px',  md: '37px'},
+            lineHeight: {xs: '28px', sm: '32px',  md: '25px'},
             textAlign: content.justify === 'left'? 'left': 'center',
           }}>
             {content.label}
@@ -41,7 +41,7 @@ export default function ServicesCard({ content }) {
             textAlign: 'center',
             fontWeight: '400',
             fontSize: {xs: '12px', sm: '13px', md: '14px'},
-            lineHeight: {xs: '23px', sm: '25px', md: '27px'},
+            lineHeight: {xs: '23px', sm: '25px', md: '18px'},
             textAlign: content.justify === 'left'? 'left': 'center',
           }}>
             {content.body}

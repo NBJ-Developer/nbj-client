@@ -43,7 +43,8 @@ function SwipeableHeroStepper() {
   return (
     <Box>
       <Box  sx={{ 
-        maxWidth: '100%', 
+        maxWidth: '100%',
+        maxHeight: '100vh', 
         position: 'relative', 
       }}
       >
@@ -74,16 +75,17 @@ function SwipeableHeroStepper() {
     
       <Box sx={{ 
         position: 'absolute',
-        top: {xs: '25vh', md:'25vh'},
-        left: {xs: '10px', md: '80px'},
+        top: {xs: '25vh', sm: '17vh', md:'25vh'},
+        left: {xs: '10px', sm: '15px', md: '80px'},
         width: '90%', 
+        height: 'auto',
       }}>
-        <Slider slideComponent={
+         <Slider slideComponent={
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '30px', sm: '45px', md:'70px'},
-            lineHeight: {xs: '50px',sm: '55px', md: '80px'},
+            fontSize: {xs: '10vw', sm: '10vw', md:'70px'},
+            lineHeight: {xs: '8vh', sm: '12vh', md: '80px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -97,8 +99,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '30px', sm: '45px', md:'70px'},
-            lineHeight: {xs: '50px',sm: '55px', md: '80px'},
+            fontSize: {xs: '10vw', sm: '10vw', md:'70px'},
+            lineHeight: {xs: '8vh',sm: '12vh', md: '80px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -110,21 +112,20 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '30px', sm: '45px', md:'70px'},
-            lineHeight: {xs: '50px',sm: '55px', md: '80px'},
+            fontSize: {xs: '10vw', sm: '10vw', md:'70px'},
+            lineHeight: {xs: '8vh',sm: '12vh', md: '80px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
             flights
           </Typography >
-        }/>
-        
-        <Typography sx={{ 
+        }/> 
+          <Typography sx={{ 
           mt: 3,
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '14px', sm: '18px', md: '22px'},
-          lineHeight: {xs: '25px', sm: '32px', md: '36px'},
+          fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+          lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
           color: '#ffffff', 
         }}>
           Our goal is simply to offer the highest standards of professionalism
@@ -132,8 +133,8 @@ function SwipeableHeroStepper() {
         <Typography sx={{ 
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '14px', sm: '18px', md: '22px'},
-          lineHeight: {xs: '25px', sm: '32px', md: '36px'},
+          fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+          lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
           color: '#ffffff', 
         }}>
           and service as measured by our safety record, dispatch reliability
@@ -141,11 +142,12 @@ function SwipeableHeroStepper() {
         <Typography sx={{ 
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '14px', sm: '18px', md: '22px'},
-          lineHeight: {xs: '25px', sm: '32px', md: '36px'},
+          fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+          lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
           color: '#ffffff', 
         }}> and customer satisfaction
         </Typography>
+        
         <Box sx={{
           mt: 4,
         }}>
