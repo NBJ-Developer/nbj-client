@@ -163,7 +163,7 @@ function SwipeableHeroStepper() {
     }}>
      <Box sx={{
       position: 'absolute',
-      bottom: {xs: '-14vh', md: '-11vh'},
+      bottom: {xs: '-22vh', md: '-11vh'},
       width: '100%',
       display: 'flex',
       justifyContent: 'center',
@@ -172,9 +172,7 @@ function SwipeableHeroStepper() {
     <Statistic />
     </Box> 
     </Box>
-    
     </Box>
-    
   );
 }
 
