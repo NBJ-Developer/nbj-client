@@ -20,13 +20,14 @@ function MissionComponent({ misionContent }) {
           alignItems: 'center',
           backgroundColor: '#ffffff',
           borderRadius: '50%',
-          width: '100px',
-          height: '100px',
+          width: '19vw',
+          height: '19vw',
           }}>
             <Typography sx={{
-              fontFamily:'raleway',
-              fontWeight:'700',
-              fontSize: '18px',
+              fontFamily: 'Raleway',
+              fontWeight: 700,
+              fontSize: {sm: '28px', md:'30px'},
+              lineHeight: {sm: '45px', md: '55px'},
               color: '#2B47A1',
               textAlign: 'center',
             }}>
@@ -35,11 +36,12 @@ function MissionComponent({ misionContent }) {
           </Box>
           </Box>
           <Typography sx={{
-                fontFamily:'Open Sans',
                 marginTop:'10px',
+                fontFamily:'Open Sans',
                 color: '#ffffff',
-                fontSize: '15px',
-                lineHeight: '27.21px',
+                fontWeight: '400',
+                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+                lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
                 }}>
                 {misionContent.body}
               </Typography>

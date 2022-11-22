@@ -153,15 +153,17 @@ const misionContent = [
               alignItems: 'center',
             }}>
               <Box>
-                 <Typography sx={{
-                fontFamily:'raleway',
-                color: '#ffffff',
-                fontWeight:'700',
-                fontSize: '22px',
-                lineHeight: '25px',
-              }}>
-                CORE VALUES
-              </Typography>
+              <Typography sx={{
+              fontFamily:'Open Sans',
+              marginTop:'10px',
+              fontWeight: '700',
+              color: '#ffffff',
+              fontSize:{xs:'15px', md:'18px'},
+              lineHeight: '27.21px',
+              textAlign: 'left',
+            }}>
+              CORE VALUES
+            </Typography>
               <List
                 sx = {{
                 listStyleType: 'disc',
@@ -183,27 +185,36 @@ const misionContent = [
                 </ListItem>
                 <ListItem>
                 <Typography sx={{
+                marginTop:'10px',
                 fontFamily:'Open Sans',
                 color: '#ffffff',
-                fontSize: '18px',
+                fontWeight: '400',
+                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+                lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
               }}>
                 Commited to our customer
               </Typography>
                 </ListItem>
                 <ListItem>
                 <Typography sx={{
+                marginTop:'10px',
                 fontFamily:'Open Sans',
                 color: '#ffffff',
-                fontSize: '18px',
+                fontWeight: '400',
+                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+                lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
               }}>
                 Innovation
               </Typography>
                 </ListItem>
                 <ListItem>
                 <Typography sx={{
+                marginTop:'10px',
                 fontFamily:'Open Sans',
                 color: '#ffffff',
-                fontSize: '18px',
+                fontWeight: '400',
+                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+                lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
               }}>
                 Quality & Simplicity
               </Typography>

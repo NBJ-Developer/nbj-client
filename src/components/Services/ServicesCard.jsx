@@ -12,8 +12,8 @@ import { Box } from '@mui/material';
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{
-      width: {xs: '100%', md: 320},
-      height: {xs: '90%', md: '67vh'},
+      width: {xs: '100%', sm: '90%', md: 320},
+      height: !content.buttonDisplay? 'auto': {xs: '90%', md: '67vh'},
       pb: {xs: 0, md: 2}, 
     }}>
       <CardActionArea>
@@ -32,9 +32,20 @@ export default function ServicesCard({ content }) {
             fontWeight: '600',
             fontSize: {xs: '18px', sm: '19px',  md: '20px'},
             lineHeight: {xs: '28px', sm: '32px',  md: '25px'},
-            textAlign: content.justify === 'left'? 'left': 'center',
+            textAlign: content.justify === 'left' || !content.buttonDisplay? 'left': 'center',
           }}>
             {content.label}
+          </Typography>
+          <Typography sx={{
+            font: 'Open Sans',
+            textAlign: 'center',
+            fontWeight: '500',
+            fontSize: {xs: '12px', sm: '13px', md: '14px'},
+            lineHeight: {xs: '23px', sm: '25px', md: '18px'},
+            textAlign: 'left',
+            mb: 2,
+          }}>
+            {content.post}
           </Typography>
           <Typography sx={{
             font: 'Open Sans',
@@ -42,7 +53,7 @@ export default function ServicesCard({ content }) {
             fontWeight: '400',
             fontSize: {xs: '12px', sm: '13px', md: '14px'},
             lineHeight: {xs: '23px', sm: '25px', md: '18px'},
-            textAlign: content.justify === 'left'? 'left': 'center',
+            textAlign: content.justify === 'left' || !content.buttonDisplay? 'left': 'center',
           }}>
             {content.body}
           </Typography>

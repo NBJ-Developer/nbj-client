@@ -47,10 +47,13 @@ function Video() {
             <Box sx={{
               textAlign: 'center',
             }}>
-              <PlayCircleFilledWhiteOutlinedIcon fontSize='large' color='#ffffff' sx={{
-              color: '#ffffff',
-              zIndex: 2,
-            }}/>
+              <PlayCircleFilledWhiteOutlinedIcon 
+                fontSize='large' 
+                color='#ffffff' 
+                sx={{
+                color: '#ffffff',
+                zIndex: 2,
+              }}/>
             </Box>
             
             <Typography sx={{
@@ -67,16 +70,15 @@ function Video() {
                 Workers Video
             </Typography>
             <Typography sx={{
-                fontFamily: 'Inter',
-                fontStyle: 'normal',
-                fontWeight: '600',
-                fontSize: '40px',
-                lineHeight: '45px',
-                color: '#ffffff',
-                zIndex: 2,
-                textAlign: 'center',
-                marginTop: '17px'
-            }} variant='h1'>
+              font: 'Raleway',
+              fontWeight: '700',
+              fontSize: {xs: '5vw', md:'60px'},
+              lineHeight: {xs: '8vh', md: '60px'},
+              color: '#ffffff',
+              zIndex: 2,
+              textAlign: 'center',
+              marginTop: '17px',
+            }}>
                 See our working video
             </Typography>
           </Box>

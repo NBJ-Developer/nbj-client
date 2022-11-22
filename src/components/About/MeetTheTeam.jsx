@@ -14,15 +14,15 @@ function MeetTheTeam() {
     },
     {
       imgPath: 'team2.png',
-      label: 'Nyerere Bolanle',
-      post: 'CEO',
+      label: 'Capt. Nyerere John',
+      post: 'Pilot-in-charge',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames dictumst nisi magnis.',
       buttonDisplay: false,
     },
     {
       imgPath: 'team3.png',
-      label: 'Nyerere Bolanle',
-      post: 'CEO',
+      label: 'Akeni Philip Elvis',
+      post: 'Director of Operations',
       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames dictumst nisi magnis.',
       buttonDisplay: false,
     },
@@ -58,9 +58,9 @@ function MeetTheTeam() {
       
       <Box sx={{
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'center',
     }}>
-      <Grid container spacing={2}>
+      <Grid container spacing={3}>
       {cardContents.map( data => (
         <Grid key={data.imgPath} item xs={12} md={4} 
         container
