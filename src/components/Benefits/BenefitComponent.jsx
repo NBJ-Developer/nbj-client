@@ -29,9 +29,9 @@ export default function BenefitComponent({image, data}) {
     <Typography sx={{
       font: 'Open Sans',
       fontWeight: '600',
+      fontSize: {xs: '18px', sm: '19px',  md: '20px'},
+      lineHeight: {xs: '28px', sm: '32px',  md: '37px'},
       textAlign: 'center',
-      fontSize: {xs: '12px', md: '24px'},
-      lineHeight: {xs: '16px', md: '24px'},
       marginBottom: '10px',
     }}>
     {data.name}
@@ -40,9 +40,8 @@ export default function BenefitComponent({image, data}) {
       display: 'block',
       font: 'Open Sans',
       fontWeight: '400',
-      fontSize: '15px',
-      fontSize: {xs: '12px', md: '24px'},
-      lineHeight: {xs: '16px', md: '24px'},
+      fontSize: {xs: '12px', sm: '13px', md: '14px'},
+      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
       textAlign: 'center',
     }}>
     {data.para}

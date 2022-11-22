@@ -14,10 +14,9 @@ function Benefits() {
         <Typography sx={{
           fontFamily: 'Raleway',
           fontWeight: 700,
-          fontSize: {xs: '18px', md:'30px'},
-          lineHeight: {xs: '24px', md: '40px'},
+          fontSize: {xs: '27px', sm: '28px', md:'30px'},
+          lineHeight: {xs: '42px', xs: '45px', md: '55px'},
           color: '#434343',
-          letterSpacing: '0.08em',
           textAlign: 'center',
           
         }}>
@@ -32,14 +31,14 @@ function Benefits() {
       }}>
         <Box
           sx={{
-            width: '85%',
+            width: {xs: '100%', sm: '90%', md: '85%'},
             mt: 4,
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
           }}
         >
-          <Grid container spacing={4}>
+          <Grid container spacing={2}>
             <Grid item xs={6} md={3}>
               <Slider slideComponent={
                 <BenefitComponent 

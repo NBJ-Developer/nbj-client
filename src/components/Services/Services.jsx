@@ -49,10 +49,10 @@ export default function Services() {
         <Typography variant='h1' sx={{
           width: '100%',
           fontFamily: 'Raleway',
-          fontStyle: 'normal',
-          fontWeight: '700',
-          fontSize: '20px',
-          lineHeight: '23px',
+          fontWeight: 700,
+          fontSize: {xs: '27px', sm: '28px'},
+          lineHeight: {xs: '42px', sm: '45px'},
+     color: '#434343',
           textAlign: 'center',
         }}>
           OUR
@@ -68,8 +68,7 @@ export default function Services() {
           justifyContent: 'center'
         }}>
           <Box sx={{  
-            maxWidth: '55%', 
-            flexGrow: 1,
+            width: '65%', 
             mt: 3, 
           }}>
             <Slider slideComponent={

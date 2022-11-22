@@ -7,8 +7,10 @@ function InputField({ content }) {
   
   const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
-      fontSize: {xs: '12px', md: '18px'},
-      lineHeight: {xs: '18px', md: '24px'},
+      font: 'Open Sans',
+      fontWeight: '400',
+      fontSize: {xs: '12px', sm: '13px', md: '14px'},
+      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
       color: '#F9A020',
     },
     input: {
@@ -42,10 +44,13 @@ function InputField({ content }) {
      label={content.label}
      size="small"
      sx={{
+      font: 'Open Sans',
+      fontWeight: '400',
+      fontSize: {xs: '12px', sm: '13px', md: '14px'},
+      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
       width: {xs: '80vw', md: '30vw'},
       mr: 1,
       mb: 2, 
-      fontFamily: 'inter',
      }}
      />
   </Box>

@@ -104,20 +104,22 @@ export default function Sub() {
             }}>
               <Slider slideComponent={
                 <Typography sx={{
-                    fontWeight: '700',
-                    fontSize: {xs: '18px', md: '45px'},
-                    lineHeight: {xs: '24px', md: '53px'},
-                    color: '#262626',
-                    textAlign: 'center',
-                }} variant='h1'>
+                  fontFamily: 'Raleway',
+                  fontWeight: 700,
+                  fontSize: {xs: '27px', sm: '28px', md:'30px'},
+                  lineHeight: {xs: '42px', sm: '45px', md: '55px'},
+                  color: '#262626',
+                  textAlign: 'center',
+                }}>
                     Join Our Mail list
                 </Typography>
               }/>
                  
                 <Typography sx={{
+                    font: 'Open Sans',
                     fontWeight: '400',
-                    fontSize: {xs: '12px', md: '18px'},
-                    lineHeight: {xs: '18px', md: '24px'},
+                    fontSize: {xs: '12px', sm: '13px', md: '14px'},
+                    lineHeight: {xs: '23px', sm: '25px', md: '27px'},
                     color: '#262626',
                     textAlign: 'center',
                     marginTop: '10px'

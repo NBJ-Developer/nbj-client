@@ -82,8 +82,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '30px', md:'78px'},
-            lineHeight: {xs: '40px', md: '91px'},
+            fontSize: {xs: '30px', sm: '45px', md:'70px'},
+            lineHeight: {xs: '50px',sm: '55px', md: '80px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -97,8 +97,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '30px', md:'78px'},
-            lineHeight: {xs: '40px', md: '91px'},
+            fontSize: {xs: '30px', sm: '45px', md:'70px'},
+            lineHeight: {xs: '50px',sm: '55px', md: '80px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -110,8 +110,8 @@ function SwipeableHeroStepper() {
           <Typography sx={{ 
             font: 'Raleway',
             fontWeight: '700',
-            fontSize: {xs: '30px', md:'78px'},
-            lineHeight: {xs: '40px', md: '91px'},
+            fontSize: {xs: '30px', sm: '45px', md:'70px'},
+            lineHeight: {xs: '50px',sm: '55px', md: '80px'},
             color: '#ffffff',
             textAlign: {xs: 'center', md: 'left'}, 
           }}>
@@ -123,27 +123,27 @@ function SwipeableHeroStepper() {
           mt: 3,
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '12px', md: '24px'},
-          lineHeight: {xs: '16px', md: '24px'},
-          color: 'rgba(255, 255, 255, 0.9)', 
+          fontSize: {xs: '14px', sm: '18px', md: '22px'},
+          lineHeight: {xs: '25px', sm: '32px', md: '36px'},
+          color: '#ffffff', 
         }}>
           Our goal is simply to offer the highest standards of professionalism
         </Typography>
         <Typography sx={{ 
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '12px', md: '24px'},
-          lineHeight: {xs: '16px', md: '24px'},
-          color: 'rgba(255, 255, 255, 0.9)', 
+          fontSize: {xs: '14px', sm: '18px', md: '22px'},
+          lineHeight: {xs: '25px', sm: '32px', md: '36px'},
+          color: '#ffffff', 
         }}>
           and service as measured by our safety record, dispatch reliability
         </Typography>
         <Typography sx={{ 
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '12px', md: '24px'},
-          lineHeight: {xs: '16px', md: '24px'},
-          color: 'rgba(255, 255, 255, 0.9)', 
+          fontSize: {xs: '14px', sm: '18px', md: '22px'},
+          lineHeight: {xs: '25px', sm: '32px', md: '36px'},
+          color: '#ffffff', 
         }}> and customer satisfaction
         </Typography>
         <Box sx={{

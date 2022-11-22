@@ -22,7 +22,7 @@ export default function OurStory({ourStoryProps}) {
           width: '80%',
           backgroundColor: '#ffffff',
           borderRadius: '0px 30px 0px 0px',
-          p: 6,
+          p: {xs: 2, sm: 4, md: 6},
         }}>
           <Box sx={{
             display: 'flex',
@@ -32,12 +32,12 @@ export default function OurStory({ourStoryProps}) {
             alignItems: 'center',
           }}>
             <Typography sx={{
-              fontFamily: 'Raleway',
-              fontStyle: 'normal',
-              fontWeight: '700',
-              fontSize: '20px',
+              font: 'Open Sans',
+              fontWeight: '600',
+              fontSize: '27px',
+              lineHeight: '42px',
               lineHeight: '23px',
-            }} variant='h1'>
+            }}>
               {ourStoryProps.heading}
               <span className='span1'>
                {ourStoryProps.heading1}
@@ -51,10 +51,10 @@ export default function OurStory({ourStoryProps}) {
             
           </Box>
           <Typography sx={{
-            fontFamily: 'Open Sans',
-            fontStyle: 'normal',
+            font: 'Open Sans',
             fontWeight: '400',
-            fontSize: '15px',
+            fontSize: '12px',
+            lineHeight: '25px',
             lineHeight: '20px',
             textAlign: 'justify',
           }}>
@@ -95,12 +95,12 @@ export default function OurStory({ourStoryProps}) {
           <Box>
           <Slider slideComponent={
           <Typography sx={{
-              fontFamily: 'Raleway',
-              fontStyle: 'normal',
-              fontWeight: '700',
-              fontSize: '28px',
-              lineHeight: '23px',
-            }} variant='h1'>
+            fontFamily: 'Raleway',
+            fontWeight: 700,
+            fontSize: {sm: '28px', md:'30px'},
+            lineHeight: {sm: '45px', md: '55px'},
+            color: '#434343',
+            }}>
               {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
             </Typography>
           }/>
@@ -108,10 +108,10 @@ export default function OurStory({ourStoryProps}) {
           </Box>
           <Box>
             <Typography sx={{
-              fontFamily: 'Raleway',
+              font: 'Open Sans',
               fontWeight: '400',
-              fontSize: '17px',
-              lineHeight: '23px',
+              fontSize: {sm: '13px', md: '14px'},
+              lineHeight: {sm: '25px', md: '27px'},
               color: '#434343',
               textAlign: 'justify',
               mt: 4,

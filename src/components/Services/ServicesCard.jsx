@@ -12,7 +12,7 @@ import { Box } from '@mui/material';
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{ 
-        width: {xs: '55vw', md: 320},
+        width: {xs: '100%', md: 320},
         maxHeight: '90%',
         pb: {xs: 0, md: 2}, 
         }}>
@@ -28,15 +28,22 @@ export default function ServicesCard({ content }) {
         />
         <CardContent>
           <Typography gutterBottom component="div" sx={{
-            fontFamily: 'Raleway',
-            fontWeight: 700,
-            fontSize: content.justify === 'left'? '26px': '20px',
-            lineHeight: '23px',
+            font: 'Open Sans',
+            fontWeight: '600',
+            fontSize: {xs: '18px', sm: '19px',  md: '20px'},
+            lineHeight: {xs: '28px', sm: '32px',  md: '37px'},
             textAlign: content.justify === 'left'? 'left': 'center',
           }}>
             {content.label}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography sx={{
+            font: 'Open Sans',
+            textAlign: 'center',
+            fontWeight: '400',
+            fontSize: {xs: '12px', sm: '13px', md: '14px'},
+            lineHeight: {xs: '23px', sm: '25px', md: '27px'},
+            textAlign: content.justify === 'left'? 'left': 'center',
+          }}>
             {content.body}
           </Typography>
         </CardContent>

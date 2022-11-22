@@ -1,3 +1,4 @@
+import { Grid } from '@mui/material'
 import Paper from '@mui/material/Paper'
 import React from 'react'
 import ServicesDetails from './ServicesDetails'
@@ -27,16 +28,26 @@ function Statistic() {
 
   return (
     <Paper sx={{
-    width: '90%',
-    px: 3,
-    display: 'flex',
-    justifyContent: 'space-between',
-    paddingY: '30px',
-  }}>
-      <ServicesDetails content={statisticContent[0]}/>
-      <ServicesDetails content={statisticContent[1]}/>
-      <ServicesDetails content={statisticContent[2]}/>
-      <ServicesDetails content={statisticContent[3]}/>
+      width: {xs: '90%', md: '90%'},
+      px: 3,
+      display: 'flex',
+      justifyContent: 'space-between',
+      py: {xs: 2, md: 4},
+    }}>
+      <Grid container spacing={2}>
+        <Grid item xs={6} md={3}>
+          <ServicesDetails content={statisticContent[0]}/>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <ServicesDetails content={statisticContent[1]}/>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <ServicesDetails content={statisticContent[2]}/>
+        </Grid>
+        <Grid item xs={6} md={3}>
+          <ServicesDetails content={statisticContent[3]}/>
+        </Grid>
+      </Grid>
     </Paper>
   )
 }
