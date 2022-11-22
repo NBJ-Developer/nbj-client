@@ -41,7 +41,7 @@ function MissionComponent({ misionContent }) {
                 color: '#ffffff',
                 fontWeight: '400',
                 fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
-                lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
+                lineHeight: {xs: '2.5vh', sm: '4vh', md: '36px'},
                 }}>
                 {misionContent.body}
               </Typography>
