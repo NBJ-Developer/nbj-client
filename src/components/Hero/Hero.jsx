@@ -163,8 +163,8 @@ function SwipeableHeroStepper() {
     }}>
      <Box sx={{
       position: 'absolute',
-      bottom: '-100px',
-      width: {xs: '100%', md: '100%'},
+      bottom: {xs: '-14vh', md: '-11vh'},
+      width: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
