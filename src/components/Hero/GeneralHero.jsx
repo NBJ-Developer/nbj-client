@@ -18,12 +18,16 @@ const GeneralHero = ({ display, bgImage, content }) => {
       borderRadius: '0 0 25px 25px',
     }}>
       <Container maxWidth="xl" sx={{
-        backgroundColor: 'rgba(32, 53, 120, 0.4)',
+        backgroundColor: !display? 'rgba(32, 53, 120, 0.8)':'rgba(32, 53, 120, 0.4)' ,
         borderRadius: '0 0 25px 25px',
         height: {xs:'149px', md:'364px'},
         pt: {xs: '20px', md:'30px'},
         }}>
-        <NavBar />
+          <Box sx={{
+          display: !display? 'none': 'block',
+        }}>
+          <NavBar />
+        </Box>
         <Box sx={{
           mt: {xs:'30px', md:'80px'},
           width: {xs:'300px', md:'600px'},

@@ -33,10 +33,15 @@ function About() {
     committed to providing quality.`
   }
 
+  const content = {
+    header: 'OUR STORY',
+    body: `If you want to know more about us, you’re in the right place. 
+    Read to learn how we can assist you`
+  }
  
   return (
     <div>
-      <GeneralHero display={false} bgImage={bgImage} />
+      <GeneralHero display={false} bgImage={bgImage} content={content}/>
       <Box sx={{
         textalign:'center',
         display: {xs:'block', md:'none'},
