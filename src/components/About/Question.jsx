@@ -12,7 +12,7 @@ function Question() {
     }}>
       <Box sx={{
         width:{xs:'100%', md:'50%'},
-        padding:'80px 80px 0px 80px',
+        padding:{xs: '20px', md: '80px 80px 0px 80px'},
       }}>
         <Typography sx={{
             fontFamily:'raleway',
@@ -42,14 +42,15 @@ function Question() {
           alt={'submit-message-animation'}
           sx={{
             my: 4,
-            width:'50vw',
+            width:{xs: '70vw', md: '50vw'},
             height:'auto',
+            color: 'inherit',
         }}>     
           </Box>
       </Box>
       <Box sx={{
         width:{xs:'100%', md:'50%'},
-        padding: {xs:'80px'},
+        p: 2,
         marginTop:{md:'70px'}
       }}>
         <Accordion />

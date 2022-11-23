@@ -9,7 +9,7 @@ function ContactMessage() {
 
   return (
     <Box sx={{
-      mt: 16,
+      mt: {xs: 12, md: 16},
       maxWidth: '100%'
     }}>
       <Box sx={{
@@ -80,7 +80,7 @@ function ContactMessage() {
                 alt={'submit-message-animation'}
                 sx={{
                   width:{xs: '65vw', md: '60%'},
-                  height:'60vh',
+                  height:'auto',
               }}>     
           </Box>
           </Box>
