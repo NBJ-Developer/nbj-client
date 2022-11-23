@@ -8,9 +8,8 @@ function InputField({ content }) {
   const CssTextField = styled(TextField)({
     '& label.Mui-focused': {
       font: 'Open Sans',
-      fontWeight: '400',
-      fontSize: {xs: '12px', sm: '13px', md: '14px'},
-      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
+      fontWeight: '500',
+      fontSize: '14px',
       color: '#F9A020',
     },
     input: {
@@ -19,7 +18,7 @@ function InputField({ content }) {
     },
     label: {
       color: '#262626',
-      fontSize: '12px',
+      fontSize: '14px',
     },
     
     '& .MuiInput-underline:after': {
@@ -43,9 +42,12 @@ function InputField({ content }) {
      <CssTextField
      label={content.label}
      size="small"
+     multiline
+     rows={content.row}
      sx={{
       font: 'Open Sans',
       fontWeight: '400',
+      backgroundColor: '#f1f3fb',
       fontSize: {xs: '12px', sm: '13px', md: '14px'},
       lineHeight: {xs: '23px', sm: '25px', md: '27px'},
       width: {xs: '80vw', md: '30vw'},

@@ -1,22 +1,20 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Accordion from '../../elements/Accordion/Accordion'
-import bigimage from '../../assets/images/BBVector.png'
 import React from 'react'
 
 function Question() {
   return (
     <Box sx={{
       display:{xs:'block', md:'flex'},
-      backgroundColor:'#121212',
-      marginTop:'80px',
+      backgroundColor:'#253988',
+      mt: 16,
     }}>
       <Box sx={{
         width:{xs:'100%', md:'50%'},
         padding:'80px 80px 0px 80px',
       }}>
         <Typography sx={{
-            marginTop:'30px',
             fontFamily:'raleway',
             color:'#FFFFFF',
             fontWeight:'700',
@@ -26,6 +24,7 @@ function Question() {
           FREQUENTLY ASKED QUESTIONS
         </Typography>
         <Typography sx={{
+          fontFamily: 'Open Sans',
             marginTop:'10px',
             color:'#FFFFFF',
             fontSize:{xs:'15px', md:'18px'},
@@ -37,25 +36,20 @@ function Question() {
           Accumsan vestibulum erat in gravida orci cursus enim. Elit 
           elementum augue tortor nec porttitor lorem ut. Nunc sodales.
         </Typography>
-        <Box sx={{
-          width:{xs:'25%', md:'50%px'},
-          height:{xs:'25%', md:'45%'},
-          display:{xs:'none', md:'block'},
-          margin:'80px',
-        }}>
-          <img
-            src={bigimage}
-            srcSet={bigimage}
-            alt='BigImage'
-            loading="lazy"
-            width='100%'
-            height='100%'
-          />
-        </Box>
+        <Box 
+          component="img"
+          src={'frequently-asked-question.gif'}
+          alt={'submit-message-animation'}
+          sx={{
+            my: 4,
+            width:'50vw',
+            height:'auto',
+        }}>     
+          </Box>
       </Box>
       <Box sx={{
         width:{xs:'100%', md:'50%'},
-        padding: {xs:'40px'},
+        padding: {xs:'80px'},
         marginTop:{md:'70px'}
       }}>
         <Accordion />

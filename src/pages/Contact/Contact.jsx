@@ -4,13 +4,21 @@ import GeneralHero from '../../components/Hero/GeneralHero'
 import ContactMessage from '../../components/Contact/ContactMessage';
 import Typography from '@mui/material/Typography';
 import Question from '../../components/About/Question';
+import bgImage from './contactBG.png'
 import Footer from '../../components/Footer/Footer';
+import ContactInfo from '../../components/Contact/ContactInfo';
 
 
 function Contact() {
+  const content = {
+    header: 'CONTACT US',
+    body: `If you want to know more about our services, you’re in the right place. 
+    Write to us and we will be sure to answer all your questions and give you a 
+    comprehensive consultation.`
+  }
   return (
     <Box>
-      <GeneralHero />
+      <GeneralHero display={true} bgImage={bgImage} content={content}/>
       <Box sx={{
         display: {xs: 'flex', md: 'none'},
         justifyContent: 'center',
@@ -37,6 +45,7 @@ function Contact() {
       </Box>
       <ContactMessage />
       <Question />
+      <ContactInfo />
       <Footer />
     </Box>
   )
