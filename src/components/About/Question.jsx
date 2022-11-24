@@ -1,18 +1,28 @@
+import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Accordion from '../../elements/Accordion/Accordion'
-import React from 'react'
+import contactBG from '../../pages/Contact/contactBG.png'
+
 
 function Question() {
   return (
     <Box sx={{
       display:{xs:'block', md:'flex'},
-      backgroundColor:'#253988',
+      backgroundImage: `url(${contactBG})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% 100%',
       mt: 16,
     }}>
       <Box sx={{
+        display: 'flex',
+        flexDirection: {xs: 'column', md: 'row'},
+        backgroundColor: 'rgba(32, 53, 120, 0.6)' ,
+      }}>
+        <Box sx={{
         width:{xs:'100%', md:'50%'},
-        padding:{xs: '20px', md: '80px 80px 0px 80px'},
+        px:{xs: 4, md: 8,},
+        py:{xs: 2, md: 4,},
       }}>
         <Typography sx={{
             fontFamily:'raleway',
@@ -50,13 +60,16 @@ function Question() {
       </Box>
       <Box sx={{
         width:{xs:'100%', md:'50%'},
-        p: 2,
+        px:{xs: 4, md: 8,},
+        py:{xs: 2, md: 4,},
         marginTop:{md:'70px'}
       }}>
         <Accordion />
         <Accordion />
         <Accordion />
       </Box>
+      </Box>
+      
     </Box>
   )
 }

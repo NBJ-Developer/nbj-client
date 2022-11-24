@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import Slider from '../../elements/Slidereffect/Slidereffect';
 import Statistic from '../Statistic/Statistic';
+import ImageSlider from '../../elements/Slidereffect/ImageSlider';
 
 
 const images = [
@@ -36,7 +37,7 @@ const content = [
    },
 ]
 
-const imageArray = ['airplain4.png', 'airplain1.png', 'airplain3.png']
+const imageArray = ['airplain4.png', 'airplain1.png']
 
 function SwipeableHeroStepper() {
 
@@ -51,17 +52,12 @@ function SwipeableHeroStepper() {
       <Box sx={{
         display: {xs: 'flex', md: 'flex'}, 
       }}>
-      <Box
-        component="img"
-        sx={{
-          display: 'block',
-          overflow: 'hidden',
-          width: '100%',
-          height: '100vh',
-        }}
-        src={images[1].imgPath}
-        alt={images[1].label}
-      />
+        <Box sx={{
+          zIndex: -2
+        }}>
+        <ImageSlider slides={imageArray}/>
+        </Box>
+      
         <Box sx={{ 
           position: 'absolute',
           backgroundImage: 'linear-gradient(rgba(32, 53, 120, 0.91), rgba(32, 53, 120, 0))',

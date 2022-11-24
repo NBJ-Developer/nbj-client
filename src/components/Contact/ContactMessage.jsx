@@ -22,7 +22,7 @@ function ContactMessage() {
             flexDirection: {xs: 'column', md: 'row'},
             justifyContent: 'center',
             alignItems: 'center',
-            width: '75%',
+            width: {xs: '90%', md: '75%'},
             backgroundColor: '#ffffff',
             borderRadius: 2,
             p: 4,
