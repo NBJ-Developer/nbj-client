@@ -12,8 +12,9 @@ import { Box } from '@mui/material';
 export default function ServicesCard({ content }) {
   return (
     <Card sx={{
+      position: 'relative',
       width: {xs: '100%', sm: '90%', md: 320},
-      height: !content.buttonDisplay? 'auto': {xs: '90%', md: '72vh'},
+      height: !content.buttonDisplay? 'auto': {xs: '90%', md: '68vh'},
       pb: {xs: 0, md: 2}, 
     }}>
       <CardActionArea>
@@ -22,16 +23,18 @@ export default function ServicesCard({ content }) {
           image={content.imgPath}
           alt={content.imgPath}
           style={{
-            height: '250px',
-            objectFit: 'fill',
+            objectFit: 'cover',
+            height: '40vh',
+            objectFit: 'cover',
           }}
         />
         <CardContent>
-          <Typography gutterBottom component="div" sx={{
+          <Typography gutterBottom component="div" 
+          sx={{
             font: 'Open Sans',
             fontWeight: '600',
-            fontSize: {xs: '18px', sm: '19px',  md: '20px'},
-            lineHeight: {xs: '28px', sm: '32px',  md: '25px'},
+            fontSize: {xs: '18px', sm: '19px',  md: '1.5vw'},
+            lineHeight: {xs: '28px', sm: '32px',  md: '1.5vw'},
             textAlign: content.justify === 'left' || !content.buttonDisplay? 'left': 'center',
           }}>
             {content.label}

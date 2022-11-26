@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TestimonialsPapper from '../papper/TestimonialsPapper';
 import Slider from '../../elements/Slidereffect/Slidereffect'
-import { Grid } from '@mui/material';
 
 export default function Testimonials() {
     const data = [
@@ -75,6 +74,8 @@ export default function Testimonials() {
           What our <span className='orangeSpan'>Clients</span>   have to say
         </Typography>
         <Box sx={{
+          pl: {xs: 4, sm: 4, md: 6},
+          pr: {xs: 4, sm: 4, md: 2},
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
@@ -82,37 +83,31 @@ export default function Testimonials() {
           <Box sx={{
             display: 'flex',
             flexDirection: {xs: 'column', md: 'row'},
-            justifyContent: 'center',
-            alignItems: 'center',
-            px: 6,
+            '& > :not(style)': {
+            mr: {xs: 0, md: 4},
+            width:  {xs: '65vw', sm: '65vw', md: 400},
+            height: 270,
+            },
           }}>
-            <Grid container spacing={2}>
-              <Grid item xs={4}>
-                <Slider slideComponent={
-                  <Box>
-                    <TestimonialsPapper data={data[0]}/>
-                  </Box>
-                }/>
-              </Grid>
-              <Grid item xs={4}>
-                <Slider slideComponent={
-                  <Box sx={{
-                    pt: {xs: 0, md: 8},
-                  }}>
-                    <TestimonialsPapper data={data[1]}/>
-                  </Box>
-                }/>
-              </Grid>
-              <Grid item xs={4}>
-                <Slider slideComponent={
-                  <Box sx={{
-                    pt: {xs: 0, md: 16},
-                  }}>
-                    <TestimonialsPapper data={data[2]}/>
-                  </Box>
-                }/> 
-              </Grid>
-            </Grid>         
+            <Slider slideComponent={
+              <Box>
+                <TestimonialsPapper data={data[0]}/>
+              </Box>
+             }/>
+            <Slider slideComponent={
+              <Box sx={{
+                pt: {xs: 0, md: 8},
+              }}>
+                <TestimonialsPapper data={data[1]}/>
+              </Box>
+            }/>
+            <Slider slideComponent={
+              <Box sx={{
+                pt: {xs: 0, md: 16},
+              }}>
+                <TestimonialsPapper data={data[2]}/>
+              </Box>
+            }/>          
           </Box> 
         </Box>
          

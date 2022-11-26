@@ -38,6 +38,7 @@ const ImageSlider = ({ slides }) => {
         <Box
         component="img"
         sx={{
+          objectFit: 'cover',
           display: 'block',
           width: '100%',
           height: '100vh',

@@ -34,7 +34,6 @@ function SwipeableHeroStepper() {
           height: '100vh', 
           flexGrow: 1,
         }}>
-
       </Box>
       </Box>
     
