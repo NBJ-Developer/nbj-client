@@ -12,7 +12,7 @@ import Link from '@mui/material/Link'
 import NbjLogo from '../../elements/Logo/NbjLogo';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
 
-const pages = ['Home', 'About', 'Media', 'Services', 'Contact'];
+const pages = ['About', 'Services', 'Contact'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,11 +29,15 @@ function ResponsiveAppBar() {
     <AppBar sx={{
       position: 'absolute',
       backgroundColor: 'inherit',
+      px: {xs: 4, sm: 1, md: 3},
+      py: 1,
       top: 0,
       border: 'none',
       boxShadow: 'none',
     }}>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{
+        px: 0,
+      }}>
         <Toolbar disableGutters sx={{
           display: {md:'flex'},
           width: '100%',
@@ -43,7 +47,7 @@ function ResponsiveAppBar() {
         <NbjLogo />
         {/* Navigation Links for the nav bar */}
         <Box sx={{
-          width: '45%',
+          width: '250px',
           display: {xs: 'none', md:'flex'},
           justifyContent: 'space-between',
         }}>
@@ -65,8 +69,7 @@ function ResponsiveAppBar() {
         </Box>
         {/* Get a quote button */}
         <Box sx={{  
-          display: { xs: 'none', md: 'flex' },
-          mr: 3, 
+          display: { xs: 'none', md: 'flex' }, 
         }}>
           <SecondaryButton buttonLabel={'Get a quote'} />
         </Box>

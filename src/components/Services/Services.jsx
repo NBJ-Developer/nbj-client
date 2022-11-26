@@ -116,7 +116,8 @@ export default function Services() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Typography>
             <Box sx={{
-              width: '100%', 
+              width: '100%',
+              px: 6, 
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',

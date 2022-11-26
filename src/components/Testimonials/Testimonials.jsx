@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import TestimonialsPapper from '../papper/TestimonialsPapper';
 import Slider from '../../elements/Slidereffect/Slidereffect'
+import { Grid } from '@mui/material';
 
 export default function Testimonials() {
     const data = [
@@ -81,31 +82,37 @@ export default function Testimonials() {
           <Box sx={{
             display: 'flex',
             flexDirection: {xs: 'column', md: 'row'},
-            '& > :not(style)': {
-            mr: {xs: 0, md: 4},
-            width:  350,
-            height: 270,
-            },
+            justifyContent: 'center',
+            alignItems: 'center',
+            px: 6,
           }}>
-            <Slider slideComponent={
-              <Box>
-                <TestimonialsPapper data={data[0]}/>
-              </Box>
-             }/>
-            <Slider slideComponent={
-              <Box sx={{
-                pt: {xs: 0, md: 8},
-              }}>
-                <TestimonialsPapper data={data[1]}/>
-              </Box>
-            }/>
-            <Slider slideComponent={
-              <Box sx={{
-                pt: {xs: 0, md: 16},
-              }}>
-                <TestimonialsPapper data={data[2]}/>
-              </Box>
-            }/>          
+            <Grid container spacing={2}>
+              <Grid item xs={4}>
+                <Slider slideComponent={
+                  <Box>
+                    <TestimonialsPapper data={data[0]}/>
+                  </Box>
+                }/>
+              </Grid>
+              <Grid item xs={4}>
+                <Slider slideComponent={
+                  <Box sx={{
+                    pt: {xs: 0, md: 8},
+                  }}>
+                    <TestimonialsPapper data={data[1]}/>
+                  </Box>
+                }/>
+              </Grid>
+              <Grid item xs={4}>
+                <Slider slideComponent={
+                  <Box sx={{
+                    pt: {xs: 0, md: 16},
+                  }}>
+                    <TestimonialsPapper data={data[2]}/>
+                  </Box>
+                }/> 
+              </Grid>
+            </Grid>         
           </Box> 
         </Box>
          

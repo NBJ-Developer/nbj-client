@@ -11,7 +11,7 @@ export default function OurStory({ourStoryProps}) {
     <Box>
       {/* SMALL DEVICE */}
       <Box sx={{
-          display: {xs: 'flex', md: 'none'},
+          display: {xs: 'flex', sm: 'flex', md: 'none'},
           flexDirection: 'column',
           mt: 16,
         }}>
@@ -22,7 +22,7 @@ export default function OurStory({ourStoryProps}) {
           width: '80%',
           backgroundColor: '#ffffff',
           borderRadius: '0px 30px 0px 0px',
-          p: {xs: 2, sm: 4, md: 6},
+          p: {xs: 4, sm: 4,},
         }}>
           <Box sx={{
             display: 'flex',
@@ -90,7 +90,7 @@ export default function OurStory({ourStoryProps}) {
           width: '60%',
           height: '70.5vh',
           minHeight: ourStoryProps.display?'63vh': '57vh',
-          p: 3,
+          p: 6,
           }}>
           <Box>
           <Slider slideComponent={

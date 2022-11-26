@@ -13,7 +13,7 @@ export default function ServicesCard({ content }) {
   return (
     <Card sx={{
       width: {xs: '100%', sm: '90%', md: 320},
-      height: !content.buttonDisplay? 'auto': {xs: '90%', md: '67vh'},
+      height: !content.buttonDisplay? 'auto': {xs: '90%', md: '72vh'},
       pb: {xs: 0, md: 2}, 
     }}>
       <CardActionArea>

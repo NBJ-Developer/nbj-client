@@ -31,14 +31,15 @@ function Benefits() {
       }}>
         <Box
           sx={{
-            width: {xs: '100%', sm: '90%', md: '85%'},
+            width: {xs: '100%', sm: '100%', md: '85%'},
             mt: 4,
+            px: 4,
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
           }}
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={'2vw'}>
             <Grid item xs={6} md={3}>
               <Slider slideComponent={
                 <BenefitComponent 

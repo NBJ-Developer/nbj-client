@@ -30,6 +30,7 @@ function Statistic() {
     <Paper sx={{
       width: {xs: '90%', md: '90%'},
       px: 3,
+      mx: 4,
       display: 'flex',
       justifyContent: 'space-between',
       py: {xs: 2, md: 4},
