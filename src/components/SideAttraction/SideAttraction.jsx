@@ -42,7 +42,7 @@ function SideAttraction() {
         mt: 22,
         display: 'flex',
         width: '100%',
-        height: '550px',
+        height: '75vh',
       }}>
         <Box sx={{
         display: 'flex',
