@@ -23,11 +23,7 @@ const GeneralHero = ({ display, bgImage, content }) => {
         height: {xs:'149px', md:'364px'},
         pt: {xs: '20px', md:'30px'},
         }}>
-          <Box sx={{
-          display: !display? 'none': 'block',
-        }}>
           <NavBar />
-        </Box>
         <Box sx={{
           mt: {xs:'30px', md:'80px'},
           width: {xs:'300px', md:'600px'},
@@ -36,16 +32,26 @@ const GeneralHero = ({ display, bgImage, content }) => {
         <Box sx={{
           display: { xs: 'none', md: 'block', },
           pt: !display? 10: 7,
+          maxWidth: '50vw',
         }}>
           <Slider slideComponent={
               <Typography variant="h3" component="h3" sx={{
+                font: 'Raleway',
                 marginBottom: '10px',
               }}>
                 {content.header}
               </Typography>
           }/>
           <Slider slideComponent={
-            <Typography>
+            <Typography sx={{
+              font: 'inter',
+              fontWeight: '400',
+              fontSize: '3vh',
+              lineHeight: '3vh',
+              color: '#ffffff',
+              textAlign: 'justify',
+              mt: 2,
+            }}>
               {content.body}
             </Typography>
           }/>
@@ -58,7 +64,9 @@ const GeneralHero = ({ display, bgImage, content }) => {
           },
           mt: 10,
         }}>
-          <Typography variant="h4" component="h4">
+          <Typography variant="h4" component="h4" sx={{
+                font: 'Raleway',
+              }}>
             {content.header}
           </Typography>
         </Box>

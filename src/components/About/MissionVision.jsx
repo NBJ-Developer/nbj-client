@@ -71,18 +71,18 @@ const misionContent = [
         <Box sx={{
           display: 'flex',
           justifyContent: 'space-between',
+          alignItems: 'center',
           width: '100%',
-          height: '50vh',
+          height: '45vh',
         }}>
           <Grid container spacing={4}>
             <Grid item xs={4} md={4}>
             <Slider slideComponent={
             <Box sx={{
-              width: '80%',
+              width: '90%',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center',
             }}>
               <Box>
                 <Typography sx={{
@@ -95,11 +95,12 @@ const misionContent = [
                 OUR VISION
               </Typography>
               <Typography sx={{
-                fontFamily:'Open Sans',
+                fontFamily:'inter',
                 marginTop:'10px',
                 color: '#ffffff',
                 fontSize:{xs:'15px', md:'18px'},
                 lineHeight: '27.21px',
+                textAlign: 'justify',
                 }}>
                 To provide the highest standards of safety through our highly 
                 trained domestic and international field representatives and customer 
@@ -113,7 +114,7 @@ const misionContent = [
             <Grid item xs={4} md={4}>
             <Slider slideComponent={
             <Box sx={{
-              width: '80%',
+              width: '90%',
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
@@ -130,11 +131,12 @@ const misionContent = [
                 OUR MISSION
               </Typography>
               <Typography sx={{
-                fontFamily:'Open Sans',
+                fontFamily:'inter',
                 marginTop:'10px',
                 color: '#ffffff',
                 fontSize:{xs:'15px', md:'18px'},
                 lineHeight: '27.21px',
+                textAlign: 'justify',
                 }}>
                 To create Value and make a difference in air travel
               </Typography>
@@ -154,8 +156,7 @@ const misionContent = [
             }}>
               <Box>
               <Typography sx={{
-              fontFamily:'Open Sans',
-              marginTop:'10px',
+              fontFamily:'inter',
               fontWeight: '700',
               color: '#ffffff',
               fontSize:{xs:'15px', md:'18px'},
@@ -174,46 +175,51 @@ const misionContent = [
                   display: 'list-item',
                 },
                 }}>
-                <ListItem>
+                <ListItem sx={{
+                  p: 0,
+                }}>
                 <Typography sx={{
-                fontFamily:'Open Sans',
+                fontFamily:'inter',
                 color: '#ffffff',
-                fontSize: '18px',
+                fontSize: '2.5vh',
               }}>
                 Team work
               </Typography>
                 </ListItem>
-                <ListItem>
+                <ListItem sx={{
+                  p: 0,
+                }}>
                 <Typography sx={{
-                marginTop:'10px',
-                fontFamily:'Open Sans',
+                fontFamily:'inter',
                 color: '#ffffff',
                 fontWeight: '400',
-                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
-                lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
+                fontSize: '2.5vh',
+                lineHeight: {xs: '4vh', sm: '4vh', md: '3vh'},
               }}>
                 Commited to our customer
               </Typography>
                 </ListItem>
-                <ListItem>
+                <ListItem sx={{
+                  p: 0,
+                }}>
                 <Typography sx={{
-                marginTop:'10px',
-                fontFamily:'Open Sans',
+                fontFamily:'inter',
                 color: '#ffffff',
                 fontWeight: '400',
-                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+                fontSize: '2.5vh',
                 lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
               }}>
                 Innovation
               </Typography>
                 </ListItem>
-                <ListItem>
+                <ListItem sx={{
+                  p: 0,
+                }}>
                 <Typography sx={{
-                marginTop:'10px',
-                fontFamily:'Open Sans',
+                fontFamily:'inter',
                 color: '#ffffff',
                 fontWeight: '400',
-                fontSize: {xs: '3.5vw', sm: '3vw', md: '22px'},
+                fontSize: '2.5vh',
                 lineHeight: {xs: '4vh', sm: '4vh', md: '36px'},
               }}>
                 Quality & Simplicity

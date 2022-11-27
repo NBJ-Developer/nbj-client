@@ -17,8 +17,8 @@ function Video() {
           <Box sx={{ 
           position: 'absolute',
           backgroundColor: 'rgba(0, 0, 0, 0.59)',
-          width: '55%',
-          height: '300px',
+          width: '70vw',
+          height: '60vh',
           bottom: '0px',
           borderRadius: '5px',
           flexGrow: 1,
@@ -32,8 +32,8 @@ function Video() {
             backgroundSize: '100% 100%',
         }}
             sx={{ 
-            width: '55%',
-            height: '300px',
+            width: '70vw',
+            height: '60vh',
             background: 'rgba(0, 0, 0, 0.51)',
             borderRadius: '5px',
         }}>
@@ -60,8 +60,8 @@ function Video() {
                 fontFamily: 'Inter',
                 fontStyle: 'normal',
                 fontWeight: '400',
-                fontSize: '20px',
-                lineHeight: '22px',
+                fontSize: '2vw',
+                lineHeight: '3vw',
                 color: '#F9A020',
                 zIndex: 2,
                 textAlign: 'center',
@@ -72,8 +72,8 @@ function Video() {
             <Typography sx={{
               font: 'Raleway',
               fontWeight: '700',
-              fontSize: {xs: '5vw', md:'60px'},
-              lineHeight: {xs: '8vh', md: '60px'},
+              fontSize: '3vw',
+              lineHeight: '3vw',
               color: '#ffffff',
               zIndex: 2,
               textAlign: 'center',

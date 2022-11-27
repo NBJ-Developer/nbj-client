@@ -32,7 +32,7 @@ export default function OurStory({ourStoryProps}) {
             alignItems: 'center',
           }}>
             <Typography sx={{
-              font: 'Open Sans',
+              font: 'inter',
               fontWeight: '600',
               fontSize: '27px',
               lineHeight: '42px',
@@ -51,7 +51,7 @@ export default function OurStory({ourStoryProps}) {
             
           </Box>
           <Typography sx={{
-            font: 'Open Sans',
+            font: 'inter',
             fontWeight: '400',
             fontSize: '12px',
             lineHeight: '25px',
@@ -78,7 +78,7 @@ export default function OurStory({ourStoryProps}) {
         display: {xs: 'none', md: 'flex'},
         alignItems: 'center',
         width: '80%',
-        maxHeight: '60.5vh',
+        maxHeight: '70.5vh',
         mt: 23,
       }}>
         <Box sx={{
@@ -88,7 +88,7 @@ export default function OurStory({ourStoryProps}) {
           background: '#ffffff',
           borderRadius: '0px 5px 5px 0px',
           width: '60%',
-          height: '70.5vh',
+          height: '60.5vh',
           minHeight: ourStoryProps.display?'63vh': '57vh',
           p: 6,
           }}>
@@ -97,8 +97,8 @@ export default function OurStory({ourStoryProps}) {
           <Typography sx={{
             fontFamily: 'Raleway',
             fontWeight: 700,
-            fontSize: {sm: '28px', md:'30px'},
-            lineHeight: {sm: '45px', md: '55px'},
+            fontSize:'3.5vh',
+            lineHeight: '3.5',
             color: '#434343',
             }}>
               {ourStoryProps.heading} <span className='span1'>{ourStoryProps.heading1}</span>
@@ -108,13 +108,12 @@ export default function OurStory({ourStoryProps}) {
           </Box>
           <Box>
             <Typography sx={{
-              font: 'Open Sans',
+              font: 'inter',
               fontWeight: '400',
-              fontSize: {sm: '13px', md: '14px'},
-              lineHeight: {sm: '25px', md: '27px'},
+              fontSize: '2.2vh',
+              lineHeight: '3.5vh',
               color: '#434343',
               textAlign: 'justify',
-              mt: 4,
             }}>
               {ourStoryProps.content}
             </Typography>
@@ -131,7 +130,7 @@ export default function OurStory({ourStoryProps}) {
         <Box
           component="img"
           sx={{
-            height: '70.5vh',
+            height: '60.5vh',
             display: 'block',
             overflow: 'hidden',
           }}

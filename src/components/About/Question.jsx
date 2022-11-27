@@ -28,17 +28,17 @@ function Question() {
             fontFamily:'raleway',
             color:'#FFFFFF',
             fontWeight:'700',
-            fontSize:{xs:'19px', md:'32px'},
-            lineHeight:{xs:'22.31px', md:'37.57px'},
+            fontSize: '4vh',
+            lineHeight: '4vh',
             }}>
           FREQUENTLY ASKED QUESTIONS
         </Typography>
         <Typography sx={{
-          fontFamily: 'Open Sans',
-            marginTop:'10px',
+          fontFamily: 'inter',
+            marginTop: 3,
             color:'#FFFFFF',
-            fontSize:{xs:'15px', md:'18px'},
-            lineHeight:{xs:'20.43px', md:'27.21px'},
+            fontSize:{xs:'15px', md:'2.8vh'},
+            lineHeight:{xs:'20.43px', md:'3vh'},
             textAlign:'justify',
             wordSpacing: '-2px',
             }}>
@@ -52,9 +52,8 @@ function Question() {
           alt={'submit-message-animation'}
           sx={{
             my: 4,
-            width:{xs: '70vw', md: '50vw'},
+            width:{xs: '40vw', md: '20vw',},
             height:'auto',
-            color: 'inherit',
         }}>     
           </Box>
       </Box>

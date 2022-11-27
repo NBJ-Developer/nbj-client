@@ -26,39 +26,39 @@ export default function TestimonialsPapper({ data }) {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
-    minHeight: '220px'
+    minHeight: '25vh'
   }}>
     <Typography sx={{
       font: 'Open Sans',
       fontWeight: '600',
-      fontSize: {xs: '18px', sm: '19px',  md: '20px'},
-      lineHeight: {xs: '28px', sm: '32px',  md: '37px'},
+      fontSize: '2.5vh',
+      lineHeight: '2.6vh',
     }}>
     {data.label}
     </Typography>
     <Typography sx={{
-      mt: 1,
+      mt: 2,
       font: 'Open Sans',
       fontWeight: '400',
-      fontSize: {xs: '12px', sm: '13px', md: '14px'},
-      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
+      fontSize: '1.8vh',
+      lineHeight:  '2vh',
     }}>
     {data.para}
     </Typography>
     <Typography sx={{
-      mt: 1,
+      mt: 2,
       font: 'Open Sans',
       fontWeight: '600',
-      fontSize: {xs: '14px', sm: '16px', md: '18px'},
-      lineHeight: {xs: '27px', sm: '30px', md: '34px'},
+      fontSize: '1.8vh',
+      lineHeight:  '2vh',
     }}>
     {data.name}
     </Typography>
     <Typography sx={{
       font: 'Open Sans',
-      fontWeight: '500',
-      fontSize: {xs: '12px', sm: '13px', md: '14px'},
-      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
+      fontWeight: '400',
+      fontSize: '1.8vh',
+      lineHeight:  '2vh',
     }}>
     {data.ocupation}
     </Typography>

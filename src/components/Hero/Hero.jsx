@@ -22,7 +22,7 @@ function SwipeableHeroStepper() {
         display: 'flex', 
       }}>
         <Box sx={{
-          zIndex: -2
+          zIndex: -10
         }}>
         <ImageSlider slides={imageArray}/>
         </Box>

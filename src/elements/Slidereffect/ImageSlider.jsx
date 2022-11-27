@@ -8,15 +8,13 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination';
 import { Box } from '@mui/material';
 import 'swiper/css/autoplay';
-
 const ImageSlider = ({ slides }) => {
   
   const { ref, inView } = useInView({
     /* Optional options */
   });
+  
   SwiperCore.use([Autoplay]);
-  useEffect(() => {
-  }, [inView])
 
   return (
     <section ref={ref}>
@@ -32,12 +30,14 @@ const ImageSlider = ({ slides }) => {
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
+          pauseOnMouseEnter: false,
         }}
       >
         <SwiperSlide>
         <Box
         component="img"
         sx={{
+          position: 'fixed',
           objectFit: 'cover',
           display: 'block',
           width: '100%',

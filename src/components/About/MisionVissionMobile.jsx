@@ -28,6 +28,7 @@ function MisionVissionMobile() {
     <div>
       <Box sx={{
         mt: 16,
+        px: 3,
         width: '100%',
         display: {xs: 'block', md: 'none'},
         backgroundColor: '#02103E',

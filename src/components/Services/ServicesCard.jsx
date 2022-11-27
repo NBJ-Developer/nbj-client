@@ -24,7 +24,7 @@ export default function ServicesCard({ content }) {
           alt={content.imgPath}
           style={{
             objectFit: 'cover',
-            height: '40vh',
+            height: !content.buttonDisplay? '50vh': '40vh',
             objectFit: 'cover',
           }}
         />
@@ -33,8 +33,8 @@ export default function ServicesCard({ content }) {
           sx={{
             font: 'Open Sans',
             fontWeight: '600',
-            fontSize: {xs: '18px', sm: '19px',  md: '1.5vw'},
-            lineHeight: {xs: '28px', sm: '32px',  md: '1.5vw'},
+            fontSize: '2.1vh',
+            lineHeight: '2.6vh',
             textAlign: content.justify === 'left' || !content.buttonDisplay? 'left': 'center',
           }}>
             {content.label}
@@ -43,8 +43,8 @@ export default function ServicesCard({ content }) {
             font: 'Open Sans',
             textAlign: 'center',
             fontWeight: '500',
-            fontSize: {xs: '12px', sm: '13px', md: '14px'},
-            lineHeight: {xs: '23px', sm: '25px', md: '18px'},
+            fontSize: '1.8vh',
+            lineHeight:  '2vh',
             textAlign: 'left',
             mb: 2,
           }}>
@@ -54,8 +54,8 @@ export default function ServicesCard({ content }) {
             font: 'Open Sans',
             textAlign: 'center',
             fontWeight: '400',
-            fontSize: {xs: '12px', sm: '13px', md: '14px'},
-            lineHeight: {xs: '23px', sm: '25px', md: '18px'},
+            fontSize: '1.8vh',
+            lineHeight: '2vh',
             textAlign: content.justify === 'left' || !content.buttonDisplay? 'left': 'center',
           }}>
             {content.body}

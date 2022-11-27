@@ -11,7 +11,7 @@ export default function CallToAction() {
     <Box>
       <Box style={{
         backgroundImage: `url(${image})`,
-        backgroundAttachment: 'fix',
+        backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100% 100%',
       }} 

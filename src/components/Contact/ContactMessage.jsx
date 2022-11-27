@@ -79,7 +79,7 @@ function ContactMessage() {
                 src={'submit-message-animation.gif'}
                 alt={'submit-message-animation'}
                 sx={{
-                  width:{xs: '65vw', md: '60%'},
+                  width:{xs: '40vw', md: '20vw',},
                   height:'auto',
               }}>     
           </Box>
