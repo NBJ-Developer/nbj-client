@@ -30,13 +30,13 @@ export default function Footer() {
             right: '0',
             py: 4,
             px: {xs: 6, md: 0},
-            marginTop: '119px',
+            mt: 16,
             maxWidth: '100%',
             background: '#06133C'
         }}>
           <NbjLogo />
           <Box sx={{
-            mb: {md: 3},
+            mb: {md: 4},
             width: '100%',
             display: 'flex',
             flexDirection: {xs: 'row', md: 'column'},
@@ -44,7 +44,7 @@ export default function Footer() {
             alignItems: 'center',
           }}>
             <Box sx={{
-              my: 3,
+              my: 4,
               width: {md: '80%'},
               display: 'flex',
               flexDirection: {xs: 'column', md: 'row'},
@@ -66,7 +66,7 @@ export default function Footer() {
               </Typography>
               {linkItems1.map((item, index) => (
               <Box key={index}>
-              <LinkComponent item={item} index={index} itemsLength={itemsLength1}/>
+                <LinkComponent item={item} index={index} itemsLength={itemsLength1}/>
               </Box>
               ))}
             </Box>
@@ -80,7 +80,6 @@ export default function Footer() {
                 display: {xs: 'block', md: 'none'},
                 m: 1.5,
                 fontFamily: 'Raleway',
-                fontStyle: 'normal',
                 fontWeight: 600,
                 fontSize: '14px',
                 lineHeight: '16px',
@@ -91,7 +90,7 @@ export default function Footer() {
               </Typography>
               {linkItems2.map((item, index) => (
               <Box key={index}>
-              <LinkComponent item={item} index={index} itemsLength={itemsLength2}/>
+                <LinkComponent item={item} index={index} itemsLength={itemsLength2}/>
               </Box>
               ))}
             </Box>
@@ -103,7 +102,7 @@ export default function Footer() {
             justifyContent: 'center'
           }}>
             <Box sx={{
-              my: 2,
+              my: 4,
               width: {xs: '90%', md: '80%'},
               height: '3px',
               backgroundColor: '#F9A020'

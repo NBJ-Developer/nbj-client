@@ -36,6 +36,14 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
 function ServiceList() {
 
+  const listItems = [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+]
+
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = images.length;
@@ -57,7 +65,7 @@ function ServiceList() {
         width: '100%'
     }}>
         {/* SMALL DEVICE */}
-        <Box sx={{
+        {/* <Box sx={{
             display: { xs: 'block', md: 'none'},
             width: '100%',
             marginTop: '34px',
@@ -198,59 +206,61 @@ function ServiceList() {
                     />
                 </Box>
             </Box>
-        </Box>
+        </Box> */}
 
         {/* MEDIUM DEVICE */}
       <Box sx={{
-            display: { xs: 'none', md: 'flex'},
-            justifyContent: 'center',
-            marginTop: '140px'
-        }}>
-            <Box sx={{
-                width: '80%',
-                height: '490px',
-                display: 'flex'
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        mt: 16,
+        px: 6,
+      }}>
+        <Box component="img" sx={{
+          objectFit: 'cover',
+          display: 'block',
+          width: '65%',
+          height: 'AUTO',
+        }}
+          src={'servicesAirplain1.png'}
+          alt={'servicesAirplain1.png'}
+        />
+          <Box >
+            <Typography sx={{
+              fontFamily: 'Raleway',
+              fontStyle: 'normal',
+              fontWeight: '600',
+              fontSize: '19px',
+              lineHeight: '25.87px',
+              color: '#000000',
+              textAlign: 'justify',
+              mt: 6,
             }}>
-                <Box sx={{
-                    width: '50%',
-                    background: '#d9d9d9',
-                }}></Box>
-                <Box sx={{
-                    width: '50%'
-                }}>
-                    <Typography sx={{
-                        fontFamily: 'Raleway',
-                        fontStyle: 'normal',
-                        fontWeight: '600',
-                        fontSize: '19px',
-                        lineHeight: '25.87px',
-                        color: '#000000',
-                        textAlign: 'justify',
-                        margin: '50px 0 0 60px'
+              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. 
+            </Typography>
+            <List sx={{ 
+                width: '100%', 
+              }}
+              aria-label="contacts"
+              >
+                {listItems.map((item, index) => (
+                  <ListItem sx={{px: 0,}}>
+                    <ListItemButton sx={{
+                      p: 0,
+                      m: 0,
                     }}>
-                        Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. 
-                    </Typography>
-                    <List
-                        sx={{ 
-                            width: '100%', 
-                            bgcolor: 'background.paper',
-                            marginLeft: '30px' 
-                        }}
-                        aria-label="contacts"
-                        >
-                            {[1, 2, 3, 4, 5].map((value) => (
-                        <ListItem sx={{py: '10px'}}>
-                            <ListItemButton>
-                            <ListItemIcon>
-                                <CircleIcon style={{color: '#d9d9d9'}} />
-                            </ListItemIcon>
-                            <ListItemText primary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. " />
-                            </ListItemButton>
-                        </ListItem>
-                            ))}
-                    </List>
-                </Box>
-            </Box>
+                    <ListItemIcon>
+                        <CircleIcon style={{
+                          color: '#F9A020',
+                          fontSize: '12px',
+                        }} />
+                    </ListItemIcon>
+                    <ListItemText primary={item} />
+                    </ListItemButton>
+                  </ListItem>
+                ))}
+            </List>
+          </Box>
       </Box>
     </Box>
   )

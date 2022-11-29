@@ -6,9 +6,8 @@ import { Typography } from '@mui/material';
 import Slider from '../../elements/Slidereffect/Slidereffect';
 import NavBar from '../NavBar/NavBar'
 
-const pages = ['Home', 'About', 'Services', 'Contact'];
 
-const GeneralHero = ({ display, bgImage, content }) => {
+const GeneralHero = ({ display, bgImage, content, pages }) => {
 
   return (
     <AppBar position="static" elevation={0} sx={{
@@ -23,7 +22,7 @@ const GeneralHero = ({ display, bgImage, content }) => {
         height: {xs:'149px', md:'364px'},
         pt: {xs: '20px', md:'30px'},
         }}>
-          <NavBar />
+          <NavBar pages={pages}/>
         <Box sx={{
           mt: {xs:'30px', md:'80px'},
           width: {xs:'300px', md:'600px'},

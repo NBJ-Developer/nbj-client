@@ -12,9 +12,9 @@ import Link from '@mui/material/Link'
 import NbjLogo from '../../elements/Logo/NbjLogo';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
 
-const pages = ['About', 'Services', 'Contact'];
 
-function ResponsiveAppBar() {
+
+function ResponsiveAppBar({pages}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {

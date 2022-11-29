@@ -31,9 +31,10 @@ const Home = () => {
     of individuals around the world. We are a ground handling company 
     committed to providing quality.`
   }]
+  const pages = ['About', 'Services', 'Contact'];
   return (
     <div>
-      <NavBar/>
+      <NavBar pages={pages}/>
       <Hero />
       <Benefits />
       <OurStory ourStoryProps={ourStoryProps[0]}/>

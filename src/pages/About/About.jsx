@@ -9,8 +9,6 @@ import MeetTheTeam from '../../components/About/MeetTheTeam'
 import bgImage from './aboutBG.png'
 import Statistic from '../../components/Statistic/Statistic'
 import Video from '../../components/About/Video'
-import MissionComponent from '../../components/About/MissionComponent'
-import { Grid } from '@mui/material'
 import MisionVissionMobile from '../../components/About/MisionVissionMobile'
 
 function About() {
@@ -38,10 +36,12 @@ function About() {
     body: `If you want to know more about us, you’re in the right place. 
     Read to learn how we can assist you`
   }
+
+  const pages = ['Home', 'Services', 'Contact'];
  
   return (
     <div>
-      <GeneralHero display={false} bgImage={bgImage} content={content}/>
+      <GeneralHero bgImage={bgImage} content={content} pages={pages}/>
       <Box sx={{
         textalign:'center',
         display: {xs:'block', md:'none'},

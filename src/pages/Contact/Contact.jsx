@@ -16,9 +16,10 @@ function Contact() {
     Write to us and we will be sure to answer all your questions and give you a 
     comprehensive consultation.`
   }
+  const pages = ['Home', 'About', 'Services'];
   return (
     <Box>
-      <GeneralHero display={true} bgImage={bgImage} content={content}/>
+      <GeneralHero display={true} bgImage={bgImage} content={content} pages={pages}/>
       <Box sx={{
         display: {xs: 'flex', md: 'none'},
         justifyContent: 'center',

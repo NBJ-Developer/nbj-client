@@ -2,7 +2,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import { BsArrowRightCircle } from 'react-icons/bs'
 
-export default function PrimaryButtons({buttonLabel}) {
+export default function SecondaryButton({buttonLabel}) {
   return (
     <Button variant="contained" sx={{ 
       width: {xs: '150px', md: '170px'},

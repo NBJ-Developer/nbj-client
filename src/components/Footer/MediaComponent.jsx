@@ -4,8 +4,7 @@ import Typography from '@mui/material/Typography'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { TiSocialLinkedinCircular } from 'react-icons/ti'
-import { FiTwitter, FiInstagram } from 'react-icons/fi'
+import { Link } from '@mui/material';
 
 
 function MediaComponent() {
@@ -36,17 +35,23 @@ function MediaComponent() {
           display: 'flex',
           justifyContent: 'space-between',
         }}>
-          <LinkedInIcon sx={{
-            mr: 6,
-            color: {xs: '', md: '#ffffff'},
-          }}/>
-          <TwitterIcon sx={{
-            mr: 6,
-            color: {xs: '', md: '#ffffff'},
-          }}/>
-          <InstagramIcon sx={{
-            color: {xs: '', md: '#ffffff'},
-          }}/>
+          <Link href="#">
+            <LinkedInIcon sx={{
+              mr: 6,
+              color: {xs: '', md: '#ffffff'},
+            }}/>
+          </Link>
+          <Link href="https://twitter.com/nbj_vip">
+            <TwitterIcon sx={{
+              mr: 6,
+              color: {xs: '', md: '#ffffff'},
+            }}/>
+          </Link>
+          <Link href="#">
+            <InstagramIcon sx={{
+              color: {xs: '', md: '#ffffff'},
+            }}/>
+          </Link>
         </Box>
       </Box>
     </div>
