@@ -30,7 +30,7 @@ export default function BenefitComponent({image, data}) {
       font: 'Open Sans',
       fontWeight: '600',
       fontSize: {xs: '18px', sm: '19px',  md: '20px'},
-      lineHeight: {xs: '28px', sm: '32px',  md: '37px'},
+      lineHeight: {xs: '20px', sm: '20px',  md: '23px'},
       textAlign: 'center',
       marginBottom: '10px',
     }}>

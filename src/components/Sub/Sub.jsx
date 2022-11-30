@@ -142,6 +142,7 @@ export default function Sub() {
                       color: '#06133C',
                       }}/>
                     <Box sx={{ 
+                      mb: 2,
                       marginRight: '10px',
                     }}>
                       <PrimaryButtons buttonLabel={'Join'} />

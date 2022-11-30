@@ -16,7 +16,7 @@ function LinkComponent({item, index, itemsLength}) {
           mt: 0.35,
           mx: 2,
         }}/>
-        <Link to='/' sx={{
+        <Link href='/' sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: {xs: '400px', md: '700'},

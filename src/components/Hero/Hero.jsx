@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import Slider from '../../elements/Slidereffect/Slidereffect';
 import Statistic from '../Statistic/Statistic';
@@ -86,8 +87,8 @@ function SwipeableHeroStepper() {
           width: {xs: '70vw', sm: '65vw', md: '55vw'},
           font: 'inter',
           fontWeight: '300',
-          fontSize: {xs: '2.5vh', sm: '3vh', md: '3vh'},
-          lineHeight: {xs: '4vh', sm: '4vh', md: '4vh'},
+          fontSize: {xs: '2.5vh', sm: '2.5vh', md: '3vh'},
+          lineHeight: {xs: '4vh', sm: '3vh', md: '4vh'},
           color: '#ffffff', 
           textAlign: 'justify',
         }}>

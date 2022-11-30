@@ -6,7 +6,7 @@ const benefitsData = [
     },
     {
         id: 2,
-        name: "Excellent Customer Service",
+        name: "Comfort & Privacy",
         para: "At pharetra sed justo id sit nam lectus lorem."
     },
     {
@@ -16,7 +16,7 @@ const benefitsData = [
     },
     {
         id: 4,
-        name: "Convenience & Flexibility",
+        name: "Excellent Customer Service",
         para: "At pharetra sed justo id sit nam lectus lorem."
     },
 ]

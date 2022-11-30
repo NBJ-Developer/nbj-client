@@ -2,6 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { useInView } from "react-intersection-observer";
+import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import { useEffect,  useState } from 'react';
 
 function ServicesDetails({content}) {
@@ -19,7 +20,7 @@ function ServicesDetails({content}) {
         setCount(i)
         myLoop();             
       }                       
-    }, 1)
+    }, 10)
     if (i === content.numb){
       setDoneCount(true)
     }else{

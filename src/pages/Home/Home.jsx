@@ -31,7 +31,7 @@ const Home = () => {
     of individuals around the world. We are a ground handling company 
     committed to providing quality.`
   }]
-  const pages = ['About', 'Services', 'Contact'];
+  const pages = ['Home', 'About', 'Services', 'Contact'];
   return (
     <div>
       <NavBar pages={pages}/>

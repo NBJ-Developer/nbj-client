@@ -15,7 +15,7 @@ export default function Footer() {
   const linkItems1 = 
   ['OUR STORY', 'OUR SERVICES', 'MEDIA', 'FAQs', 'CONTACT',]
   const linkItems2 = 
-  ['GROUND SUPPORT', 'CHATER & BOOKING', 'CREW SERVICES', 'HOSPITALITY',]
+  ['GROUND SUPPORT', 'CHARTER & BOOKING', 'CREW SERVICES', 'HOSPITALITY',]
   
   const itemsLength1 = linkItems1.length
   const itemsLength2 = linkItems2.length
