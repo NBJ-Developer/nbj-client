@@ -1,6 +1,8 @@
 import React from 'react'
 import Box from '@mui/material/Box'
+import {Link as RouterLink} from 'react-router-dom'
 import Link from '@mui/material/Link'
+import OurStory from '../About/OurStory'
 
 function LinkComponent({item, index, itemsLength}) {
   return (
@@ -16,7 +18,7 @@ function LinkComponent({item, index, itemsLength}) {
           mt: 0.35,
           mx: 2,
         }}/>
-        <Link href='/' sx={{
+        <Link component={RouterLink} to='OurStory' sx={{
           fontFamily: 'Raleway',
           fontStyle: 'normal',
           fontWeight: {xs: '400px', md: '700'},

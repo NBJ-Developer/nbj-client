@@ -13,7 +13,7 @@ export default function ServicesCard({ content }) {
   return (
     <Card sx={{
       position: 'relative',
-      width: {xs: '100%', sm: '90%', md: 320},
+      width: {xs: '100%', sm: '80%', md: 320},
       height: !content.buttonDisplay? 'auto': {xs: '90%', md: 'auto'},
       pb: {xs: 0, md: 2}, 
     }}>
@@ -24,14 +24,19 @@ export default function ServicesCard({ content }) {
           alt={content.imgPath}
           style={{
             objectFit: 'cover',
-            height: !content.buttonDisplay? '50vh': '40vh',
+            height: !content.buttonDisplay? 'auto': '40vh',
             objectFit: 'cover',
           }}
         />
-        <CardContent>
+        <CardContent sx={{
+          py: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+        }}>
           <Typography gutterBottom component="div" 
           sx={{
-            font: 'Open Sans',
+            font: 'Raleway',
             fontWeight: '600',
             fontSize: '2.1vh',
             lineHeight: '2.6vh',
@@ -40,7 +45,7 @@ export default function ServicesCard({ content }) {
             {content.label}
           </Typography>
           <Typography sx={{
-            font: 'Open Sans',
+            font: 'inter',
             textAlign: 'center',
             fontWeight: '500',
             fontSize: '1.8vh',
@@ -51,7 +56,7 @@ export default function ServicesCard({ content }) {
             {content.post}
           </Typography>
           <Typography sx={{
-            font: 'Open Sans',
+            font: 'inter',
             textAlign: 'center',
             fontWeight: '400',
             fontSize: '1.8vh',

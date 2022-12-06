@@ -37,7 +37,7 @@ function About() {
     Read to learn how we can assist you`
   }
 
-  const pages = ['Home', 'Services', 'Contact'];
+  const pages = ['Home', 'About', 'Services', 'Contact'];
  
   return (
     <div>

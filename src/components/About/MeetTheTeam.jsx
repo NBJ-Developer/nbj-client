@@ -59,6 +59,7 @@ function MeetTheTeam() {
       <Box sx={{
       display: 'flex',
       justifyContent: 'center',
+      alignItems: 'center',
     }}>
       <Grid container spacing={3}>
       {cardContents.map( data => (

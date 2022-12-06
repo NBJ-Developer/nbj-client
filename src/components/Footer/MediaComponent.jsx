@@ -41,7 +41,7 @@ function MediaComponent() {
               color: {xs: '', md: '#ffffff'},
             }}/>
           </Link>
-          <Link href="https://twitter.com/nbj_vip">
+          <Link href="https://twitter.com/nbj_vip" target={'_blank'}>
             <TwitterIcon sx={{
               mr: 6,
               color: {xs: '', md: '#ffffff'},

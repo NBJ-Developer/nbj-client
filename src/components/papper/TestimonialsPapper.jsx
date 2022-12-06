@@ -7,8 +7,7 @@ export default function TestimonialsPapper({ data }) {
   return (
 <Box>
   <Box sx={{
-  mr: 4,
-  ml: 4,
+  mx: 4,
   display: 'flex',
   justifyContent: data.left? 'left': 'right',
   }}>
@@ -22,6 +21,7 @@ export default function TestimonialsPapper({ data }) {
   </Box>
   
   <Paper sx={{
+    mb: 4,
     p: 1,
     display: 'flex',
     flexDirection: 'column',

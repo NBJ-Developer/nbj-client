@@ -17,7 +17,7 @@ function Services() {
     body: `If you want to know more about us, you’re in the right place. 
     Read to learn how we can assist you`
   }
-  const pages = ['Home', 'About', 'Contact'];
+  const pages = ['Home', 'About', 'Services', 'Contact'];
   return (
     <Box>
       <GeneralHero bgImage={bgImage} content={content} pages={pages}/>

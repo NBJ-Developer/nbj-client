@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import Slider from '../../elements/Slidereffect/Slidereffect';
 import Statistic from '../Statistic/Statistic';

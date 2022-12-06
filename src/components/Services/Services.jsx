@@ -126,16 +126,16 @@ export default function Services() {
               <Box>
                 <Grid container spacing={1}>
                 <Grid item md={3}>
-                <Slider slideComponent={<ServicesCard content={content[0]}/>}/>
+                  <Slider slideComponent={<ServicesCard content={content[0]}/>}/>
                 </Grid>
                 <Grid item md={3}>
-              <Slider slideComponent={<ServicesCard content={content[1]}/>}/>
+                  <Slider slideComponent={<ServicesCard content={content[1]}/>}/>
                 </Grid>
                 <Grid item md={3}>
-              <Slider slideComponent={<ServicesCard content={content[2]}/>}/>
+                  <Slider slideComponent={<ServicesCard content={content[2]}/>}/>
                 </Grid>
                 <Grid item md={3}>
-              <Slider slideComponent={<ServicesCard content={content[3]}/>}/>
+                 <Slider slideComponent={<ServicesCard content={content[3]}/>}/>
                 </Grid>
               </Grid>
               </Box>

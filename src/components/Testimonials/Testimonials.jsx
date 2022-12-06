@@ -86,7 +86,7 @@ export default function Testimonials() {
             '& > :not(style)': {
             mr: {xs: 0, md: 4},
             width:  {xs: '65vw', sm: '65vw', md: 400},
-            height: 270,
+            height: 'auto',
             },
           }}>
             <Slider slideComponent={

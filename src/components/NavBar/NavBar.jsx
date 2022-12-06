@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
@@ -27,8 +26,8 @@ function ResponsiveAppBar({pages}) {
 
   return (
     <AppBar sx={{
-      position: 'absolute',
-      backgroundColor: 'inherit',
+      position: 'fixed',
+      background: 'linear-gradient(rgba(32, 53, 120, 0.91), rgba(32, 53, 120, 0))',
       px: {xs: 4, sm: 1, md: 3},
       py: 1,
       top: 0,
@@ -109,7 +108,18 @@ function ResponsiveAppBar({pages}) {
           >
             {pages.map((page) => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
+                <Box>
+                  <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
+                    color: '#000000',
+                    '&:hover': {
+                      color: '#F9A020',
+                      textDecorationWidth: '5px',
+                      textDecorationThickness: '3px',             
+                      }
+                  }}>
+              {page}
+            </Link>
+          </Box>
               </MenuItem>
             ))}
           </Menu>

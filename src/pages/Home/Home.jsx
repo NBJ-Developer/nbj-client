@@ -9,6 +9,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import Services from '../../components/Services/Services'
 import Sub from '../../components/Sub/Sub'
 import Testimonials from '../../components/Testimonials/Testimonials'
+import { Route, Routes } from 'react-router-dom'
 
 
 const Home = () => {

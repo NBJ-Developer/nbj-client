@@ -2,10 +2,9 @@ import React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import { useInView } from "react-intersection-observer";
-import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import { useEffect,  useState } from 'react';
 
-function ServicesDetails({content}) {
+function ServicesDetails({content, component}) {
   const { ref, inView } = useInView({
     /* Optional options */
   });
@@ -38,9 +37,13 @@ function ServicesDetails({content}) {
   return (
     <div ref={ref}>
       <Box sx={{
-        border: '1px solid #F9A020',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
         pb: 1,
     }}>
+      {component}
         <Typography sx={{
           mb: 1,
           fontFamily: 'Raleway',
@@ -48,7 +51,6 @@ function ServicesDetails({content}) {
           fontSize: {xs: '27px', sm: '28px', md:'30px'},
           lineHeight: {xs: '42px', xs: '45px', md: '55px'},
           color: '#434343',
-          textAlign: 'center',
           color: '#0E1035',
         }}>
           {`${count}${content.plusSign && doneCount? content.plusSign: ''}`}
@@ -59,7 +61,6 @@ function ServicesDetails({content}) {
           fontWeight: '400',
           fontSize: {xs: '12px', md: '24px'},
           lineHeight: {xs: '16px', md: '24px'},
-          textAlign: 'center',
           color: '#0E1035',
         }}>
           {content.body}

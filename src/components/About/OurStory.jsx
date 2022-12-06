@@ -14,7 +14,8 @@ export default function OurStory({ourStoryProps}) {
           display: {xs: 'flex', sm: 'flex', md: 'none'},
           flexDirection: 'column',
           mt: 16,
-        }}>
+        }}
+        >
         <Box sx={{
           display: 'flex',
           flexDirection: 'column',

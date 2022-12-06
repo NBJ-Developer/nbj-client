@@ -8,6 +8,7 @@ import 'swiper/css/free-mode'
 import 'swiper/css/pagination';
 import { Box } from '@mui/material';
 import 'swiper/css/autoplay';
+
 const ImageSlider = ({ slides }) => {
   
   const { ref, inView } = useInView({
