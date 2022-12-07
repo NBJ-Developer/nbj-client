@@ -9,7 +9,6 @@ import NavBar from '../../components/NavBar/NavBar'
 import Services from '../../components/Services/Services'
 import Sub from '../../components/Sub/Sub'
 import Testimonials from '../../components/Testimonials/Testimonials'
-import { Route, Routes } from 'react-router-dom'
 
 
 const Home = () => {
@@ -39,7 +38,9 @@ const Home = () => {
       <Hero />
       <Benefits />
       <OurStory ourStoryProps={ourStoryProps[0]}/>
+    <div id='ourServices'>
       <Services />
+    </div>
       <CallToAction />
       <Testimonials />
       <SideAttraction />

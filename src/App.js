@@ -3,6 +3,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Services from './pages/Services/Services';
 import Contact from './pages/Contact/Contact'
+import GetPrice from './pages/Contact/GetPrice'
 import './App.css';
 
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/About' element={<About />} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Services' element={<Services />} />
+        <Route path='/GetPrice' element={<GetPrice />} />
       </Routes>
     </BrowserRouter>
   );

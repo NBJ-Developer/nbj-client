@@ -8,6 +8,7 @@ import Slider from '../../elements/Slidereffect/Slidereffect'
 
 export default function OurStory({ourStoryProps}) {
   return (
+    <div id='ourStory'>
     <Box>
       {/* SMALL DEVICE */}
       <Box sx={{
@@ -140,5 +141,6 @@ export default function OurStory({ourStoryProps}) {
             />
       </Box>
     </Box>
+    </div>
   );
 }

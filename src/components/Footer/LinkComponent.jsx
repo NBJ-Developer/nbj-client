@@ -1,10 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import {Link as RouterLink} from 'react-router-dom'
-import Link from '@mui/material/Link'
-import OurStory from '../About/OurStory'
 
-function LinkComponent({item, index, itemsLength}) {
+function LinkComponent({item, sectionId, link, index, itemsLength}) {
   return (
     <div>
       <Box sx={{
@@ -18,17 +15,16 @@ function LinkComponent({item, index, itemsLength}) {
           mt: 0.35,
           mx: 2,
         }}/>
-        <Link component={RouterLink} to='OurStory' sx={{
+          <a href={sectionId? `#${sectionId}`: `http://localhost:3000/${link}`} style={{
           fontFamily: 'Raleway',
-          fontStyle: 'normal',
-          fontWeight: {xs: '400px', md: '700'},
-          fontSize: {xs: '14px', md: '20px'},
+          fontWeight: '700',
+          fontSize: '1.5vw',
           lineHeight: {xs: '16px', md: '24px'},
           color: '#ffffff',
           textDecoration: 'none'
-        }}>
-          {item}
-        </Link>
+          }}>
+            {item}
+          </a>
         <Box sx={{
           display: {xs: 'none', md: index + 1 !== itemsLength? 'block': 'none'},
           borderLeft: '3px solid #ffffff',
@@ -37,7 +33,6 @@ function LinkComponent({item, index, itemsLength}) {
           mx: 2,
         }}/>
       </Box>
-      
     </div>
   )
 }

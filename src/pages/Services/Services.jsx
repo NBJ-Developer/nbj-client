@@ -2,9 +2,7 @@ import * as React from 'react';
 import GeneralHero from '../../components/Hero/GeneralHero'
 import Box from '@mui/material/Box';
 import ServiceSummary from '../../components/Services/ServiceSummary';
-import ServiceCTA1 from '../../components/CallToAction/ServiceCTA1';
 import ServiceList from '../../components/Services/ServiceList';
-import ServiceCTA2 from '../../components/CallToAction/ServiceCTA2';
 import Footer from '../../components/Footer/Footer'
 import bgImage from './servicesBG.png'
 import ServicesNavigations from '../../components/Services/ServicesNavigations';

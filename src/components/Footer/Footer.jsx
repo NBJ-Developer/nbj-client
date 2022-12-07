@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
 import { Link } from 'react-router-dom'
 import { TbMinusVertical } from 'react-icons/tb'
 import Typography from '@mui/material/Typography';
@@ -13,7 +12,12 @@ import LinkComponent from './LinkComponent';
 export default function Footer() {
 
   const linkItems1 = 
-  ['OUR STORY', 'OUR SERVICES', 'MEDIA', 'FAQs', 'CONTACT',]
+  [
+    {name: 'OUR STORY', id:'ourStory'}, 
+    {name: 'OUR SERVICES', id:'ourServices'}, 
+    {name: 'MEDIA', id:'media'}, 
+    {name: 'FAQs', id:'faqs'}, 
+    {name: 'CONTACT', link: 'Contact'},]
   const linkItems2 = 
   ['GROUND SUPPORT', 'CHARTER & BOOKING', 'CREW SERVICES', 'HOSPITALITY',]
   
@@ -66,7 +70,7 @@ export default function Footer() {
               </Typography>
               {linkItems1.map((item, index) => (
               <Box key={index}>
-                <LinkComponent item={item} index={index} itemsLength={itemsLength1}/>
+                <LinkComponent item={item.name} sectionId={item.id} link={item.link} index={index} itemsLength={itemsLength1}/>
               </Box>
               ))}
             </Box>

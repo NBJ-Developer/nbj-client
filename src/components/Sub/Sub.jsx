@@ -9,83 +9,8 @@ import Slider from '../../elements/Slidereffect/Slidereffect';
 export default function Sub() {
 
   return (
+    <div id='contact'>
     <Box>
-      {/* SMALL DEVICE */}
-       {/* <Box sx={{   
-            display: {xs: 'flex', md: 'none'},
-            mt: 16,
-            justifyContent: 'center',
-            alignItems: 'center',
-            position: 'relative',
-        }}>
-          <Box sx={{ 
-          position: 'absolute',
-          background: 'rgba(0, 0, 0, 0.51)',
-          width: '70%',
-          height: '160px',
-          borderRadius: '30px 0',
-          bottom: '0px',
-          flexGrow: 1,
-        }}>
-
-      </Box>
-            
-            <Box style={{
-               backgroundImage: `url(${image2})`,
-               backgroundRepeat: 'no-repeat',
-               backgroundSize: '100% 100%',
-            }}
-                sx={{ 
-                width: '70%',
-                height: '160px',
-                background: 'rgba(0, 0, 0, 0.51)',
-                borderRadius: '30px 0'
-            }}>
-              <Box sx={{
-                position: 'absolute',
-                left: 12,
-                right: 12,
-                zIndex: 2,
-              }}>
-                <Typography sx={{
-                  fontFamily: 'Inter',
-                  fontStyle: 'normal',
-                  fontWeight: '700',
-                  fontSize: '24px',
-                  lineHeight: '22px',
-                  color: '#ffffff',
-                  zIndex: 2,
-                  textAlign: 'center',
-                  marginTop: '17px'
-              }} variant='h1'>
-                  Subscribe to our newsletter
-              </Typography>
-                
-                <Box sx={{ 
-                  width: '100%', 
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  mt: 2,
-                  zIndex: 2,
-                }}>
-                    <InputField content={{
-                      label:'Enter Email',
-                      color: '#ffffff',
-                      }} />
-                  <Box sx={{ 
-                    my: 2,
-                  }}>
-                    <PrimaryButtons buttonLabel={'Join'} />
-                  </Box>
-                </Box>
-              </Box>
-                
-            </Box>
-        </Box>  */}
-
-      {/* MEDIUM DEVICE */}
        <Box sx={{   
             display: 'flex',
             mt: 16,
@@ -152,5 +77,6 @@ export default function Sub() {
                
             </Box>
         </Box>
+        </div>
   );
 }

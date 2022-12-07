@@ -21,8 +21,10 @@ export default function SecondaryButton({buttonLabel}) {
         color: '#F9A020',
         border: '3px solid #F9A020',
       },
-      }}>
-      {buttonLabel}
+      }}
+      href="/GetPrice"
+      >
+        {buttonLabel}
       <BsArrowRightCircle style={{marginLeft: '5px'}}/>
     </Button>
   );
