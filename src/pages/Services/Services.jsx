@@ -11,9 +11,9 @@ import ContactInfo from '../../components/Contact/ContactInfo';
 
 function Services() {
   const content = {
-    header: 'OUR STORY',
-    body: `If you want to know more about us, you’re in the right place. 
-    Read to learn how we can assist you`
+    header: 'SERVICES',
+    body: `If you want to know more about our services, you’re in the right place. 
+    Read to learn how we can be of service to you.`
   }
   const pages = ['Home', 'About', 'Services', 'Contact'];
   return (

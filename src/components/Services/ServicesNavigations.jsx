@@ -1,9 +1,47 @@
 import { Box } from '@mui/material';
 import React from 'react'
-import ServicesLink from '../../components/Services/ServicesLink';
+import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+
+const CustomWidthTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} classes={{ popper: className }} />
+))({
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: '#f5f5f9',
+    color: 'rgba(0, 0, 0, 0.87)',
+    maxWidth: '23vw',
+    border: '1px solid #dadde9',
+  },
+});
 
 function ServicesNavigations() {
-  const linkItem = ['Ground Support', 'Airport Charter & Bookings', 'Crew Services', 'Hospitality Services']
+  const linkItem = [
+    {title: 'Ground Support', body: `
+    Aliquam eget finibus ante, non facilisis lectus. Sed vitae dignissim est, vel aliquam tellus.
+    Praesent non nunc mollis, fermentum neque at, semper arcu.
+    Nullam eget est sed sem iaculis gravida eget vitae justo.
+    Aliquam eget finibus ante, non facilisis lectus. Sed vitae dignissim est, vel aliquam tellus.
+    Praesent non nunc mollis, fermentum neque at, semper arcu.
+    Nullam eget est sed sem iaculis gravida eget vitae justo.
+    `},
+    {title: 'Airport Charter & Bookings', body: `
+    Aliquam eget finibus ante, non facilisis lectus. Sed vitae dignissim est, vel aliquam tellus.
+    Praesent non nunc mollis, fermentum neque at, semper arcu.
+    Nullam eget est sed sem iaculis gravida eget vitae justo.
+    `},
+    {title: 'Crew Services', body: `
+    Aliquam eget finibus ante, non facilisis lectus. Sed vitae dignissim est, vel aliquam tellus.
+    Praesent non nunc mollis, fermentum neque at, semper arcu.
+    Nullam eget est sed sem iaculis gravida eget vitae justo.
+    `},
+    {title: 'Hospitality Services', body: `
+    Aliquam eget finibus ante, non facilisis lectus. Sed vitae dignissim est, vel aliquam tellus.
+    Praesent non nunc mollis, fermentum neque at, semper arcu.
+    Nullam eget est sed sem iaculis gravida eget vitae justo.
+    `},
+    
+  ]
   return (
     <div>
       <Box sx={{
@@ -20,9 +58,11 @@ function ServicesNavigations() {
           backgroundColor: '#ffffff',
         }}>
         {linkItem.map((item, index) => (
-          <Box key={index}>
-            <ServicesLink linkItem={item}/>
-          </Box>
+          <div key={index}>
+          <CustomWidthTooltip title={item.body}>
+            <Button sx={{ m: 1 }}>{item.title}</Button>
+          </CustomWidthTooltip>
+        </div>
         ))}
         
       </Box>

@@ -2,6 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { styled } from '@mui/material/styles';
+import { useState } from 'react';
 
 function InputField({ content }) {
   
@@ -41,6 +42,7 @@ function InputField({ content }) {
   <Box>
      <CssTextField
      label={content.label}
+     name={content.name}
      size="small"
      multiline
      rows={content.row}

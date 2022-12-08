@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import bgImage from './contactBG.png'
 import Footer from '../../components/Footer/Footer';
 import ContactInfo from '../../components/Contact/ContactInfo';
+import { ContactUs } from '../../components/Contact/ContactUs';
 
 
 function Contact() {

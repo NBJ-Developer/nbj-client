@@ -2,10 +2,24 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import InputField from '../Sub/InputField';
-import PrimaryButtons from '../../elements/Button/PrimaryButtons';
+import emailjs from '@emailjs/browser';
 
 
 function ContactMessage() {
+
+  const form = React.useRef()
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    console.log(form.current)
+
+    emailjs.sendForm('service_z5lntx8', 'template_xcqlbaf', form.current, 'E-NFBC2xL_q21ferI')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
   return (
     <Box sx={{
@@ -41,7 +55,7 @@ function ContactMessage() {
             </Typography>
 
             {/* FORM */}
-            <Box sx={{ 
+            <Box component='form' ref={form} onSubmit={handleChange} sx={{ 
               width: '100%', 
               display: 'flex',
               flexDirection: 'column',
@@ -51,24 +65,45 @@ function ContactMessage() {
               <InputField content={{
                 label:'Your Name',
                 color: '#06133C',
-                }}/>
+                name: 'user_name',
+                }}
+                />
               <InputField content={{
                 label:'Email Address',
                 color: '#06133C',
+                name: 'user_email',
                 }}/>
               <InputField content={{
               label:'Subject',
               color: '#06133C',
+              name: 'subject',
               }}/>
               <InputField content={{
               label:'Message',
               color: '#06133C',
+              name: 'message',
               row: 6,
               }}/>
-              <Box sx={{ 
-                marginRight: '10px',
-              }}>
-                <PrimaryButtons buttonLabel={'Button'} />
+              <Box component='button' label='Button' sx={{
+                mt: 1, 
+                width: {xs: '150px', md: '170px'},
+                height: {xs: '30px', md: '40px'},
+                backgroundColor: '#F9A020',
+                fontFamily: 'inter',
+                fontStyle: 'normal',
+                fontSize: {xs: '15px', md: '20px'},
+                color: '#ffffff',
+                textTransform: 'Capitalize',
+                border: 'none',
+                borderRadius: '10px 0 10px 0',
+                '&:hover': {
+                  backgroundColor: 'inherit',
+                  opacity: [0.9, 0.8, 0.7],
+                  color: '#F9A020',
+                  border: '3px solid #F9A020',
+                },
+                }}>
+                Button
               </Box>
             </Box>
             </Box>
