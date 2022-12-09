@@ -16,9 +16,8 @@ function Video() {
         }}>
           <Box sx={{ 
           position: 'absolute',
-          backgroundColor: 'rgba(0, 0, 0, 0.59)',
           width: '60vw',
-          height: '60vh',
+          height: '60vw',
           bottom: '0px',
           borderRadius: '5px',
           flexGrow: 1,
@@ -32,9 +31,8 @@ function Video() {
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center', 
-              width: '60vw',
-              height: '60vh',
-              background: 'rgba(0, 0, 0, 0.51)',
+              width: '70vw',
+              height: '60vw',
               borderRadius: '5px',
               zIndex: 2,
             }}>
@@ -45,7 +43,6 @@ function Video() {
             position: 'absolute',
             left: 12,
             right: 12,
-            pt: 9,
             zIndex: 2,
           }}>
             <Box sx={{
