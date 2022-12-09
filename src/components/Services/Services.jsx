@@ -22,13 +22,13 @@ import { textAlign } from '@mui/system';
         buttonDisplay: 'primary',
     },
     {
-        label: 'Maintenance',
+        label: 'Crew Services',
         imgPath: 'service2.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
         buttonDisplay: 'primary',
     },
     {
-        label: 'Wings Inflight',
+        label: 'Hospitality Service',
         imgPath: 'service3.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra cursus morbi fringilla.',
         buttonDisplay: 'primary',
