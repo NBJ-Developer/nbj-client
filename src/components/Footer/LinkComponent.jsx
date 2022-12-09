@@ -7,6 +7,7 @@ function LinkComponent({item, sectionId, link, index, itemsLength}) {
       <Box sx={{
         mt: {xs: 1, md: 0},
         display: 'flex',
+        alignItems: 'center',
       }}>
         <Box sx={{
           display: {xs: 'block', md: 'none'},
@@ -18,10 +19,10 @@ function LinkComponent({item, sectionId, link, index, itemsLength}) {
           <a href={sectionId? `#${sectionId}`: `http://localhost:3000/${link}`} style={{
           fontFamily: 'Raleway',
           fontWeight: '700',
-          fontSize: '1.5vw',
+          fontSize: '1.9vw',
           lineHeight: {xs: '16px', md: '24px'},
           color: '#ffffff',
-          textDecoration: 'none'
+          textDecoration: 'none',
           }}>
             {item}
           </a>

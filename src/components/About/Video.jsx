@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
 import PlayCircleFilledWhiteOutlinedIcon from '@mui/icons-material/PlayCircleFilledWhiteOutlined';
+import clip from '../../assets/images/video.mp4'
 import image from '../../assets/images/video.png'
-import Slider from '../../elements/Slidereffect/Slidereffect';
 
 function Video() {
   return (
@@ -17,26 +17,30 @@ function Video() {
           <Box sx={{ 
           position: 'absolute',
           backgroundColor: 'rgba(0, 0, 0, 0.59)',
-          width: '70vw',
+          width: '60vw',
           height: '60vh',
           bottom: '0px',
           borderRadius: '5px',
           flexGrow: 1,
         }}>
-
+          <video src={clip} playsInLine autoPlay loop muted width='100%' height='100%'/>
       </Box>
             
-        <Box style={{
-            backgroundImage: `url(${image})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '100% 100%',
-        }}
-            sx={{ 
-            width: '70vw',
-            height: '60vh',
-            background: 'rgba(0, 0, 0, 0.51)',
-            borderRadius: '5px',
-        }}>
+        <Box 
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center', 
+              width: '60vw',
+              height: '60vh',
+              background: 'rgba(0, 0, 0, 0.51)',
+              borderRadius: '5px',
+              zIndex: 2,
+            }}>
+              
+            
+              
           <Box sx={{
             position: 'absolute',
             left: 12,
@@ -84,7 +88,7 @@ function Video() {
           </Box>
                 
           </Box>
-        </Box> 
+        </Box>
     </div>
   )
 }

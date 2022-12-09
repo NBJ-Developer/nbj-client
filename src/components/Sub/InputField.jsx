@@ -5,6 +5,12 @@ import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 
 function InputField({ content }) {
+
+  const [value, setValue] = useState('')
+
+  const handleChange = (e) => {
+    console.log(e.target.value)
+  }
   
   const CssTextField = styled(TextField)({
     '& label.Mui-focused': {

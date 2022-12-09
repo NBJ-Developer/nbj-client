@@ -7,17 +7,18 @@ import emailjs from '@emailjs/browser';
 
 function ContactMessage() {
 
-  const form = React.useRef()
+  const form = React.useRef(null)
 
-  const handleChange = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form.current)
 
     emailjs.sendForm('service_z5lntx8', 'template_xcqlbaf', form.current, 'E-NFBC2xL_q21ferI')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
+        window.location.reload()
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
   }
 
@@ -55,13 +56,15 @@ function ContactMessage() {
             </Typography>
 
             {/* FORM */}
-            <Box component='form' ref={form} onSubmit={handleChange} sx={{ 
-              width: '100%', 
-              display: 'flex',
-              flexDirection: 'column',
-              p: 2,
-              mt: 2,
-            }}>
+            <Box component='form' ref={form} onSubmit={handleSubmit} 
+              sx={{ 
+                width: '100%', 
+                display: 'flex',
+                flexDirection: 'column',
+                p: 2,
+                mt: 2,
+              }}
+            >
               <InputField content={{
                 label:'Your Name',
                 color: '#06133C',
@@ -103,7 +106,7 @@ function ContactMessage() {
                   border: '3px solid #F9A020',
                 },
                 }}>
-                Button
+                Send
               </Box>
             </Box>
             </Box>
