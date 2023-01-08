@@ -125,7 +125,7 @@ export default function OurStory({ourStoryProps}) {
             mt: 4,
             display: ourStoryProps.display? 'block': 'none',
           }}>
-            <PrimaryButtons buttonLabel={'Button'}/>
+            <PrimaryButtons buttonLabel={'Learn More'}/>
           </Box>
         </Box>
 

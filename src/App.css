@@ -7,11 +7,16 @@
   max-width: 100%;
 }
 .span1{
-  background-color: #4264CC;
+  background-color: #F9A020;
   border-radius: 5px;
   color: #ffffff;
   padding: 0 3px;
   margin: 0 2px;
+}
+div.sticky{
+  position: absolute;
+  position: sticky;
+  top: 0;
 }
 
 .span2{

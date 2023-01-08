@@ -1,8 +1,5 @@
-import React, { useEffect } from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Pagination} from 'swiper';
-import SwiperCore, { Autoplay } from 'swiper';
-import { useInView } from "react-intersection-observer";
+import { Autoplay, Pagination, Navigation } from "swiper";
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination';
@@ -10,29 +7,29 @@ import { Box } from '@mui/material';
 import 'swiper/css/autoplay';
 
 const ImageSlider = ({ slides }) => {
-  
-  const { ref, inView } = useInView({
-    /* Optional options */
-  });
-  
-  SwiperCore.use([Autoplay]);
 
   return (
-    <section ref={ref}>
+    <section>
       <Swiper
-        freeMode={true}
-        loop={true}
-        modules={[Pagination, Autoplay]}
-        className='mySwiper'
-        effect={'flip'}
-        slidesPerView={1}
-        spaceBetween={30}
-        pagination={{ clickable: true }}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: false,
+        onSlideChange={(swiper) => {
+          localStorage.setItem('swiperSlideIndex', swiper.activeIndex);
+          console.log(swiper.activeIndex)
         }}
+        spaceBetween={30}
+        centeredSlides={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        loop={true}
+        className="mySwiper"
       >
         <SwiperSlide>
         <Box

@@ -29,7 +29,6 @@ export default function ServicesCard({ content }) {
           }}
         />
         <CardContent sx={{
-          py: 4,
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -40,7 +39,7 @@ export default function ServicesCard({ content }) {
             fontWeight: '600',
             fontSize: '2.1vh',
             lineHeight: '2.6vh',
-            textAlign: content.justify === 'left' || !content.buttonDisplay? 'left': 'center',
+            textAlign: content.justify === 'left'? 'left': 'center',
           }}>
             {content.label}
           </Typography>
@@ -50,8 +49,7 @@ export default function ServicesCard({ content }) {
             fontWeight: '500',
             fontSize: '1.8vh',
             lineHeight:  '2vh',
-            textAlign: 'left',
-            mb: 2,
+            mb: 1,
           }}>
             {content.post}
           </Typography>
@@ -74,12 +72,12 @@ export default function ServicesCard({ content }) {
         <Box sx={{
           display: content.buttonDisplay === 'primary'? 'block': 'none'
         }}>
-          <PrimaryButtons buttonLabel={'Button'}/>
+          <PrimaryButtons buttonLabel={content.primaryButton}/>
         </Box>
         <Box sx={{
           display: content.buttonDisplay === 'secondary'? 'block': 'none'
         }}>
-          <SecondaryButton buttonLabel={'Button'}/>
+          <SecondaryButton buttonLabel={content.secondaryButton}/>
         </Box>
       </CardActions>
     </Card>

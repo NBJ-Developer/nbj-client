@@ -15,7 +15,7 @@ function SideAttraction() {
       We have different rooms that suit your taste. Our rooms are 
       also pet friendly and you definately enjoy your stay.`,
       buttonDisplay: 'secondary',
-      justify: 'left',
+      secondaryButton: 'Contact Us',
     },
     {
       imgPath: 'transport.png',
@@ -23,7 +23,7 @@ function SideAttraction() {
       body: `Take advantage of your stop to visit our restaurants. Everything 
       in between from breakfast to dinner is made carefully with excellent hygiene.`,
       buttonDisplay: 'secondary',
-      justify: 'left',
+      secondaryButton: 'Contact Us',
     },
     {
       imgPath: 'hotel.png',
@@ -32,7 +32,7 @@ function SideAttraction() {
       We have different rooms that suit your taste. Our rooms are 
       also pet friendly and you definately enjoy your stay.`,
       buttonDisplay: 'secondary',
-      justify: 'left',
+      secondaryButton: 'Contact Us',
     },
   ]
 
@@ -45,17 +45,17 @@ function SideAttraction() {
         height: '75vh',
       }}>
         <Box sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: {xs: '40%', md: '25%'},
-        backgroundColor: '#2B47A1',
-      }}>
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          width: { xs: '40%', md: '25%' },
+          backgroundColor: '#2B47A1',
+        }}>
           <Typography sx={{
             fontFamily: 'Raleway',
             fontWeight: 700,
-            fontSize: {xs: '27px', sm: '28px', md:'30px'},
-            lineHeight: {xs: '42px', sm: '45px', md: '55px'},
+            fontSize: { xs: '27px', sm: '28px', md: '30px' },
+            lineHeight: { xs: '42px', sm: '45px', md: '55px' },
             color: '#ffffff',
             textAlign: 'center',
             marginTop: '17px'
@@ -69,18 +69,18 @@ function SideAttraction() {
           alignItems: 'center',
           overflow: 'auto',
           px: 1,
-          width: {xs: '60%', md: '75%'},
+          width: { xs: '60%', md: '75%' },
           backgroundColor: 'rgba(43, 71, 161, 0.2)',
         }}>
           <Grid container spacing={2}>
             <Grid item xs={12} md={4}>
-              <Slider slideComponent={<ServicesCard content={contents[0]}/>}/>
+              <Slider slideComponent={<ServicesCard content={contents[0]} />} />
             </Grid>
             <Grid item xs={12} md={4}>
-              <Slider slideComponent={<ServicesCard content={contents[1]}/>}/>
+              <Slider slideComponent={<ServicesCard content={contents[1]} />} />
             </Grid>
             <Grid item xs={12} md={4}>
-              <Slider slideComponent={<ServicesCard content={contents[0]}/>}/>
+              <Slider slideComponent={<ServicesCard content={contents[0]} />} />
             </Grid>
           </Grid>
         </Box>

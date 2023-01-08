@@ -9,21 +9,18 @@ function MeetTheTeam() {
       imgPath: 'team1.png',
       label: 'Nyerere Bolanle',
       post: 'CEO',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames dictumst nisi magnis.',
       buttonDisplay: false,
     },
     {
       imgPath: 'team2.png',
       label: 'Capt. Nyerere John',
       post: 'Pilot-in-charge',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames dictumst nisi magnis.',
       buttonDisplay: false,
     },
     {
       imgPath: 'team3.png',
       label: 'Akeni Philip Elvis',
       post: 'Director of Operations',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fames dictumst nisi magnis.',
       buttonDisplay: false,
     },
   ]
