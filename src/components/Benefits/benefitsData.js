@@ -8,7 +8,7 @@ const benefitsData = [
   {
     id: 2,
     name: "Comfort & Privacy",
-    para: 'We offer'
+    para: 'Your comfort and privacy is what we ensure to deliver in all your travels.'
   },
   {
     id: 3,

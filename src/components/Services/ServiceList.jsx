@@ -37,11 +37,11 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 function ServiceList() {
 
   const listItems = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Flight Dispatch: Efficient and accurate flight plan, information and necessary\n permissions to enable smooth travels. ',
+    'Refuelling ',
+    'Permits: These permits include local and international landing and flight permits.  ',
+    'Passenger and Luggage Handling  ',
+    'Marshalling and Parking',
 ]
 
     const theme = useTheme();
@@ -236,7 +236,7 @@ function ServiceList() {
               textAlign: 'justify',
               mt: 6,
             }}>
-              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. 
+            Embodied in our ground support service are: 
             </Typography>
             <List sx={{ 
                 width: '100%', 

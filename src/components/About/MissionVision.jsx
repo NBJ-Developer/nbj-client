@@ -196,7 +196,7 @@ const misionContent = [
                 fontSize: '2.5vh',
                 lineHeight: {xs: '4vh', sm: '4vh', md: '3vh'},
               }}>
-                Commited to our customer
+                Committed to customers
               </Typography>
                 </ListItem>
                 <ListItem sx={{

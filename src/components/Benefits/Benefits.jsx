@@ -15,7 +15,7 @@ function Benefits() {
           fontFamily: 'Raleway',
           fontWeight: 700,
           fontSize: {xs: '27px', sm: '28px', md:'30px'},
-          lineHeight: {xs: '42px', xs: '45px', md: '55px'},
+          lineHeight: {xs: '42px', sm: '45px', md: '55px'},
           color: '#434343',
           textAlign: 'center',
           
@@ -31,7 +31,7 @@ function Benefits() {
       }}>
         <Box
           sx={{
-            width: {xs: '100%', sm: '100%', md: '85%'},
+            width: {xs: '100%', sm: '100%', md: '90%'},
             mt: 4,
             px: 4,
             display: 'flex',

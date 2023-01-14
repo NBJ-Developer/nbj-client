@@ -1,5 +1,7 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from "swiper";
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination';

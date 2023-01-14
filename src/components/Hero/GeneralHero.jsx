@@ -17,7 +17,8 @@ const GeneralHero = ({ display, bgImage, content, pages }) => {
       borderRadius: '0 0 25px 25px',
     }}>
       <Container maxWidth="xl" sx={{
-        backgroundColor: !display? 'rgba(32, 53, 120, 0.8)':'rgba(32, 53, 120, 0.4)' ,
+        backgroundColor: !display? 'rgba(32, 53, 120, 0.9)':'rgba(32, 53, 120, 0.4)' ,
+        // mixBlendMode: 'multiply',
         borderRadius: '0 0 25px 25px',
         height: {xs:'149px', md:'364px'},
         pt: {xs: '20px', md:'30px'},
