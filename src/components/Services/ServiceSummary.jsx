@@ -34,16 +34,10 @@ function ServiceSummary() {
               color: '#000000',
               textAlign: 'justify'
             }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ultricies
-              malesuada urna faucibus consectetur neque, a tristique aenean. Velit egestas semper
-              interdum massa condimentum imperdiet vulputate. Laoreet suspendisse nulla sem sed
-              fusce. Enim, sit euismod proin egestas fames dui. Mi cursus enim, interdum bibendum
-              scelerisque tincidunt egestas. Dolor mattis diam at non libero ut. Amet sed volutpat
-              pharetra placerat lacinia convallis dignissim est. Lacinia dis porta ac dui. Vestibulum
-              amet elementum ultrices feugiat pulvinar. Arcu urna posuere a sit. Tellus sit sollicitudin
-              integer pretium metus semper mus iaculis. Augue laoreet tincidunt elit nunc rhoncus
-              bibendum diam. Diam sapien, vel, volutpat ligula eu, a vestibulum. Quis rhoncus, tincidunt
-              mattis dis nec.
+              Ground support service is n integral part of airline operations and a prominent role as we are tasked with ensuring the safety and comfort of the passengers
+              as they prepare for take-off and landing. NBJ’s highly skilled ground handlers  are fully equipped to provide these range of services to the flight on ground.
+              Our dedicated team is ready to provide to provide efficient ground support
+              and assist guests and passengers with any flight related arrangement.
             </Typography>
           </Box>
             <Paper elevation={3} sx={{

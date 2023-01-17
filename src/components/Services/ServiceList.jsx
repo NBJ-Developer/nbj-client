@@ -7,12 +7,6 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import CircleIcon from '@mui/icons-material/Circle';
-import { useTheme } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
-import MobileStepper from '@mui/material/MobileStepper';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
     const images = [
     {
@@ -37,178 +31,18 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 function ServiceList() {
 
   const listItems = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Crew Transportation',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 ]
 
-    const theme = useTheme();
-    const [activeStep, setActiveStep] = React.useState(0);
-    const maxSteps = images.length;
-
-    const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
-
-    const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
-
-    const handleStepChange = (step) => {
-        setActiveStep(step);
-    };
 
   return (
     <Box sx={{
         width: '100%'
     }}>
-        {/* SMALL DEVICE */}
-        {/* <Box sx={{
-            display: { xs: 'block', md: 'none'},
-            width: '100%',
-            marginTop: '34px',
-            textAlign: 'center'
-        }}>
-            <Typography variant='h6' sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                fontSize: '13px',
-                lineHeight: '18px',
-                color: '#121212',
-            }}>
-                GALLERY
-            </Typography>
-            <Typography sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                fontSize: '13px',
-                lineHeight: '18px',
-                color: '#121212',
-                marginTop: '5px',
-                padding: '0 30px'
-            }}>
-                If you want to know more about us, you’re in the right place. 
-                     Read to learn how we can assist you
-            </Typography>
-            
-            <Box sx={{
-                display: 'flex',
-                width: '100%',
-                justifyContent: 'center'
-            }}>
-                <Box sx={{
-                    width: '60%',
-                    height: '160px',
-                    background: '#d9d9d9',
-                    marginTop: '28px'
-                }}></Box>
-            </Box>
-
-            <Typography variant='h6' sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                fontSize: '16px',
-                lineHeight: '22px',
-                color: '#000000',
-                marginTop: '10px'
-            }}>
-                Hanger
-            </Typography>
-            <Typography sx={{
-                fontFamily: 'Raleway',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                fontSize: '12px',
-                lineHeight: '16px',
-                color: '#000000',
-                marginTop: '5px',
-                padding: '0 40px'
-            }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                   Quisque adipiscing placerat in nisl morbi ornare. 
-            </Typography>
-            
-            <Box sx={{
-                display: 'flex',
-                width: '100%',
-                justifyContent: 'center'
-            }}>
-                <Box sx={{  maxWidth: '60%', 
-                            flexGrow: 1,
-                            marginTop: '28px' 
-                        }}>
-                        {images.map((step, index) => (
-                        <div key={step.label}>
-                            {Math.abs(activeStep - index) <= 4 ? (
-                            <Box
-                                component="img"
-                                sx={{
-                                height: '150px',
-                                display: 'block',
-                                maxWidth: '100%',
-                                overflow: 'hidden',
-                                width: '100%',
-                                marginTop: '20px',
-                                borderRadius: '5px 5px 0 0'
-                                }}
-                                src={step.imgPath}
-                                alt={step.label}
-                            />
-                            ) : null}
-                        </div>
-                        ))}
-                    <Paper
-                        square
-                        elevation={0}
-                        sx={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                height: 30,
-                                bgcolor: '#d9d9d9',
-                                borderRadius: '0  0 5px 5px',
-                            }}
-                    >
-                        <Typography>{images[activeStep].label}</Typography>
-                    </Paper>
-
-                    <MobileStepper
-                        steps={maxSteps}
-                        position="static"
-                        activeStep={activeStep}
-                        nextButton={
-                        <Button
-                            size="small"
-                            onClick={handleNext}
-                            disabled={activeStep === maxSteps - 1}
-                        >
-                            {theme.direction === 'rtl' ? (
-                            <KeyboardArrowLeft />
-                            ) : (
-                            <KeyboardArrowRight />
-                            )}
-                        </Button>
-                        }
-                        backButton={
-                        <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-                            {theme.direction === 'rtl' ? (
-                            <KeyboardArrowRight />
-                            ) : (
-                            <KeyboardArrowLeft />
-                            )}
-                        </Button>
-                        }
-                    />
-                </Box>
-            </Box>
-        </Box> */}
-
-        {/* MEDIUM DEVICE */}
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -236,7 +70,7 @@ function ServiceList() {
               textAlign: 'justify',
               mt: 6,
             }}>
-              Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. 
+              Embodied in our crew services are:
             </Typography>
             <List sx={{ 
                 width: '100%', 

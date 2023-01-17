@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
+import Link from '@mui/material/Link'
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 const CustomWidthTooltip = styled(({ className, ...props }) => (
@@ -60,7 +60,7 @@ function ServicesNavigations() {
         {linkItem.map((item, index) => (
           <div key={index}>
           <CustomWidthTooltip title={item.body}>
-            <Button sx={{ m: 1 }}>{item.title}</Button>
+            <Link activeClassName="active" to="/some-route">{item.title}</Link>
           </CustomWidthTooltip>
         </div>
         ))}
