@@ -34,19 +34,19 @@ function MediaComponent() {
           display: 'flex',
           justifyContent: 'space-between',
         }}>
-          <Link href="#">
+          <Link href="https://www.linkedin.com/company/nbj-vip-groundhandling/" target={'_blank'}>
             <LinkedInIcon sx={{
               mr: 6,
               color: '#ffffff',
             }}/>
           </Link>
-          <Link href="https://twitter.com/nbj_vip" target={'_blank'}>
+          <Link href="https://twitter.com/vip_nbj" target={'_blank'}>
             <TwitterIcon sx={{
               mr: 6,
               color:  '#ffffff',
             }}/>
           </Link>
-          <Link href="#">
+          <Link href="https://www.instagram.com/_nbjvipcharter/" target={'_blank'}>
             <InstagramIcon sx={{
               color: '#ffffff',
             }}/>
