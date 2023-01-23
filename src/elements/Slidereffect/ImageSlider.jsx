@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from 'swiper/react'
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay} from "swiper";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import 'swiper/css'
@@ -15,21 +15,16 @@ const ImageSlider = ({ slides }) => {
       <Swiper
         onSlideChange={(swiper) => {
           localStorage.setItem('swiperSlideIndex', swiper.activeIndex);
-          console.log(swiper.activeIndex)
         }}
         spaceBetween={30}
         centeredSlides={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay]}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
           
         }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
         loop={true}
         className="mySwiper"
       >
