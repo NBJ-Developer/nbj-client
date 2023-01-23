@@ -8,36 +8,8 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import CircleIcon from '@mui/icons-material/Circle';
 
-    const images = [
-    {
-        label: 'Ground Support',
-        imgPath: 'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
-    },
-    {
-        label: 'Aircraft Charter & Bookings',
-        imgPath: 'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
-    },
-    {
-        label: 'Maintenance',
-        imgPath: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
-    },
-    {
-        label: 'Wings Inflight',
-        imgPath: 'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-    },
-    ];
 
-
-function ServiceList() {
-
-  const listItems = [
-    'Crew Transportation',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-]
-
+function ServiceList({listItems}) {
 
   return (
     <Box sx={{

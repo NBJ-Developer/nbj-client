@@ -4,7 +4,8 @@ import Typography from '@mui/material/Typography';
 import { Paper } from '@mui/material';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 
-function ServiceSummary() {
+function ServiceSummary({serviceSummary}) {
+  console.log()
   return (
     <Box sx={{
       width: '100%'
@@ -34,10 +35,7 @@ function ServiceSummary() {
               color: '#000000',
               textAlign: 'justify'
             }}>
-              Ground support service is n integral part of airline operations and a prominent role as we are tasked with ensuring the safety and comfort of the passengers
-              as they prepare for take-off and landing. NBJ’s highly skilled ground handlers  are fully equipped to provide these range of services to the flight on ground.
-              Our dedicated team is ready to provide to provide efficient ground support
-              and assist guests and passengers with any flight related arrangement.
+              {serviceSummary}
             </Typography>
           </Box>
             <Paper elevation={3} sx={{
