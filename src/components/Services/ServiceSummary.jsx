@@ -5,7 +5,6 @@ import { Paper } from '@mui/material';
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 
 function ServiceSummary({serviceSummary}) {
-  console.log()
   return (
     <Box sx={{
       width: '100%'
@@ -35,7 +34,9 @@ function ServiceSummary({serviceSummary}) {
               color: '#000000',
               textAlign: 'justify'
             }}>
+
               {serviceSummary}
+
             </Typography>
           </Box>
             <Paper elevation={3} sx={{

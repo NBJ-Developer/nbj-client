@@ -21,6 +21,7 @@ export default function BenefitComponent({image, data}) {
       component="img"
       sx={{
         overflow: 'hidden',
+        width: '116px',
         borderRadius: '0px 30px 30px 0px',
       }}
       src={image}
@@ -29,8 +30,8 @@ export default function BenefitComponent({image, data}) {
     <Typography sx={{
       font: 'Open Sans',
       fontWeight: '600',
-      fontSize: {xs: '18px', sm: '19px',  md: '20px'},
-      lineHeight: {xs: '20px', sm: '20px',  md: '23px'},
+      fontSize: {xs: '14px', sm: '16px',  md: '18px'},
+      lineHeight: '20px',
       textAlign: 'center',
       marginBottom: '10px',
     }}>
@@ -41,7 +42,7 @@ export default function BenefitComponent({image, data}) {
       font: 'Open Sans',
       fontWeight: '400',
       fontSize: {xs: '12px', sm: '13px', md: '14px'},
-      lineHeight: {xs: '23px', sm: '25px', md: '27px'},
+      lineHeight: '20px',
       textAlign: 'center',
     }}>
     {data.para}

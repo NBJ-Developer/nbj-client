@@ -9,6 +9,7 @@ import ListItemText from '@mui/material/ListItemText';
 import CircleIcon from '@mui/icons-material/Circle';
 
 
+
 function ServiceList({listItems}) {
 
   return (
@@ -42,7 +43,7 @@ function ServiceList({listItems}) {
               textAlign: 'justify',
               mt: 6,
             }}>
-              Embodied in our crew services are:
+            Embodied in our ground support service are: 
             </Typography>
             <List sx={{ 
                 width: '100%', 

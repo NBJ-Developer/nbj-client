@@ -41,14 +41,14 @@ function About() {
  
   return (
     <div>
-      <GeneralHero bgImage={bgImage} content={content} pages={pages}/>
+      <GeneralHero bgImage={bgImage} content={content} pages={pages} />
       <Box sx={{
         textalign:'center',
         display: {xs:'block', md:'none'},
         padding: '39px 47px 0px',
       }}>
         <Typography sx={{
-        textAlign:'center',
+        textAlign:'center'
       }}>
           If you want to know more about us, you’re in the right place. Read to learn how we can assist you
         </Typography>
