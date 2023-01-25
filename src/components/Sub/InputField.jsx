@@ -17,7 +17,7 @@ function InputField({ content }) {
       font: 'Open Sans',
       fontWeight: '500',
       fontSize: '14px',
-      color: '#F9A020',
+      color: '#F9A020'
     },
     input: {
       color: '#262626',
@@ -33,13 +33,13 @@ function InputField({ content }) {
     },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
-        borderColor: content.color === '#ffffff'? '#f1f3fb': '#06133C',
+        borderColor: content.color === '#ffffff'? '#f1f3fb': '#dcdcdc',
       },
       '&:hover fieldset': {
         borderColor: '#F9A020',
       },
       '&.Mui-focused fieldset': {
-        borderColor: content.color === '#ffffff'? '#f1f3fb': '#06133C',
+        borderColor: content.color === '#ffffff'? '#f1f3fb': '#F9A020',
       },
     },
   });

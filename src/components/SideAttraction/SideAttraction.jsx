@@ -26,11 +26,10 @@ function SideAttraction() {
       secondaryButton: 'Contact Us',
     },
     {
-      imgPath: 'hotel.png',
-      label: 'Hotels Reservations',
-      body: `Book a room in our hotels to relax after a long flight. 
-      We have different rooms that suit your taste. Our rooms are 
-      also pet friendly and you definately enjoy your stay.`,
+      imgPath: 'vacation.png',
+      label: 'Vacation Plan',
+      body: `If you are stressed out and in need of spa services and quality 
+      relaxation spots, Let’s help you fulfil those wishes.`,
       buttonDisplay: 'secondary',
       secondaryButton: 'Contact Us',
     },
@@ -80,7 +79,7 @@ function SideAttraction() {
               <Slider slideComponent={<ServicesCard content={contents[1]} />} />
             </Grid>
             <Grid item xs={12} md={4}>
-              <Slider slideComponent={<ServicesCard content={contents[0]} />} />
+              <Slider slideComponent={<ServicesCard content={contents[2]} />} />
             </Grid>
           </Grid>
         </Box>
