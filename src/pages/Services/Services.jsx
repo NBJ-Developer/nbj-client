@@ -80,6 +80,27 @@ function Services() {
 
 ]
 
+const Image = [
+  'ground_support.png',
+  'airport_charter.png',
+  'crew_services.png',
+  'servicesAirplain.png'
+]
+
+const Alt = [
+  'ground_support.png',
+  'airport_charter.png',
+  'crew_services.png',
+  'servicesAirplain.png'
+]
+
+const Image2 = [
+  'servicesAirplain1.png',
+  'servicesAirplain1.png',
+  'service2.png',
+  'hospitality_services.png'
+]
+
   const linkItem = ['Ground Support', 'Airport Charter & Bookings', 'Crew Services', 'Hospitality Services']
 
   const StyledTab = styled(Tab)({
@@ -139,8 +160,8 @@ function Services() {
           width: '100%',
           height: '75vh',
         }}
-        src={'servicesAirplain.png'}
-        alt={'servicesAirplain.png'}
+        src={Image[index]}
+        alt={Alt[index]}
       />
       </Box>
       </Box>

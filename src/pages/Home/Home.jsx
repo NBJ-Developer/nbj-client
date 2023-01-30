@@ -16,8 +16,8 @@ const Home = () => {
     heading: 'Our',
     heading1: 'Story',
     display: true,
-    mdImage: 'ourStory.png',
-    xsImage: 'airplain5.png',
+    mdImage: 'our_story.png',
+    xsImage: 'our_story.png',
     content: `NBJ was birthed in 2020 out of the passion to provide the 
     highest standard of air travel while ensuring the safety and comfort 
     of individuals around the world. We are a ground handling company 

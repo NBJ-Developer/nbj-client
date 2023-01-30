@@ -18,7 +18,7 @@ function MeetTheTeam() {
       buttonDisplay: false,
     },
     {
-      imgPath: 'team3.png',
+      imgPath: 'team4.png',
       label: 'Akeni Philip Elvis',
       post: 'Director of Operations',
       buttonDisplay: false,
