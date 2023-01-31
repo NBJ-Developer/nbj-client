@@ -10,14 +10,8 @@ import CircleIcon from '@mui/icons-material/Circle';
 
 
 
-function ServiceList({listItems}) {
+function ServiceList({listItems, listImage}) {
 
-  const Image = [
-    'servicesAirplain1.png',
-    'servicesAirplain1.png',
-    'service2.png',
-    'hospitality_services.png'
-  ]
   
   return (
     <Box sx={{
@@ -36,8 +30,8 @@ function ServiceList({listItems}) {
           width: '65%',
           height: 'AUTO',
         }}
-          src={'servicesAirplain1.png'}
-          alt={'servicesAirplain1.png'}
+          src={listImage}
+          alt={listImage}
         />
           <Box >
             <Typography sx={{

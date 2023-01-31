@@ -86,6 +86,13 @@ const Image = [
   'crew_services.png',
   'servicesAirplain.png'
 ]
+const listImages = [
+    'servicesAirplain1.png',
+    'servicesAirplain1.png',
+    'service2.png',
+    'hospitality_services.png'
+  ]
+  
 
 const Alt = [
   'ground_support.png',
@@ -159,7 +166,7 @@ const Alt = [
       </Box>
       </Box>
       <ServiceSummary serviceSummary={serviceSummary[index]}/>
-      <ServiceList listItems={listItems[index]}/>
+      <ServiceList listItems={listItems[index]} listImage={listImages[index]}/>
       <CallToAction />
       <ContactInfo />
       <Footer />
