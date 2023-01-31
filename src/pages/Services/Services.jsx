@@ -94,13 +94,6 @@ const Alt = [
   'servicesAirplain.png'
 ]
 
-const Image2 = [
-  'servicesAirplain1.png',
-  'servicesAirplain1.png',
-  'service2.png',
-  'hospitality_services.png'
-]
-
   const linkItem = ['Ground Support', 'Airport Charter & Bookings', 'Crew Services', 'Hospitality Services']
 
   const StyledTab = styled(Tab)({

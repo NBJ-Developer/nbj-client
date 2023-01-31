@@ -12,6 +12,13 @@ import CircleIcon from '@mui/icons-material/Circle';
 
 function ServiceList({listItems}) {
 
+  const Image = [
+    'servicesAirplain1.png',
+    'servicesAirplain1.png',
+    'service2.png',
+    'hospitality_services.png'
+  ]
+  
   return (
     <Box sx={{
         width: '100%'
