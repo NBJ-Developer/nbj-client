@@ -37,7 +37,7 @@ export default function OurStory({ourStoryProps}) {
               font: 'inter',
               fontWeight: '600',
               fontSize: '27px',
-              lineHeight: '42px',
+              // lineHeight: '42px',
               lineHeight: '23px',
             }}>
               {ourStoryProps.heading}
@@ -56,7 +56,7 @@ export default function OurStory({ourStoryProps}) {
             font: 'inter',
             fontWeight: '400',
             fontSize: '12px',
-            lineHeight: '25px',
+            // lineHeight: '25px',
             lineHeight: '20px',
             textAlign: 'justify',
           }}>
@@ -80,7 +80,7 @@ export default function OurStory({ourStoryProps}) {
         display: {xs: 'none', md: 'flex'},
         alignItems: 'center',
         width: '80%',
-        maxHeight: '70.5vh',
+        maxHeight: '75vh',
         mt: 23,
       }}>
         <Box sx={{
@@ -88,7 +88,6 @@ export default function OurStory({ourStoryProps}) {
           flexDirection: 'column',
           justifyContent: 'center',
           background: '#ffffff',
-          borderRadius: '0px 5px 5px 0px',
           width: '60%',
           height: '60.5vh',
           minHeight: ourStoryProps.display?'63vh': '57vh',
@@ -134,6 +133,7 @@ export default function OurStory({ourStoryProps}) {
           sx={{
             height: '60.5vh',
             display: 'block',
+            borderRadius: '0px 30px 30px 0px',
             overflow: 'hidden',
           }}
           src={ourStoryProps.mdImage}

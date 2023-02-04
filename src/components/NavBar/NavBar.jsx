@@ -10,6 +10,7 @@ import AppBar from '@mui/material/AppBar';
 import Link from '@mui/material/Link'
 import NbjLogo from '../../elements/Logo/NbjLogo';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
+import './NavBar.css';
 
 
 
@@ -23,6 +24,7 @@ function ResponsiveAppBar({pages}) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
 
   return (
     <AppBar sx={{
@@ -52,7 +54,12 @@ function ResponsiveAppBar({pages}) {
         }}>
           {pages.map((page) => (
             <Box>
-            <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
+            <Link href={`${page === 'Home'? '/': `/${page}`}`} 
+              // className={({isActive}) => {
+              //   return 'color: "#ffffff"' +
+              //   (isActive ? 'color: "#F9A020"' : 'color: "#ffffff"')
+              // }}
+              underline="hover" sx={{
               color: '#ffffff',
               '&:hover': {
                 color: '#F9A020',
@@ -109,7 +116,8 @@ function ResponsiveAppBar({pages}) {
             {pages.map((page) => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
                 <Box>
-                  <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
+                  <Link href={`${page === 'Home'? '/': `/${page}`}`} 
+                    underline="hover" sx={{
                     color: '#000000',
                     '&:hover': {
                       color: '#F9A020',

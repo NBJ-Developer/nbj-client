@@ -21,7 +21,7 @@ function AboutUs() {
         marginLeft:{xs:'30px', md:'100px'},
         marginTop:{xs:'22px', md:'158px'},
         marginRight:'22px',
-        height:{xs:'50%',},
+        height:{xs:'50%'},
         width:{md:'50%'},
       }}>
         <Typography sx={{

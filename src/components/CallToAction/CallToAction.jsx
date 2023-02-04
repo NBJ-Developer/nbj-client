@@ -54,7 +54,7 @@ export default function CallToAction() {
             Start with NBJ today!
           </Typography>
           <Box>
-            <PrimaryButtons buttonLabel={'Button'}/>
+            <PrimaryButtons buttonLabel={'Get Quote'}/>
           </Box>
           
         </Box>
