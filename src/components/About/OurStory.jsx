@@ -37,7 +37,7 @@ export default function OurStory({ourStoryProps}) {
               font: 'inter',
               fontWeight: '600',
               fontSize: '27px',
-              lineHeight: '42px',
+              // lineHeight: '42px',
               lineHeight: '23px',
             }}>
               {ourStoryProps.heading}
@@ -56,7 +56,7 @@ export default function OurStory({ourStoryProps}) {
             font: 'inter',
             fontWeight: '400',
             fontSize: '12px',
-            lineHeight: '25px',
+            // lineHeight: '25px',
             lineHeight: '20px',
             textAlign: 'justify',
           }}>
@@ -88,7 +88,6 @@ export default function OurStory({ourStoryProps}) {
           flexDirection: 'column',
           justifyContent: 'center',
           background: '#ffffff',
-          borderRadius: '0px 5px 5px 0px',
           width: '60%',
           height: 'inherit',
           minHeight: ourStoryProps.display?'63vh': '57vh',
@@ -133,6 +132,7 @@ export default function OurStory({ourStoryProps}) {
           sx={{
             height: 'inherit',
             display: 'block',
+            borderRadius: '0px 30px 30px 0px',
             overflow: 'hidden',
           }}
           src={ourStoryProps.mdImage}

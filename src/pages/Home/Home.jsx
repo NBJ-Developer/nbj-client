@@ -38,9 +38,9 @@ const Home = () => {
       <Hero />
       <Benefits />
       <OurStory ourStoryProps={ourStoryProps[0]}/>
-    <div id='ourServices'>
-      <Services />
-    </div>
+      <div id='ourServices'>
+        <Services />
+      </div>
       <CallToAction />
       <Testimonials />
       <SideAttraction />

@@ -16,6 +16,7 @@ import { useEffect } from 'react';
 
 
 
+
 function ResponsiveAppBar({pages}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [index, setIndex] = React.useState(0);
@@ -37,7 +38,6 @@ function ResponsiveAppBar({pages}) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
   const StyledTab = styled(Tab)({
     color: '#ffffff',
   "&.Mui-selected": {
@@ -131,7 +131,8 @@ function ResponsiveAppBar({pages}) {
             {pages.map((page) => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
                 <Box>
-                  <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
+                  <Link href={`${page === 'Home'? '/': `/${page}`}`} 
+                    underline="hover" sx={{
                     color: '#000000',
                     "&.Mui-selected": {
                       color: "#F9A020"

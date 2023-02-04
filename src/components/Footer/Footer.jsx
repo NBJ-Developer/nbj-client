@@ -17,9 +17,15 @@ export default function Footer() {
     {name: 'OUR SERVICES', id:'ourServices'}, 
     {name: 'MEDIA', id:'media'}, 
     {name: 'FAQs', id:'faqs'}, 
-    {name: 'CONTACT', link: 'Contact'},]
+    {name: 'CONTACT', link: '../Contact'}
+  ]
   const linkItems2 = 
-  ['GROUND SUPPORT', 'CHARTER & BOOKING', 'CREW SERVICES', 'HOSPITALITY',]
+  [
+    {name: 'GROUND SUPPORT', link:'../Services'}, 
+    {name: 'CHARTER & BOOKING', link:'../Services'}, 
+    {name: 'CREW SERVICES', link:'../Services'}, 
+    {name: 'HOSPITALITY', link:'../Services'}, 
+  ]
   
   const itemsLength1 = linkItems1.length
   const itemsLength2 = linkItems2.length
@@ -94,7 +100,7 @@ export default function Footer() {
               </Typography>
               {linkItems2.map((item, index) => (
               <Box key={index}>
-                <LinkComponent item={item} index={index} itemsLength={itemsLength2}/>
+              <LinkComponent item={item.name} sectionId={item.id} link={item.link} index={index} itemsLength={itemsLength2}/>
               </Box>
               ))}
             </Box>

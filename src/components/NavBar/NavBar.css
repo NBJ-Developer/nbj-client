@@ -1,0 +1,12 @@
+.navbar_main {
+    display: block;
+    color: '#ffffff',
+}
+
+.navbar_active {
+    color: aqua !important;
+}
+
+.navbar_inactive {
+    color: #ffffff;
+}

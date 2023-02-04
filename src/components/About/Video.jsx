@@ -22,7 +22,7 @@ function Video() {
           borderRadius: '5px',
           flexGrow: 1,
         }}>
-          <video src={clip} playsInLine autoPlay loop muted width='100%' height='100%'/>
+          <video src={clip} playsInLine autoPlay loop muted width='100%' height='100%' sx={{background: 'rgba(0, 0, 0, 0.59)'}}/>
       </Box>
             
         <Box 
@@ -36,9 +36,7 @@ function Video() {
               borderRadius: '5px',
               zIndex: 2,
             }}>
-              
-            
-              
+                
           <Box sx={{
             position: 'absolute',
             left: 12,
