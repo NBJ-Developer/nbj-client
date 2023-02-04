@@ -10,19 +10,40 @@ import AppBar from '@mui/material/AppBar';
 import Link from '@mui/material/Link'
 import NbjLogo from '../../elements/Logo/NbjLogo';
 import SecondaryButton from '../../elements/Button/SecondaryButton';
+import { styled } from "@mui/material/styles";
+import { Tab, Tabs } from '@mui/material';
+import { useEffect } from 'react';
 
 
 
 function ResponsiveAppBar({pages}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [index, setIndex] = React.useState(0);
+
+  console.log(window.location.pathname.substring(1))
+  useEffect(()=> {
+    if (window.location.pathname.substring(1) === ''){
+      setIndex(0)
+    }else{
+      setIndex(pages.indexOf(window.location.pathname.substring(1)))
+    }
+    
+  }, [pages])
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
+  console.log(index)
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const StyledTab = styled(Tab)({
+    color: '#ffffff',
+  "&.Mui-selected": {
+    color: "#F9A020"
+  }
+});
 
   return (
     <AppBar sx={{
@@ -45,27 +66,28 @@ function ResponsiveAppBar({pages}) {
         {/* NBJ logo for the nav bar */}
         <NbjLogo />
         {/* Navigation Links for the nav bar */}
-        <Box sx={{
-          width: '350px',
-          display: {xs: 'none', md:'flex'},
-          justifyContent: 'space-between',
-        }}>
-          {pages.map((page) => (
-            <Box>
+        <Tabs
+          value={index}
+          textColor="inherit"
+          variant="fullWidth"
+          aria-label="full width tabs example"
+          TabIndicatorProps={{
+            sx: {
+              backgroundColor: '#F9A020',
+            },
+          }}
+        >
+          {pages.map((page, index) => (
             <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
-              color: '#ffffff',
-              '&:hover': {
-                color: '#F9A020',
-                textDecorationWidth: '5px',
-                textDecorationThickness: '3px',             
-                }
-            }}>
-              {page}
-            </Link>
-          </Box>
-            
+                    color: '#000000',
+                    "&.Mui-selected": {
+                      color: "#F9A020"
+                    }
+                  }}>
+            <StyledTab label={page} key={index}/>
+           </Link>
           ))}
-        </Box>
+        </Tabs>
         {/* Get a quote button */}
         <Box sx={{  
           display: { xs: 'none', md: 'flex' }, 
@@ -111,11 +133,9 @@ function ResponsiveAppBar({pages}) {
                 <Box>
                   <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
                     color: '#000000',
-                    '&:hover': {
-                      color: '#F9A020',
-                      textDecorationWidth: '5px',
-                      textDecorationThickness: '3px',             
-                      }
+                    "&.Mui-selected": {
+                      color: "#F9A020"
+                    }
                   }}>
               {page}
             </Link>

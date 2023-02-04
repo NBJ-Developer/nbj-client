@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-//import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { BsArrowRightCircle } from 'react-icons/bs'
+import { Box } from '@mui/material';
 
 export default function PrimaryButtons({ buttonLabel }) {
   return (
+    <Box>
       <Button variant="contained" sx={{ 
         width: {xs: '150px', md: '170px'},
         height: {xs: '30px', md: '40px'},
@@ -26,5 +26,7 @@ export default function PrimaryButtons({ buttonLabel }) {
         {buttonLabel}
         <BsArrowRightCircle style={{marginLeft: '5px'}}/>
       </Button>
+          
+      </Box>
   );
 }

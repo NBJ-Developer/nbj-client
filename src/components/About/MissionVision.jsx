@@ -70,12 +70,12 @@ const misionContent = [
       }}>
         <Box sx={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           alignItems: 'center',
           width: '100%',
           height: '45vh',
         }}>
-          <Grid container spacing={4}>
+          <Grid container spacing={6}>
             <Grid item xs={4} md={4}>
             <Slider slideComponent={
             <Box sx={{
@@ -100,7 +100,6 @@ const misionContent = [
                 color: '#ffffff',
                 fontSize:{xs:'15px', md:'18px'},
                 lineHeight: '27.21px',
-                textAlign: 'justify',
                 }}>
                 To provide the highest standards of safety through our highly 
                 trained domestic and international field representatives and customer 
@@ -136,7 +135,6 @@ const misionContent = [
                 color: '#ffffff',
                 fontSize:{xs:'15px', md:'18px'},
                 lineHeight: '27.21px',
-                textAlign: 'justify',
                 }}>
                 To create Value and make a difference in air travel
               </Typography>
@@ -151,24 +149,22 @@ const misionContent = [
               width: '100%',
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'center',
-              alignItems: 'center',
             }}>
               <Box>
               <Typography sx={{
-              fontFamily:'inter',
-              fontWeight: '700',
-              color: '#ffffff',
-              fontSize:{xs:'15px', md:'18px'},
-              lineHeight: '27.21px',
-              textAlign: 'left',
+              
+                fontFamily:'raleway',
+                color: '#ffffff',
+                fontWeight:'700',
+                fontSize: '22px',
+                lineHeight: '25px',
             }}>
-              CORE VALUES
+              OUR CORE VALUES
             </Typography>
               <List
                 sx = {{
                 listStyleType: 'disc',
-                pl: 5,
+                pl: 3,
                 fontSize:{xs:'18px', md:'22px'},
                 color: '#F9A020',
                 '& .MuiListItem-root': {

@@ -10,6 +10,7 @@ const imageArray = ['airplain4.png', 'airplain1.png']
 
 function SwipeableHeroStepper() {
 
+
   return (
     <Box>
       <Box sx={{

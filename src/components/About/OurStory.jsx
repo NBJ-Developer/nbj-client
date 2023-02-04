@@ -80,7 +80,7 @@ export default function OurStory({ourStoryProps}) {
         display: {xs: 'none', md: 'flex'},
         alignItems: 'center',
         width: '80%',
-        maxHeight: '70.5vh',
+        height: '65.5vh',
         mt: 23,
       }}>
         <Box sx={{
@@ -90,7 +90,7 @@ export default function OurStory({ourStoryProps}) {
           background: '#ffffff',
           borderRadius: '0px 5px 5px 0px',
           width: '60%',
-          height: '60.5vh',
+          height: 'inherit',
           minHeight: ourStoryProps.display?'63vh': '57vh',
           p: 6,
           }}>
@@ -112,7 +112,7 @@ export default function OurStory({ourStoryProps}) {
             <Typography sx={{
               font: 'inter',
               fontWeight: '400',
-              fontSize: '2.2vh',
+              fontSize: '1.2vw',
               lineHeight: '3.5vh',
               color: '#434343',
               textAlign: 'justify',
@@ -128,11 +128,10 @@ export default function OurStory({ourStoryProps}) {
             <PrimaryButtons buttonLabel={'Learn More'}/>
           </Box>
         </Box>
-
         <Box
           component="img"
           sx={{
-            height: '60.5vh',
+            height: 'inherit',
             display: 'block',
             overflow: 'hidden',
           }}
