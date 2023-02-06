@@ -79,7 +79,7 @@ function ResponsiveAppBar({pages}) {
         >
           {pages.map((page, index) => (
             <Link href={`${page === 'Home'? '/': `/${page}`}`} underline="hover" sx={{
-                    color: '#000000',
+                    color: 'transparent',
                     "&.Mui-selected": {
                       color: "#F9A020"
                     }
@@ -133,7 +133,7 @@ function ResponsiveAppBar({pages}) {
                 <Box>
                   <Link href={`${page === 'Home'? '/': `/${page}`}`} 
                     underline="hover" sx={{
-                    color: '#000000',
+                    color: 'transparent',
                     "&.Mui-selected": {
                       color: "#F9A020"
                     }
