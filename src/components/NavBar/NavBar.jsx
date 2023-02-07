@@ -73,6 +73,7 @@ function ResponsiveAppBar({pages}) {
           aria-label="full width tabs example"
           TabIndicatorProps={{
             sx: {
+              color: '#F9A020',
               backgroundColor: '#F9A020',
             },
           }}
