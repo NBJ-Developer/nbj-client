@@ -55,8 +55,8 @@ function ResponsiveAppBar({pages}) {
         <NbjLogo />
         {/* Navigation Links for the nav bar */}
         <Box sx={{
-          width: '20rem',
-          display: 'flex',
+          display: { xs: 'none', md: 'flex' },
+          width: '23rem',
           justifyContent: 'space-between',
           alignItems: 'center'
         }}>
