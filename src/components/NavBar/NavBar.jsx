@@ -115,9 +115,16 @@ function ResponsiveAppBar({pages}) {
             {pages.map((page) => (
               <MenuItem key={page} onClick={handleCloseNavMenu}>
                 <Box sx={{
-                  width: '70vw',
+                  mt: 2,
+                  width: '50vw',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
                 }}>
-                  <Link href={`${page === 'Home'? '/': `/${page}`}`}>
+                  <Link href={`${page === 'Home'? '/': `/${page}`}`} sx={{
+                    color: '#121822',
+                    textDecoration: 'none',
+                  }}>
               {page}
             </Link>
           </Box>
