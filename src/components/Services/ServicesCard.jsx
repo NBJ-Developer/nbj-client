@@ -13,7 +13,7 @@ export default function ServicesCard({ content }) {
   return (
     <Card sx={{
       position: 'relative',
-      width: {xs: '100%', sm: '80%', md: 320},
+      width: {xs: '100%', sm: '100%', md: 320},
       height: !content.buttonDisplay? 'auto': {xs: '90%', md: 'auto'},
       pb: {xs: 0, md: 2}, 
     }}>
@@ -25,7 +25,6 @@ export default function ServicesCard({ content }) {
           style={{
             objectFit: 'cover',
             height: !content.buttonDisplay? 'auto': '40vh',
-            objectFit: 'cover',
           }}
         />
         <CardContent sx={{
@@ -55,7 +54,6 @@ export default function ServicesCard({ content }) {
           </Typography>
           <Typography sx={{
             font: 'inter',
-            textAlign: 'center',
             fontWeight: '400',
             fontSize: '1.8vh',
             lineHeight: '2vh',

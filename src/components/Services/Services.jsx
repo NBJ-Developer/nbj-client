@@ -45,7 +45,9 @@ export default function Services() {
     <Box>
       {/* SMALL DEVICE */}
       <Box sx={{
-        display: { xs: 'block', md: 'none' },
+        display: { xs: 'flex', md: 'none' },
+        flexDirection: 'column',
+        justifyContent: 'center',
         mt: 16,
         width: '100%'
       }}>
@@ -75,9 +77,20 @@ export default function Services() {
             width: '65%',
             mt: 3,
           }}>
-            <Slider slideComponent={
-              <ServicesCard content={content[0]} />
-            } />
+            <Grid container spacing={2}>
+              <Grid item md={12}>
+                <Slider slideComponent={<ServicesCard content={content[0]} />} />
+              </Grid>
+              <Grid item md={12}>
+                <Slider slideComponent={<ServicesCard content={content[1]} />} />
+              </Grid>
+              <Grid item md={12}>
+                <Slider slideComponent={<ServicesCard content={content[2]} />} />
+              </Grid>
+              <Grid item md={12}>
+                <Slider slideComponent={<ServicesCard content={content[3]} />} />
+              </Grid>
+            </Grid>
           </Box>
         </Box>
       </Box>
@@ -125,10 +138,10 @@ export default function Services() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '550px',
+          marginTop: 4,
         }}>
           <Box>
-            <Grid container spacing={1}>
+            <Grid container spacing={2}>
               <Grid item md={3}>
                 <Slider slideComponent={<ServicesCard content={content[0]} />} />
               </Grid>

@@ -91,7 +91,6 @@ function SwipeableHeroStepper() {
             fontSize: { xs: '2vh', sm: '2.5vh', md: '3vh' },
             lineHeight: { xs: '4vh', sm: '3vh', md: '4vh' },
             color: '#ffffff',
-            textAlign: 'justify',
           }}>
             Our goal is simply to offer the highest standards of professionalism
             and service as measured by our safety record, dispatch reliability
