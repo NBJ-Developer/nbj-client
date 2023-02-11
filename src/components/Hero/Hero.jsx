@@ -50,7 +50,7 @@ function SwipeableHeroStepper() {
             <Typography sx={{
               font: 'Raleway',
               fontWeight: '700',
-              fontSize: { xs: '5vh', sm: '7vh', md: '10vh' },
+              fontSize: { xs: '3.5vh', sm: '7vh', md: '10vh' },
               lineHeight: { xs: '6vh', sm: '8vh', md: '11vh' },
               color: '#ffffff',
             }}>
@@ -64,7 +64,7 @@ function SwipeableHeroStepper() {
             <Typography sx={{
               font: 'Raleway',
               fontWeight: '700',
-              fontSize: { xs: '5vh', sm: '7vh', md: '10vh' },
+              fontSize: { xs: '3.5vh', sm: '7vh', md: '10vh' },
               lineHeight: { xs: '6vh', sm: '8vh', md: '11vh' },
               color: '#ffffff',
             }}>
@@ -76,7 +76,7 @@ function SwipeableHeroStepper() {
             <Typography sx={{
               font: 'Raleway',
               fontWeight: '700',
-              fontSize: { xs: '5vh', sm: '7vh', md: '10vh' },
+              fontSize: { xs: '3.5vh', sm: '7vh', md: '10vh' },
               lineHeight: { xs: '6vh', sm: '8vh', md: '11vh' },
               color: '#ffffff',
             }}>
@@ -88,7 +88,7 @@ function SwipeableHeroStepper() {
             width: { xs: '70vw', sm: '65vw', md: '55vw' },
             font: 'inter',
             fontWeight: '300',
-            fontSize: { xs: '2.5vh', sm: '2.5vh', md: '3vh' },
+            fontSize: { xs: '2vh', sm: '2.5vh', md: '3vh' },
             lineHeight: { xs: '4vh', sm: '3vh', md: '4vh' },
             color: '#ffffff',
             textAlign: 'justify',
