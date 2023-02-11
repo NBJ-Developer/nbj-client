@@ -19,8 +19,7 @@ const benefitsData = [
   {
     id: 4,
     name: "Excellent Customer Service",
-    para: `We make you feel ******** with our top-notch 
-    customer first service.`
+    para: `We make you feel how special you are with our fantastic customer service.`
   },
 ]
 
