@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import ServicesCard from './ServicesCard';
 import Slider from '../../elements/Slidereffect/Slidereffect'
 import { Grid } from '@mui/material';
-import { textAlign } from '@mui/system';
 
 //const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
