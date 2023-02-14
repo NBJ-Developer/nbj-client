@@ -54,7 +54,6 @@ function SideAttraction() {
             fontFamily: 'Raleway',
             fontWeight: 700,
             fontSize: { xs: '27px', sm: '28px', md: '30px' },
-            lineHeight: { xs: '42px', sm: '45px', md: '55px' },
             color: '#ffffff',
             textAlign: 'center',
             marginTop: '17px'
@@ -63,10 +62,10 @@ function SideAttraction() {
           </Typography>
         </Box>
         <Box sx={{
-          display: 'flex',
+          display: {xs: 'none', md:'flex'},
           justifyContent: 'center',
           alignItems: 'center',
-          overflow: 'auto',
+          overflow: 'scroll',
           px: 1,
           width: { xs: '60%', md: '75%' },
           backgroundColor: 'rgba(43, 71, 161, 0.2)',
@@ -82,6 +81,15 @@ function SideAttraction() {
               <Slider slideComponent={<ServicesCard content={contents[2]} />} />
             </Grid>
           </Grid>
+        </Box>
+        <Box sx={{
+          display: {xs: 'flex', md: 'none'},
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          overflow: 'scroll',
+        }}>
+          {contents.map(content => <Box key={content.imgPath} sx={{ width: '85%'}}><Slider slideComponent={<ServicesCard content={content} />} /></Box>)}
         </Box>
       </Box>
     </div>
