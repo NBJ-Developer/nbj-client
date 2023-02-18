@@ -14,6 +14,7 @@ const content = [
     body: 'For Excellent aircraft and passenger handling handling.',
     buttonDisplay: 'primary',
     primaryButton: 'Read More',
+    link: 'Services'
   },
   {
     label: 'Aircraft Charter & Bookings',
@@ -21,6 +22,7 @@ const content = [
     body: 'For private charter and commercial bookings handling. ',
     buttonDisplay: 'primary',
     primaryButton: 'Read More',
+    link: 'Services'
   },
   {
     label: 'Crew Services',
@@ -28,6 +30,7 @@ const content = [
     body: 'We make available crew transportation and hotel bookings.',
     buttonDisplay: 'primary',
     primaryButton: 'Read More',
+    link: 'Services'
   },
   {
     label: 'Hospitality Service',
@@ -35,6 +38,7 @@ const content = [
     body: 'Committed to delivering unparalleled hospitable service.',
     buttonDisplay: 'primary',
     primaryButton: 'Read More',
+    link: 'Services'
   },
 ];
 

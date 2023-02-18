@@ -73,7 +73,7 @@ function ServiceSummary({serviceSummary}) {
               }}>
                 Get in touch with us.
               </Typography>
-              <PrimaryButtons buttonLabel={'Button'} />
+              <PrimaryButtons buttonLabel={'Button'} link={'Contact'} />
             </Paper>
         </Box>
       </Box>

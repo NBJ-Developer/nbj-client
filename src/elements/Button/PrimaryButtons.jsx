@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { BsArrowRightCircle } from 'react-icons/bs'
 import { Box } from '@mui/material';
 
-export default function PrimaryButtons({ buttonLabel }) {
+export default function PrimaryButtons({ buttonLabel, sectionId, link }) {
   return (
     <Box>
       <Button variant="contained" sx={{ 
@@ -22,7 +22,9 @@ export default function PrimaryButtons({ buttonLabel }) {
           color: '#F9A020',
           border: '3px solid #F9A020',
         },
-        }}>
+        }}
+        href={sectionId? `#${sectionId}`: `http://localhost:3000/${link}`}
+        >
         {buttonLabel}
         <BsArrowRightCircle style={{marginLeft: '5px'}}/>
       </Button>
