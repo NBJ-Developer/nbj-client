@@ -20,7 +20,7 @@ const ImageSlider = ({ slides }) => {
         centeredSlides={true}
         modules={[Autoplay]}
         autoplay={{
-          delay: 1000,
+          delay: 5000,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
           
