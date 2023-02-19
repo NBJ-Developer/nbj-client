@@ -87,9 +87,9 @@ function SideAttraction() {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          overflow: 'scroll',
+          overflow: 'auto',
         }}>
-          {contents.map(content => <Box key={content.imgPath} sx={{ width: '85%'}}><Slider slideComponent={<ServicesCard content={content} />} /></Box>)}
+          {contents.map(content => <Box key={content.imgPath} sx={{ width: '85%'}}><Slider slideComponent={<ServicesCard content={content}/>} /></Box>)}
         </Box>
       </Box>
     </div>

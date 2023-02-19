@@ -61,7 +61,7 @@ function ResponsiveAppBar({pages}) {
           alignItems: 'center'
         }}>
           {pages.map((page) => (
-            <Box>
+            <Box key={page}>
             <Link href={`${page === 'Home'? '/': `/${page}`}`} sx={{
               textDecoration: page === index?'underline':'none',
               textDecorationThickness: '0.2rem',

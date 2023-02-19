@@ -22,7 +22,9 @@ export default function PrimaryButtons({ buttonLabel }) {
           color: '#F9A020',
           border: '3px solid #F9A020',
         },
-        }}>
+        }}
+        href="/GetPrice"
+      >
         {buttonLabel}
         <BsArrowRightCircle style={{marginLeft: '5px'}}/>
       </Button>
