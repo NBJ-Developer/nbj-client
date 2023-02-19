@@ -36,7 +36,9 @@ const Home = () => {
     <div>
       <NavBar pages={pages}/>
       <Hero />
-      <Benefits />
+      <div id='benefits'>
+        <Benefits />
+      </div>
       <OurStory ourStoryProps={ourStoryProps[0]}/>
       <div id='ourServices'>
         <Services />

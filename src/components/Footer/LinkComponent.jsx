@@ -16,7 +16,7 @@ function LinkComponent({item, sectionId, link, index, itemsLength}) {
           mt: 0.35,
           mx: 2,
         }}/>
-          <a href={sectionId? `#${sectionId}`: `http://localhost:3000/${link}`} style={{
+          <a href={sectionId? `#${sectionId}`: `/${link}`} style={{
           fontFamily: 'Raleway',
           fontWeight: '700',
           fontSize: '1.9vw',

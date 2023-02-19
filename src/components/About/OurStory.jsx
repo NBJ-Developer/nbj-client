@@ -4,6 +4,7 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import Typography from '@mui/material/Typography';
 import Slider from '../../elements/Slidereffect/Slidereffect'
+import { Link } from 'react-router-dom'
 
 
 export default function OurStory({ourStoryProps}) {
@@ -124,7 +125,7 @@ export default function OurStory({ourStoryProps}) {
             mt: 4,
             display: ourStoryProps.display? 'block': 'none',
           }}>
-            <PrimaryButtons buttonLabel={'Learn More'}/>
+            <PrimaryButtons buttonLabel={'Learn More'} link={'About'} />
           </Box>
         </Box>
         <Box

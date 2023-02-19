@@ -70,7 +70,7 @@ export default function ServicesCard({ content }) {
         <Box sx={{
           display: content.buttonDisplay === 'primary'? 'block': 'none'
         }}>
-          <PrimaryButtons buttonLabel={content.primaryButton}/>
+          <PrimaryButtons buttonLabel={content.primaryButton} link={content.link}/>
         </Box>
         <Box sx={{
           display: content.buttonDisplay === 'secondary'? 'block': 'none'

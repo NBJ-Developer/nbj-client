@@ -5,6 +5,7 @@ import PrimaryButtons from '../../elements/Button/PrimaryButtons';
 import Slider from '../../elements/Slidereffect/Slidereffect';
 import Statistic from '../Statistic/Statistic';
 import ImageSlider from '../../elements/Slidereffect/ImageSlider';
+//import { Link } from 'react-router-dom'
 
 const imageArray = ['airplain4.png', 'airplain1.png']
 
@@ -100,7 +101,7 @@ function SwipeableHeroStepper() {
           <Box sx={{
             mt: 4,
           }}>
-            <PrimaryButtons buttonLabel={'Explore'} />
+            <PrimaryButtons buttonLabel={'Explore'} sectionId={'benefits'} />
           </Box>
 
         </Box>
