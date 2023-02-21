@@ -49,8 +49,6 @@ function ServicesDetails({content, component}) {
           fontFamily: 'Raleway',
           fontWeight: 700,
           fontSize: {xs: '27px', sm: '28px', md:'30px'},
-          lineHeight: {xs: '42px', xs: '45px', md: '55px'},
-          color: '#434343',
           color: '#0E1035',
         }}>
           {`${count}${content.plusSign && doneCount? content.plusSign: ''}`}
