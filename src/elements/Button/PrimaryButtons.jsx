@@ -12,7 +12,7 @@ export default function PrimaryButtons({ buttonLabel, sectionId, link }) {
         backgroundColor: '#F9A020',
         fontFamily: 'inter',
         fontStyle: 'normal',
-        fontSize: {xs: '15px', md: '20px'},
+        fontSize: {xs: '10px', md: '16px'},
         color: '#ffffff',
         textTransform: 'Capitalize',
         borderRadius: '10px 0 10px 0',
