@@ -7,7 +7,7 @@ export default function PrimaryButtons({ buttonLabel, sectionId, link }) {
   return (
     <Box>
       <Button variant="contained" sx={{ 
-        width: {xs: '150px', md: '170px'},
+        minWidth: {xs: '150px', md: '170px'},
         height: {xs: '30px', md: '40px'},
         backgroundColor: '#F9A020',
         fontFamily: 'inter',

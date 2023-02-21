@@ -5,7 +5,7 @@ import { BsArrowRightCircle } from 'react-icons/bs'
 export default function SecondaryButton({buttonLabel}) {
   return (
     <Button variant="contained" sx={{ 
-      width: {xs: '150px', md: '170px'},
+      minWidth: {xs: '150px', md: '170px'},
       height: {xs: '30px', md: '40px'},
       backgroundColor: 'inherit',
       fontFamily: 'inter',
