@@ -38,17 +38,10 @@ function ContactInfo() {
           justifyContent: 'space-between',
           py: {xs: 2, md: 4},
         }}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={4} >
-              <ContactInfoComponent content={statisticContent[0]}/>
-            </Grid>
-            <Grid item xs={12} md={4} >
-              <ContactInfoComponent content={statisticContent[1]}/>
-            </Grid>
-            <Grid item xs={12} md={4} >
-              <ContactInfoComponent content={statisticContent[2]}/>
-            </Grid>
-          </Grid>
+
+          {
+            statisticContent.map(content => (<div key={content.imgPath}><ContactInfoComponent content={content}/></div>))
+          }
         </Paper>
       </Box>
    
