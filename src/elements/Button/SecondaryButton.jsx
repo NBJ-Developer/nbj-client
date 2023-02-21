@@ -10,7 +10,7 @@ export default function SecondaryButton({buttonLabel}) {
       backgroundColor: 'inherit',
       fontFamily: 'inter',
       fontStyle: 'normal',
-      fontSize: {xs: '10px', md: '16px'},
+      fontSize: {xs: '14px', md: '18px'},
       color: '#F9A020',
       border: '1px solid #F9A020',
       textTransform: 'none',
