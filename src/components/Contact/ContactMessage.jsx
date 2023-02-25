@@ -13,7 +13,7 @@ function ContactMessage() {
     e.preventDefault();
     console.log(form.current)
 
-    emailjs.sendForm('service_z5lntx8', 'template_xcqlbaf', form.current, 'E-NFBC2xL_q21ferI')
+    emailjs.sendForm('service_nt2ccgq', 'template_d219wxr', form.current, 'l5r6HjKXINd75VYi0')
       .then((result) => {
         console.log(result.text);
         window.location.reload()

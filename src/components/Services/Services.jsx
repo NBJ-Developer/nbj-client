@@ -11,7 +11,7 @@ const content = [
   {
     label: 'Ground Support',
     imgPath: 'airplain3.png',
-    body: 'For Excellent aircraft and passenger handling handling.',
+    body: 'For excellent passenger, aircraft and ground handling.',
     buttonDisplay: 'primary',
     primaryButton: 'Read More',
     link: 'Services'
@@ -68,7 +68,6 @@ export default function Services() {
             <span className='span1'>
               SERVICES
             </span>
-            AREAS
           </Typography>
         } />
 

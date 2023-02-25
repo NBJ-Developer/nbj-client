@@ -20,10 +20,11 @@ function ServiceSummary({serviceSummary}) {
         <Box sx={{
           width: '100%',
           display: 'flex',
+          flexDirection: {xs: 'column', md: 'row'},
           px: 6,
         }}>
           <Box sx={{
-            maxWidth: '60vw',
+            maxWidth: {md:'60vw'},
           }}>
             <Typography sx={{
               fontFamily: 'Raleway',
@@ -48,7 +49,8 @@ function ServiceSummary({serviceSummary}) {
               alignItems: 'center',
               ml: '3vw',
               py: 3,
-              width: '30vw',
+              width: {md:'30vw'},
+              mt: {xs: '25px', md: '0px'},
               height: '30vh',
               background: '#ffffff',
             }}>

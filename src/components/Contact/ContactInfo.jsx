@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import { Grid, Paper } from '@mui/material'
+import { Paper } from '@mui/material'
 import ContactInfoComponent from './ContactInfoComponent'
 
 function ContactInfo() {
@@ -40,7 +40,9 @@ function ContactInfo() {
         }}>
 
           {
-            statisticContent.map(content => (<div key={content.imgPath}><ContactInfoComponent content={content}/></div>))
+            statisticContent.map(content => (
+            <div key={content.imgPath}><ContactInfoComponent content={content}/></div>
+            ))
           }
         </Paper>
       </Box>
